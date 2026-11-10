@@ -9,10 +9,19 @@ export const FALLBACK_BETA = "server-side-fallback-2026-07-01";
 
 let client: Anthropic | null = null;
 export function anthropic(): Anthropic {
-  if (!client) client = new Anthropic();
+  if (!client) {
+    // Use only ANTHROPIC_API_KEY. Pin the base URL and ignore ANTHROPIC_AUTH_TOKEN /
+    // ANTHROPIC_BASE_URL, which dev tools often set in the shell. Note: a shell-level
+    // ANTHROPIC_API_KEY still wins over .env.local (Next.js never overrides real env vars).
+    client = new Anthropic({
+      apiKey: process.env.ANTHROPIC_API_KEY,
+      authToken: null,
+      baseURL: process.env.KEEPALIVE_ANTHROPIC_BASE_URL ?? "https://api.anthropic.com",
+    });
+  }
   return client;
 }
 
 export function aiConfigured(): boolean {
-  return Boolean(process.env.ANTHROPIC_API_KEY || process.env.ANTHROPIC_AUTH_TOKEN);
+  return Boolean(process.env.ANTHROPIC_API_KEY);
 }
