@@ -1,26 +1,155 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf6f0;
+  --foreground: #2a1d14;
+  --espresso: #3b2416;
+  --crema: #f2e6d6;
+  --paper: #fffdf9;
+  --line: #e8dccb;
+  --muted: #7a6656;
+  --save: #1f7a4d;
+  --save-soft: #e3f4ea;
+  --warn: #b45309;
+  --danger: #b42318;
+  --paypal: #003087;
+  --paypal-light: #0070e0;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-espresso: var(--espresso);
+  --color-crema: var(--crema);
+  --color-paper: var(--paper);
+  --color-line: var(--line);
+  --color-muted: var(--muted);
+  --color-save: var(--save);
+  --color-save-soft: var(--save-soft);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --color-paypal: var(--paypal);
+  --color-paypal-light: var(--paypal-light);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: var(--font-fraunces);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: transform 0.05s ease, opacity 0.15s ease, background 0.15s ease;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.btn-primary {
+  background: var(--espresso);
+  color: #fff;
+}
+.btn-primary:hover:not(:disabled) {
+  background: #24150c;
+}
+.btn-ghost {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--foreground);
+}
+.btn-ghost:hover:not(:disabled) {
+  background: var(--crema);
+}
+.btn-save {
+  background: var(--save);
+  color: #fff;
+}
+.btn-paypal {
+  background: #ffc439;
+  color: #111;
+}
+.btn-danger-ghost {
+  border: 1px solid #f3c7c2;
+  color: var(--danger);
+  background: #fff;
+}
+.btn-danger-ghost:hover:not(:disabled) {
+  background: #fdf0ee;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 10px;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.95rem;
+}
+.input:focus {
+  outline: 2px solid #c9a37f;
+  outline-offset: 1px;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 0.25s ease-out both;
+}
+
+@keyframes pulse-dot {
+  0%,
+  80%,
+  100% {
+    opacity: 0.25;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+.typing span {
+  animation: pulse-dot 1.2s infinite;
+}
+.typing span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.typing span:nth-child(3) {
+  animation-delay: 0.3s;
 }
