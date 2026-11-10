@@ -1,0 +1,12 @@
+{
+  "fullTextLength": 1019,
+  "headings": [
+    "Introduction",
+    "Why ACP?"
+  ],
+  "links": [],
+  "retrievedAt": "2026-11-09T21:00:03.658Z",
+  "text": "Introduction\n\nThe Agentic Commerce Protocol (ACP) is an open specification that enables a programmatic exchange between buyers, their AI agents, and sellers to complete a purchase. Agents render the checkout UI, collect buyer selections and payment credentials, and keep customers informed in real time—while sellers keep their existing back-end models and payment processing.\n\nThis documentation helps you understand ACP concepts and implement the required endpoints so agents like ChatGPT can transact with your store.\n\nWhy ACP?\n\nThere are many ways for agents to \"transact\" with sellers -- such as browser-based automations. However, ACP declares a common set of interfaces (think MCP) for how agents can conduct a checkout and how they can securely relay credentials.\n\nAgent-buyable checkouts: Instead of an agent traversing a site, it can have a determinstic and programmatic experience purchasing.\nSecure credential relay: Agents can interact with sellers and their PSP to provision and relay payment credentials.",
+  "title": "Introduction | Agentic Commerce Protocol",
+  "url": "https://www.agenticcommerce.dev/docs"
+}

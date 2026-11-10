@@ -1,0 +1,200 @@
+{
+  "links": [
+    {
+      "text": "Real-time planning",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning"
+    },
+    {
+      "text": "Real-time planning: minimizing disruption on replanning",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-minimize-disruption"
+    },
+    {
+      "text": "Constraints",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/user-guide/constraints"
+    },
+    {
+      "text": "Vehicle resource constraints",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/vehicle-resource-constraints/vehicle-resource-constraints"
+    },
+    {
+      "text": "Shift hours and overtime",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/vehicle-resource-constraints/shift-hours-and-overtime"
+    },
+    {
+      "text": "Lunch breaks and personal appointments",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/vehicle-resource-constraints/lunch-breaks-and-personal-appointments"
+    },
+    {
+      "text": "Fairness",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/vehicle-resource-constraints/fairness"
+    },
+    {
+      "text": "Route optimization",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/vehicle-resource-constraints/route-optimization"
+    },
+    {
+      "text": "Technician costs",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/vehicle-resource-constraints/technician-costs"
+    },
+    {
+      "text": "Technician ratings",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/vehicle-resource-constraints/technician-ratings"
+    },
+    {
+      "text": "Coverage area",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/vehicle-resource-constraints/coverage-area"
+    },
+    {
+      "text": "Visit service constraints",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/visit-service-constraints"
+    },
+    {
+      "text": "Time windows and opening hours",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/visit-time-windows"
+    },
+    {
+      "text": "Skills",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/skills"
+    },
+    {
+      "text": "Visit dependencies",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/visit-dependencies"
+    },
+    {
+      "text": "Multi-vehicle visits",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/multi-vehicle-visits"
+    },
+    {
+      "text": "Multi-day schedules and movable visits",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/multi-day-schedules-and-movable-visits"
+    },
+    {
+      "text": "Priority visits and optional visits",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/priority-visits-and-optional-visits"
+    },
+    {
+      "text": "Visit service level agreement (SLA)",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/visit-slas"
+    },
+    {
+      "text": "Duration added for first visit on location",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/duration-added-for-first-visit-on-location"
+    },
+    {
+      "text": "Visit profit",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/visit-profit"
+    },
+    {
+      "text": "Visit requirements and tags",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/visit-requirements-and-tags/visit-requirement-and-tags"
+    },
+    {
+      "text": "Visit requirements",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/visit-requirements-and-tags/visit-requirements"
+    },
+    {
+      "text": "Tags",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/visit-service-constraints/visit-requirements-and-tags/tags"
+    },
+    {
+      "text": "Real-time planning",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning"
+    },
+    {
+      "text": "Real-time planning: extended visit",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-extended-visit"
+    },
+    {
+      "text": "Real-time planning: reassignment",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-reassignment"
+    },
+    {
+      "text": "Real-time planning: emergency visit",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-emergency-visit"
+    },
+    {
+      "text": "Real-time planning: focused replanning",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-focused-replanning"
+    },
+    {
+      "text": "Real-time planning: no show",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-no-show"
+    },
+    {
+      "text": "Real-time planning: technician ill",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-technician-ill"
+    },
+    {
+      "text": "Real-time planning: pinning visits",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-pinning-visits"
+    },
+    {
+      "text": "Real-time planning: minimizing disruption on replanning",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-minimize-disruption"
+    },
+    {
+      "text": "Real-time planning: actual arrival and departure times",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-actual-times"
+    },
+    {
+      "text": "Ask Claude",
+      "url": "https://claude.ai/new?q=Summarise%20and%20analyze%20the%20key%20insights%20from%20%22https%3A%2F%2Fdocs.timefold.ai%2Ffield-service-routing%2Flatest%2Freal-time-planning%2Freal-time-planning-minimize-disruption%22.%20Answer%20in%20the%20language%20of%20the%20content%20itself."
+    },
+    {
+      "text": "Ask ChatGPT",
+      "url": "https://chat.openai.com/?q=Summarise%20and%20analyze%20the%20key%20insights%20from%20%22https%3A%2F%2Fdocs.timefold.ai%2Ffield-service-routing%2Flatest%2Freal-time-planning%2Freal-time-planning-minimize-disruption%22.%20Answer%20in%20the%20language%20of%20the%20content%20itself."
+    },
+    {
+      "text": "1. Original assignment and what counts as a disruption",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-minimize-disruption#_original_assignment_and_what_counts_as_a_disruption"
+    },
+    {
+      "text": "1.1. Batch schedule",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-minimize-disruption#_batch_schedule"
+    },
+    {
+      "text": "1.2. Real-time planning update: a new shift becomes available for the preferred vehicle",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-minimize-disruption#_real_time_planning_update_a_new_shift_becomes_available_for_the_preferred_vehicle"
+    },
+    {
+      "text": "Real-time planning",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning"
+    },
+    {
+      "text": "Real-time planning: pinning visits",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-pinning-visits"
+    },
+    {
+      "text": "1. Original assignment and what counts as a disruption",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-minimize-disruption#_original_assignment_and_what_counts_as_a_disruption"
+    },
+    {
+      "text": "constraint weights",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/user-guide/constraints#_constraint_weights"
+    },
+    {
+      "text": "pinning",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-pinning-visits"
+    },
+    {
+      "text": "pinning individual visits",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-pinning-visits#_pinning_individual_visits"
+    },
+    {
+      "text": "real-time planning",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning"
+    },
+    {
+      "text": "pinned visits",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-pinning-visits"
+    },
+    {
+      "text": "constraints and constraint weights",
+      "url": "https://docs.timefold.ai/field-service-routing/latest/user-guide/constraints"
+    }
+  ],
+  "text": "DOCS\nSolver\nModels\nPlatform\nStart Free Trial\nField Service Routing\nResponding to change\nReal-time planning\nReal-time planning: minimizing disruption on replanning\nlatest \nSearch\n⌘\nK\nTHE BASICS\nIntroduction\nGetting started: Hello world\nUser guide\nFEATURE GUIDES\nVehicle resource constraints\nVisit service constraints\nScenarios\nRESPONDING TO CHANGE\nManual intervention\nRecommendations\nReal-time planning\nReal-time planning: extended visit\nReal-time planning: reassignment\nReal-time planning: emergency visit\nReal-time planning: focused replanning\nReal-time planning: no show\nReal-time planning: technician ill\nReal-time planning: pinning visits\nReal-time planning: minimizing disruption on replanning\nReal-time planning: actual arrival and departure times\nScenarios\nMORE INFORMATION\nFAQs\nChangelog\nUpgrade to the latest version\nFeature requests\nAsk Claude\nAsk ChatGPT\nContents\n1. Original assignment and what counts as a disruption\n1.1. Batch schedule\n1.2. Real-time planning update: a new shift becomes available for the preferred vehicle\nReal-time planning: minimizing disruption on replanning\n\nReal-time planning can be disruptive to technician’s schedules.\n\nReal-time planning: pinning visits solves this by hard-pinning specific visits or blocks of the schedule so that they cannot be touched at all. This is the right tool when a visit absolutely must not move, for instance because a technician has already started traveling to it.\n\nHowever, pinning is an all-or-nothing tool. For every other already-planned visit that is not pinned, Timefold is completely free to move it to a different vehicle or a different time, even when doing so only brings a marginal improvement to the schedule. In practice, a small optimization gain is often not worth telling a technician (or a customer) that their already-communicated appointment has changed again.\n\nThe Minimize disruption on replanning soft constraint addresses this middle ground. Instead of hard-blocking changes, it makes Timefold reluctant to move a visit away from its previous assignment, in proportion to how disruptive that change actually is. A visit can still be moved or delayed when there is a good enough reason for it, for example, to keep the solution feasible or because the improvement clearly outweighs the disruption.\n\nThis guide explains the constraint with the following example:\n\n1. Original assignment and what counts as a disruption\n1. Original assignment and what counts as a disruption\nLEARN HOW TO CONFIGURE AN API KEY TO RUN THE EXAMPLES IN THIS GUIDE:\n\nFor every visit that is already assigned when a solve starts, Timefold records its current vehicle shift, its position in that shift’s itinerary, and its startServiceTime. This is called the visit’s original assignment for that solve.\n\nVisits that have no original assignment, for instance a brand new emergency visit that has never been planned before, are entirely unaffected by this constraint: there is nothing for them to be disrupted from.\n\nOnce solving has produced a new plan, the Minimize disruption on replanning constraint compares each visit’s new assignment against its original assignment:\n\nA change of vehicle shift is penalized with a flat penalty of 100.\n\nA change of vehicle is penalized with a flat penalty of 100. In the case of a visit that is moved to a different vehicle’s shift, both penalties apply, for a total of 200.\n\nA change of startServiceTime is penalized in proportion to the difference, one point per second between the original and the new startServiceTime.\n\nThese penalties are combined and multiplied by minimizeDisruptionOnReplanningWeight.\n\nEvery soft constraint has a weight that can be configured to change the relative importance of the constraint compared to other constraints.\n\nLearn about constraint weights.\n\nWhen this constraint is violated, its constraint match justification includes the visit’s original vehicle shift ID, its original itinerary position, and its original startServiceTime, as well as the visit’s current vehicle shift ID, itinerary position and startServiceTime, so you can see exactly what changed.\n1.1. Batch schedule\n\nThe original schedule was generated from the following input dataset during the regular batch scheduling. Visit E prefers Beth, but at this point Beth only has a short one-hour shift late in the day, which is too short to fit Visit E’s 90-minute service. The visit is assigned to Ann instead:\n\nInput\n\nOutput\n\nTry this example in Timefold Platform by saving this JSON into a file called sample.json and make the following API call:\ncurl -X POST -H \"Content-type: application/json\" -H 'X-API-KEY: <API_KEY>' https://app.timefold.ai/api/models/field-service-routing/v1/route-plans -d@sample.json\nCopy\n{\n  \"config\": {\n    \"run\": {\n      \"name\": \"Original shift plan: minimize disruption example\"\n    }\n  },\n  \"modelInput\": {\n    \"vehicles\": [\n      {\n        \"id\": \"Ann\",\n        \"shifts\": [\n          {\n            \"id\": \"Ann-2027-02-01\",\n            \"startLocation\": [33.68786, -84.18487],\n            \"minStartTime\": \"2027-02-01T09:00:00Z\",\n            \"maxEndTime\": \"2027-02-01T17:00:00Z\"\n          }\n        ]\n      },\n      {\n        \"id\": \"Beth\",\n        \"shifts\": [\n          {\n            \"id\": \"Beth-2027-02-01\",\n            \"startLocation\": [33.70474, -84.06508],\n            \"minStartTime\": \"2027-02-01T16:00:00Z\",\n            \"maxEndTime\": \"2027-02-01T17:00:00Z\"\n          }\n        ]\n      }\n    ],\n    \"visits\": [\n      {\n        \"id\": \"Visit E\",\n        \"location\": [33.90719, -84.28149],\n        \"serviceDuration\": \"PT1H30M\",\n        \"preferredVehicles\": [\"Beth\"]\n      }\n    ]\n  }\n}\nJSON\nCopy\n\nThe exact arrivalTime, travel distances, and score in this guide’s example output depend on the map data used to solve it. Treat them as illustrative, and expect the actual values from your own environment to differ.\n\n1.2. Real-time planning update: a new shift becomes available for the preferred vehicle\n\nA few hours later, Beth’s afternoon frees up and she is available to work a longer shift, starting well before Visit E’s original startServiceTime and comfortably long enough to fit it:\n\n{\n  \"id\": \"Beth-2027-02-01-B\",\n  \"startLocation\": [33.70474, -84.06508],\n  \"minStartTime\": \"2027-02-01T09:30:00Z\",\n  \"maxEndTime\": \"2027-02-01T17:00:00Z\"\n}\nJSON\nCopy\n\nWithout minimizeDisruptionOnReplanningWeight set, Visit E’s preference for Beth would now win: Timefold would move Visit E from Ann’s shift onto Beth’s new shift, pulling its startServiceTime forward to whenever Beth can reach it, even though nothing about Visit E itself changed and the schedule that was already communicated to Ann and the customer would need to be revised for a marginal gain.\n\nActivate the constraint by setting minimizeDisruptionOnReplanningWeight in config.model.overrides. This time, there is a preferred vehicle set for Visit E, so the penalty for minimizing disruptions needs to be higher than the preferred vehicle constraint’s penalty. Let’s set the weight to 100:\n\n{\n  \"config\": {\n    \"model\": {\n      \"overrides\": {\n        \"minimizeDisruptionOnReplanningWeight\": 100\n      }\n    }\n  }\n}\nJSON\nCopy\n\nInstead of resubmitting the full updated dataset, you can make this change with the Patch feature, which submits only the change as a JSON Patch document and generates a new revision of the plan. The Patch feature is currently available as a preview feature. If you’d like early access to it, please contact us.\n\nAdd the new shift for Beth:\n\nInput\n\nPatch\n\n{\n  \"id\": \"Beth-2027-02-01-B\",\n  \"startLocation\": [33.70474, -84.06508],\n  \"minStartTime\": \"2027-02-01T09:30:00Z\",\n  \"maxEndTime\": \"2027-02-01T17:00:00Z\"\n}\nJSON\nCopy\n\nSee /from-patch for more information about the /from-patch/ endpoint and the patch payload format.\n\nBecause minimizeDisruptionOnReplanningWeight is part of config, not modelInput, it is set directly alongside the patch, not as a patch operation:\n\n{\n  \"config\": {\n    \"model\": {\n      \"overrides\": {\n        \"minimizeDisruptionOnReplanningWeight\": 100\n      }\n    }\n  }\n}\nJSON\nCopy\n\nBecause this request continues the existing dataset, Timefold automatically carries forward Ann’s and Beth’s previous assignments as the original assignment for this solve. Unlike pinning, there is no need to add itinerary or minStartTravelTime to Visit E yourself for this to work.\n\nSubmit the patch to generate a new revision of the plan.\n\nPatch\n\nOutput\n\nTry this example in Timefold Platform by saving this JSON into a file called patch.json and make the following API call:\ncurl -X POST -H \"Content-type: application/json\" -H 'X-API-KEY: <API_KEY>' https://app.timefold.ai/api/models/field-service-routing/v1/route-plans/<ID>/from-patch -d@patch.json\nCopy\n{\n  \"config\": {\n    \"run\": {\n      \"name\": \"Real-time planning: minimize disruption\"\n    },\n    \"model\": {\n      \"overrides\": {\n        \"minimizeDisruptionOnReplanningWeight\": 1\n      }\n    }\n  },\n  \"patch\": [\n    {\n      \"op\": \"add\",\n      \"path\": \"/vehicles/[id=Beth]/shifts/-\",\n      \"value\": {\n        \"id\": \"Beth-2027-02-01-B\",\n        \"startLocation\": [33.70474, -84.06508],\n        \"minStartTime\": \"2027-02-01T09:30:00Z\",\n        \"maxEndTime\": \"2027-02-01T17:00:00Z\"\n      }\n    }\n  ]\n}\nJSON\nCopy\n\nIf you are not using the Patch feature, resubmitting the full updated input dataset as a new dataset has the same effect, but because a fresh dataset has no previous solve to continue from, Visit E’s original assignment must be added back manually, the same way it would need to be for pinning individual visits, just without setting pin to true:\n\nInput\n\nOutput\n\nTry this example in Timefold Platform by saving this JSON into a file called sample.json and make the following API call:\ncurl -X POST -H \"Content-type: application/json\" -H 'X-API-KEY: <API_KEY>' https://app.timefold.ai/api/models/field-service-routing/v1/route-plans -d@sample.json\nCopy\n{\n  \"config\": {\n    \"run\": {\n      \"name\": \"Real-time planning: minimize disruption\"\n    },\n    \"model\": {\n      \"overrides\": {\n        \"minimizeDisruptionOnReplanningWeight\": 100\n      }\n    }\n  },\n  \"modelInput\": {\n    \"vehicles\": [\n      {\n        \"id\": \"Ann\",\n        \"shifts\": [\n          {\n            \"id\": \"Ann-2027-02-01\",\n            \"startLocation\": [33.68786, -84.18487],\n            \"minStartTime\": \"2027-02-01T09:00:00Z\",\n            \"maxEndTime\": \"2027-02-01T17:00:00Z\",\n            \"itinerary\": [\n              {\n                \"id\": \"Visit E\",\n                \"kind\": \"VISIT\",\n                \"startServiceTime\": \"2027-02-01T09:35:42Z\"\n              }\n            ]\n          }\n        ]\n      },\n      {\n        \"id\": \"Beth\",\n        \"shifts\": [\n          {\n            \"id\": \"Beth-2027-02-01\",\n            \"startLocation\": [33.70474, -84.06508],\n            \"minStartTime\": \"2027-02-01T16:00:00Z\",\n            \"maxEndTime\": \"2027-02-01T17:00:00Z\"\n          },\n          {\n            \"id\": \"Beth-2027-02-01-B\",\n            \"startLocation\": [33.70474, -84.06508],\n            \"minStartTime\": \"2027-02-01T09:30:00Z\",\n            \"maxEndTime\": \"2027-02-01T17:00:00Z\"\n          }\n        ]\n      }\n    ],\n    \"visits\": [\n      {\n        \"id\": \"Visit E\",\n        \"location\": [33.90719, -84.28149],\n        \"serviceDuration\": \"PT1H30M\",\n        \"preferredVehicles\": [\"Beth\"],\n        \"minStartTravelTime\": \"2027-02-01T00:00:00Z\"\n      }\n    ]\n  }\n}\nJSON\nCopy\nNext\n\nSee the full API spec, try the online API, or start a free trial.\n\nLearn more about field service routing from our YouTube playlist.\n\nLearn about real-time planning.\n\nReal-time planning with pinned visits.\n\nLearn about constraints and constraint weights.\n\n© 2026 Timefold BV\nTimefold.ai\nDocumentation\nChangelog\nSend feedback\nPrivacy\nLegal",
+  "title": "Real-time planning: minimizing disruption on replanning | Real-time planning | Responding to change | Field Service Routing | Timefold Documentation",
+  "url": "https://docs.timefold.ai/field-service-routing/latest/real-time-planning/real-time-planning-minimize-disruption",
+  "retrievedAt": "2026-11-09T21:01:55.143Z"
+}

@@ -1,0 +1,92 @@
+{
+  "links": [
+    {
+      "text": "Join a hackathon",
+      "url": "https://devpost.com/software/unhappy-path#join-a-hackathon"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://devpost.com/software/unhappy-path#host-a-hackathon"
+    },
+    {
+      "text": "Resources",
+      "url": "https://devpost.com/software/unhappy-path#resources"
+    },
+    {
+      "text": "Join a hackathon",
+      "url": "https://devpost.com/software/unhappy-path#"
+    },
+    {
+      "text": "Back",
+      "url": "https://devpost.com/software/unhappy-path#"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://devpost.com/software/unhappy-path#"
+    },
+    {
+      "text": "Back",
+      "url": "https://devpost.com/software/unhappy-path#"
+    },
+    {
+      "text": "Resources",
+      "url": "https://devpost.com/software/unhappy-path#"
+    },
+    {
+      "text": "Back",
+      "url": "https://devpost.com/software/unhappy-path#"
+    },
+    {
+      "text": "Like",
+      "url": "https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bsoftware_id%5D=1525981&flow%5Bname%5D=like_software&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Funhappy-path"
+    },
+    {
+      "text": "Comment",
+      "url": "https://devpost.com/software/unhappy-path#updates"
+    },
+    {
+      "text": "STORY",
+      "url": "https://devpost.com/software/unhappy-path"
+    },
+    {
+      "text": "UPDATES",
+      "url": "https://devpost.com/software/unhappy-path#updates"
+    },
+    {
+      "text": "SUBMISSION HISTORY",
+      "url": "https://devpost.com/software/unhappy-path#submission-history"
+    },
+    {
+      "text": "https://unhappy-path.vercel.app",
+      "url": "https://unhappy-path.vercel.app/"
+    },
+    {
+      "text": "unhappy-path.vercel.app",
+      "url": "https://unhappy-path.vercel.app/"
+    },
+    {
+      "text": "GitHub Repo",
+      "url": "https://github.com/ShermaineYap/unhappy-path"
+    },
+    {
+      "text": "Like",
+      "url": "https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bsoftware_id%5D=1525981&flow%5Bname%5D=like_software&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Funhappy-path"
+    },
+    {
+      "text": "6 days ago",
+      "url": "https://devpost.com/software/unhappy-path/updates/868018"
+    },
+    {
+      "text": "sign up for Devpost",
+      "url": "https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bcommentable_id%5D=868018&flow%5Bname%5D=comment_on_software_update&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Funhappy-path"
+    },
+    {
+      "text": "Discord",
+      "url": "https://discord.com/invite/HP4BhW3hnp"
+    }
+  ],
+  "text": "Join a hackathon \nHost a hackathon \nResources \nLog in\nSign up\nUnhappy Path\n\nAn AI agent that crash-tests your PayPal sandbox integration: declines, forged & duplicate webhooks, refunds, price tampering.\n\n Like  Comment\nSTORY\nUPDATES\nSUBMISSION HISTORY\n\n1\n2\n3\n4\n5\n6\nInspiration\n\nEvery PayPal integration I have seen, including my own first ones, is tested on the happy path: create an order, approve it, capture it, done. The failures that actually cost a shop money live elsewhere — a card that is declined at capture but the order still ships, a webhook endpoint that accepts any POST, PayPal retrying a delivery and the order shipping twice, a refund issued from the PayPal dashboard that the shop's books never hear about. PayPal's sandbox already has the tools to reproduce every one of these (PayPal-Mock-Response, webhook event resend, test cards, refunds), but wiring them into a repeatable test takes a day most teams never spend. I wanted an agent that spends that day for you in three minutes.\n\nWhat it does\n\nUnhappy Path is an AI agent that crash-tests a PayPal sandbox integration before go-live. You point it at your sandbox build and it:\n\nPlans the test: Gemini reads your PayPal app's webhook subscriptions (fetched from PayPal), checks your test endpoints respond, reads your README, and chooses and orders seven scenarios with a reason for each.\nRuns the scenarios against your real checkout code, as real PayPal sandbox calls:\nWebhook subscriptions cover captures, denials, refunds and disputes\nHappy path: pays as a sandbox buyer with a test card; PayPal and your database must agree\nPrice tampering (critical): injects price: \"0.01\" into your checkout call\nDeclined capture (high): makes PayPal decline your capture with PayPal-Mock-Response: INSTRUMENT_DECLINED\nForged webhook (critical): posts a fake PAYMENT.CAPTURE.COMPLETED with an invalid signature\nDuplicate delivery (high): waits for PayPal's real signed capture webhook, then asks PayPal to resend it\nRefund sync: refunds through PayPal as if from the dashboard and waits for PayPal's refund webhook\nDecides go-live with rules, not vibes: any failed critical or high scenario blocks go-live, and the AI cannot override it.\nInvestigates and explains each failure: the model chooses PayPal Agent Toolkit calls (get_order, get_refund, list_transactions) to see what PayPal's records show, then writes the likely root cause, the impact, and a minimal fix — citing only from a curated list of PayPal docs, so links can't be invented.\n\nEvery PayPal call the agent makes is shown in a timeline with status and timing, and the report downloads as Markdown.\n\nTo try it without your own app, the live demo includes Kedai Kopi, a small Malaysian coffee shop in two builds: one with five classic PayPal mistakes, one with them fixed.\n\nHow we built it\nNext.js 15 / TypeScript on Vercel (free Hobby plan). Each scenario runs in its own serverless request; the two webhook scenarios are resumable state machines that follow PayPal's real (slow) sandbox deliveries across requests for up to 7 minutes.\nPayPal APIs: Orders v2 (create, PATCH, confirm-payment-source, capture, get, add tracking, update tracker), Payments v2 (get capture, refund), Webhooks management (list), Webhook events (list, resend), webhook signature verification, sandbox negative testing (PayPal-Mock-Response), and the PayPal Agent Toolkit (@paypal/agent-toolkit).\nAI: Google Gemini via the Vercel AI SDK, with a fallback chain across free-tier models. The planner and fix-writer use structured output (zod schemas); citations are an enum of curated doc IDs.\nA test contract of three tiny sandbox-only endpoints (/checkout, /approve, /probe) lets the agent drive your code and read back what your database believes.\nThe demo shop has no database — it keeps its books in PayPal. Each shipment is a PayPal shipment tracker on the order, a refund cancels the tracker, and pre-capture notes live in the order's custom_id. The probe reads only these merchant-written records, never PayPal's own payment status, so the buggy build genuinely believes the wrong things. The fixed build makes fulfilment idempotent with a per-order PayPal-Request-Id.\nMeasured results\n\nFive full runs against each demo shop on the live deployment (70 scenario runs):\n\nSHOP\tRUNS\tPLANTED FAILURES CAUGHT\tMISSED\tFALSE ALARMS\tMEDIAN RUN TIME\nBuggy (5 planted bugs)\t5\t25 / 25\t0\t0\t162 s\nFixed\t5\t—\t—\t0\t143 s\n\nVerdicts were identical across all runs. Most of the run time is waiting for PayPal's sandbox webhooks.\n\nChallenges we ran into\nPayPal's sandbox delivers webhooks in 1–2 minutes, longer than a serverless request. I rebuilt the two webhook scenarios as resumable state machines, and they only fail once PayPal has actually emitted the event and the merchant had time to process it — otherwise they report \"skipped\" instead of guessing.\nNo free database. Instead of paying for Redis I moved the demo shop's records into PayPal itself (shipment trackers + order notes), which turned out to be a better demo of the platform.\nFree-tier Gemini quotas and multi-turn tool calling. Gemini 3 rejects multi-turn function calls without thought signatures in the SDK version the Agent Toolkit supports, so the model now selects Toolkit calls as structured output and our code executes them.\nA documented decline trigger that didn't fire: putting CCREJECT-REFUSED in the cardholder name did not decline Orders v2 card payments in my tests, so Unhappy Path uses PayPal-Mock-Response instead.\nAccomplishments that we're proud of\nIt finds real bugs using real PayPal behaviour — including PayPal's own signed webhook redeliveries — not simulations.\n25/25 planted failures, 0 false alarms, repeatable.\nThe go-live verdict can't be talked into \"ready\" by the model.\nWhat we learned\n\nThe unhappy paths are where a payment integration's correctness actually lives, and PayPal's sandbox is far more capable of reproducing them than most developers realise — webhook resend and PayPal-Mock-Response in particular.\n\nWhat's next\nDisputes: open a sandbox dispute and check the merchant provides tracking evidence (sandbox require-evidence / adjudicate)\nSubscriptions: failed-renewal and suspension handling\nA GitHub Action that runs the suite on every pull request against a preview deployment\nHonest limitations\nSandbox only, by design; production keys are rejected.\nYour app needs the three-endpoint test contract; without it only the webhook-configuration check runs.\nOn free-tier Gemini quotas, the demo may show an explanation Gemini wrote for the same failure on an earlier run (clearly labelled); your own app falls back to built-in rules.\nThe measured study uses our own demo shop as ground truth, so it measures repeatability and false alarms, not coverage of every real-world bug.\nTesting instructions\n\nOpen https://unhappy-path.vercel.app → Kedai Kopi, buggy build → Plan the test → Run 7 scenarios (about 3 minutes). Or click Show a recorded run instead to see a complete run instantly. No login or keys needed. To test your own sandbox app, see the README's \"Test contract\" section.\n\nBuilt With\ngemini\nnext.js\npaypal\npaypal-agent-toolkit\npaypal-orders-api\npaypal-webhooks\nreact\ntypescript\nvercel\nvercel-ai-sdk\nTry it out\n unhappy-path.vercel.app\n GitHub Repo\nSUBMITTED TO\n\nPayPal AI Hackathon\n\nCREATED BY\nShermaine Yap \n\n\n Like \nUpdates\n\nShermaine Yap started this project — 6 days ago\n\nLeave feedback in the comments!\n\nLog in or sign up for Devpost to join the conversation.\n\nSubmission history\nDevpost\nAbout\nCareers\nContact\nHelp\nHackathons\nBrowse hackathons\nExplore projects\nHost a hackathon\nHackathon guides\nPortfolio\nYour projects\nYour hackathons\nSettings\nConnect\n Twitter\n Discord\n Facebook\n LinkedIn\n© 2026 Devpost, Inc. All rights reserved.\nCommunity guidelines\nSecurity\nCA notice\nPrivacy policy\nTerms of service",
+  "title": "Unhappy Path | Devpost",
+  "url": "https://devpost.com/software/unhappy-path",
+  "retrievedAt": "2026-11-09T21:06:22.632Z"
+}

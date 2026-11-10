@@ -1,0 +1,440 @@
+{
+  "fullTextLength": 3619,
+  "headings": [
+    "capture",
+    "capture_status_details properties",
+    "amount_with_breakdown properties",
+    "amount_breakdown properties",
+    "money properties",
+    "money properties",
+    "money properties",
+    "money properties",
+    "money properties",
+    "money properties",
+    "discount_with_breakdown properties",
+    "network_transaction properties",
+    "seller_protection properties",
+    "seller_receivable_breakdown properties",
+    "money properties",
+    "money properties",
+    "money properties",
+    "money properties",
+    "money properties",
+    "exchange_rate properties",
+    "platform_fee properties",
+    "money properties",
+    "payee_base properties",
+    "link_description-2 properties",
+    "link_schema-2 properties",
+    "Media properties",
+    "link_schema-2 properties",
+    "Media properties",
+    "processor_response properties"
+  ],
+  "links": [
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#status",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#status_details",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture_status_details",
+      "text": "capture_status_details"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#status_details.reason",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/amount_with_breakdown",
+      "text": "amount_with_breakdown"
+    },
+    {
+      "href": "https://developer.paypal.com/docs/integration/direct/rest/currency-codes/",
+      "text": "Currency Codes"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/amount_breakdown",
+      "text": "amount_breakdown"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.item_total",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/money",
+      "text": "money"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.item_total.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.item_total.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.shipping",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/money",
+      "text": "money"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.shipping.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.shipping.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.handling",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/money",
+      "text": "money"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.handling.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.handling.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.tax_total",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/money",
+      "text": "money"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.tax_total.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.tax_total.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.insurance",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/money",
+      "text": "money"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.insurance.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.insurance.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.shipping_discount",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/money",
+      "text": "money"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.shipping_discount.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.shipping_discount.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.discount",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/discount_with_breakdown",
+      "text": "discount_with_breakdown"
+    },
+    {
+      "href": "https://developer.paypal.com/docs/integration/direct/rest/currency-codes/",
+      "text": "Currency Codes"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.discount.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#amount.breakdown.discount.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#invoice_id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#custom_id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#network_transaction_reference",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/network_transaction",
+      "text": "network_transaction"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#network_transaction_reference.id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#network_transaction_reference.date",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#network_transaction_reference.network",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/card_brand",
+      "text": "card_brand"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#network_transaction_reference.acquirer_reference_number",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_protection",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/seller_protection",
+      "text": "seller_protection"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_protection.status",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_protection.dispute_categories",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#final_capture",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/seller_receivable_breakdown",
+      "text": "seller_receivable_breakdown"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.gross_amount",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/money",
+      "text": "money"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.gross_amount.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.gross_amount.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.paypal_fee",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/money",
+      "text": "money"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.paypal_fee.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.paypal_fee.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.paypal_fee_in_receivable_currency",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/money",
+      "text": "money"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.paypal_fee_in_receivable_currency.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.paypal_fee_in_receivable_currency.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.net_amount",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/money",
+      "text": "money"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.net_amount.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.net_amount.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.receivable_amount",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/money",
+      "text": "money"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.receivable_amount.currency_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.receivable_amount.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.exchange_rate",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/exchange_rate",
+      "text": "exchange_rate"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.exchange_rate.source_currency",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.exchange_rate.target_currency",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/currency_code",
+      "text": "currency_code"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.exchange_rate.value",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.platform_fees",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/platform_fee",
+      "text": "platform_fee"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/capture#seller_receivable_breakdown.platform_fees.amount",
+      "text": ""
+    }
+  ],
+  "retrievedAt": "2026-11-09T21:06:42.504Z",
+  "text": "capture\n\nA captured payment.\n\nstatus\nenum\nOptional\nThe status of the captured payment.\nValue in\n\"COMPLETED\" | \"DECLINED\" | \"PARTIALLY_REFUNDED\" | \"PENDING\" | \"REFUNDED\" | \"FAILED\"\nstatus_details\nobject<capture_status_details>\nOptional\nThe details of the captured payment status.\nid\nstring\nOptional\nThe PayPal-generated ID for the captured payment.\nMatch\n^[\\S\\s]*$\nLength\n0 <= length <= 2147483647\namount\nobject<amount_with_breakdown>\nOptional\nThe total order amount with an optional breakdown that provides details, such as the total item amount, total tax amount, shipping, handling, insurance, and discounts, if any.\nIf you specify `amount.breakdown`, the amount equals `item_total` plus `tax_total` plus `shipping` plus `handling` plus `insurance` minus `shipping_discount` minus discount.\nThe amount must be a positive number. For listed of supported currencies and decimal precision, see the PayPal REST APIs Currency Codes.\ninvoice_id\nstring\nOptional\nThe API caller-provided external invoice number for this order. Appears in both the payer's transaction history and the emails that the payer receives.\nMatch\n^[\\S\\s]*$\nLength\n0 <= length <= 2147483647\ncustom_id\nstring\nOptional\nThe API caller-provided external ID. Used to reconcile API caller-initiated transactions with PayPal transactions. Appears in transaction and settlement reports.\nMatch\n^[\\S\\s]*$\nLength\n0 <= length <= 255\nnetwork_transaction_reference\nobject<network_transaction>\nOptional\nReference values used by the card network to identify a transaction.\nseller_protection\nobject<seller_protection>\nOptional\nThe level of protection offered as defined by [PayPal Seller Protection for Merchants](https://www.paypal.com/us/webapps/mpp/security/seller-protection).\nfinal_capture\nboolean\nOptional\nIndicates whether you can make additional captures against the authorized payment. Set to `true` if you do not intend to capture additional payments against the authorization. Set to `false` if you intend to capture additional payments against the authorization.\nDefault\nfalse\nseller_receivable_breakdown\nobject<seller_receivable_breakdown>\nOptional\nThe detailed breakdown of the capture activity. This is not available for transactions that are in pending state.\ndisbursement_mode\nenum<disbursement_mode>\nOptional\nThe funds that are held on behalf of the merchant.\nDefault\n\"INSTANT\"\nValue in\n\"INSTANT\" | \"DELAYED\"\nlinks\nobject<link_description-2>[]\nOptional\nAn array of related [HATEOAS links](/docs/api/reference/api-responses/#hateoas-links).\nItems\n0 <= length <= 32767\nprocessor_response\nobject<processor_response>\nOptional\nThe processor response information for payment requests, such as direct credit card transactions.\ncreate_time\nstring<date_time>\nOptional\nThe date and time, in [Internet date and time format](https://tools.ietf.org/html/rfc3339#section-5.6). Seconds are required while fractional seconds are optional.\nNote: The regular expression provides guidance but does not reject all invalid dates.\nMatch\n^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])[T,t]([0-1][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)([.][0-9]+)?([Zz]|[+-][0-9]{2}:[0-9]{2})$\nLength\n20 <= length <= 64\nupdate_time\nstring<date_time>\nOptional\nThe date and time, in [Internet date and time format](https://tools.ietf.org/html/rfc3339#section-5.6). Seconds are required while fractional seconds are optional.\nNote: The regular expression provides guidance but does not reject all invalid dates.\nMatch\n^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])[T,t]([0-1][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)([.][0-9]+)?([Zz]|[+-][0-9]{2}:[0-9]{2})$\nLength\n20 <= length <= 64",
+  "title": "capture - Payments v2 | PayPal Developer",
+  "url": "https://developer.paypal.com/api/payments/v2/definitions/capture"
+}

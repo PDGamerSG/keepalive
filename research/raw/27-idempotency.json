@@ -1,0 +1,368 @@
+{
+  "fullTextLength": 5110,
+  "links": [
+    {
+      "text": "REST API",
+      "url": "https://developer.paypal.com/api"
+    },
+    {
+      "text": "Server SDKs",
+      "url": "https://developer.paypal.com/serversdk"
+    },
+    {
+      "text": "Codes",
+      "url": "https://developer.paypal.com/api/codes/"
+    },
+    {
+      "text": "Webhook events",
+      "url": "https://developer.paypal.com/api/rest/webhooks/"
+    },
+    {
+      "text": "iOS",
+      "url": "https://developer.paypal.com/sdk/ios/overview"
+    },
+    {
+      "text": "Android",
+      "url": "https://developer.paypal.com/sdk/android/overview"
+    },
+    {
+      "text": "Get started with PayPal REST APIs",
+      "url": "https://developer.paypal.com/api/rest"
+    },
+    {
+      "text": "Authentication",
+      "url": "https://developer.paypal.com/api/rest/authentication"
+    },
+    {
+      "text": "Postman guide",
+      "url": "https://developer.paypal.com/api/rest/postman"
+    },
+    {
+      "text": "Codespaces",
+      "url": "https://developer.paypal.com/api/rest/codespaces"
+    },
+    {
+      "text": "API requests",
+      "url": "https://developer.paypal.com/api/rest/requests"
+    },
+    {
+      "text": "API responses",
+      "url": "https://developer.paypal.com/api/rest/responses"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developer.paypal.com/api/rest/current-resources"
+    },
+    {
+      "text": "Orders",
+      "url": "https://developer.paypal.com/api/orders/v2"
+    },
+    {
+      "text": "Payments",
+      "url": "https://developer.paypal.com/api/payments/v2"
+    },
+    {
+      "text": "Payment Method Tokens",
+      "url": "https://developer.paypal.com/api/payment-tokens/v3"
+    },
+    {
+      "text": "Add Tracking",
+      "url": "https://developer.paypal.com/api/tracking/v1"
+    },
+    {
+      "text": "Catalog Products",
+      "url": "https://developer.paypal.com/api/catalog-products/v1"
+    },
+    {
+      "text": "Currency Exchange",
+      "url": "https://developer.paypal.com/api/pricing/v2"
+    },
+    {
+      "text": "Disputes",
+      "url": "https://developer.paypal.com/api/customer-disputes/v1"
+    },
+    {
+      "text": "Identity",
+      "url": "https://developer.paypal.com/api/identity/v1"
+    },
+    {
+      "text": "Invoices",
+      "url": "https://developer.paypal.com/api/invoicing/v2"
+    },
+    {
+      "text": "Partner Referrals",
+      "url": "https://developer.paypal.com/api/partner-referrals/v2"
+    },
+    {
+      "text": "Payment Experience",
+      "url": "https://developer.paypal.com/api/payment-experience/v1"
+    },
+    {
+      "text": "Payment Links & Buttons",
+      "url": "https://developer.paypal.com/api/payment-links-buttons/v1"
+    },
+    {
+      "text": "Payouts",
+      "url": "https://developer.paypal.com/api/payments.payouts-batch/v1"
+    },
+    {
+      "text": "Subscriptions",
+      "url": "https://developer.paypal.com/api/subscriptions/v1"
+    },
+    {
+      "text": "Transactions",
+      "url": "https://developer.paypal.com/api/transaction-search/v1"
+    },
+    {
+      "text": "Usage Based Billing",
+      "url": "https://developer.paypal.com/api/usage-based-billing/v1"
+    },
+    {
+      "text": "Webhooks",
+      "url": "https://developer.paypal.com/api/webhooks/v1"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developer.paypal.com/api/rest/webhooks"
+    },
+    {
+      "text": "Webhook event names",
+      "url": "https://developer.paypal.com/api/rest/webhooks/event-names"
+    },
+    {
+      "text": "Webhooks Events dashboard",
+      "url": "https://developer.paypal.com/api/rest/webhooks/events-dashboard"
+    },
+    {
+      "text": "Webhooks simulator",
+      "url": "https://developer.paypal.com/api/rest/webhooks/simulator"
+    },
+    {
+      "text": "Integration",
+      "url": "https://developer.paypal.com/api/rest/webhooks/rest"
+    },
+    {
+      "text": "Production environment",
+      "url": "https://developer.paypal.com/api/rest/production"
+    },
+    {
+      "text": "PayPal application guidelines",
+      "url": "https://developer.paypal.com/api/rest/reference/policies-and-guidelines"
+    },
+    {
+      "text": "PayPal security guidelines",
+      "url": "https://developer.paypal.com/api/rest/reference/info-security-guidelines"
+    },
+    {
+      "text": "Rate limiting guidelines",
+      "url": "https://developer.paypal.com/api/rest/reference/rate-limiting"
+    },
+    {
+      "text": "Idempotency",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency"
+    },
+    {
+      "text": "Agreement already cancelled",
+      "url": "https://developer.paypal.com/api/rest/troubleshooting/rest_agreement_already_cancelled"
+    },
+    {
+      "text": "Cannot pay self",
+      "url": "https://developer.paypal.com/api/rest/troubleshooting/rest_cannot_pay_self"
+    },
+    {
+      "text": "Currency mismatch",
+      "url": "https://developer.paypal.com/api/rest/troubleshooting/rest_currency_mismatch"
+    },
+    {
+      "text": "Duplicate transaction",
+      "url": "https://developer.paypal.com/api/rest/troubleshooting/rest_duplicate_transaction"
+    },
+    {
+      "text": "Merchant not enabled for reference transaction",
+      "url": "https://developer.paypal.com/api/rest/troubleshooting/rest_merchant_not_enabled_for_reference_transaction"
+    },
+    {
+      "text": "Unsupported payee currency",
+      "url": "https://developer.paypal.com/api/rest/troubleshooting/rest_unsupported_payee_currency"
+    },
+    {
+      "text": "Not authorized",
+      "url": "https://developer.paypal.com/api/rest/troubleshooting/rest_not_authorized"
+    },
+    {
+      "text": "Resource not found",
+      "url": "https://developer.paypal.com/api/rest/troubleshooting/rest_resource_not_found"
+    },
+    {
+      "text": "Unprocessable entity",
+      "url": "https://developer.paypal.com/api/rest/troubleshooting/rest_unprocessable_entity"
+    },
+    {
+      "text": "Invalid request or validation error",
+      "url": "https://developer.paypal.com/api/rest/troubleshooting/rest_validation_error"
+    },
+    {
+      "text": "Deprecated resources",
+      "url": "https://developer.paypal.com/api/rest/deprecated-resources"
+    },
+    {
+      "text": "Invoices",
+      "url": "https://developer.paypal.com/api/deprecated/invoicing/v1"
+    },
+    {
+      "text": "Partner Referrals",
+      "url": "https://developer.paypal.com/api/deprecated/partner-referrals/v1"
+    },
+    {
+      "text": "Payments",
+      "url": "https://developer.paypal.com/api/deprecated/payments/v1"
+    },
+    {
+      "text": "Billing Agreements",
+      "url": "https://developer.paypal.com/api/deprecated/payments.billing-agreements/v1"
+    },
+    {
+      "text": "Billing Plans",
+      "url": "https://developer.paypal.com/api/deprecated/payments.billing-plans/v1"
+    },
+    {
+      "text": "Idempotency",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency"
+    },
+    {
+      "text": "View as Markdown",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency.md"
+    },
+    {
+      "text": "View as Markdown",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency.md"
+    },
+    {
+      "text": "PayPal-Request-Id",
+      "url": "https://developer.paypal.com/api/rest/requests/#paypal-request-id"
+    },
+    {
+      "text": "Example",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency#example"
+    },
+    {
+      "text": "capture authorized payment",
+      "url": "https://developer.paypal.com/api/payments/v2/authorizations-capture/"
+    },
+    {
+      "text": "Usage notes",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency#usage-notes"
+    },
+    {
+      "text": "Support, docs, and resources",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency#support-docs-and-resources"
+    },
+    {
+      "text": "OAuth 2.0",
+      "url": "https://oauth.net/2/"
+    },
+    {
+      "text": "Merchant Technical Support",
+      "url": "https://www.paypal.com/mts"
+    },
+    {
+      "text": "Stackoverflow PayPal forum",
+      "url": "https://stackoverflow.com/questions/tagged/paypal"
+    },
+    {
+      "text": "PayPal Help Center",
+      "url": "https://www.paypal.com/cgi-bin/helpweb?cmd=_help"
+    },
+    {
+      "text": "Rate limiting guidelines\n\nPrevious Page",
+      "url": "https://developer.paypal.com/api/rest/reference/rate-limiting"
+    },
+    {
+      "text": "Agreement already cancelled\n\nNext Page",
+      "url": "https://developer.paypal.com/api/rest/troubleshooting/rest_agreement_already_cancelled"
+    },
+    {
+      "text": "ON THIS PAGE",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency#"
+    },
+    {
+      "text": "Example",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency#example"
+    },
+    {
+      "text": "Usage notes",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency#usage-notes"
+    },
+    {
+      "text": "Support, docs, and resources",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency#support-docs-and-resources"
+    },
+    {
+      "text": "GitHub repo",
+      "url": "https://github.com/paypal"
+    },
+    {
+      "text": "Postman repo",
+      "url": "https://www.postman.com/paypal"
+    },
+    {
+      "text": "PayPal.com",
+      "url": "https://paypal.com/"
+    },
+    {
+      "text": "llms.txt",
+      "url": "https://developer.paypal.com/llms.txt"
+    },
+    {
+      "text": "Developer blog",
+      "url": "https://developer.paypal.com/community/blog/"
+    },
+    {
+      "text": "Community",
+      "url": "https://developer.paypal.com/community"
+    },
+    {
+      "text": "Help Center",
+      "url": "https://www.paypal.com/cshelp/technical"
+    },
+    {
+      "text": "Sign up for updates",
+      "url": "https://developer.paypal.com/community/developer-program"
+    },
+    {
+      "text": "X",
+      "url": "https://x.com/paypaldev"
+    },
+    {
+      "text": "YouTube",
+      "url": "https://www.youtube.com/@paypaldev"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/paypaldev"
+    },
+    {
+      "text": "Discord",
+      "url": "https://developer.paypal.com/discord"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://www.paypal.com/legalhub/privacy-full"
+    },
+    {
+      "text": "Terms of Service",
+      "url": "https://www.paypal.com/legalhub/useragreement-full"
+    },
+    {
+      "text": "Developer Agreement",
+      "url": "https://www.paypal.com/legalhub/paypal/xdeveloper-full"
+    },
+    {
+      "text": "Manage cookies and learn more",
+      "url": "https://www.paypal.com/myaccount/privacy/cookiePrefs?locale=en_US"
+    }
+  ],
+  "text": "Business\nPlatforms and marketplaces\nEnterprise\nSearch...\n⌘ K\nLog In\nSign Up\nHelp\nAPIs & SDKs\nAPI REFERENCE\n\nREST APIs\n\nGet started with PayPal REST APIs\nAuthentication\nPostman guide\nCodespaces\nAPI requests\nAPI responses\n\nCore Resources\n\nOverview\nAPI Integration\nRelease Notes\nOrders\nPayments\nPayment Method Tokens\nAdd Tracking\nCatalog Products\nCurrency Exchange\nDisputes\nIdentity\nInvoices\nPartner Referrals\nPayment Experience\nPayment Links & Buttons\nPayouts\nSubscriptions\nTransactions\nUsage Based Billing\nWebhooks\n\nWebhooks\n\nOverview\nWebhook event names\nWebhooks Events dashboard\nWebhooks simulator\nIntegration\n\nGo Live\n\nProduction environment\nPayPal application guidelines\nPayPal security guidelines\nRate limiting guidelines\nIdempotency\n\nTroubleshooting\n\nAgreement already cancelled\nCannot pay self\nCurrency mismatch\nDuplicate transaction\nMerchant not enabled for reference transaction\nUnsupported payee currency\nNot authorized\nResource not found\nUnprocessable entity\nInvalid request or validation error\n\nReference\n\nDeprecated Resources\n\nDeprecated resources\nInvoices\nPartner Referrals\nPayments\nBilling Agreements\nBilling Plans\nIdempotency\nIdempotency\n\nLast updated: August 11, 2026\n\nCopy for LLM\n\nView as Markdown\n\nYou can make idempotent calls any number of times without concern that the server creates or completes an action on a resource more than once. You can retry idempotent calls that fail with network timeouts or HTTP 5xx status codes for as long as the server stores the ID. Idempotency enables you to correlate request payloads with response payloads, eliminate duplicate requests, and retry failed requests or requests with unclear responses.\n\nTo enforce idempotency on REST API POST calls, use the PayPal-Request-Id request header, which contains a unique user-generated ID that the server stores for a period of time.\n\nNote: Not all APIs support this header. To determine whether your API supports it and for information about how long the server stores the ID, see the reference for your API.\n\n\n\n\nIf you are using a REST SDK, idempotency and the PayPal-Request-Id header are abstracted for you.\n\nFor example, when you include a previously specified PayPal-Request-Id header in a request, PayPal returns the latest status of the previous request that used that same header. Conversely, when you omit the PayPal-Request-Id header from a request, PayPal duplicates the request.\n\nNote: When you send two simultaneous API requests with same PayPal-Request-Id header, PayPal processes the first request and might fail the second request.\n\nExample\n\nA capture authorized payment request that includes a PayPal-Request-Id header times out but the server captures the payment.\n\nYou retry the original request with the same PayPal-Request-Id header:\n\ncurl -v -X POST https://api-m.sandbox.paypal.com/v2/payments/authorizations/0VF52814937998046/capture \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Authorization: Bearer Access-Token\" \\\n  -H \"PayPal-Request-Id: 123e4567-e89b-12d3-a456-426655440010\" \\\n  -d '{\n  \"amount\": {\n    \"value\": \"10.99\",\n    \"currency_code\": \"USD\"\n  },\n  \"invoice_id\": \"INVOICE-123\",\n  \"final_capture\": true\n}'\n\nIf this request succeeds, PayPal returns the latest status of the request, which is the HTTP 201 Created status code and a JSON response body that shows captured payment details. The server does not capture the payment again because the capture succeeded in the first call.\n\n{\n  \"id\": \"2GG279541U471931P\",\n  \"status\": \"COMPLETED\",\n  \"links\": [\n    {\n      \"rel\": \"self\",\n      \"method\": \"GET\",\n      \"href\": \"https://api-m.paypal.com/v2/payments/captures/2GG279541U471931P\"\n    },\n    {\n      \"rel\": \"refund\",\n      \"method\": \"POST\",\n      \"href\": \"https://api-m.paypal.com/v2/payments/captures/2GG279541U471931P/refund\"\n    },\n    {\n      \"rel\": \"up\",\n      \"method\": \"GET\",\n      \"href\": \"https://api-m.paypal.com/v2/payments/authorizations/0VF52814937998046\"\n    }\n  ]\n}\nUsage notes\nThe PayPal-Request-Id header value must be unique for both each request and an API call type. For example, authorize payment and capture authorized payment.\nPayPal recommends that you use the UUID standard for the PayPal-Request-Id header value because it meets the 38 single-byte character limit.\nPayPal provides the status of a request at the current time and not the status of the original request.\nSupport, docs, and resources\nOAuth 2.0\nMerchant Technical Support\nStackoverflow PayPal forum\nPayPal Help Center\n\nRate limiting guidelines\n\nPrevious Page\n\nAgreement already cancelled\n\nNext Page\n\nON THIS PAGE\nExample\nUsage notes\nSupport, docs, and resources\n\nResources\n\nGitHub repo\n\nPostman repo\n\nPayPal.com\n\nllms.txt\n\nWhere to find us\n\nDeveloper blog\n\nCommunity\n\nHelp Center\n\nSign up for updates\n\nWhere to hear from us\n\nX\n\nYouTube\n\nLinkedIn\n\nDiscord\n\nLegal\n\nPrivacy Policy\n\nTerms of Service\n\nDeveloper Agreement\n\n© 2026 PayPal. All rights reserved.\n\nIf you accept cookies, we'll use them to improve and customise your experience and enable our partners to show you personalised PayPal ads when you visit other sites. Manage cookies and learn more\nAccept\nDecline\nClose\nFeedback",
+  "title": "Idempotency | PayPal Developer",
+  "url": "https://developer.paypal.com/api/rest/reference/idempotency"
+}

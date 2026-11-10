@@ -1,0 +1,267 @@
+{
+  "fullTextLength": 3598,
+  "headings": [
+    "Simulate negative responses with request headers",
+    "Request headers",
+    "Set up your development environment",
+    "Invoke negative testing",
+    "Enable negative testing",
+    "Test API error handling routines",
+    "Test with negative testing",
+    "Example request",
+    "Example response",
+    "ON THIS PAGE",
+    "On this page",
+    "If you accept cookies, we'll use them to improve and customise your experience and enable our partners to show you personalised PayPal ads when you visit other sites. Manage cookies and learn more"
+  ],
+  "links": [
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers.md",
+      "text": "View as Markdown"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers.md",
+      "text": "View as Markdown"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#request-headers",
+      "text": "Request headers"
+    },
+    {
+      "href": "https://developer.paypal.com/api/deprecated/payments/v1/",
+      "text": "Payments API v1"
+    },
+    {
+      "href": "https://developer.paypal.com/api/deprecated/payments/v1/payment-create/",
+      "text": "Create payment"
+    },
+    {
+      "href": "https://developer.paypal.com/api/deprecated/payments/v1/payment-execute/",
+      "text": "Execute approved PayPal payment"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/",
+      "text": "Payments API v2"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/authorizations-get/",
+      "text": "Show details for authorized payment"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/authorizations-capture/",
+      "text": "Capture authorized payment"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/authorizations-void/",
+      "text": "Void authorized payment"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/captures-get/",
+      "text": "Show captured payment details"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/captures-refund/",
+      "text": "Refund captured payment"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/refunds-get/",
+      "text": "Show refund details"
+    },
+    {
+      "href": "https://developer.paypal.com/api/orders/v2/",
+      "text": "Orders API v2"
+    },
+    {
+      "href": "https://developer.paypal.com/api/orders/v2/orders-create/",
+      "text": "Create order"
+    },
+    {
+      "href": "https://developer.paypal.com/api/orders/v2/orders-patch/",
+      "text": "Update order"
+    },
+    {
+      "href": "https://developer.paypal.com/api/orders/v2/orders-get/",
+      "text": "Show order details"
+    },
+    {
+      "href": "https://developer.paypal.com/api/orders/v2/orders-authorize/",
+      "text": "Authorize payment for order"
+    },
+    {
+      "href": "https://developer.paypal.com/api/orders/v2/orders-capture/",
+      "text": "Capture payment for order"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#set-up-your-development-environment",
+      "text": "Set up your development environment"
+    },
+    {
+      "href": "https://developer.paypal.com/platforms/get-started/",
+      "text": "Get started"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#invoke-negative-testing",
+      "text": "Invoke negative testing"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#enable-negative-testing",
+      "text": "Enable negative testing"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#test-api-error-handling-routines",
+      "text": "Test API error handling routines"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#test-with-negative-testing",
+      "text": "Test with negative testing"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#enable-negative-testing",
+      "text": "Enable negative testing"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#test-api-error-handling-routines",
+      "text": "Test API error handling routines"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/errors/",
+      "text": "Payment API Error Messages"
+    },
+    {
+      "href": "https://developer.paypal.com/api/orders/v2/error-messages",
+      "text": "Orders API Error Messages"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#test-with-negative-testing",
+      "text": "Test with negative testing"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#example-request",
+      "text": "Example request"
+    },
+    {
+      "href": "https://developer.paypal.com/api/rest/authentication/",
+      "text": "get an access token"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#example-response",
+      "text": "Example response"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/overview",
+      "text": "Overview\n\nPrevious Page"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/values",
+      "text": "Test values\n\nNext Page"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#",
+      "text": "ON THIS PAGE"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#request-headers",
+      "text": "Request headers"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#set-up-your-development-environment",
+      "text": "Set up your development environment"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#invoke-negative-testing",
+      "text": "Invoke negative testing"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#enable-negative-testing",
+      "text": "Enable negative testing"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#test-api-error-handling-routines",
+      "text": "Test API error handling routines"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#test-with-negative-testing",
+      "text": "Test with negative testing"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#example-request",
+      "text": "Example request"
+    },
+    {
+      "href": "https://developer.paypal.com/negative-testing/request-headers#example-response",
+      "text": "Example response"
+    },
+    {
+      "href": "https://developer.paypal.com/",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal",
+      "text": "GitHub repo"
+    },
+    {
+      "href": "https://www.postman.com/paypal",
+      "text": "Postman repo"
+    },
+    {
+      "href": "https://paypal.com/",
+      "text": "PayPal.com"
+    },
+    {
+      "href": "https://developer.paypal.com/llms.txt",
+      "text": "llms.txt"
+    },
+    {
+      "href": "https://developer.paypal.com/community/blog/",
+      "text": "Developer blog"
+    },
+    {
+      "href": "https://developer.paypal.com/community",
+      "text": "Community"
+    },
+    {
+      "href": "https://www.paypal.com/cshelp/technical",
+      "text": "Help Center"
+    },
+    {
+      "href": "https://developer.paypal.com/community/developer-program",
+      "text": "Sign up for updates"
+    },
+    {
+      "href": "https://x.com/paypaldev",
+      "text": "X"
+    },
+    {
+      "href": "https://www.youtube.com/@paypaldev",
+      "text": "YouTube"
+    },
+    {
+      "href": "https://www.linkedin.com/company/paypaldev",
+      "text": "LinkedIn"
+    },
+    {
+      "href": "https://developer.paypal.com/discord",
+      "text": "Discord"
+    },
+    {
+      "href": "https://www.paypal.com/legalhub/privacy-full",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "https://www.paypal.com/legalhub/useragreement-full",
+      "text": "Terms of Service"
+    },
+    {
+      "href": "https://www.paypal.com/legalhub/paypal/xdeveloper-full",
+      "text": "Developer Agreement"
+    }
+  ],
+  "retrievedAt": "2026-11-09T20:59:24.097Z",
+  "text": "Simulate negative responses with request headers\n\nLast updated: October 14, 2026\n\nAPI\nCopy for LLM\n\nView as Markdown\n\nRequest headers\n\nNote: If you do not use the specific test values, the service returns the actual API responses.\n\nYou can use request headers to test the following Payments API and Orders API methods:\n\nPayments API v1\n\nCreate payment\n\nExecute approved PayPal payment\n\nPayments API v2\n\nShow details for authorized payment\n\nCapture authorized payment\n\nVoid authorized payment\n\nShow captured payment details\n\nRefund captured payment\n\nShow refund details\n\nOrders API v2\n\nCreate order\n\nUpdate order\n\nShow order details\n\nAuthorize payment for order\n\nCapture payment for order\n\nSet up your development environment\n\nBefore you can use request headers to simulate negative responses, you must set up your development environment. After you get a token that lets you access protected REST API resources, you create sandbox accounts to test your web and mobile apps. For details, see Get started.\n\nThen, return to this page to use request headers to simulate negative responses.\n\nInvoke negative testing\n\t\n1.\tEnable negative testing.\n2.\tTest API error handling routines.\n3.\tTest with negative testing.\nEnable negative testing\n\nREST API apps use a request header to invoke negative testing in the sandbox. This header configures the sandbox into a negative testing state for transactions that include the merchant.\n\nTo enable negative testing:\n\nAdd a key to the PayPal-Mock-Response request header in your API call.\nTest API error handling routines\n\nTo simulate an error, add a mock_application_codes value that equals the error code to test:\n\nRequest header, Type, Example\nRequest header\tType\tExample\nPayPal-Mock-Response\tJSON\t\"mock_application_codes\": \"DUPLICATE_INVOICE_ID\"\n\nFor the available error codes, see Payment API Error Messages and Orders API Error Messages.\n\nTest with negative testing\n\nWith a valid access token, you can make REST API calls for negative testing.\n\nExample request\ncurl -X POST \\\nhttps://api-m.sandbox.paypal.com/v2/checkout/orders/7WH94211LK834082R/capture \\\n  -H 'Authorization: Bearer <Access-Token>' \\\n  -H 'Content-Type: application/json' \\\n  -H 'PayPal-Mock-Response: {\"mock_application_codes\": \"DUPLICATE_INVOICE_ID\"}'\n\nWhere:\n\nHeader, Value\nHeader\tValue\nContent-Type\tapplication/json\nAuthorization\tBearer <Access-Token>\nSee get an access token.\nPayPal-Mock-Response\t{\\\"mock_application_codes\\\": \\\"<error_name>\\\"}\nExample response\n{\n  \"name\": \"UNPROCESSABLE_ENTITY\",\n  \"details\": [\n    {\n      \"issue\": \"DUPLICATE_INVOICE_ID\",\n      \"description\": \"Duplicate Invoice ID detected. To avoid a potential duplicate transaction your account setting requires that Invoice Id be unique for each transaction.\"\n    }\n  ],\n  \"message\": \"The requested action could not be completed, was semantically incorrect, or failed business validation.\",\n  \"debug_id\": \"70c28ae654da\",\n  \"links\": [\n    {\n      \"href\": \"/api/orders/v2/#error-DUPLICATE_INVOICE_ID\",\n      \"rel\": \"information_link\",\n      \"method\": \"GET\"\n    }\n  ]\n}\n\nOverview\n\nPrevious Page\n\nTest values\n\nNext Page\n\nON THIS PAGE\nRequest headers\nSet up your development environment\nInvoke negative testing\nEnable negative testing\nTest API error handling routines\nTest with negative testing\nExample request\nExample response\n\nResources\n\nGitHub repo\n\nPostman repo\n\nPayPal.com\n\nllms.txt\n\nWhere to find us\n\nDeveloper blog\n\nCommunity\n\nHelp Center\n\nSign up for updates\n\nWhere to hear from us\n\nX\n\nYouTube\n\nLinkedIn\n\nDiscord\n\nLegal\n\nPrivacy Policy\n\nTerms of Service\n\nDeveloper Agreement\n\n© 2026 PayPal. All rights reserved.",
+  "title": "Simulate negative responses with request headers | PayPal Developer",
+  "url": "https://developer.paypal.com/negative-testing/request-headers"
+}

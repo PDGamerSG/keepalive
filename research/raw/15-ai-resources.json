@@ -1,0 +1,383 @@
+{
+  "links": [
+    {
+      "text": "Business",
+      "url": "https://developer.paypal.com/get-started"
+    },
+    {
+      "text": "Platforms and marketplaces",
+      "url": "https://developer.paypal.com/platforms/overview"
+    },
+    {
+      "text": "Enterprise",
+      "url": "https://developer.paypal.com/braintree"
+    },
+    {
+      "text": "Log In",
+      "url": "https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdashboard%2F&intent=developer&ctxId=ul1794255018576"
+    },
+    {
+      "text": "Sign Up",
+      "url": "https://www.paypal.com/webapps/mpp/account-selection?intent=developer&country.x=US&locale.x=en_US"
+    },
+    {
+      "text": "Get started",
+      "url": "https://developer.paypal.com/get-started"
+    },
+    {
+      "text": "Payments",
+      "url": "https://developer.paypal.com/payments"
+    },
+    {
+      "text": "Revenue",
+      "url": "https://developer.paypal.com/revenue"
+    },
+    {
+      "text": "Developer resources",
+      "url": "https://developer.paypal.com/developer-resources"
+    },
+    {
+      "text": "Business",
+      "url": "https://developer.paypal.com/get-started"
+    },
+    {
+      "text": "Platforms and marketplaces",
+      "url": "https://developer.paypal.com/platforms/overview"
+    },
+    {
+      "text": "Enterprise",
+      "url": "https://developer.paypal.com/braintree"
+    },
+    {
+      "text": "Get started",
+      "url": "https://developer.paypal.com/get-started"
+    },
+    {
+      "text": "Payments",
+      "url": "https://developer.paypal.com/payments"
+    },
+    {
+      "text": "Revenue",
+      "url": "https://developer.paypal.com/revenue"
+    },
+    {
+      "text": "Developer resources",
+      "url": "https://developer.paypal.com/developer-resources"
+    },
+    {
+      "text": "FAQs",
+      "url": "https://www.paypal.com/cshelp/technical"
+    },
+    {
+      "text": "Account help",
+      "url": "https://www.paypal.com/cshelp/contact-us"
+    },
+    {
+      "text": "Technical support",
+      "url": "https://www.paypal.com/cshelp/technical"
+    },
+    {
+      "text": "API Status",
+      "url": "https://www.paypal-status.com/api/production/"
+    },
+    {
+      "text": "JavaScript SDK",
+      "url": "https://developer.paypal.com/sdk/js/set-up"
+    },
+    {
+      "text": "React SDK",
+      "url": "https://developer.paypal.com/sdk/react/reference"
+    },
+    {
+      "text": "REST API",
+      "url": "https://developer.paypal.com/api"
+    },
+    {
+      "text": "Server SDKs",
+      "url": "https://developer.paypal.com/serversdk"
+    },
+    {
+      "text": "Codes",
+      "url": "https://developer.paypal.com/api/codes/"
+    },
+    {
+      "text": "Webhook events",
+      "url": "https://developer.paypal.com/api/rest/webhooks/"
+    },
+    {
+      "text": "iOS",
+      "url": "https://developer.paypal.com/sdk/ios/overview"
+    },
+    {
+      "text": "Android",
+      "url": "https://developer.paypal.com/sdk/android/overview"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developer.paypal.com/developer-resources"
+    },
+    {
+      "text": "Upgrade older integrations",
+      "url": "https://developer.paypal.com/upgrade"
+    },
+    {
+      "text": "Make a checkout AI-ready",
+      "url": "https://developer.paypal.com/ai-tools/get-started"
+    },
+    {
+      "text": "API statuses",
+      "url": "https://www.paypal-status.com/api/production/"
+    },
+    {
+      "text": "Apps, scopes, and credentials",
+      "url": "https://developer.paypal.com/apps-scopes-and-credentials"
+    },
+    {
+      "text": "Security guidelines",
+      "url": "https://developer.paypal.com/security-guidelines"
+    },
+    {
+      "text": "Server-side SDK",
+      "url": "https://developer.paypal.com/serversdk/java/getting-started/how-to-get-started"
+    },
+    {
+      "text": "Donation SDK",
+      "url": "https://developer.paypal.com/sdk/donate"
+    },
+    {
+      "text": "Get started",
+      "url": "https://developer.paypal.com/api/get-started"
+    },
+    {
+      "text": "Make API requests",
+      "url": "https://developer.paypal.com/api/make-api-requests"
+    },
+    {
+      "text": "Handle API responses",
+      "url": "https://developer.paypal.com/api/handle-api-responses"
+    },
+    {
+      "text": "Rate limiting",
+      "url": "https://developer.paypal.com/api/rate-limiting"
+    },
+    {
+      "text": "REST API references",
+      "url": "https://developer.paypal.com/api/rest"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developer.paypal.com/ai-tools/get-started"
+    },
+    {
+      "text": "Agent toolkit",
+      "url": "https://developer.paypal.com/ai-tools/toolkit"
+    },
+    {
+      "text": "Agent tools",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools"
+    },
+    {
+      "text": "Build with an LLM",
+      "url": "https://developer.paypal.com/ai-tools/build-with-llm"
+    },
+    {
+      "text": "MCP server",
+      "url": "https://developer.paypal.com/ai-tools/mcp-server"
+    },
+    {
+      "text": "Prompts",
+      "url": "https://developer.paypal.com/ai-tools/prompts"
+    },
+    {
+      "text": "Credit card number generator",
+      "url": "https://developer.paypal.com/credit-card-number-generator"
+    },
+    {
+      "text": "IBAN generator",
+      "url": "https://developer.paypal.com/iban-generator"
+    },
+    {
+      "text": "VS Code extension",
+      "url": "https://developer.paypal.com/vs-code-extension"
+    },
+    {
+      "text": "Secure file transfer",
+      "url": "https://developer.paypal.com/secure-file-transfer"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developer.paypal.com/reference"
+    },
+    {
+      "text": "Country codes",
+      "url": "https://developer.paypal.com/reference/country-codes"
+    },
+    {
+      "text": "Currency codes",
+      "url": "https://developer.paypal.com/reference/currency-codes"
+    },
+    {
+      "text": "Locale codes",
+      "url": "https://developer.paypal.com/reference/locale-codes"
+    },
+    {
+      "text": "State codes",
+      "url": "https://developer.paypal.com/reference/state-codes"
+    },
+    {
+      "text": "Guidelines",
+      "url": "https://developer.paypal.com/reference/guidelines"
+    },
+    {
+      "text": "Product lifecycle",
+      "url": "https://developer.paypal.com/archive/product-lifecycle"
+    },
+    {
+      "text": "NVP/SOAP APIs",
+      "url": "https://developer.paypal.com/api/nvp-soap"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developer.paypal.com/ai-tools/get-started"
+    },
+    {
+      "text": "View as Markdown",
+      "url": "https://developer.paypal.com/ai-tools/get-started.md"
+    },
+    {
+      "text": "View as Markdown",
+      "url": "https://developer.paypal.com/ai-tools/get-started.md"
+    },
+    {
+      "text": "agent toolkit quickstart guide",
+      "url": "https://developer.paypal.com/ai-tools/toolkit/"
+    },
+    {
+      "text": "LLM integration guide",
+      "url": "https://developer.paypal.com/ai-tools/build-with-llm/"
+    },
+    {
+      "text": "agentic commerce services",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about"
+    },
+    {
+      "text": "Key features of PayPal AI tools and resources",
+      "url": "https://developer.paypal.com/ai-tools/get-started#key-features-of-paypal-ai-tools-and-resources"
+    },
+    {
+      "text": "Getting started",
+      "url": "https://developer.paypal.com/ai-tools/get-started#getting-started"
+    },
+    {
+      "text": "Agentic commerce services",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about"
+    },
+    {
+      "text": "Agent toolkit quickstart guide",
+      "url": "https://developer.paypal.com/ai-tools/toolkit/"
+    },
+    {
+      "text": "MCP server quickstart guide",
+      "url": "https://developer.paypal.com/ai-tools/mcp-server/"
+    },
+    {
+      "text": "LLM integration quickstart guide",
+      "url": "https://developer.paypal.com/ai-tools/build-with-llm/"
+    },
+    {
+      "text": "Agent tools reference",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/"
+    },
+    {
+      "text": "Best practices for prompts",
+      "url": "https://developer.paypal.com/ai-tools/prompts/"
+    },
+    {
+      "text": "Upgrade from v4 to v6\n\nUpdate your PayPal JavaScript integration from checkout.js (v4) to PayPal Web SDK v6. Move to the createInstance() architecture, explicit eligibility checks, and session-based payment flows.",
+      "url": "https://developer.paypal.com/v4-v6"
+    },
+    {
+      "text": "Agent toolkit\n\nNext Page",
+      "url": "https://developer.paypal.com/ai-tools/toolkit"
+    },
+    {
+      "text": "ON THIS PAGE",
+      "url": "https://developer.paypal.com/ai-tools/get-started#"
+    },
+    {
+      "text": "Key features of PayPal AI tools and resources",
+      "url": "https://developer.paypal.com/ai-tools/get-started#key-features-of-paypal-ai-tools-and-resources"
+    },
+    {
+      "text": "Getting started",
+      "url": "https://developer.paypal.com/ai-tools/get-started#getting-started"
+    },
+    {
+      "text": "GitHub repo",
+      "url": "https://github.com/paypal"
+    },
+    {
+      "text": "Postman repo",
+      "url": "https://www.postman.com/paypal"
+    },
+    {
+      "text": "PayPal.com",
+      "url": "https://paypal.com/"
+    },
+    {
+      "text": "llms.txt",
+      "url": "https://developer.paypal.com/llms.txt"
+    },
+    {
+      "text": "Developer blog",
+      "url": "https://developer.paypal.com/community/blog/"
+    },
+    {
+      "text": "Community",
+      "url": "https://developer.paypal.com/community"
+    },
+    {
+      "text": "Help Center",
+      "url": "https://www.paypal.com/cshelp/technical"
+    },
+    {
+      "text": "Sign up for updates",
+      "url": "https://developer.paypal.com/community/developer-program"
+    },
+    {
+      "text": "X",
+      "url": "https://x.com/paypaldev"
+    },
+    {
+      "text": "YouTube",
+      "url": "https://www.youtube.com/@paypaldev"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/paypaldev"
+    },
+    {
+      "text": "Discord",
+      "url": "https://developer.paypal.com/discord"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://www.paypal.com/legalhub/privacy-full"
+    },
+    {
+      "text": "Terms of Service",
+      "url": "https://www.paypal.com/legalhub/useragreement-full"
+    },
+    {
+      "text": "Developer Agreement",
+      "url": "https://www.paypal.com/legalhub/paypal/xdeveloper-full"
+    },
+    {
+      "text": "Manage cookies and learn more",
+      "url": "https://www.paypal.com/myaccount/privacy/cookiePrefs?locale=en_US"
+    }
+  ],
+  "text": "Business\nPlatforms and marketplaces\nEnterprise\nSearch...\n⌘ K\nLog In\nSign Up\nGet started\nPayments\nRevenue\nDeveloper resources\nHelp\nAPIs & SDKs\nDEVELOPER RESOURCES\nOverview\nUpgrade older integrations\nMake a checkout AI-ready\nAPI statuses\n\nCREATE AN ACCOUNT\n\nApps, scopes, and credentials\nSecurity guidelines\n\nSDK\n\nJavaScript SDK v6\nJavaScript SDK v5\nServer-side SDK\nMobile SDKs\nDonation SDK\n\nAPI\n\nGet started\nMake API requests\nHandle API responses\nRate limiting\nREST API references\nAPI troubleshooting\nCodes\nWebhook events\n\nUPGRADE OLD INTEGRATIONS\n\nUpgrade hub\nPartner w/ commerce platforms\n\nTOOLS AND TESTING\n\nAI tools\nOverview\nAgent toolkit\nAgent tools\nBuild with an LLM\nMCP server\nPrompts\nCredit card number generator\nIBAN generator\nVS Code extension\nSandbox Testing\nNegative testing\nSecure file transfer\n\nREFERENCE\n\nOverview\nCountry codes\nCurrency codes\nLocale codes\nState codes\nGuidelines\n\nLEGACY INTEGRATIONS\n\nProduct lifecycle\nLegacy integration doc archive\nNVP/SOAP APIs\nAI tools\nOverview\nPayPal's AI resources for developers\n\nLast updated: June 10, 2026\n\nCopy for LLM\n\nView as Markdown\n\nUsing AI is a powerful way to enhance your applications and services. Everyday examples include:\n\nE-commerce stores that automate order processing, handle returns, and provide 24/7 customer support.\nMarketplaces that enable AI-powered product discovery and streamline seller onboarding.\nSaaS platforms that automate billing, subscription management, and payment reconciliation.\nService businesses that generate and send invoices, process payments, and manage appointments.\n\nWhen you combine AI with PayPal's powerful payment and commerce services, you can change how you build and deploy commerce automation solutions, and you can help customers use AI to shop.\n\nCustom AI assistant for your website or app\n\nIntegration with major LLM platforms\n\nAI-powered shopping through an AI platform\n\nWhat do you want to build?\n\nagent toolkit\n\nLLM integration\n\nagentic commerce services\n\nOur suite of AI-powered tools enable you to leverage AI in these ways:\n\nBuild custom agents: Create AI agents that handle payment workflows and customer interactions using the agent toolkit quickstart guide.\nConnect with LLMs: Enable ChatGPT, Claude, and other AI assistants to interact with your services using the LLM integration guide.\nJoin PayPal's agentic commerce network: Make your products discoverable through AI shopping surfaces with PayPal's agentic commerce services.\nKey features of PayPal AI tools and resources\n\nPayPal AI tools enable agents to perform commerce-related tasks using PayPal's APIs and services. Agents can process payments, manage subscriptions, handle disputes, automate invoicing, and provide customer support while maintaining the highest standards of security and compliance that PayPal is known for.\n\nKey features of PayPal's AI tools and resources include:\n\nSeamless integration: Built on PayPal's infrastructure, our AI agents provide direct access to payment processing, financial data, and commerce APIs.\nIntelligent automation: Leverage advanced AI capabilities to automate repetitive tasks, make data-driven decisions, and provide personalized customer experiences at scale.\nDeveloper-friendly tools: Our agent toolkit includes everything you need, from quickstart guides to advanced MCP (Model Context Protocol) servers, to build, test, and deploy agents quickly.\nEnterprise-grade security: All agents operate within PayPal's secure environment, ensuring PCI compliance and protecting sensitive financial data throughout every transaction.\nScalable architecture: Whether you're building a simple payment bot or a complex multi-agent commerce system, our platform scales to meet your needs.\nGetting started\n\nThese pages help you start using PayPal's AI tools and resources:\n\nAgentic commerce services\nAgent toolkit quickstart guide\nMCP server quickstart guide\nLLM integration quickstart guide\nAgent tools reference\nBest practices for prompts\n\nUpgrade from v4 to v6\n\nUpdate your PayPal JavaScript integration from checkout.js (v4) to PayPal Web SDK v6. Move to the createInstance() architecture, explicit eligibility checks, and session-based payment flows.\n\nAgent toolkit\n\nNext Page\n\nON THIS PAGE\nKey features of PayPal AI tools and resources\nGetting started\n\nResources\n\nGitHub repo\n\nPostman repo\n\nPayPal.com\n\nllms.txt\n\nWhere to find us\n\nDeveloper blog\n\nCommunity\n\nHelp Center\n\nSign up for updates\n\nWhere to hear from us\n\nX\n\nYouTube\n\nLinkedIn\n\nDiscord\n\nLegal\n\nPrivacy Policy\n\nTerms of Service\n\nDeveloper Agreement\n\n© 2026 PayPal. All rights reserved.\n\nIf you accept cookies, we'll use them to improve and customise your experience and enable our partners to show you personalised PayPal ads when you visit other sites. Manage cookies and learn more\nAccept\nDecline\nClose\nFeedback",
+  "title": "PayPal's AI resources for developers | PayPal Developer",
+  "url": "https://developer.paypal.com/ai-tools/get-started"
+}

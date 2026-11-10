@@ -1,0 +1,33 @@
+# Local secrets and machine files
+.env
+.env.*
+!.env.example
+.DS_Store
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+
+# Future application dependencies and generated output
+node_modules/
+.next/
+out/
+dist/
+coverage/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+test-results/
+playwright-report/
+
+# Private runtime/customer data
+data/local/
+artifacts/local/
+research/private/
+
+# Public-source research captures are intentionally tracked in this PRIVATE archive.
+# Review/remove third-party captures before any public release; see README.md.

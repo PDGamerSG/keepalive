@@ -1,0 +1,109 @@
+{
+  "length": 61485,
+  "links": [
+    {
+      "text": "Reference",
+      "url": "https://developer.paypal.com/sdk/js/reference"
+    },
+    {
+      "text": "REST API references",
+      "url": "https://developer.paypal.com/api/rest"
+    },
+    {
+      "text": "Reference",
+      "url": "https://developer.paypal.com/sdk/js/reference"
+    },
+    {
+      "text": "React SDK v6 Reference",
+      "url": "https://developer.paypal.com/sdk/react/reference"
+    },
+    {
+      "text": "sdkInstance.createPayPalOneTimePaymentSession(options)",
+      "url": "https://developer.paypal.com/sdk/js/reference#sdkinstancecreatepaypalonetimepaymentsessionoptions"
+    },
+    {
+      "text": "authorize",
+      "url": "https://developer.paypal.com/api/orders/v2/orders-authorize"
+    },
+    {
+      "text": "sdkInstance.createPayPalSavePaymentSession(options)",
+      "url": "https://developer.paypal.com/sdk/js/reference#sdkinstancecreatepaypalsavepaymentsessionoptions"
+    },
+    {
+      "text": "sdkInstance.createPayPalCreditOneTimePaymentSession(options)",
+      "url": "https://developer.paypal.com/sdk/js/reference#sdkinstancecreatepaypalcreditonetimepaymentsessionoptions"
+    },
+    {
+      "text": "sdkInstance.createPayPalSubscriptionSession(options)",
+      "url": "https://developer.paypal.com/sdk/js/reference#sdkinstancecreatepaypalsubscriptionsessionoptions"
+    },
+    {
+      "text": "sdkInstance.createPayPalMessages(options?)",
+      "url": "https://developer.paypal.com/sdk/js/reference#sdkinstancecreatepaypalmessagesoptions"
+    },
+    {
+      "text": "authorize",
+      "url": "https://developer.paypal.com/api/orders/v2/orders-authorize"
+    },
+    {
+      "text": "sdkInstance.createPayPalGuestOneTimePaymentSession(options)",
+      "url": "https://developer.paypal.com/sdk/js/reference#sdkinstancecreatepaypalguestonetimepaymentsessionoptions"
+    },
+    {
+      "text": "Reference\n\nReact SDK v6 reference",
+      "url": "https://developer.paypal.com/sdk/react/reference"
+    },
+    {
+      "text": "sdkInstance.createPayPalOneTimePaymentSession(options)",
+      "url": "https://developer.paypal.com/sdk/js/reference#sdkinstancecreatepaypalonetimepaymentsessionoptions"
+    },
+    {
+      "text": "sdkInstance.createPayPalSavePaymentSession(options)",
+      "url": "https://developer.paypal.com/sdk/js/reference#sdkinstancecreatepaypalsavepaymentsessionoptions"
+    },
+    {
+      "text": "sdkInstance.createPayPalCreditOneTimePaymentSession(options)",
+      "url": "https://developer.paypal.com/sdk/js/reference#sdkinstancecreatepaypalcreditonetimepaymentsessionoptions"
+    },
+    {
+      "text": "sdkInstance.createPayPalSubscriptionSession(options)",
+      "url": "https://developer.paypal.com/sdk/js/reference#sdkinstancecreatepaypalsubscriptionsessionoptions"
+    },
+    {
+      "text": "sdkInstance.createPayPalMessages(options?)",
+      "url": "https://developer.paypal.com/sdk/js/reference#sdkinstancecreatepaypalmessagesoptions"
+    },
+    {
+      "text": "sdkInstance.createPayPalGuestOneTimePaymentSession(options)",
+      "url": "https://developer.paypal.com/sdk/js/reference#sdkinstancecreatepaypalguestonetimepaymentsessionoptions"
+    },
+    {
+      "text": "PayPal.com",
+      "url": "https://paypal.com/"
+    }
+  ],
+  "sections": [
+    {
+      "index": -1,
+      "q": "AUTHORIZE",
+      "text": "ABSENT"
+    },
+    {
+      "index": 17906,
+      "q": "authorization",
+      "text": "tter ISO 3166-1 country code\ngooglePaySession.confirmOrder(options)\n\nUse the payment data from Google Pay to confirm the PayPal order. Call this inside the onPaymentAuthorized callback.\n\nParameters\nParameter, Required, Description\nParameter\tRequired\tDescription\norderId\tyes\tstring. The PayPal order ID created on your server.\npaymentMethodData\tyes\tobject. The payment method data from the Google Pay authorization response (paymentData.paymentMethodData).\nReturns\n\nconfirmOrder returns a promise that resolves to { status }:\n\nStatus, Description\nStatus\tDescription\nAPPROVED\tOrder confirmed and ready to capture.\nPAYER_ACTION_REQUIRED\t3D Secure authentication required before capture.\nExample\n\nSet up a complete Google Pay integration, from eligibility checking and configuration through payment authorization and order confirmation.\n\nconst sdkInstance = await window.paypal.createInstance({\n  clientId: \"YOUR_CLIENT_ID\",\n  components: [\"googlepay-payments\"],\n  pageType: \"checkout\",\n});\n// Check eligibility before setting up Google Pay\nconst paymentMethods = await sdkInstance.findEligibleMethods({\n  currencyCode: \"USD\",\n});\nif (paymentMethods.isEligible(\"googlepay\")) {\n  const googlePayPaymentMethodDetails = paymentMethods.getDetails(\"googlepay\");\n  // Create Google Pay session and format config\n  const googlePaySession = sdkInstance.createGooglePayOneTimePaymentSession();\n  const googlePayConfig = googlePaySession.formatConfigForPaymentRequest(\n    googlePayPaymentMethodDetails.config,\n  );\n  // Initialize Google Pay client\n  const paymentsClient = new google.payments.api.PaymentsClient({\n    environment: \"TEST\", // Use \"PRODUCTION\" for live transactions\n    paymentDataCallbacks: {\n      onPaymentAuthorized: async (paymentData) => {\n        try {\n          const orderId = await createOrder();\n          const { status } = await googlePaySession.confirmOrder({\n            orderId,\n            paymentMethodData: paymentData.paymentMethodData,\n          });\n          if (status !== \"PAYER_ACTION_REQUIRED\") {\n            await captureOrder(orderId);\n          }\n          return { transactionState: \"SUCCESS\" };\n        } catch (err) {\n          return {\n            transactionState: \"ERROR\",\n            error: { message: err.message },\n          };\n        }\n      },\n    },\n  });\n  // Check readiness and render button\n  const { result } = await paymentsClient.isReadyToPay({\n    allowedPaymentMethods: googlePayConfig.allowedPaymentMethods,\n    apiVersion: googlePayConfig.apiVersion,\n    apiVersionMinor: googlePayConfig.apiVersionMinor,\n  });\n  if (result) {\n    const button = paymentsClient.createButton({\n      onClick: () => {\n        paymentsClient.loadPaymentData({\n          ...googlePayConfig,\n          transactionInfo: {\n            countryCode: googlePayConfig.countryCode,\n            currencyCode: \"USD\",\n            totalPriceStatus: \"FINAL\",\n            totalPrice: \"10.00\",\n          },\n          callbackIntents: [\"PAYMENT_AUTHORIZATION\"],\n        });\n      },\n    });\n    document.getElementById(\"google-pay-container\").appendChild(button);\n  }\n}\nsdkInstance.createApplePayOneTimePaymentSession()\n\nCreate a session for Apple Pay payments. The Apple Pay session integrates with the browser's native ApplePaySession API and handles merchant validation and order confirmation.\n\nApple Pay requires: - The applepay-payments component - The Apple Pay JavaScript SD"
+    },
+    {
+      "index": 6369,
+      "q": "createPayPalOneTimePaymentSession",
+      "text": "tryCode = payLaterDetails.countryCode;\n// Get PayPal Credit configuration\nconst creditDetails = paymentMethods.getDetails(\"credit\");\nCreating payment sessions\n\nPayment sessions manage the complete payment flow from initiation through completion. Each payment method has its own session creation method that returns a session object with methods to start and control the payment process.\n\nsdkInstance.createPayPalOneTimePaymentSession(options)\n\nCreate a payment session for one-time PayPal payments. This session handles the complete PayPal Checkout flow, including payment approval, shipping address changes, and order updates.\n\nParameters\n\nThe options object configures callbacks that handle different stages of the payment flow. These callbacks allow you to respond to buyer actions and update your order accordingly.\n\nParameter\tRequired\tDescription\nonApprove\tyes\t\n\nfunction(data). Called when the buyer approves the payment in the PayPal flow. This is where you should capture or authorize the payment on your server.\n\nThe function receives a data object containing:\n\norderId — The PayPal order ID to capture\n\npayerId — The buyer's PayPal payer ID\n\nThis function can return a promise if you need to perform async operations like capturing the payment.\n\n\nonCancel\tno\t\n\nfunction(data). Called when the buyer cancels the payment flow by closing the PayPal window or selecting cancel.\n\nThe data object contains:\n\norderId — The order ID (if one was created)\n\nUse this callback to:\n\nTrack abandoned checkouts\nRe-enable your checkout button\nShow a message to the buyer\n\nonError\tno\t\n\nfunction(error). Called when an error occurs during the payment flow. This includes network errors, validation errors, or payment failures.\n\nThe error object contains:\n\ncode — Error code for identifying the issue\n\nmessage — Human-readable error description\n\nUse this to display user-friendly error messages and log errors for debugging.\n\n\nonShippingAddressChange\tno\t\n\nfunction(data). Called when the buyer changes their shipping address within the PayPal flow. This allows you to update shipping costs or restrict certain addresses.\n\nThe data object contains:\n\nerrors — Errors to show to the user\n\norderId — The current order ID\n\nshippingAddress — The new address object\n\nReturn a promise to update the order with new shipping costs. If you reject the promise, the address change will be rejected.\n\n\nonShippingOptionsChange\tno\t\n\nfunction(data). Called when the buyer selects a different shipping option, for example, standard or express shipping.\n\nThe data object contains:\n\nerrors — Errors to show to the user\n\norderId — The current order ID\n\nselectedShippingOption — The selected option details\n\nReturn a promise to update the order total with the new shipping cost.\n\n\norderId\tno\t\n\nstring. An existing PayPal order ID to use for this session. This allows you to create the order on your server before starting the payment flow (eager order creation).\n\nIf not provided, you'll pass an order creation function to the start() method.\n\n\ncommit\tno\t\n\nboolean. Controls the final button text in the PayPal flow:\n\ntrue — Shows \"Pay Now\" (payment happens immediately)\n\nfalse — Shows \"Continue\" (additional confirmation step)\n\nDefault: true\n\n\nsavePayment\tno\t\n\nboolean. Saves the customer's payment method during purchase. Set to true if your Orders API request saves the payment method using payment tokens.\n\nReturns\n\ncreatePayPa"
+    },
+    {
+      "index": 6821,
+      "q": "onApprove",
+      "text": " payment session for one-time PayPal payments. This session handles the complete PayPal Checkout flow, including payment approval, shipping address changes, and order updates.\n\nParameters\n\nThe options object configures callbacks that handle different stages of the payment flow. These callbacks allow you to respond to buyer actions and update your order accordingly.\n\nParameter\tRequired\tDescription\nonApprove\tyes\t\n\nfunction(data). Called when the buyer approves the payment in the PayPal flow. This is where you should capture or authorize the payment on your server.\n\nThe function receives a data object containing:\n\norderId — The PayPal order ID to capture\n\npayerId — The buyer's PayPal payer ID\n\nThis function can return a promise if you need to perform async operations like capturing the payment.\n\n\nonCancel\tno\t\n\nfunction(data). Called when the buyer cancels the payment flow by closing the PayPal window or selecting cancel.\n\nThe data object contains:\n\norderId — The order ID (if one was created)\n\nUse this callback to:\n\nTrack abandoned checkouts\nRe-enable your checkout button\nShow a message to the buyer\n\nonError\tno\t\n\nfunction(error). Called when an error occurs during the payment flow. This includes network errors, validation errors, or payment failures.\n\nThe error object contains:\n\ncode — Error code for identifying the issue\n\nmessage — Human-readable error description\n\nUse this to display user-friendly error messages and log errors for debugging.\n\n\nonShippingAddressChange\tno\t\n\nfunction(data). Called when the buyer changes their shipping address within the PayPal flow. This allows you to update shipping costs or restrict certain addresses.\n\nThe data object contains:\n\nerrors — Errors to show to the user\n\norderId — The current order ID\n\nshippingAddress — The new address object\n\nReturn a promise to update the order with new shipping costs. If you reject the promise, the address change will be rejected.\n\n\nonShippingOptionsChange\tno\t\n\nfunction(data). Called when the buyer selects a different shipping option, for example, standard or express shipping.\n\nThe data object contains:\n\nerrors — Errors to show to the user\n\norderId — The current order ID\n\nselectedShippingOption — The selected option details\n\nReturn a promise to update the order total with the new shipping cost.\n\n\norderId\tno\t\n\nstring. An existing PayPal order ID to use for this session. This allows you to create the order on your server before starting the payment flow (eager order creation).\n\nIf not provided, you'll pass an order creation function to the start() method.\n\n\ncommit\tno\t\n\nboolean. Controls the final button text in the PayPal flow:\n\ntrue — Shows \"Pay Now\" (payment happens immediately)\n\nfalse — Shows \"Continue\" (additional confirmation step)\n\nDefault: true\n\n\nsavePayment\tno\t\n\nboolean. Saves the customer's payment method during purchase. Set to true if your Orders API request saves the payment method using payment tokens.\n\nReturns\n\ncreatePayPalOneTimePaymentSession returns a PaymentSession object with methods to control the payment flow.\n\ninterface PaymentSession {\n  start(options?: StartOptions, orderPromise: Promise): Promise<void>;\n  hasReturned(): boolean;\n  resume(): Promise<void>;\n}\nExample\n\nCreate a PayPal payment session with handlers for approval, shipping changes, cancellation, and errors.\n\nconst paypalSession = sdkInstance.createPayPalOneTimePaymentSession({\n  onApprove: asyn"
+    }
+  ],
+  "title": "Reference | PayPal Developer",
+  "url": "https://developer.paypal.com/sdk/js/reference"
+}

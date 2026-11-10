@@ -1,0 +1,353 @@
+{
+  "links": [
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login?ref=top-nav-login"
+    },
+    {
+      "text": "Sign up",
+      "url": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button"
+    },
+    {
+      "text": "Join a hackathon",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d#join-a-hackathon"
+    },
+    {
+      "text": "Devpost\n      Participate in our public hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Devpost for Teams\n      Access your company's private hackathons",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Login",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d#host-a-hackathon"
+    },
+    {
+      "text": "Devpost\n      Grow your developer ecosystem and promote your platform",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Host a public hackathon",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Devpost for Teams\n      Drive innovation, collaboration, and retention within your organization",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Host an internal hackathon",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "AI hackathons",
+      "url": "https://info.devpost.com/product/ai-hackathons"
+    },
+    {
+      "text": "Customer hackathons",
+      "url": "https://info.devpost.com/product/customer-hackathons"
+    },
+    {
+      "text": "Employee hackathons",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Public hackathons",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Resources",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d#resources"
+    },
+    {
+      "text": "Blog\n      \n      \n        Insights into hackathon planning and participation",
+      "url": "https://info.devpost.com/blog"
+    },
+    {
+      "text": "Customer stories\n      \n      \n        Inspiration from peers and other industry leaders",
+      "url": "https://info.devpost.com/customer-stories"
+    },
+    {
+      "text": "Planning guides\n      \n      \n        Best practices for planning online and in-person hackathons",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Webinars & events\n      \n      \n        Upcoming events and on-demand recordings",
+      "url": "https://info.devpost.com/webinar-events"
+    },
+    {
+      "text": "Help desk\n      \n      \n        Common questions and support documentation",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Join a hackathon",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d#"
+    },
+    {
+      "text": "Back",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d#"
+    },
+    {
+      "text": "Devpost\n      Participate in our public hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Devpost for Teams\n      Access your company's private hackathons",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Login",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d#"
+    },
+    {
+      "text": "Back",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d#"
+    },
+    {
+      "text": "Devpost\n      Grow your developer ecosystem and promote your platform",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Host a public hackathon",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Devpost for Teams\n      Drive innovation, collaboration, and retention within your organization",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Host an internal hackathon",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "AI hackathons",
+      "url": "https://info.devpost.com/product/ai-hackathons"
+    },
+    {
+      "text": "Customer hackathons",
+      "url": "https://info.devpost.com/product/customer-hackathons"
+    },
+    {
+      "text": "Employee hackathons",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Public hackathons",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Resources",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d#"
+    },
+    {
+      "text": "Back",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d#"
+    },
+    {
+      "text": "Blog\n      \n      \n        Insights into hackathon planning and participation",
+      "url": "https://info.devpost.com/blog"
+    },
+    {
+      "text": "Customer stories\n      \n      \n        Inspiration from peers and other industry leaders",
+      "url": "https://info.devpost.com/customer-stories"
+    },
+    {
+      "text": "Planning guides\n      \n      \n        Best practices for planning online and in-person hackathons",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Webinars & events\n      \n      \n        Upcoming events and on-demand recordings",
+      "url": "https://info.devpost.com/webinar-events"
+    },
+    {
+      "text": "Help desk\n      \n      \n        Common questions and support documentation",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login?ref=top-nav-login"
+    },
+    {
+      "text": "Sign up",
+      "url": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button"
+    },
+    {
+      "text": "Like",
+      "url": "https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bsoftware_id%5D=1497188&flow%5Bname%5D=like_software&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Fagentescrow-q5tv0d"
+    },
+    {
+      "text": "Comment",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d#updates"
+    },
+    {
+      "text": "STORY",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d"
+    },
+    {
+      "text": "UPDATES",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d#updates"
+    },
+    {
+      "text": "SUBMISSION HISTORY",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d#submission-history"
+    },
+    {
+      "text": "https://agent-escrow-6i1.pages.dev/",
+      "url": "https://agent-escrow-6i1.pages.dev/"
+    },
+    {
+      "text": "paypal",
+      "url": "https://devpost.com/software/built-with/paypal"
+    },
+    {
+      "text": "react",
+      "url": "https://devpost.com/software/built-with/react"
+    },
+    {
+      "text": "typescript",
+      "url": "https://devpost.com/software/built-with/typescript"
+    },
+    {
+      "text": "agent-escrow-6i1.pages.dev",
+      "url": "https://agent-escrow-6i1.pages.dev/"
+    },
+    {
+      "text": "PayPal AI Hackathon",
+      "url": "https://paypalaihackathon.devpost.com/"
+    },
+    {
+      "text": "Jamil Nour",
+      "url": "https://devpost.com/jamilnour"
+    },
+    {
+      "text": "Like",
+      "url": "https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bsoftware_id%5D=1497188&flow%5Bname%5D=like_software&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Fagentescrow-q5tv0d"
+    },
+    {
+      "text": "Jamil Nour",
+      "url": "https://devpost.com/jamilnour"
+    },
+    {
+      "text": "19 days ago",
+      "url": "https://devpost.com/software/agentescrow-q5tv0d/updates/854426"
+    },
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login"
+    },
+    {
+      "text": "sign up for Devpost",
+      "url": "https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bcommentable_id%5D=854426&flow%5Bname%5D=comment_on_software_update&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Fagentescrow-q5tv0d"
+    },
+    {
+      "text": "About",
+      "url": "https://info.devpost.com/about"
+    },
+    {
+      "text": "Careers",
+      "url": "https://info.devpost.com/careers"
+    },
+    {
+      "text": "Contact",
+      "url": "https://info.devpost.com/contact"
+    },
+    {
+      "text": "Help",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Browse hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Explore projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://info.devpost.com/"
+    },
+    {
+      "text": "Hackathon guides",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Your projects",
+      "url": "https://devpost.com/portfolio/redirect?page=projects"
+    },
+    {
+      "text": "Your hackathons",
+      "url": "https://devpost.com/portfolio/redirect?page=hackathons"
+    },
+    {
+      "text": "Settings",
+      "url": "https://devpost.com/settings"
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/devpost"
+    },
+    {
+      "text": "Discord",
+      "url": "https://discord.com/invite/HP4BhW3hnp"
+    },
+    {
+      "text": "Facebook",
+      "url": "https://www.facebook.com/devposthacks"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/devpost/"
+    },
+    {
+      "text": "Community guidelines",
+      "url": "https://info.devpost.com/legal/community-guidelines"
+    },
+    {
+      "text": "Security",
+      "url": "https://info.devpost.com/legal/security"
+    },
+    {
+      "text": "CA notice",
+      "url": "https://info.devpost.com/legal/california-consumer-privacy-act"
+    },
+    {
+      "text": "Privacy policy",
+      "url": "https://info.devpost.com/legal/privacy-policy"
+    },
+    {
+      "text": "Terms of service",
+      "url": "https://info.devpost.com/legal/terms-of-service"
+    }
+  ],
+  "text": "Join a hackathon \nHost a hackathon \nResources \nLog in\nSign up\nAgentEscrow\n\nAutonomous Trust, Milestone Verification & Settlement Protocol for the Machine-to-Machine (M2M) Agent Economy powered by PayPal Orders v2.\n\n Like  Comment\nSTORY\nUPDATES\nSUBMISSION HISTORY\n\nReal PayPal Sandbox transaction activity statement\n\nFull AgentEscrow Dashboard overview with protocol statistics\n\nModel gateway & latency selector (OpenRouter / OpenAI)\n\nCustom software milestone specification generator\n\nPayPal Orders v2 AUTHORIZE escrow hold locked\n\nAI Worker Agent synthesizing deliverable in real time\n\nSentinelGuard AST audit detecting flaw & triggering auto-heal\n\nLive PayPal Sandbox checkout authentication modal\n\nFinal programmatic settlement receipt & Payouts breakdown\n\nReal PayPal Sandbox transaction activity statement\n\nFull AgentEscrow Dashboard overview with protocol statistics\n\nModel gateway & latency selector (OpenRouter / OpenAI)\n\nCustom software milestone specification generator\n\nPayPal Orders v2 AUTHORIZE escrow hold locked\n\nAI Worker Agent synthesizing deliverable in real time\n\nSentinelGuard AST audit detecting flaw & triggering auto-heal\n\nLive PayPal Sandbox checkout authentication modal\n\nFinal programmatic settlement receipt & Payouts breakdown\n\nReal PayPal Sandbox transaction activity statement\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nInspiration: The Autonomous Agent Trust Vacuum\n\nAs autonomous software agents begin hiring other specialized agents to write code, extract datasets, audit smart contracts, and train sub-models, they encounter a critical economic roadblock: the complete absence of financial trust in Machine-to-Machine (M2M) commerce.\n\nIf the buyer agent pays upfront: The worker agent might hallucinate, produce security flaws, or disappear, resulting in immediate capital loss.\nIf the worker agent works first: The buyer agent might steal the deliverable, refuse payout, or go offline.\nTraditional card checkouts fail: Standard e-commerce gateways assume immediate consumer delivery and trigger irreversible card fees upon charge.\n\nWe asked: How can autonomous agents trade and settle services with zero risk, zero upfront fees, and programmatic milestone enforcement?\n\nThe answer is AgentEscrow, built directly on the deep two-phase commit architecture of PayPal Orders v2 (intent: AUTHORIZE -> CAPTURE / VOID).\n\nWhat It Does\n\nAgentEscrow turns PayPal into the financial backbone of the agent economy through an autonomous 5-stage protocol:\n\nDeterministic Escrow Hold (intent: AUTHORIZE): A buyer agent creates a task contract specifying deliverables and acceptance tests. Funds are reserved on hold via PayPal Orders v2 with $0 charged upfront.\nVerifiable Worker Dispatch: The worker agent receives cryptographic proof that funds are safely held in escrow before expending compute or calling LLMs.\nOpenAI-Compatible AI Worker Engine: Native integration with OpenRouter (Claude 3.5 Sonnet, GPT-4o, DeepSeek) and custom OpenAI-compatible gateways to synthesize deliverables in real time.\nAutonomous AI Auditor & Self-Correction: SentinelGuard AI subjects deliverables to AST parsers, vulnerability scans, and schema benchmarks. If a flaw is detected, funds remain locked, and diagnostic payloads are piped back to the worker for an autonomous self-healing patch.\nProgrammatic Settlement (CAPTURE & Payouts v1): Once 100% of specs pass, the protocol triggers an automated server-side PayPal CAPTURE, deducts a 3% platform fee, and disburses net funds to the worker wallet via PayPal Payouts v1. If permanently rejected, the authorization is VOIDED at zero fee.\nHow We Built It & PayPal API Deep Integration\nPayPal APIs Used & Purpose in Architecture:\nPAYPAL API SERVICE\tHTTP METHOD\tENDPOINT\tPROTOCOL FUNCTION\nPayPal Orders v2\tPOST\t/v2/checkout/orders\tCreates task contract with intent: \"AUTHORIZE\".\nPayPal Orders v2\tPOST\t/v2/checkout/orders/{id}/authorize\tSecures buyer funds into a verifiable escrow hold.\nPayPal Payments v2\tPOST\t/v2/payments/authorizations/{id}/capture\tProgrammatically settles payment and disburses to worker upon 100% test pass.\nPayPal Payments v2\tPOST\t/v2/payments/authorizations/{id}/void\tCancels the escrow hold if deliverable fails specification audits ($0 net charge).\nPayPal Payouts v1\tPOST\t/v1/payments/payouts\tSplits protocol fees (3%) and issues instantaneous disbursement to worker wallet.\nTechnical Architecture:\nFrontend: React 19, TypeScript, and Vite with zero external UI/CSS frameworks (pure Vanilla CSS with custom glassmorphism, responsive 1080p dashboard, and procedural Web Audio API synthesizer).\nLive Sandbox SDK: @paypal/react-paypal-js for seamless buyer popup authentication and live Smart Buttons.\nServerless Edge Backend: Cloudflare Pages Functions (/functions/api/paypal/void.ts & /functions/api/paypal/capture.ts) for real-time authenticated OAuth token generation and direct communication with api-m.sandbox.paypal.com.\nZero-Knowledge M2M Delivery: Deliverables remain securely encrypted in sealed enclaves until the PayPal capture receipt releases the payout keys.\nChallenges We Overcame\nHandling Two-Phase Commit in Edge Functions: PayPal OAuth requires a short-lived bearer token exchanged via basic auth credentials. We implemented resilient serverless edge handlers on Cloudflare Pages that securely authenticate against PayPal Sandbox servers to execute live server-side void and capture actions without leaking secrets.\nPreventing Premature Deliverable Leakage: Formulated the Zero-Knowledge sealed enclave architecture to solve the buyer free-riding dilemma while preserving full real-time developer observability for demo evaluation.\nMulti-Model Dynamic Gateway Resilience: Unified multiple model providers into a single, high-performance OpenAI-compatible contract engine with real-time ping latency testing and persistent local ledger storage.\nAccomplishments We're Proud Of\nA production-ready, deployed full-stack dApp that anyone can test right now on https://agent-escrow-6i1.pages.dev/.\nFull PayPal Orders v2 two-phase commit lifecycle working both with live PayPal Sandbox credentials and a built-in offline simulator.\nAutonomous self-healing loop showing code flaw detection, diagnostic AST feedback, and instant auto-patch verification.\nBuilt-in interactive custom bounty generator allowing users to create any software milestone on the fly.\nWhat We Learned\n\nWe learned that PayPal's two-phase commit architecture (AUTHORIZE / CAPTURE / VOID) is uniquely suited for autonomous AI agent networks—far better than irreversible traditional card checkouts or volatile crypto gas fees. PayPal's dispute protection, global compliance, and instant payout infrastructure give AI agents a stable, risk-free economic foundation.\n\nWhat's Next for AgentEscrow\nAutonomous Micro-Payout Milestones: Splitting large development tasks into multi-stage partial captures as milestones are progressively verified.\nMulti-Signature Human-Agent Arbitration: Escalating edge-case disputes to decentralized human judges using staked escrow pools.\nPayPal Agent Wallet SDK: An npm package (@paypal/agent-escrow-sdk) allowing autonomous frameworks (LangChain, AutoGen, CrewAI) to embed escrow with three lines of Python or TypeScript.\nBuilt With\ncloudflare-pages\nopenai-api\nopenrouter\npaypal\nreact\ntypescript\nvite\nweb-audio-api\nTry it out\n agent-escrow-6i1.pages.dev\nSUBMITTED TO\n\nPayPal AI Hackathon\n\nCREATED BY\n\nSole architect and developer:\n• Designed the M2M escrow architecture using PayPal Orders v2 and Payouts v1.\n• Built the full-stack React & TypeScript web application with Cloudflare Pages Edge functions.\n• Integrated multi-model LLM code synthesis (OpenRouter/OpenAI) and AST self-healing audit engine.\n• Handled all deployment, documentation, testing, and pitch video production.\n\nJamil Nour \n\n\n Like \nUpdates\n\nJamil Nour started this project — 19 days ago\n\nLeave feedback in the comments!\n\nLog in or sign up for Devpost to join the conversation.\n\nSubmission history\nDevpost\nAbout\nCareers\nContact\nHelp\nHackathons\nBrowse hackathons\nExplore projects\nHost a hackathon\nHackathon guides\nPortfolio\nYour projects\nYour hackathons\nSettings\nConnect\n Twitter\n Discord\n Facebook\n LinkedIn\n© 2026 Devpost, Inc. All rights reserved.\nCommunity guidelines\nSecurity\nCA notice\nPrivacy policy\nTerms of service",
+  "title": "AgentEscrow | Devpost",
+  "url": "https://devpost.com/software/agentescrow-q5tv0d",
+  "retrievedAt": "2026-11-09T20:58:27.062Z",
+  "note": "Revisit of prior S30 to locate underlying implementation; not counted as new source."
+}

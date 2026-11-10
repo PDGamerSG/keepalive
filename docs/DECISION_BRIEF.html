@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProofRoute — decision and build scope</title>
+<style>
+:root{font-family:var(--font-sans,system-ui,sans-serif);color:var(--foreground,CanvasText);--line:var(--border,GrayText);--quiet:var(--muted-foreground,GrayText);--surface:var(--card,Canvas);--a:var(--chart-1,Highlight);--b:var(--chart-2,LinkText);--bad:var(--destructive,MarkText)}
+*{box-sizing:border-box}html,body{margin:0}main{width:100%;display:grid;gap:16px}p{margin:0;line-height:1.55}h2{font-size:18px;line-height:1.3;margin:0 0 8px}h3{margin:0;font-size:14px}.muted{color:var(--quiet);font-size:12px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius,12px);padding:16px}.eyebrow{font-size:11px;font-weight:650;letter-spacing:.07em;text-transform:uppercase;color:var(--quiet);margin-bottom:8px}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}.metric{font-size:25px;font-weight:650;letter-spacing:-.04em;margin:7px 0 3px}.path{font-family:var(--font-mono,monospace);font-size:16px;letter-spacing:.02em}.tag{font-size:11px;display:inline-block;padding:3px 7px;border:1px solid var(--line);border-radius:6px;margin-bottom:8px}.legend{display:flex;gap:18px;align-items:center;margin:10px 0;font-size:12px;flex-wrap:wrap}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}.source{background:var(--a)}.rescue{background:var(--b)}svg{display:block;width:100%;height:240px}svg text{font-family:var(--font-sans,system-ui,sans-serif);fill:var(--foreground,CanvasText);font-size:12px}.axis{stroke:var(--line);stroke-width:1}.gridline{stroke:var(--line);stroke-width:1;stroke-dasharray:3 5}.bar-original{fill:var(--a)}.bar-rescue{fill:var(--b)}.bar-fail{fill:var(--bad)}.scope-controls{display:flex;gap:8px;margin:12px 0;flex-wrap:wrap}button{font:inherit;font-size:12px;line-height:1.3;border:1px solid var(--line);border-radius:7px;background:transparent;color:inherit;padding:7px 10px;cursor:pointer}button[aria-pressed="true"]{background:var(--secondary,ButtonFace);border-color:var(--primary,Highlight)}button:focus-visible{outline:2px solid var(--ring,Highlight);outline-offset:2px}.modules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.module{text-align:left;min-height:63px;font-size:12px;padding:10px;display:flex;flex-direction:column;gap:5px}.module small{color:var(--quiet);font-size:10px}.module.later{opacity:.55}.detail{margin-top:10px;min-height:78px;border-top:1px solid var(--line);padding-top:12px;font-size:13px}.flow{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:10px}.flow span{font-size:11px;padding:6px 7px;border:1px solid var(--line);border-radius:5px}.arrow{color:var(--quiet);font-style:normal}.time{display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:12px}.time strong{display:block;font-size:17px;margin:4px 0}.notes{font-size:12px;color:var(--quiet);line-height:1.6}.foot{padding-bottom:4px;font-size:11px;color:var(--quiet)}
+@media(max-width:560px){.split,.time{grid-template-columns:1fr}.modules{grid-template-columns:repeat(2,minmax(0,1fr))}svg{height:220px}.metric{font-size:23px}.card{padding:16px}}
+</style>
+</head>
+<body>
+<main>
+  <section class="card" aria-labelledby="decision">
+    <div class="eyebrow">Recommended project · design, not implemented</div>
+    <h2 id="decision">Find the broken promise. Buy a verified rescue.</h2>
+    <p>ProofRoute audits a merchant’s existing delivery plan under reviewed travel scenarios, then sells one replacement that passes an independent checker before PayPal capture.</p>
+    <div class="flow" aria-label="Proposed workflow">
+      <span>AI proposes</span><i class="arrow" aria-hidden="true">→</i><span>Merchant reviews</span><i class="arrow" aria-hidden="true">→</i><span>Audit</span><i class="arrow" aria-hidden="true">→</i><span>Authorize</span><i class="arrow" aria-hidden="true">→</i><span>Solve &amp; check</span><i class="arrow" aria-hidden="true">→</i><span>Capture &amp; release</span>
+    </div>
+  </section>
+  <div class="split">
+    <section class="card" aria-label="Existing plan arithmetic">
+      <span class="tag">Existing plan · synthetic example</span>
+      <p class="path">A → B → C</p><div class="metric">4.0 km</div>
+      <p>Nominal pass. B starts <strong>15 minutes late</strong> under CORRIDOR_DELAY.</p>
+    </section>
+    <section class="card" aria-label="Proposed rescue arithmetic">
+      <span class="tag">Verified rescue · static oracle</span>
+      <p class="path">B → A → C</p><div class="metric">4.4 km</div>
+      <p>Passes all 3 scenarios. <strong>+400 m</strong> buys a feasible plan under the agreed model.</p>
+    </section>
+  </div>
+  <section class="card" aria-labelledby="margin-title">
+    <h2 id="margin-title">Which delivery promise breaks?</h2>
+    <p class="muted">Minimum service-start window margin in each frozen scenario. Negative means late.</p>
+    <div class="legend"><span><i class="dot source"></i>Existing A,B,C</span><span><i class="dot rescue"></i>Rescue B,A,C</span></div>
+    <svg viewBox="0 0 680 240" role="img" aria-labelledby="chart-title chart-desc">
+      <title id="chart-title">Window margins for the original and rescue plans</title>
+      <desc id="chart-desc">Nominal: original ten minutes, rescue thirteen. City slowdown: original two, rescue five. Corridor delay: original minus fifteen, rescue thirteen. Values are exact static synthetic arithmetic, not observed delivery performance.</desc>
+      <line class="axis" x1="400" x2="400" y1="12" y2="202"/>
+      <line class="gridline" x1="184" x2="184" y1="12" y2="202"/>
+      <line class="gridline" x1="616" x2="616" y1="12" y2="202"/>
+      <text x="4" y="43">Nominal</text>
+      <rect class="bar-original" x="400" y="24" width="144" height="14" rx="3"><title>Existing: +10 min, B</title></rect>
+      <rect class="bar-rescue" x="400" y="44" width="187.2" height="14" rx="3"><title>Rescue: +13 min, A</title></rect>
+      <text x="551" y="36">+10m</text><text x="594" y="56">+13m</text>
+      <text x="4" y="105">City slowdown</text>
+      <rect class="bar-original" x="400" y="86" width="28.8" height="14" rx="3"><title>Existing: +2 min, B</title></rect>
+      <rect class="bar-rescue" x="400" y="106" width="72" height="14" rx="3"><title>Rescue: +5 min, A</title></rect>
+      <text x="436" y="98">+2m</text><text x="479" y="118">+5m</text>
+      <text x="4" y="167">Corridor delay</text>
+      <rect class="bar-fail" x="184" y="148" width="216" height="14" rx="3"><title>Existing: −15 min, B</title></rect>
+      <rect class="bar-rescue" x="400" y="168" width="187.2" height="14" rx="3"><title>Rescue: +13 min, A</title></rect>
+      <text x="143" y="160">−15m</text><text x="594" y="180">+13m</text>
+      <text x="184" y="220" text-anchor="middle">−15 min</text><text x="400" y="220" text-anchor="middle">0 · promise close</text><text x="616" y="220" text-anchor="middle">+15 min</text>
+    </svg>
+    <p class="notes">All six stop orders were enumerated. Only B,A,C passes all three under the 4.5 km ceiling. This checks the tiny model’s arithmetic; actual AI, solver and payment execution remain to be demonstrated.</p>
+  </section>
+  <section class="card" aria-labelledby="scope-title">
+    <h2 id="scope-title">Twelve connected capabilities</h2>
+    <p class="muted">Select a scope, then a module to inspect its build boundary.</p>
+    <div class="scope-controls" role="group" aria-label="Build scope">
+      <button id="flagship" aria-pressed="true" type="button">Hackathon flagship</button>
+      <button id="full" aria-pressed="false" type="button">Full product</button>
+    </div>
+    <div class="modules" id="modules"></div>
+    <div class="detail" id="detail" aria-live="polite"></div>
+  </section>
+  <section class="card time" aria-label="Build estimates and submission deadline">
+    <div><span class="eyebrow">Focused build estimates</span><strong id="hours">44–58 hours</strong><p id="scope-note">Flagship, including integration reserve. The full first build is 70–100 hours.</p></div>
+    <div><span class="eyebrow">Hard deadline · IST</span><strong>13 Nov · 01:30</strong><p>2026 · equivalent to 12 Nov, noon PST. Target ready submission 5½ hours earlier.</p></div>
+  </section>
+  <p class="foot">Prior work already covers the individual ingredients. The proposed distinction is the complete merchant workflow and quality of execution. Pricing, customer demand, novelty and a winning/hiring outcome are unproven. Sources, exact types, resource links and build sequence are in the accompanying handoff.</p>
+</main>
+<script>
+const modules = [
+ {name:'Dispatch intake',tier:'Flagship',body:'Typed JSON/sample import of stops, vans and the owner’s existing route. Validate units, IDs and directed matrices; keep the original plan distinct from the paid rescue.'},
+ {name:'Promise compiler',tier:'Flagship',body:'Actual local AI proposes supported edits with exact source quotes. The merchant reviews current revisions; the model cannot change price, payee, scenarios or payment state.'},
+ {name:'Matrix provenance',tier:'Flagship + road later',body:'Freeze the source, node order, normalization, hash and assumptions. Synthetic matrices in the flagship; configured road-engine snapshots are a later milestone.'},
+ {name:'Independent audit',tier:'Flagship',body:'A separate TypeScript checker recomputes coverage, load, distance and per-scenario timing. It exposes the exact broken promise and arithmetic witness.'},
+ {name:'Scenario laboratory',tier:'Flagship + editor later',body:'Nominal, corridor delay and city slowdown share one route order. Every accepted scenario is mandatory. Editable recipes create a new reviewed input, never mutate an authorized contract.'},
+ {name:'Robust rescue solver',tier:'Flagship',body:'Local OR-Tools uses shared routing variables plus one time dimension per scenario. Bounded attempts produce candidates; only independent verification establishes acceptance.'},
+ {name:'Margin explorer',tier:'Flagship + deeper later',body:'Show actual window, shift, load and distance headroom. Later, binary-search the exact 0–3600s uniform-extra-leg tolerance. These are model margins, not probabilities.'},
+ {name:'Reviewed remedies',tier:'Full product',body:'Generate explicit sufficient changes for this fixed route, recheck them, then require a new draft and consent. No silent promise relaxation or globally minimal-change claim.'},
+ {name:'Replanning lineage',tier:'Full product',body:'Link immutable parent/child tasks and compare assignments/order. A child has fresh consent and checkout; it inherits no financial authorization.'},
+ {name:'PayPal controller',tier:'Flagship',body:'Durable AUTHORIZE, capture and void journals; stable keys; first-send deadline; reserved financial lanes; authentic webhooks and authoritative reconciliation before conflicting effects.'},
+ {name:'Evidence explorer',tier:'Flagship + explorer later',body:'Export source/input/contract/route/report bindings and selected payment observations. Offline verification proves route integrity and feasibility, not authenticity of copied payment JSON.'},
+ {name:'Agent & operator access',tier:'Full product',body:'Optional owner-scoped read-only MCP tools and guarded reconciliation views. No force-paid/release override, model-supplied identity authority or unearned AP2/ACP compliance claim.'}
+];
+let full=false, selected=3;
+function render(){
+ const host=document.getElementById('modules');host.replaceChildren();
+ modules.forEach((item,index)=>{
+  const b=document.createElement('button');b.type='button';b.className='module'+(!full&&item.tier==='Full product'?' later':'');b.setAttribute('aria-pressed',String(index===selected));
+  const name=document.createElement('span');name.textContent=item.name;const tier=document.createElement('small');tier.textContent=full?'Full scope':item.tier;b.append(name,tier);b.addEventListener('click',()=>{selected=index;render()});host.append(b);
+ });
+ const d=document.getElementById('detail');d.replaceChildren();const h=document.createElement('h3');h.textContent=modules[selected].name;const p=document.createElement('p');p.textContent=modules[selected].body;d.append(h,p);
+ document.getElementById('flagship').setAttribute('aria-pressed',String(!full));document.getElementById('full').setAttribute('aria-pressed',String(full));
+ document.getElementById('hours').textContent=full?'70–100 hours':'44–58 hours';document.getElementById('scope-note').textContent=full?'Initial twelve-module product; further production and customer validation comes afterward.':'Flagship, including integration reserve. The full first build is 70–100 hours.';
+}
+document.getElementById('flagship').addEventListener('click',()=>{full=false;render()});document.getElementById('full').addEventListener('click',()=>{full=true;render()});render();
+</script>
+</body>
+</html>

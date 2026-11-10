@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "dispatch-input/v2",
+  "route": {
+    "schemaVersion": "route-input/v1",
+    "serviceDay": "2026-11-10",
+    "timeZone": "Asia/Kolkata",
+    "source": "SYNTHETIC",
+    "depotId": "D0",
+    "nodeIds": [
+      "D0",
+      "A",
+      "B",
+      "C"
+    ],
+    "stops": [
+      {
+        "id": "A",
+        "label": "Medical A",
+        "demandGrams": 3000,
+        "serviceSeconds": 300,
+        "windowOpenSeconds": 32400,
+        "windowCloseSeconds": 34800,
+        "xMeters": null,
+        "yMeters": null
+      },
+      {
+        "id": "B",
+        "label": "Medical B",
+        "demandGrams": 3000,
+        "serviceSeconds": 300,
+        "windowOpenSeconds": 32400,
+        "windowCloseSeconds": 34500,
+        "xMeters": null,
+        "yMeters": null
+      },
+      {
+        "id": "C",
+        "label": "Flexible C",
+        "demandGrams": 2000,
+        "serviceSeconds": 300,
+        "windowOpenSeconds": 32400,
+        "windowCloseSeconds": 38400,
+        "xMeters": null,
+        "yMeters": null
+      }
+    ],
+    "vehicles": [
+      {
+        "id": "VAN-1",
+        "capacityGrams": 10000,
+        "shiftStartSeconds": 32400,
+        "shiftEndSeconds": 39600
+      }
+    ],
+    "distanceMeters": [
+      [
+        0,
+        1000,
+        1200,
+        3000
+      ],
+      [
+        1000,
+        0,
+        1000,
+        1200
+      ],
+      [
+        1200,
+        1000,
+        0,
+        1000
+      ],
+      [
+        1000,
+        2000,
+        2000,
+        0
+      ]
+    ],
+    "travelSeconds": [
+      [
+        0,
+        600,
+        840,
+        1200
+      ],
+      [
+        600,
+        0,
+        600,
+        720
+      ],
+      [
+        840,
+        480,
+        0,
+        600
+      ],
+      [
+        1200,
+        720,
+        600,
+        0
+      ]
+    ]
+  },
+  "matrixProvenance": {
+    "sourceKind": "SYNTHETIC",
+    "sourceLabel": "ProofRoute three-stop arithmetic fixture; synthetic travel",
+    "engineVersion": null,
+    "profile": null,
+    "mapDataTimestamp": null,
+    "generatedAt": "2026-11-10T00:00:00.000Z",
+    "normalization": "CEIL_METERS_SECONDS",
+    "attribution": [
+      "Original synthetic arithmetic fixture for ProofRoute; no road map used."
+    ],
+    "dataLicenseUrl": null,
+    "coordinatesE7": [],
+    "snapshotBodyHash": null,
+    "fallbackCellsPresent": false,
+    "unreachableCellsPresent": false
+  },
+  "scenarioSet": {
+    "schemaVersion": "travel-scenarios/v1",
+    "nodeIds": [
+      "D0",
+      "A",
+      "B",
+      "C"
+    ],
+    "nominalScenarioId": "NOMINAL",
+    "scenarios": [
+      {
+        "id": "NOMINAL",
+        "label": "Synthetic nominal",
+        "assumptionText": "Synthetic nominal travel times; not measured traffic.",
+        "travelSeconds": [
+          [
+            0,
+            600,
+            840,
+            1200
+          ],
+          [
+            600,
+            0,
+            600,
+            720
+          ],
+          [
+            840,
+            480,
+            0,
+            600
+          ],
+          [
+            1200,
+            720,
+            600,
+            0
+          ]
+        ],
+        "derivation": {
+          "kind": "NOMINAL"
+        }
+      },
+      {
+        "id": "CITY_SLOWDOWN",
+        "label": "Synthetic city slowdown: +4 minutes per moving leg",
+        "assumptionText": "Assume 240 additional seconds on every directed off-diagonal leg.",
+        "travelSeconds": [
+          [
+            0,
+            840,
+            1080,
+            1440
+          ],
+          [
+            840,
+            0,
+            840,
+            960
+          ],
+          [
+            1080,
+            720,
+            0,
+            840
+          ],
+          [
+            1440,
+            960,
+            840,
+            0
+          ]
+        ],
+        "derivation": {
+          "kind": "UNIFORM_ADD_SECONDS",
+          "baseScenarioId": "NOMINAL",
+          "extraSeconds": 240
+        }
+      },
+      {
+        "id": "CORRIDOR_DELAY",
+        "label": "Synthetic A-to-B delay: +25 minutes",
+        "assumptionText": "Assume A to B takes 2100 seconds instead of 600; all other nominal legs unchanged.",
+        "travelSeconds": [
+          [
+            0,
+            600,
+            840,
+            1200
+          ],
+          [
+            600,
+            0,
+            2100,
+            720
+          ],
+          [
+            840,
+            480,
+            0,
+            600
+          ],
+          [
+            1200,
+            720,
+            600,
+            0
+          ]
+        ],
+        "derivation": {
+          "kind": "EDGE_OVERRIDES",
+          "baseScenarioId": "NOMINAL",
+          "edges": [
+            {
+              "fromId": "A",
+              "toId": "B",
+              "travelSeconds": 2100
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

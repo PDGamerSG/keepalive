@@ -1,0 +1,90 @@
+{
+  "fixtureVersion": "proofroute-research-fixture/v1",
+  "name": "Elementwise max is stricter than finite scenarios",
+  "isSynthetic": true,
+  "nodeIds": [
+    "D0",
+    "A",
+    "B"
+  ],
+  "fixedStopSequence": [
+    "A",
+    "B"
+  ],
+  "serviceSeconds": 0,
+  "shiftStartSeconds": 0,
+  "shiftEndSeconds": 100,
+  "windowCloseSeconds": {
+    "A": 100,
+    "B": 21
+  },
+  "scenarioTravelSeconds": [
+    {
+      "scenarioId": "FIRST_LEG_SLOW",
+      "matrix": [
+        [
+          0,
+          20,
+          100
+        ],
+        [
+          100,
+          0,
+          1
+        ],
+        [
+          0,
+          100,
+          0
+        ]
+      ]
+    },
+    {
+      "scenarioId": "SECOND_LEG_SLOW",
+      "matrix": [
+        [
+          0,
+          1,
+          100
+        ],
+        [
+          100,
+          0,
+          20
+        ],
+        [
+          0,
+          100,
+          0
+        ]
+      ]
+    }
+  ],
+  "envelopeMatrix": [
+    [
+      0,
+      20,
+      100
+    ],
+    [
+      100,
+      0,
+      20
+    ],
+    [
+      0,
+      100,
+      0
+    ]
+  ],
+  "expected": {
+    "scenarioServiceStartAtB": {
+      "FIRST_LEG_SLOW": 21,
+      "SECOND_LEG_SLOW": 21
+    },
+    "envelopeServiceStartAtB": 40,
+    "bothFiniteScenariosPass": true,
+    "envelopePass": false
+  },
+  "interpretation": "An elementwise maximum combines arc delays from different named scenarios. It provides a sufficient stronger model, but can miss a plan that satisfies every agreed finite scenario. No probability interpretation."
+}

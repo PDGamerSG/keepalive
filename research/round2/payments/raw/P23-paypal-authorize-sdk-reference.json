@@ -1,0 +1,529 @@
+{
+  "fullTextLength": 8051,
+  "headings": [
+    "Authorize payment for order",
+    "Authorization",
+    "Path Parameters",
+    "Header Parameters",
+    "Request Body",
+    "payment_source properties",
+    "card_request properties",
+    "address_portable properties",
+    "Address Details properties",
+    "card_attributes properties",
+    "card_customer properties",
+    "phone_with_type properties",
+    "phone_number_without_country_code properties",
+    "name properties",
+    "vault_instruction_base properties",
+    "card_verification properties",
+    "card_stored_credential properties",
+    "network_transaction_reference properties",
+    "network_token_request properties",
+    "card_experience_context properties",
+    "token properties",
+    "paypal_wallet properties",
+    "name properties",
+    "phone_with_type properties",
+    "phone_number_without_country_code properties",
+    "tax_info properties",
+    "address_portable properties",
+    "Address Details properties",
+    "paypal_wallet_attributes properties",
+    "paypal_wallet_customer properties",
+    "phone_with_type properties",
+    "phone_number_without_country_code properties",
+    "name properties",
+    "vault_paypal_wallet_base properties",
+    "shipping_detail properties",
+    "name properties",
+    "phone properties",
+    "shipping_option properties",
+    "money properties",
+    "address_portable properties",
+    "Address Details properties",
+    "paypal_wallet_experience_context properties",
+    "app_switch_context properties",
+    "mobile_web_context properties",
+    "callback_configuration properties",
+    "paypal_wallet_stored_credential properties",
+    "bancontact_request properties",
+    "experience_context_base properties",
+    "blik_request properties",
+    "blik_experience_context properties",
+    "blik_seamless properties",
+    "blik_one_click properties",
+    "eps_request properties",
+    "experience_context_base properties",
+    "giropay_request properties",
+    "experience_context_base properties",
+    "ideal_request properties",
+    "experience_context_base properties",
+    "mybank_request properties",
+    "experience_context_base properties",
+    "p24_request properties",
+    "experience_context_base properties",
+    "sofort_request properties",
+    "experience_context_base properties",
+    "trustly_request properties",
+    "experience_context_base properties",
+    "apple_pay_request properties",
+    "phone_number_without_country_code properties",
+    "apple_pay_decrypted_token_data properties",
+    "money properties",
+    "card properties",
+    "address_portable properties",
+    "Address Details properties",
+    "card_attributes properties",
+    "card_customer properties",
+    "phone_with_type properties",
+    "phone_number_without_country_code properties",
+    "name properties",
+    "vault_instruction_base properties",
+    "card_verification properties",
+    "apple_pay_payment_data properties",
+    "card_stored_credential properties",
+    "network_transaction_reference properties",
+    "apple_pay_attributes properties",
+    "customer properties",
+    "phone_with_type properties",
+    "phone_number_without_country_code properties",
+    "name properties",
+    "v3_vault_instruction_base properties",
+    "apple_pay_experience_context properties",
+    "google_pay_request properties",
+    "phone_with_national_required_and_country_code properties",
+    "google_pay_card properties",
+    "address_portable properties",
+    "Address Details properties",
+    "google_pay_decrypted_token_data properties",
+    "google_pay_card properties",
+    "address_portable properties",
+    "Address Details properties",
+    "assurance_details properties",
+    "google_pay_experience_context properties",
+    "venmo_wallet_request properties",
+    "venmo_wallet_experience_context properties",
+    "callback_configuration properties",
+    "venmo_wallet_attributes properties",
+    "venmo_wallet_customer properties",
+    "phone_with_type properties",
+    "phone_number_without_country_code properties",
+    "name properties",
+    "vault_venmo_wallet_base properties",
+    "crypto_request properties",
+    "crypto_account_holder_name properties",
+    "experience_context_base_without_brand_shipping properties",
+    "Response Body",
+    "200\n\napplication/json",
+    "201\n\napplication/json",
+    "403\n\napplication/json",
+    "422\n\napplication/json"
+  ],
+  "links": [
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize.md",
+      "text": "View as Markdown"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/schema.json",
+      "text": "API Spec (JSON)"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/schema.yaml",
+      "text": "API Spec (YAML)"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize.md",
+      "text": "View as Markdown"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/schema.json",
+      "text": "API Spec (JSON)"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/schema.yaml",
+      "text": "API Spec (YAML)"
+    },
+    {
+      "href": "https://developer.paypal.com/api/orders/v2/orders-create",
+      "text": "API v2"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-create",
+      "text": "SDK"
+    },
+    {
+      "href": "https://developer.paypal.com/api/rest/reference/orders/v2/errors/#authorize-order",
+      "text": "Orders v2 errors"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#authorization",
+      "text": "Authorization"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#parameters-path",
+      "text": "Path Parameters"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#parameters.path.id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#parameters-header",
+      "text": "Header Parameters"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#parameters.header.paypal-request-id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#parameters.header.prefer",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#parameters.header.paypal-client-metadata-id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/guid",
+      "text": "guid"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#parameters.header.authorization",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/standard_header_schema",
+      "text": "standard_header_schema"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#parameters.header.paypal-auth-assertion",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body",
+      "text": "Request Body"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/payment_source",
+      "text": "payment_source"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/card_request",
+      "text": "card_request"
+    },
+    {
+      "href": "https://www.pcisecuritystandards.org/pci_security/completing_self_assessment",
+      "text": " PCI SAQ D compliance"
+    },
+    {
+      "href": "https://developer.paypal.com/docs/checkout/advanced/integrate/",
+      "text": "this Integration Guide"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.name",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.number",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.expiry",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/date_year_month",
+      "text": "date_year_month"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.security_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.type",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/card_type",
+      "text": "card_type"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.brand",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/card_brand",
+      "text": "card_brand"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/address_portable",
+      "text": "address_portable"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.address_line_1",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.address_line_2",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.address_line_3",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.admin_area_4",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.admin_area_3",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.admin_area_2",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.admin_area_1",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.postal_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.country_code",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/country_code",
+      "text": "country_code"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.address_details",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.address_details.street_number",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.address_details.street_name",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.address_details.street_type",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.address_details.delivery_service",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.address_details.building_name",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.billing_address.address_details.sub_building",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/card_attributes",
+      "text": "card_attributes"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/card_customer",
+      "text": "card_customer"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/merchant_partner_customer_id",
+      "text": "merchant_partner_customer_id"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.email_address",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/email",
+      "text": "email"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.phone",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/phone_with_type",
+      "text": "phone_with_type"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.phone.phone_type",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/phone_type",
+      "text": "phone_type"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.phone.phone_number",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/phone_number_without_country_code",
+      "text": "phone_number_without_country_code"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.phone.phone_number.national_number",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.name",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/name",
+      "text": "name"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.name.prefix",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.name.given_name",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.name.surname",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.name.middle_name",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.name.suffix",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.name.full_name",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.customer.merchant_customer_id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.vault",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/vault_instruction_base",
+      "text": "vault_instruction_base"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.vault.store_in_vault",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/store_in_vault_instruction",
+      "text": "store_in_vault_instruction"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.verification",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/card_verification",
+      "text": "card_verification"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.attributes.verification.method",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.vault_id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/vault_id",
+      "text": "vault_id"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.single_use_token",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/single_use_token",
+      "text": "single_use_token"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.stored_credential",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/card_stored_credential",
+      "text": "card_stored_credential"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.stored_credential.payment_initiator",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/payment_initiator",
+      "text": "payment_initiator"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.stored_credential.payment_type",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/stored_payment_source_payment_type",
+      "text": "stored_payment_source_payment_type"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.stored_credential.usage",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/stored_payment_source_usage_type",
+      "text": "stored_payment_source_usage_type"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/orders-authorize#request-body.applicationjson.payment_source.card.stored_credential.previous_network_transaction_reference",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/orders/v2/definitions/network_transaction_reference",
+      "text": "network_transaction_reference"
+    }
+  ],
+  "retrievedAt": "2026-11-09T21:04:09.017Z",
+  "text": "Authorize payment for order\nCopy for LLM\n\nView as Markdown\n\nAPI Spec (JSON)\n\nAPI Spec (YAML)\n\nCompact mode\nHides field descriptions and other prose for a more compact, scannable view of the API reference.\nSDK\nAPI v2\nSDK\nAuthorizes payment for an order. To successfully authorize payment for an order, the buyer must first approve the order or a valid payment_source must be provided in the request. A buyer can approve the order upon being redirected to the rel:approve URL that was returned in the HATEOAS links in the create order response.\nNote: For error handling and troubleshooting, see Orders v2 errors.\nServer URL\nhttps://api-m.sandbox.paypal.com/\nPOST\n/\nv2\n/\ncheckout\n/\norders\n/\n{id}\n/\nauthorize\nSend\nAuthorization\nPath\nHeader\nBody\nAuthorization\nAuthorization\nBearer <token>\nFLOW\nClient Credentials\nTOKEN URL\nhttps://api-m.sandbox.paypal.com/v1/oauth2/token\nIN\nheader\n\nSCOPES\n\nManage payments and checkout workflow.\nhttps://uri.paypal.com/services/payments/payment\nAllows client-side integration on Create, Get, Patch, Authorize & Capture Order endpoints.\nhttps://uri.paypal.com/services/payments/orders/deprecating-jssdk-migration-for-limited-merchants\nPath Parameters\nid\nstring\nRequired\nThe ID of the order for which to authorize.\nMatch\n^[A-Z0-9]+$\nLength\n1 <= length <= 36\nHeader Parameters\nPayPal-Request-Id\nstring\nOptional\nThe server stores keys for 6 hours. The API callers can request the times to up to 72 hours by speaking to their Account Manager. It is mandatory for all single-step create order calls (E.g. Create Order Request with payment source information like Card, PayPal.vault_id, PayPal.billing_agreement_id, etc).\nMatch\n^[\\S\\s]*$\nLength\n1 <= length <= 108\nPrefer\nstring\nOptional\nThe preferred server response upon successful completion of the request. Value is:\nreturn=minimal. The server returns a minimal response to optimize communication between the API caller and the server. A minimal response includes the id, status and HATEOAS links.\nreturn=representation. The server returns a complete resource representation, including the current state of the resource.\nDefault\n\"return=minimal\"\nMatch\n^[a-zA-Z=,-]*$\nLength\n1 <= length <= 25\nPayPal-Client-Metadata-Id\nstring<guid>\nOptional\nA GUID value originating from Fraudnet and Dyson passed from external API clients via HTTP header. The value is used by Risk decisions to correlate calls which, in turn, might result in lower decline rates..\nMatch\n^[A-Za-z0-9-{}(),]*$\nLength\n1 <= length <= 68\nAuthorization\nstring<standard_header_schema>\nOptional\nHolds authorization information for external API calls.\nMatch\n^.*$\nLength\n1 <= length <= 16000\nPayPal-Auth-Assertion\nstring\nOptional\nHeader for an API client-provided JWT assertion that identifies the merchant. Establishing the consent to act-on-behalf of a merchant is a prerequisite for using this header.\nMatch\n^.*$\nLength\n1 <= length <= 10000\nRequest Body\n\napplication/json\n\nTypeScript Definitions\n\nUse the request body type in TypeScript.\n\nCopy\npayment_source\nobject<payment_source>\nOptional\nThe payment source definition.\nResponse Body\n200\n\napplication/json\n\n201\n\napplication/json\n\n403\n\napplication/json\n\n422\n\napplication/json\n\nRequest samples\n\nSample 1 - 201 - Authorize Order - PayPal Wallet as Payment Source\nSample 2 - 200 - Authorize Order - Idempotent Response with PayPal Wallet\nSample 3 - 201 - Authorize Order - PayPal Wallet Vault ID\nSample 4 - 403 - Authorize Order - 403 Forbidden Error - Charity is not confirmed\nSample 5 - 422 - Authorize Order - 422 - Payer Action Required\nSample 6 - 422 - Authorize Order - 422 Unprocessable Entity Error - Payment Denied\n.NET\nJava\nNode\nPython\nPHP\nRuby\nCopy\nusing Microsoft.Extensions.Logging;\nusing PaypalServerSdk.Standard;\nusing PaypalServerSdk.Standard.Authentication;\nusing PaypalServerSdk.Standard.Controllers;\nusing PaypalServerSdk.Standard.Exceptions;\nusing PaypalServerSdk.Standard.Http.Response;\nusing PaypalServerSdk.Standard.Models;\nusing System;\nusing System.Collections.Generic;\nusing System.Threading.Tasks;\n\nnamespace TestConsoleProject\n{\n    public class Program\n    {\n        public static async Task Main()\n        {\n            // Scenario: 201 - Authorize Order - PayPal Wallet as Payment Source\n\n            PaypalServerSdkClient client = new PaypalServerSdkClient.Builder()\n                .ClientCredentialsAuth(\n                    new ClientCredentialsAuthModel.Builder(\n                        \"OAuthClientId\",\n                        \"OAuthClientSecret\"\n                    )\n                    .Build())\n                .Environment(PaypalServerSdk.Standard.Environment.Sandbox)\n                .LoggingConfig(config => config\n                    .LogLevel(LogLevel.Information)\n                    .RequestConfig(reqConfig => reqConfig.Body(true))\n                    .ResponseConfig(respConfig => respConfig.Headers(true))\n                )\n                .Build();\n\n            OrdersController ordersController = client.OrdersController;\n\n            AuthorizeOrderInput authorizeOrderInput = new AuthorizeOrderInput\n            {\n                Id = \"5O190127TN364715T\",\n                Prefer = \"return=minimal\",\n            };\n\n            try\n            {\n                ApiResponse<OrderAuthorizeResponse> result = await ordersController.AuthorizeOrderAsync(authorizeOrderInput);\n            }\n            catch (ApiException e)\n            {\n                Console.WriteLine(e.Message);\n            }\n        }\n    }\n}\n\nResponse samples\n\n200\n201\n403\n422\napplication/json\nSample 1 - Authorize Order - Idempotent Response with PayPal Wallet\n{\n  \"id\": \"5O190127TN364715T\",\n  \"payment_source\": {\n    \"paypal\": {\n      \"name\": {\n        \"given_name\": \"John\",\n        \"surname\": \"Doe\"\n      },\n      \"account_status\": \"VERIFIED\",\n      \"email_address\": \"customer@example.com\",\n      \"account_id\": \"QYR5Z8XDVJNXQ\"\n    }\n  },\n  \"purchase_units\": [\n    {\n      \"reference_id\": \"d9f80740-38f0-11e8-b467-0ed5f89f718b\",\n      \"shipping\": {\n        \"address\": {\n          \"address_line_1\": \"2211 N First Street\",\n          \"address_line_2\": \"Building 17\",\n          \"admin_area_2\": \"San Jose\",\n          \"admin_area_1\": \"CA\",\n          \"postal_code\": \"95131\",\n          \"country_code\": \"US\"\n        }\n      },\n      \"payments\": {\n        \"authorizations\": [\n          {\n            \"id\": \"0AW2184448108334S\",\n            \"status\": \"CREATED\",\n            \"amount\": {\n              \"currency_code\": \"USD\",\n              \"value\": \"100.00\"\n            },\n            \"seller_protection\": {\n              \"status\": \"ELIGIBLE\",\n              \"dispute_categories\": [\n                \"ITEM_NOT_RECEIVED\",\n                \"UNAUTHORIZED_TRANSACTION\"\n              ]\n            },\n            \"expiration_time\": \"2018-05-01T21:20:49Z\",\n            \"create_time\": \"2018-04-01T21:20:49Z\",\n            \"update_time\": \"2018-04-01T21:20:49Z\",\n            \"links\": [\n              {\n                \"href\": \"https://api-m.paypal.com/v2/payments/authorizations/0AW2184448108334S\",\n                \"rel\": \"self\",\n                \"method\": \"GET\"\n              },\n              {\n                \"href\": \"https://api-m.paypal.com/v2/payments/authorizations/0AW2184448108334S/capture\",\n                \"rel\": \"capture\",\n                \"method\": \"POST\"\n              },\n              {\n                \"href\": \"https://api-m.paypal.com/v2/payments/authorizations/0AW2184448108334S/void\",\n                \"rel\": \"void\",\n                \"method\": \"POST\"\n              },\n              {\n                \"href\": \"https://api-m.paypal.com/v2/payments/authorizations/0AW2184448108334S/reauthorize\",\n                \"rel\": \"reauthorize\",\n                \"method\": \"POST\"\n              }\n            ]\n          }\n        ]\n      }\n    }\n  ],\n  \"payer\": {\n    \"name\": {\n      \"given_name\": \"John\",\n      \"surname\": \"Doe\"\n    },\n    \"email_address\": \"customer@example.com\",\n    \"payer_id\": \"QYR5Z8XDVJNXQ\"\n  },\n  \"links\": [\n    {\n      \"href\": \"https://api-m.paypal.com/v2/checkout/orders/5O190127TN364715T\",\n      \"rel\": \"self\",\n      \"method\": \"GET\"\n    }\n  ]\n}",
+  "title": "Authorize payment for order - Orders v2 SDK | PayPal Developer",
+  "url": "https://developer.paypal.com/sdk/orders/v2/orders-authorize"
+}

@@ -1,0 +1,379 @@
+{
+  "links": [
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login?ref=top-nav-login"
+    },
+    {
+      "text": "Sign up",
+      "url": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button"
+    },
+    {
+      "text": "Join a hackathon",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal#join-a-hackathon"
+    },
+    {
+      "text": "Devpost\n      Participate in our public hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Devpost for Teams\n      Access your company's private hackathons",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Login",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal#host-a-hackathon"
+    },
+    {
+      "text": "Devpost\n      Grow your developer ecosystem and promote your platform",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Host a public hackathon",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Devpost for Teams\n      Drive innovation, collaboration, and retention within your organization",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Host an internal hackathon",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "AI hackathons",
+      "url": "https://info.devpost.com/product/ai-hackathons"
+    },
+    {
+      "text": "Customer hackathons",
+      "url": "https://info.devpost.com/product/customer-hackathons"
+    },
+    {
+      "text": "Employee hackathons",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Public hackathons",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Resources",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal#resources"
+    },
+    {
+      "text": "Blog\n      \n      \n        Insights into hackathon planning and participation",
+      "url": "https://info.devpost.com/blog"
+    },
+    {
+      "text": "Customer stories\n      \n      \n        Inspiration from peers and other industry leaders",
+      "url": "https://info.devpost.com/customer-stories"
+    },
+    {
+      "text": "Planning guides\n      \n      \n        Best practices for planning online and in-person hackathons",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Webinars & events\n      \n      \n        Upcoming events and on-demand recordings",
+      "url": "https://info.devpost.com/webinar-events"
+    },
+    {
+      "text": "Help desk\n      \n      \n        Common questions and support documentation",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Join a hackathon",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal#"
+    },
+    {
+      "text": "Back",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal#"
+    },
+    {
+      "text": "Devpost\n      Participate in our public hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Devpost for Teams\n      Access your company's private hackathons",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Login",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal#"
+    },
+    {
+      "text": "Back",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal#"
+    },
+    {
+      "text": "Devpost\n      Grow your developer ecosystem and promote your platform",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Host a public hackathon",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Devpost for Teams\n      Drive innovation, collaboration, and retention within your organization",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Host an internal hackathon",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "AI hackathons",
+      "url": "https://info.devpost.com/product/ai-hackathons"
+    },
+    {
+      "text": "Customer hackathons",
+      "url": "https://info.devpost.com/product/customer-hackathons"
+    },
+    {
+      "text": "Employee hackathons",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Public hackathons",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Resources",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal#"
+    },
+    {
+      "text": "Back",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal#"
+    },
+    {
+      "text": "Blog\n      \n      \n        Insights into hackathon planning and participation",
+      "url": "https://info.devpost.com/blog"
+    },
+    {
+      "text": "Customer stories\n      \n      \n        Inspiration from peers and other industry leaders",
+      "url": "https://info.devpost.com/customer-stories"
+    },
+    {
+      "text": "Planning guides\n      \n      \n        Best practices for planning online and in-person hackathons",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Webinars & events\n      \n      \n        Upcoming events and on-demand recordings",
+      "url": "https://info.devpost.com/webinar-events"
+    },
+    {
+      "text": "Help desk\n      \n      \n        Common questions and support documentation",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login?ref=top-nav-login"
+    },
+    {
+      "text": "Sign up",
+      "url": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button"
+    },
+    {
+      "text": "Like",
+      "url": "https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bsoftware_id%5D=1515393&flow%5Bname%5D=like_software&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Fkitty-autonomous-rotating-savings-on-paypal"
+    },
+    {
+      "text": "Comment",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal#updates"
+    },
+    {
+      "text": "STORY",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal"
+    },
+    {
+      "text": "UPDATES",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal#updates"
+    },
+    {
+      "text": "SUBMISSION HISTORY",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal#submission-history"
+    },
+    {
+      "text": "NASASA, 2024",
+      "url": "https://nasasa.co.za/"
+    },
+    {
+      "text": "FinMark Trust, 2024",
+      "url": "https://finmark.org.za/"
+    },
+    {
+      "text": "World Bank, 2023",
+      "url": "https://www.worldbank.org/en/publication/globalfindex"
+    },
+    {
+      "text": "KNOMAD / World Bank, 2024",
+      "url": "https://www.knomad.org/"
+    },
+    {
+      "text": "express.js",
+      "url": "https://devpost.com/software/built-with/express-js"
+    },
+    {
+      "text": "natural-language-processing",
+      "url": "https://devpost.com/software/built-with/natural-language-processing"
+    },
+    {
+      "text": "node.js",
+      "url": "https://devpost.com/software/built-with/node-js"
+    },
+    {
+      "text": "paypal",
+      "url": "https://devpost.com/software/built-with/paypal"
+    },
+    {
+      "text": "react",
+      "url": "https://devpost.com/software/built-with/react"
+    },
+    {
+      "text": "typescript",
+      "url": "https://devpost.com/software/built-with/typescript"
+    },
+    {
+      "text": "kitty-2tnq.onrender.com",
+      "url": "https://kitty-2tnq.onrender.com/"
+    },
+    {
+      "text": "GitHub Repo",
+      "url": "https://github.com/tatendaephraim/kitty.git"
+    },
+    {
+      "text": "PayPal AI Hackathon",
+      "url": "https://paypalaihackathon.devpost.com/"
+    },
+    {
+      "text": "Ephraim Chipwanya",
+      "url": "https://devpost.com/tatendaephraim"
+    },
+    {
+      "text": "Like",
+      "url": "https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bsoftware_id%5D=1515393&flow%5Bname%5D=like_software&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Fkitty-autonomous-rotating-savings-on-paypal"
+    },
+    {
+      "text": "Ephraim Chipwanya",
+      "url": "https://devpost.com/tatendaephraim"
+    },
+    {
+      "text": "10 days ago",
+      "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal/updates/865881"
+    },
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login"
+    },
+    {
+      "text": "sign up for Devpost",
+      "url": "https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bcommentable_id%5D=865881&flow%5Bname%5D=comment_on_software_update&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Fkitty-autonomous-rotating-savings-on-paypal"
+    },
+    {
+      "text": "About",
+      "url": "https://info.devpost.com/about"
+    },
+    {
+      "text": "Careers",
+      "url": "https://info.devpost.com/careers"
+    },
+    {
+      "text": "Contact",
+      "url": "https://info.devpost.com/contact"
+    },
+    {
+      "text": "Help",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Browse hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Explore projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://info.devpost.com/"
+    },
+    {
+      "text": "Hackathon guides",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Your projects",
+      "url": "https://devpost.com/portfolio/redirect?page=projects"
+    },
+    {
+      "text": "Your hackathons",
+      "url": "https://devpost.com/portfolio/redirect?page=hackathons"
+    },
+    {
+      "text": "Settings",
+      "url": "https://devpost.com/settings"
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/devpost"
+    },
+    {
+      "text": "Discord",
+      "url": "https://discord.com/invite/HP4BhW3hnp"
+    },
+    {
+      "text": "Facebook",
+      "url": "https://www.facebook.com/devposthacks"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/devpost/"
+    },
+    {
+      "text": "Community guidelines",
+      "url": "https://info.devpost.com/legal/community-guidelines"
+    },
+    {
+      "text": "Security",
+      "url": "https://info.devpost.com/legal/security"
+    },
+    {
+      "text": "CA notice",
+      "url": "https://info.devpost.com/legal/california-consumer-privacy-act"
+    },
+    {
+      "text": "Privacy policy",
+      "url": "https://info.devpost.com/legal/privacy-policy"
+    },
+    {
+      "text": "Terms of service",
+      "url": "https://info.devpost.com/legal/terms-of-service"
+    }
+  ],
+  "text": "Join a hackathon \nHost a hackathon \nResources \nLog in\nSign up\nKitty: Autonomous Rotating Savings on PayPal\n\nAutonomous AI agents manage diaspora savings circles (mukando/stokvel) with non-custodial PayPal peer-to-peer payouts, agent slot swap negotiations, and deterministic policy guardrails.\n\n Like  Comment\nSTORY\nUPDATES\nSUBMISSION HISTORY\n\nCircle Dashboard\n\nPaypal Checkout Settlement\n\nPolicy Engine Guardian\n\nAutonomous Agent to Agent Slot Swap Negotiation\n\nCircle Dashboard\n\nPaypal Checkout Settlement\n\nPolicy Engine Guardian\n\nAutonomous Agent to Agent Slot Swap Negotiation\n\nCircle Dashboard\n\n1\n2\n3\n4\n5\nKitty: Autonomous Rotating Savings on PayPal\n\nTatenda Ephraim Chipwanya PayPal AI Hackathon 2026 Submission tatendachipwanya@outlook.com October 2026\n\nInspiration\n\nRotating Savings and Credit Associations (ROSCAs) are among humanity's oldest and most resilient financial mutual-aid structures. Known as mukando in Zimbabwe, stokvel in South Africa, susu in Ghana and the Caribbean, tanda in Mexico and Latin America, chama in Kenya, chit funds in India, and paluwagan in the Philippines, these circles enable community members to pool fixed periodic savings into a lump-sum pot awarded to one member each round:\n\n\n\nRound Pot \n(\n𝑃\n)\n=\n∑\n𝑖\n=\n1\n𝑁\n𝑐\n𝑖\n=\n𝑁\n×\n𝑐\n\nwhere \n𝑁\n represents the number of vetted circle members and \n𝑐\n is the uniform periodic contribution (e.g., \n6\n×\n$\n100\n=\n$\n600\n).\n\nVerifiable Global Statistics and Scope\n11.5+ Million Participants in South Africa Alone: According to official survey data from the National Stokvel Association of South Africa (NASASA) and the FinMark Trust FinScope Survey, over 11.5 million South African adults belong to more than 820,000 active stokvels, mobilizing an estimated R50 billion (\n≈\n$\n2.8\n billion USD) annually outside traditional commercial banking rails (NASASA, 2024; FinMark Trust, 2024).\nOver 1 Billion People Globally: The World Bank Global Findex Database documents that informal community savings groups and ROSCAs serve over 1 billion individuals across emerging economies and migrant corridors, providing critical liquidity without predatory micro-lending interest rates (World Bank, 2023).\nThe Global Diaspora Lifeline: According to the United Nations International Organization for Migration (IOM) World Migration Report, there are over 281 million international migrants worldwide, generating more than $656 billion USD in cross-border flows (KNOMAD / World Bank, 2024). Diaspora populations resident in the United Kingdom, United States, Canada, and Australia frequently rely on informal circles to overcome credit invisibility.\nThe Real-World Problem\n\nIn practice, informal circles depend on one exhausted, stressed human treasurer chasing late payments on WhatsApp, calculating arrears in spreadsheets, and mediating bitter conflicts when unexpected emergencies strike (e.g., boiler failures, urgent rent hikes, or family medical emergencies). If the organizer vanishes or mishandles funds, members lose their life savings. Kitty was built to replace the vulnerable human treasurer with accountable, multilingual autonomous AI agents and non-custodial PayPal peer-to-peer settlement, providing diaspora communities with institution-grade financial protection while preserving their cherished cultural traditions.\n\nWhat it does\n\nKitty is an autonomous multi-party agentic financial platform that governs rotating savings circles through four key capabilities:\n\nMultilingual Constitution Drafter (English & Chishona): An organizer describes circle intentions in plain language (e.g., \"Tiri vanhu 6 vanoshanda, tinobvisa $100 pamwedzi pa PayPal...\"). Powered by Gemini 3.8 Flash, Kitty synthesizes the prompt into legal bylaws and deterministic machine-readable parameters (\nrulesJson\n) that every member cryptographically signs before joining.\nAutonomous Member Negotiation Agents (The Showpiece): When a member faces an urgent financial crisis (e.g., Chipo's unexpected home repair), she cannot wait for her assigned Slot 3. Her personal AI agent negotiates a slot swap with counterparty agents (like Nyasha's Slot 5 agent) strictly within signed mandate parameters:\n\nMandate: \n𝜙\nswap\n≤\nmaxSwapFee\nand\nIncentive\noffered\n≥\nminIncentive\n\nThe personal agents converse, counter-offer, and converge on an equitable $12 swap incentive fee. A two-tap human consent modal ensures no money moves without explicit human approval.\n\nNon-Custodial Direct Peer-to-Peer PayPal Settlement: Kitty holds $0 in custody (\n𝐵\nplatform\n≡\n0\n). When a round executes, contributions route directly from member to recipient via PayPal Orders v2 by binding purchase_units[0].payee.email_address to the round recipient's PayPal wallet. Kitty never touches the pot, eliminating money-transmitter risk.\nThe Guardian (Deterministic Policy Engine): Every proposed transaction must pass 7 ordered TypeScript guardrail checks before contacting PayPal: Known Payee, Constitution Match, Mandate Limits, Round State, Duplicate Cooldown, Velocity Cap, and Dual Consent.\nCulturally Supportive Treasurer & Natural Language Ledger Auditor: The Treasurer Agent issues compassionate, non-shaming payment reminders in the member's native language with a 5-day grace period. Members can query the circle's history in plain English (\"Where did my $100 go?\"), and the agent responds with audit citations grounded strictly in the immutable ledger.\nHow we built it\n\nKitty is built with a production-grade full-stack architecture pairing PayPal's modern APIs with Google's Gemini SDK:\n\nPayments & Vaulting: Node.js and Express server implementing PayPal Orders v2 (/v2/checkout/orders with intent: CAPTURE), PayPal Vault for recurring tokenization, and PayPal Invoicing v2 for late payment recovery.\nAutonomous Commerce & Agent Toolkit: Integrated @paypal/agent-toolkit (v1.11.0) exposing 47 official PayPal tools for agent-driven balance inquiries, invoice generation, and transaction tracking.\nArtificial Intelligence Layer: @google/genai (Gemini 3.8 Flash) for low-latency multi-agent negotiations, bilingual contract drafting, and context-grounded natural language audit reporting.\nFrontend Application: React 19 SPA with Tailwind CSS, role-switching controls between 6 sandbox members, interactive ledger auditing, and live PayPal checkout modals.\nReal-Time Webhook Pipeline: Dedicated /api/paypal/webhook endpoint with simulated event dispatching (simulate-event) for PAYMENT.CAPTURE.COMPLETED, CHECKOUT.ORDER.APPROVED, and INVOICING.INVOICE.PAID.\nIdempotency Guard: Automatically injects deterministic PayPal-Request-Id headers generated from member and round hashes, mathematically guaranteeing that network retries never double-charge.\nChallenges we ran into\nPayPal Orders v2 Payer Approval in Headless Flows: When creating orders server-side, attempting immediate capture returns HTTP 422 UNPROCESSABLE_ENTITY with ORDER_NOT_APPROVED because a payer must approve the transaction. We resolved this by engineering a dual-path checkout architecture:\nAn interactive PayPal Sandbox Approval Popup (checkoutnow?token=...) allowing users to log into their test account and approve.\nAn Instant 1-Click Sandbox Invoicing & Payment Settlement fallback that writes official completed transaction records (INV2-... and EXTR-...) to the PayPal Sandbox Dashboard and triggers live webhooks.\nPreventing Agent Hallucinations in Financial Operations: LLMs can easily hallucinate arbitrary transfer amounts or fall prey to prompt injection attacks. We solved this by enforcing a strict Architectural Separation of Concerns: the AI negotiates terms, but the plain TypeScript Policy Engine evaluates the proposed transaction against hardcoded constitution constraints. If an agent attempts to move funds to an unrecognized wallet, the transaction is immediately blocked.\nNon-Custodial Multi-Party Payouts: Traditional platforms pool money in a central business account before distributing it. To keep Kitty non-custodial, we utilized the payee object within Orders v2 purchase units, routing funds directly from contributor to recipient.\nAccomplishments that we're proud of\nTrue Agent-to-Agent Commercial Negotiation: Personal AI agents successfully negotiate slot trades within pre-signed mandate boundaries, counter-offering and closing deals without human micromanagement.\nZero-Custody Architecture: Kitty handles multi-party rotating capital without ever holding user funds (\n𝐵\nplatform\n≡\n0\n), preserving community trust and eliminating regulatory burdens.\nBilingual Inclusivity: Flawless generation of legal constitutions and supportive treasurer communications in both English and Chishona, honoring the heritage of African diaspora savings clubs.\nLive Sandbox Verification: Real transaction records and registered webhook events (3D545458LT116283N) verifiable inside the PayPal Developer Sandbox Dashboard.\nWhat we learned\nAgentic Commerce Requires Deterministic Guardrails: Generative models are exceptional negotiators and synthesizers, but final financial execution must always belong to deterministic code and human consent. The paradigm \"AI Proposes, Guardian Validates, Human Consents, PayPal Settles\" is the ideal architecture for high-stakes agentic finance.\nInformal Finance is Ripe for Modern FinTech: Over a billion people use informal savings circles because of cultural intimacy, not lack of technology. By respecting the cultural roots of mukando and stokvel while layering on PayPal's global trust infrastructure, we can bring modern financial security to millions of underserved diaspora savers.\nWhat's next for Kitty: Autonomous Rotating Savings on PayPal\nCross-Border FX Settlement: Integrating PayPal's multi-currency conversion APIs so diaspora members earning in USD can settle directly into home-country mobile wallets or local currency accounts.\nDecentralized Member Credit Scoring: Transforming immutable on-time ROSCA payment histories into verifiable PayPal credit reputations, helping unbanked diaspora immigrants qualify for traditional credit.\nEmergency Micro-Insurance Pools: Enabling personal agents to automatically contribute $2-$5 per cycle into a shared emergency buffer pool, governed by multi-agent voting when catastrophic events occur.\nBuilt With\nagentic-commerce\nautonomous-agents\nexpress.js\nfinancial-inclusion\nfintech\ngemini-flash\nidempotency\nmukando\nmulti-agent-systems\nnatural-language-processing\nnode.js\nnon-custodial\npaypal\npaypal-agent-toolkit\npaypal-orders-v2\npaypal-vault\npaypal-webhooks\npolicy-engine\nreact\nrender\nrosca\nstokvel\nsusu\ntailwindcss\ntypescript\nTry it out\n kitty-2tnq.onrender.com\n GitHub Repo\nSUBMITTED TO\n\nPayPal AI Hackathon\n\nCREATED BY\nEphraim Chipwanya \n\n\n Like \nUpdates\n\nEphraim Chipwanya started this project — 10 days ago\n\nLeave feedback in the comments!\n\nLog in or sign up for Devpost to join the conversation.\n\nSubmission history\nDevpost\nAbout\nCareers\nContact\nHelp\nHackathons\nBrowse hackathons\nExplore projects\nHost a hackathon\nHackathon guides\nPortfolio\nYour projects\nYour hackathons\nSettings\nConnect\n Twitter\n Discord\n Facebook\n LinkedIn\n© 2026 Devpost, Inc. All rights reserved.\nCommunity guidelines\nSecurity\nCA notice\nPrivacy policy\nTerms of service",
+  "title": "Kitty: Autonomous Rotating Savings on PayPal | Devpost",
+  "url": "https://devpost.com/software/kitty-autonomous-rotating-savings-on-paypal"
+}

@@ -1,0 +1,979 @@
+{
+  "schemaVersion": "proofroute-design-oracle/v2",
+  "evidenceMode": "STATIC_ARITHMETIC_ONLY",
+  "method": "Direct integer recurrence over all six stop orders; no solver, model, application or provider executed. Example generatedAt is fixed fixture metadata, not road-data provenance.",
+  "maxTotalDistanceMeters": 4500,
+  "requiredScenarioIds": [
+    "NOMINAL",
+    "CITY_SLOWDOWN",
+    "CORRIDOR_DELAY"
+  ],
+  "original": {
+    "stopIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "totalDistanceMeters": 4000,
+    "distanceMarginMeters": 500,
+    "loadGrams": 8000,
+    "capacityMarginGrams": 2000,
+    "pass": false,
+    "scenarios": [
+      {
+        "scenarioId": "NOMINAL",
+        "timePass": true,
+        "returnSeconds": 36300,
+        "shiftMarginSeconds": 3300,
+        "minimumWindowMarginSeconds": 600,
+        "schedule": [
+          {
+            "stopId": "A",
+            "arrivalSeconds": 33000,
+            "serviceStartSeconds": 33000,
+            "departureSeconds": 33300,
+            "windowMarginSeconds": 1800
+          },
+          {
+            "stopId": "B",
+            "arrivalSeconds": 33900,
+            "serviceStartSeconds": 33900,
+            "departureSeconds": 34200,
+            "windowMarginSeconds": 600
+          },
+          {
+            "stopId": "C",
+            "arrivalSeconds": 34800,
+            "serviceStartSeconds": 34800,
+            "departureSeconds": 35100,
+            "windowMarginSeconds": 3600
+          }
+        ],
+        "violations": []
+      },
+      {
+        "scenarioId": "CITY_SLOWDOWN",
+        "timePass": true,
+        "returnSeconds": 37260,
+        "shiftMarginSeconds": 2340,
+        "minimumWindowMarginSeconds": 120,
+        "schedule": [
+          {
+            "stopId": "A",
+            "arrivalSeconds": 33240,
+            "serviceStartSeconds": 33240,
+            "departureSeconds": 33540,
+            "windowMarginSeconds": 1560
+          },
+          {
+            "stopId": "B",
+            "arrivalSeconds": 34380,
+            "serviceStartSeconds": 34380,
+            "departureSeconds": 34680,
+            "windowMarginSeconds": 120
+          },
+          {
+            "stopId": "C",
+            "arrivalSeconds": 35520,
+            "serviceStartSeconds": 35520,
+            "departureSeconds": 35820,
+            "windowMarginSeconds": 2880
+          }
+        ],
+        "violations": []
+      },
+      {
+        "scenarioId": "CORRIDOR_DELAY",
+        "timePass": false,
+        "returnSeconds": 37800,
+        "shiftMarginSeconds": 1800,
+        "minimumWindowMarginSeconds": -900,
+        "schedule": [
+          {
+            "stopId": "A",
+            "arrivalSeconds": 33000,
+            "serviceStartSeconds": 33000,
+            "departureSeconds": 33300,
+            "windowMarginSeconds": 1800
+          },
+          {
+            "stopId": "B",
+            "arrivalSeconds": 35400,
+            "serviceStartSeconds": 35400,
+            "departureSeconds": 35700,
+            "windowMarginSeconds": -900
+          },
+          {
+            "stopId": "C",
+            "arrivalSeconds": 36300,
+            "serviceStartSeconds": 36300,
+            "departureSeconds": 36600,
+            "windowMarginSeconds": 2100
+          }
+        ],
+        "violations": [
+          {
+            "code": "WINDOW",
+            "stopId": "B",
+            "excessUnits": 900
+          }
+        ]
+      }
+    ]
+  },
+  "rescue": {
+    "stopIds": [
+      "B",
+      "A",
+      "C"
+    ],
+    "totalDistanceMeters": 4400,
+    "distanceMarginMeters": 100,
+    "loadGrams": 8000,
+    "capacityMarginGrams": 2000,
+    "pass": true,
+    "scenarios": [
+      {
+        "scenarioId": "NOMINAL",
+        "timePass": true,
+        "returnSeconds": 36540,
+        "shiftMarginSeconds": 3060,
+        "minimumWindowMarginSeconds": 780,
+        "schedule": [
+          {
+            "stopId": "B",
+            "arrivalSeconds": 33240,
+            "serviceStartSeconds": 33240,
+            "departureSeconds": 33540,
+            "windowMarginSeconds": 1260
+          },
+          {
+            "stopId": "A",
+            "arrivalSeconds": 34020,
+            "serviceStartSeconds": 34020,
+            "departureSeconds": 34320,
+            "windowMarginSeconds": 780
+          },
+          {
+            "stopId": "C",
+            "arrivalSeconds": 35040,
+            "serviceStartSeconds": 35040,
+            "departureSeconds": 35340,
+            "windowMarginSeconds": 3360
+          }
+        ],
+        "violations": []
+      },
+      {
+        "scenarioId": "CITY_SLOWDOWN",
+        "timePass": true,
+        "returnSeconds": 37500,
+        "shiftMarginSeconds": 2100,
+        "minimumWindowMarginSeconds": 300,
+        "schedule": [
+          {
+            "stopId": "B",
+            "arrivalSeconds": 33480,
+            "serviceStartSeconds": 33480,
+            "departureSeconds": 33780,
+            "windowMarginSeconds": 1020
+          },
+          {
+            "stopId": "A",
+            "arrivalSeconds": 34500,
+            "serviceStartSeconds": 34500,
+            "departureSeconds": 34800,
+            "windowMarginSeconds": 300
+          },
+          {
+            "stopId": "C",
+            "arrivalSeconds": 35760,
+            "serviceStartSeconds": 35760,
+            "departureSeconds": 36060,
+            "windowMarginSeconds": 2640
+          }
+        ],
+        "violations": []
+      },
+      {
+        "scenarioId": "CORRIDOR_DELAY",
+        "timePass": true,
+        "returnSeconds": 36540,
+        "shiftMarginSeconds": 3060,
+        "minimumWindowMarginSeconds": 780,
+        "schedule": [
+          {
+            "stopId": "B",
+            "arrivalSeconds": 33240,
+            "serviceStartSeconds": 33240,
+            "departureSeconds": 33540,
+            "windowMarginSeconds": 1260
+          },
+          {
+            "stopId": "A",
+            "arrivalSeconds": 34020,
+            "serviceStartSeconds": 34020,
+            "departureSeconds": 34320,
+            "windowMarginSeconds": 780
+          },
+          {
+            "stopId": "C",
+            "arrivalSeconds": 35040,
+            "serviceStartSeconds": 35040,
+            "departureSeconds": 35340,
+            "windowMarginSeconds": 3360
+          }
+        ],
+        "violations": []
+      }
+    ]
+  },
+  "passingOrders": [
+    [
+      "B",
+      "A",
+      "C"
+    ]
+  ],
+  "comparison": {
+    "distanceDeltaMeters": 400,
+    "changedVehicleCount": 1,
+    "changedStopPositionCount": 2,
+    "minimumRescueWindowMarginSeconds": 300,
+    "worstRescueReturnSeconds": 37500,
+    "minimumRescueShiftMarginSeconds": 2100,
+    "uniformLegDelayToleranceSeconds": 150
+  },
+  "allOrders": [
+    {
+      "stopIds": [
+        "A",
+        "B",
+        "C"
+      ],
+      "totalDistanceMeters": 4000,
+      "distanceMarginMeters": 500,
+      "loadGrams": 8000,
+      "capacityMarginGrams": 2000,
+      "pass": false,
+      "scenarios": [
+        {
+          "scenarioId": "NOMINAL",
+          "timePass": true,
+          "returnSeconds": 36300,
+          "shiftMarginSeconds": 3300,
+          "minimumWindowMarginSeconds": 600,
+          "schedule": [
+            {
+              "stopId": "A",
+              "arrivalSeconds": 33000,
+              "serviceStartSeconds": 33000,
+              "departureSeconds": 33300,
+              "windowMarginSeconds": 1800
+            },
+            {
+              "stopId": "B",
+              "arrivalSeconds": 33900,
+              "serviceStartSeconds": 33900,
+              "departureSeconds": 34200,
+              "windowMarginSeconds": 600
+            },
+            {
+              "stopId": "C",
+              "arrivalSeconds": 34800,
+              "serviceStartSeconds": 34800,
+              "departureSeconds": 35100,
+              "windowMarginSeconds": 3600
+            }
+          ],
+          "violations": []
+        },
+        {
+          "scenarioId": "CITY_SLOWDOWN",
+          "timePass": true,
+          "returnSeconds": 37260,
+          "shiftMarginSeconds": 2340,
+          "minimumWindowMarginSeconds": 120,
+          "schedule": [
+            {
+              "stopId": "A",
+              "arrivalSeconds": 33240,
+              "serviceStartSeconds": 33240,
+              "departureSeconds": 33540,
+              "windowMarginSeconds": 1560
+            },
+            {
+              "stopId": "B",
+              "arrivalSeconds": 34380,
+              "serviceStartSeconds": 34380,
+              "departureSeconds": 34680,
+              "windowMarginSeconds": 120
+            },
+            {
+              "stopId": "C",
+              "arrivalSeconds": 35520,
+              "serviceStartSeconds": 35520,
+              "departureSeconds": 35820,
+              "windowMarginSeconds": 2880
+            }
+          ],
+          "violations": []
+        },
+        {
+          "scenarioId": "CORRIDOR_DELAY",
+          "timePass": false,
+          "returnSeconds": 37800,
+          "shiftMarginSeconds": 1800,
+          "minimumWindowMarginSeconds": -900,
+          "schedule": [
+            {
+              "stopId": "A",
+              "arrivalSeconds": 33000,
+              "serviceStartSeconds": 33000,
+              "departureSeconds": 33300,
+              "windowMarginSeconds": 1800
+            },
+            {
+              "stopId": "B",
+              "arrivalSeconds": 35400,
+              "serviceStartSeconds": 35400,
+              "departureSeconds": 35700,
+              "windowMarginSeconds": -900
+            },
+            {
+              "stopId": "C",
+              "arrivalSeconds": 36300,
+              "serviceStartSeconds": 36300,
+              "departureSeconds": 36600,
+              "windowMarginSeconds": 2100
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "B",
+              "excessUnits": 900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stopIds": [
+        "A",
+        "C",
+        "B"
+      ],
+      "totalDistanceMeters": 5400,
+      "distanceMarginMeters": -900,
+      "loadGrams": 8000,
+      "capacityMarginGrams": 2000,
+      "pass": false,
+      "scenarios": [
+        {
+          "scenarioId": "NOMINAL",
+          "timePass": false,
+          "returnSeconds": 36060,
+          "shiftMarginSeconds": 3540,
+          "minimumWindowMarginSeconds": -420,
+          "schedule": [
+            {
+              "stopId": "A",
+              "arrivalSeconds": 33000,
+              "serviceStartSeconds": 33000,
+              "departureSeconds": 33300,
+              "windowMarginSeconds": 1800
+            },
+            {
+              "stopId": "C",
+              "arrivalSeconds": 34020,
+              "serviceStartSeconds": 34020,
+              "departureSeconds": 34320,
+              "windowMarginSeconds": 4380
+            },
+            {
+              "stopId": "B",
+              "arrivalSeconds": 34920,
+              "serviceStartSeconds": 34920,
+              "departureSeconds": 35220,
+              "windowMarginSeconds": -420
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "B",
+              "excessUnits": 420
+            }
+          ]
+        },
+        {
+          "scenarioId": "CITY_SLOWDOWN",
+          "timePass": false,
+          "returnSeconds": 37020,
+          "shiftMarginSeconds": 2580,
+          "minimumWindowMarginSeconds": -1140,
+          "schedule": [
+            {
+              "stopId": "A",
+              "arrivalSeconds": 33240,
+              "serviceStartSeconds": 33240,
+              "departureSeconds": 33540,
+              "windowMarginSeconds": 1560
+            },
+            {
+              "stopId": "C",
+              "arrivalSeconds": 34500,
+              "serviceStartSeconds": 34500,
+              "departureSeconds": 34800,
+              "windowMarginSeconds": 3900
+            },
+            {
+              "stopId": "B",
+              "arrivalSeconds": 35640,
+              "serviceStartSeconds": 35640,
+              "departureSeconds": 35940,
+              "windowMarginSeconds": -1140
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "B",
+              "excessUnits": 1140
+            }
+          ]
+        },
+        {
+          "scenarioId": "CORRIDOR_DELAY",
+          "timePass": false,
+          "returnSeconds": 36060,
+          "shiftMarginSeconds": 3540,
+          "minimumWindowMarginSeconds": -420,
+          "schedule": [
+            {
+              "stopId": "A",
+              "arrivalSeconds": 33000,
+              "serviceStartSeconds": 33000,
+              "departureSeconds": 33300,
+              "windowMarginSeconds": 1800
+            },
+            {
+              "stopId": "C",
+              "arrivalSeconds": 34020,
+              "serviceStartSeconds": 34020,
+              "departureSeconds": 34320,
+              "windowMarginSeconds": 4380
+            },
+            {
+              "stopId": "B",
+              "arrivalSeconds": 34920,
+              "serviceStartSeconds": 34920,
+              "departureSeconds": 35220,
+              "windowMarginSeconds": -420
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "B",
+              "excessUnits": 420
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stopIds": [
+        "B",
+        "A",
+        "C"
+      ],
+      "totalDistanceMeters": 4400,
+      "distanceMarginMeters": 100,
+      "loadGrams": 8000,
+      "capacityMarginGrams": 2000,
+      "pass": true,
+      "scenarios": [
+        {
+          "scenarioId": "NOMINAL",
+          "timePass": true,
+          "returnSeconds": 36540,
+          "shiftMarginSeconds": 3060,
+          "minimumWindowMarginSeconds": 780,
+          "schedule": [
+            {
+              "stopId": "B",
+              "arrivalSeconds": 33240,
+              "serviceStartSeconds": 33240,
+              "departureSeconds": 33540,
+              "windowMarginSeconds": 1260
+            },
+            {
+              "stopId": "A",
+              "arrivalSeconds": 34020,
+              "serviceStartSeconds": 34020,
+              "departureSeconds": 34320,
+              "windowMarginSeconds": 780
+            },
+            {
+              "stopId": "C",
+              "arrivalSeconds": 35040,
+              "serviceStartSeconds": 35040,
+              "departureSeconds": 35340,
+              "windowMarginSeconds": 3360
+            }
+          ],
+          "violations": []
+        },
+        {
+          "scenarioId": "CITY_SLOWDOWN",
+          "timePass": true,
+          "returnSeconds": 37500,
+          "shiftMarginSeconds": 2100,
+          "minimumWindowMarginSeconds": 300,
+          "schedule": [
+            {
+              "stopId": "B",
+              "arrivalSeconds": 33480,
+              "serviceStartSeconds": 33480,
+              "departureSeconds": 33780,
+              "windowMarginSeconds": 1020
+            },
+            {
+              "stopId": "A",
+              "arrivalSeconds": 34500,
+              "serviceStartSeconds": 34500,
+              "departureSeconds": 34800,
+              "windowMarginSeconds": 300
+            },
+            {
+              "stopId": "C",
+              "arrivalSeconds": 35760,
+              "serviceStartSeconds": 35760,
+              "departureSeconds": 36060,
+              "windowMarginSeconds": 2640
+            }
+          ],
+          "violations": []
+        },
+        {
+          "scenarioId": "CORRIDOR_DELAY",
+          "timePass": true,
+          "returnSeconds": 36540,
+          "shiftMarginSeconds": 3060,
+          "minimumWindowMarginSeconds": 780,
+          "schedule": [
+            {
+              "stopId": "B",
+              "arrivalSeconds": 33240,
+              "serviceStartSeconds": 33240,
+              "departureSeconds": 33540,
+              "windowMarginSeconds": 1260
+            },
+            {
+              "stopId": "A",
+              "arrivalSeconds": 34020,
+              "serviceStartSeconds": 34020,
+              "departureSeconds": 34320,
+              "windowMarginSeconds": 780
+            },
+            {
+              "stopId": "C",
+              "arrivalSeconds": 35040,
+              "serviceStartSeconds": 35040,
+              "departureSeconds": 35340,
+              "windowMarginSeconds": 3360
+            }
+          ],
+          "violations": []
+        }
+      ]
+    },
+    {
+      "stopIds": [
+        "B",
+        "C",
+        "A"
+      ],
+      "totalDistanceMeters": 5200,
+      "distanceMarginMeters": -700,
+      "loadGrams": 8000,
+      "capacityMarginGrams": 2000,
+      "pass": false,
+      "scenarios": [
+        {
+          "scenarioId": "NOMINAL",
+          "timePass": false,
+          "returnSeconds": 36060,
+          "shiftMarginSeconds": 3540,
+          "minimumWindowMarginSeconds": -360,
+          "schedule": [
+            {
+              "stopId": "B",
+              "arrivalSeconds": 33240,
+              "serviceStartSeconds": 33240,
+              "departureSeconds": 33540,
+              "windowMarginSeconds": 1260
+            },
+            {
+              "stopId": "C",
+              "arrivalSeconds": 34140,
+              "serviceStartSeconds": 34140,
+              "departureSeconds": 34440,
+              "windowMarginSeconds": 4260
+            },
+            {
+              "stopId": "A",
+              "arrivalSeconds": 35160,
+              "serviceStartSeconds": 35160,
+              "departureSeconds": 35460,
+              "windowMarginSeconds": -360
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "A",
+              "excessUnits": 360
+            }
+          ]
+        },
+        {
+          "scenarioId": "CITY_SLOWDOWN",
+          "timePass": false,
+          "returnSeconds": 37020,
+          "shiftMarginSeconds": 2580,
+          "minimumWindowMarginSeconds": -1080,
+          "schedule": [
+            {
+              "stopId": "B",
+              "arrivalSeconds": 33480,
+              "serviceStartSeconds": 33480,
+              "departureSeconds": 33780,
+              "windowMarginSeconds": 1020
+            },
+            {
+              "stopId": "C",
+              "arrivalSeconds": 34620,
+              "serviceStartSeconds": 34620,
+              "departureSeconds": 34920,
+              "windowMarginSeconds": 3780
+            },
+            {
+              "stopId": "A",
+              "arrivalSeconds": 35880,
+              "serviceStartSeconds": 35880,
+              "departureSeconds": 36180,
+              "windowMarginSeconds": -1080
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "A",
+              "excessUnits": 1080
+            }
+          ]
+        },
+        {
+          "scenarioId": "CORRIDOR_DELAY",
+          "timePass": false,
+          "returnSeconds": 36060,
+          "shiftMarginSeconds": 3540,
+          "minimumWindowMarginSeconds": -360,
+          "schedule": [
+            {
+              "stopId": "B",
+              "arrivalSeconds": 33240,
+              "serviceStartSeconds": 33240,
+              "departureSeconds": 33540,
+              "windowMarginSeconds": 1260
+            },
+            {
+              "stopId": "C",
+              "arrivalSeconds": 34140,
+              "serviceStartSeconds": 34140,
+              "departureSeconds": 34440,
+              "windowMarginSeconds": 4260
+            },
+            {
+              "stopId": "A",
+              "arrivalSeconds": 35160,
+              "serviceStartSeconds": 35160,
+              "departureSeconds": 35460,
+              "windowMarginSeconds": -360
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "A",
+              "excessUnits": 360
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stopIds": [
+        "C",
+        "A",
+        "B"
+      ],
+      "totalDistanceMeters": 7200,
+      "distanceMarginMeters": -2700,
+      "loadGrams": 8000,
+      "capacityMarginGrams": 2000,
+      "pass": false,
+      "scenarios": [
+        {
+          "scenarioId": "NOMINAL",
+          "timePass": false,
+          "returnSeconds": 36660,
+          "shiftMarginSeconds": 2940,
+          "minimumWindowMarginSeconds": -1020,
+          "schedule": [
+            {
+              "stopId": "C",
+              "arrivalSeconds": 33600,
+              "serviceStartSeconds": 33600,
+              "departureSeconds": 33900,
+              "windowMarginSeconds": 4800
+            },
+            {
+              "stopId": "A",
+              "arrivalSeconds": 34620,
+              "serviceStartSeconds": 34620,
+              "departureSeconds": 34920,
+              "windowMarginSeconds": 180
+            },
+            {
+              "stopId": "B",
+              "arrivalSeconds": 35520,
+              "serviceStartSeconds": 35520,
+              "departureSeconds": 35820,
+              "windowMarginSeconds": -1020
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "B",
+              "excessUnits": 1020
+            }
+          ]
+        },
+        {
+          "scenarioId": "CITY_SLOWDOWN",
+          "timePass": false,
+          "returnSeconds": 37620,
+          "shiftMarginSeconds": 1980,
+          "minimumWindowMarginSeconds": -1740,
+          "schedule": [
+            {
+              "stopId": "C",
+              "arrivalSeconds": 33840,
+              "serviceStartSeconds": 33840,
+              "departureSeconds": 34140,
+              "windowMarginSeconds": 4560
+            },
+            {
+              "stopId": "A",
+              "arrivalSeconds": 35100,
+              "serviceStartSeconds": 35100,
+              "departureSeconds": 35400,
+              "windowMarginSeconds": -300
+            },
+            {
+              "stopId": "B",
+              "arrivalSeconds": 36240,
+              "serviceStartSeconds": 36240,
+              "departureSeconds": 36540,
+              "windowMarginSeconds": -1740
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "A",
+              "excessUnits": 300
+            },
+            {
+              "code": "WINDOW",
+              "stopId": "B",
+              "excessUnits": 1740
+            }
+          ]
+        },
+        {
+          "scenarioId": "CORRIDOR_DELAY",
+          "timePass": false,
+          "returnSeconds": 38160,
+          "shiftMarginSeconds": 1440,
+          "minimumWindowMarginSeconds": -2520,
+          "schedule": [
+            {
+              "stopId": "C",
+              "arrivalSeconds": 33600,
+              "serviceStartSeconds": 33600,
+              "departureSeconds": 33900,
+              "windowMarginSeconds": 4800
+            },
+            {
+              "stopId": "A",
+              "arrivalSeconds": 34620,
+              "serviceStartSeconds": 34620,
+              "departureSeconds": 34920,
+              "windowMarginSeconds": 180
+            },
+            {
+              "stopId": "B",
+              "arrivalSeconds": 37020,
+              "serviceStartSeconds": 37020,
+              "departureSeconds": 37320,
+              "windowMarginSeconds": -2520
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "B",
+              "excessUnits": 2520
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stopIds": [
+        "C",
+        "B",
+        "A"
+      ],
+      "totalDistanceMeters": 7000,
+      "distanceMarginMeters": -2500,
+      "loadGrams": 8000,
+      "capacityMarginGrams": 2000,
+      "pass": false,
+      "scenarios": [
+        {
+          "scenarioId": "NOMINAL",
+          "timePass": false,
+          "returnSeconds": 36180,
+          "shiftMarginSeconds": 3420,
+          "minimumWindowMarginSeconds": -480,
+          "schedule": [
+            {
+              "stopId": "C",
+              "arrivalSeconds": 33600,
+              "serviceStartSeconds": 33600,
+              "departureSeconds": 33900,
+              "windowMarginSeconds": 4800
+            },
+            {
+              "stopId": "B",
+              "arrivalSeconds": 34500,
+              "serviceStartSeconds": 34500,
+              "departureSeconds": 34800,
+              "windowMarginSeconds": 0
+            },
+            {
+              "stopId": "A",
+              "arrivalSeconds": 35280,
+              "serviceStartSeconds": 35280,
+              "departureSeconds": 35580,
+              "windowMarginSeconds": -480
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "A",
+              "excessUnits": 480
+            }
+          ]
+        },
+        {
+          "scenarioId": "CITY_SLOWDOWN",
+          "timePass": false,
+          "returnSeconds": 37140,
+          "shiftMarginSeconds": 2460,
+          "minimumWindowMarginSeconds": -1200,
+          "schedule": [
+            {
+              "stopId": "C",
+              "arrivalSeconds": 33840,
+              "serviceStartSeconds": 33840,
+              "departureSeconds": 34140,
+              "windowMarginSeconds": 4560
+            },
+            {
+              "stopId": "B",
+              "arrivalSeconds": 34980,
+              "serviceStartSeconds": 34980,
+              "departureSeconds": 35280,
+              "windowMarginSeconds": -480
+            },
+            {
+              "stopId": "A",
+              "arrivalSeconds": 36000,
+              "serviceStartSeconds": 36000,
+              "departureSeconds": 36300,
+              "windowMarginSeconds": -1200
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "B",
+              "excessUnits": 480
+            },
+            {
+              "code": "WINDOW",
+              "stopId": "A",
+              "excessUnits": 1200
+            }
+          ]
+        },
+        {
+          "scenarioId": "CORRIDOR_DELAY",
+          "timePass": false,
+          "returnSeconds": 36180,
+          "shiftMarginSeconds": 3420,
+          "minimumWindowMarginSeconds": -480,
+          "schedule": [
+            {
+              "stopId": "C",
+              "arrivalSeconds": 33600,
+              "serviceStartSeconds": 33600,
+              "departureSeconds": 33900,
+              "windowMarginSeconds": 4800
+            },
+            {
+              "stopId": "B",
+              "arrivalSeconds": 34500,
+              "serviceStartSeconds": 34500,
+              "departureSeconds": 34800,
+              "windowMarginSeconds": 0
+            },
+            {
+              "stopId": "A",
+              "arrivalSeconds": 35280,
+              "serviceStartSeconds": 35280,
+              "departureSeconds": 35580,
+              "windowMarginSeconds": -480
+            }
+          ],
+          "violations": [
+            {
+              "code": "WINDOW",
+              "stopId": "A",
+              "excessUnits": 480
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

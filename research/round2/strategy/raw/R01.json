@@ -1,0 +1,288 @@
+{
+  "fullTextLength": 28522,
+  "links": [
+    {
+      "text": "Featured\n\nPayPal + AG Grid workshop, part 1: sandbox setup and PayPal data retrieval",
+      "url": "https://developer.paypal.com/community/blog/PayPal_AG_Grid_Part_1"
+    },
+    {
+      "text": "Featured\n\nHow PayPal is governing agent skills at enterprise scale",
+      "url": "https://developer.paypal.com/community/blog/agent_skills_at_enterprise_scale"
+    },
+    {
+      "text": "Featured\n\nWhat We Learned Building PayPal's MCP Gateway",
+      "url": "https://developer.paypal.com/community/blog/PayPal_MCP_Gateway"
+    },
+    {
+      "text": "Featured",
+      "url": "https://developer.paypal.com/community/blog/tag/Featured"
+    },
+    {
+      "text": "PayPal + AG Grid workshop, part 1: sandbox setup and PayPal data retrieval\n\nAs part of PayPal's AI Hackathon [https://paypalaihackathon.devpost.com/] which is t",
+      "url": "https://developer.paypal.com/community/blog/PayPal_AG_Grid_Part_1"
+    },
+    {
+      "text": "Featured",
+      "url": "https://developer.paypal.com/community/blog/tag/Featured"
+    },
+    {
+      "text": "How PayPal is governing agent skills at enterprise scale\n\nHow PayPal is governing agent skills at enterprise scale HOW PAYPAL IS GOVERNING AGENT SKILLS AT ENTER",
+      "url": "https://developer.paypal.com/community/blog/agent_skills_at_enterprise_scale"
+    },
+    {
+      "text": "Featured",
+      "url": "https://developer.paypal.com/community/blog/tag/Featured"
+    },
+    {
+      "text": "What We Learned Building PayPal's MCP Gateway\n\nAuthored by: Faiz Mohammed, Amy Wang & Suraj Kumar One enterprise connection for people, agents, and approved par",
+      "url": "https://developer.paypal.com/community/blog/PayPal_MCP_Gateway"
+    },
+    {
+      "text": "Featured",
+      "url": "https://developer.paypal.com/community/blog/tag/Featured"
+    },
+    {
+      "text": "Hackathon: Build What's Next with PayPal and AI\n\nBuild What's Next with PayPal and AI The PayPal AI Hackathon is now live through Nov 12, 2026. Your chance to w",
+      "url": "https://developer.paypal.com/community/blog/PayPal_AI_Hackathon"
+    },
+    {
+      "text": "Featured",
+      "url": "https://developer.paypal.com/community/blog/tag/Featured"
+    },
+    {
+      "text": "WebMCP is here: PayPal is helping every merchant become agent-ready\n\nWebMCP is here: PayPal is helping every merchant become agent-ready Make your PayPal-powere",
+      "url": "https://developer.paypal.com/community/blog/WebMCP_PayPal_Agent_Ready"
+    },
+    {
+      "text": "Technology",
+      "url": "https://developer.paypal.com/community/blog/tag/Technology"
+    },
+    {
+      "text": "Customer Graph: PayPal's knowledge graph for unified customer entity\n\n> This work was developed with support from Deepika Khera and Karteek Chada INTRODUCTION A",
+      "url": "https://developer.paypal.com/community/blog/knowledge_graph_for_unified_customer_entity"
+    },
+    {
+      "text": "Featured",
+      "url": "https://developer.paypal.com/community/blog/tag/Featured"
+    },
+    {
+      "text": "One Codebase, Two Clouds\n\nHow we run the same financial onboarding service across two independent production deployments — one on AWS, one on GCP — without fork",
+      "url": "https://developer.paypal.com/community/blog/one_codebase_two_clouds"
+    },
+    {
+      "text": "Featured",
+      "url": "https://developer.paypal.com/community/blog/tag/Featured"
+    },
+    {
+      "text": "Stop Giving AI More Documentation. Give It an API.\n\nI asked an AI coding assistant to generate a React component from a design mockup using our internal design ",
+      "url": "https://developer.paypal.com/community/blog/stopgivingaimoredocumentation"
+    },
+    {
+      "text": "Technology",
+      "url": "https://developer.paypal.com/community/blog/tag/Technology"
+    },
+    {
+      "text": "Step-by-Step Guide: Setting Up PayPal Accounting Sync\n\nPAYPAL ACCOUNTING SYNC BOOKKEEPING SHOULDN'T EAT INTO YOUR DAY. CONNECT PAYPAL TO QUICKBOOKS ONCE, AND WE",
+      "url": "https://developer.paypal.com/community/blog/setting-up-paypal-accounting-platform-sync"
+    },
+    {
+      "text": "Featured",
+      "url": "https://developer.paypal.com/community/blog/tag/Featured"
+    },
+    {
+      "text": "The Speed Trap : Why Fast Hashing Fails at Password Security\n\nAt PayPal, we process over 6 billion transactions annually across hundreds of millions of active a",
+      "url": "https://developer.paypal.com/community/blog/The%20Speed%20Trap%20:%20Why%20Fast%20Hashing%20Fails%20at%20Password%20Security"
+    },
+    {
+      "text": "Featured",
+      "url": "https://developer.paypal.com/community/blog/tag/Featured"
+    },
+    {
+      "text": "A New Context Plugin for AI-Assisted Coding with PayPal SDKs\n\nThe hardest part of AI-assisted API integration isn't writing the code anymore: the newest models ",
+      "url": "https://developer.paypal.com/community/blog/A%20New%20Context%20Plugin%20for%20AI-Assisted%20Coding%20with%20PayPal%20SDKs"
+    },
+    {
+      "text": "Featured",
+      "url": "https://developer.paypal.com/community/blog/tag/Featured"
+    },
+    {
+      "text": "Help reduce global customer loss by using a dual payment provider strategy with PayPal and Stripe\n\nA percentage of your customers want to use PayPal, so why are",
+      "url": "https://developer.paypal.com/community/blog/Help%20reduce%20global%20customer%20loss%20by%20using%20a%20dual%20payment%20provider%20strategy%20with%20PayPal%20and%20Stripe"
+    },
+    {
+      "text": "Featured",
+      "url": "https://developer.paypal.com/community/blog/tag/Featured"
+    },
+    {
+      "text": "Building Flexible Onboarding Workflows: How We Eliminated Code Deploys for Flow Changes\n\nTHE CORE PROBLEM: WORKFLOWS CHANGE; CODE SHOULDN'T Building a customer ",
+      "url": "https://developer.paypal.com/community/blog/Building-Flexible-Onboarding-Workflows"
+    },
+    {
+      "text": "Technology",
+      "url": "https://developer.paypal.com/community/blog/tag/Technology"
+    },
+    {
+      "text": "Learning",
+      "url": "https://developer.paypal.com/community/blog/tag/Learning"
+    },
+    {
+      "text": "Why Immutable PDFs Matter: Lessons from a Financial Agreement Generation Approach\n\nContext At first glance, generating agreements dynamically sounds straightfor",
+      "url": "https://developer.paypal.com/community/blog/Why-Immutable-PDFs-Matter"
+    },
+    {
+      "text": "Announcements",
+      "url": "https://developer.paypal.com/community/blog/tag/Announcements"
+    },
+    {
+      "text": "Learning",
+      "url": "https://developer.paypal.com/community/blog/tag/Learning"
+    },
+    {
+      "text": "Technology",
+      "url": "https://developer.paypal.com/community/blog/tag/Technology"
+    },
+    {
+      "text": "Currency Exchange APIs, New Notebooks & More: Now Live in Postman\n\nPayPal’s Public Postman Workspace just leveled up. With the latest release, developers now ha",
+      "url": "https://developer.paypal.com/community/blog/currency-exchange-apis-new-notebooks-more-now-live-in-postman"
+    },
+    {
+      "text": "Agents",
+      "url": "https://developer.paypal.com/community/blog/tag/Agents"
+    },
+    {
+      "text": "AI",
+      "url": "https://developer.paypal.com/community/blog/tag/AI"
+    },
+    {
+      "text": "Accelerating Agentic Payments with PayPal\n\nThe future of commerce is autonomous, and PayPal is at the forefront in enabling AI-driven payment experiences. Agent",
+      "url": "https://developer.paypal.com/community/blog/accelerating-agentic-payments"
+    },
+    {
+      "text": "Learning",
+      "url": "https://developer.paypal.com/community/blog/tag/Learning"
+    },
+    {
+      "text": "Technology",
+      "url": "https://developer.paypal.com/community/blog/tag/Technology"
+    },
+    {
+      "text": "Featured",
+      "url": "https://developer.paypal.com/community/blog/tag/Featured"
+    },
+    {
+      "text": "Reducing PayPal API Call Volume with Smart Querying and Batch Operations\n\nPayPal's batch operations allow developers and businesses to process thousands of tran",
+      "url": "https://developer.paypal.com/community/blog/reducing-paypal-api-call-volume-with-smart-querying-and-batch-operations"
+    },
+    {
+      "text": "Agents",
+      "url": "https://developer.paypal.com/community/blog/tag/Agents"
+    },
+    {
+      "text": "AI",
+      "url": "https://developer.paypal.com/community/blog/tag/AI"
+    },
+    {
+      "text": "Building Trust, Transparency, and Security in Payments\n\nArtificial intelligence is revolutionizing ecommerce payments by enhancing security, accelerating transa",
+      "url": "https://developer.paypal.com/community/blog/trust-transperancy-security-payments"
+    },
+    {
+      "text": "Agents",
+      "url": "https://developer.paypal.com/community/blog/tag/Agents"
+    },
+    {
+      "text": "AI",
+      "url": "https://developer.paypal.com/community/blog/tag/AI"
+    },
+    {
+      "text": "Building Responsible AI for Payments and Lending\n\nArtificial Intelligence (AI) has emerged as a transformative force across industries, reshaping how products a",
+      "url": "https://developer.paypal.com/community/blog/building-responsible-ai"
+    },
+    {
+      "text": "AI",
+      "url": "https://developer.paypal.com/community/blog/tag/AI"
+    },
+    {
+      "text": "Announcements",
+      "url": "https://developer.paypal.com/community/blog/tag/Announcements"
+    },
+    {
+      "text": "Learning",
+      "url": "https://developer.paypal.com/community/blog/tag/Learning"
+    },
+    {
+      "text": "Technology",
+      "url": "https://developer.paypal.com/community/blog/tag/Technology"
+    },
+    {
+      "text": "News",
+      "url": "https://developer.paypal.com/community/blog/tag/News"
+    },
+    {
+      "text": "Upgrade Smarter with PayPal’s AI Assistant for JavaScript SDK v6\n\nPayPal’s release of JavaScript SDK v6 [https://developer.paypal.com/community/blog/paypal-js-s",
+      "url": "https://developer.paypal.com/community/blog/upgrade-smarter-with-ai-assistant"
+    },
+    {
+      "text": "Agents",
+      "url": "https://developer.paypal.com/community/blog/tag/Agents"
+    },
+    {
+      "text": "AI",
+      "url": "https://developer.paypal.com/community/blog/tag/AI"
+    },
+    {
+      "text": "How PayPal’s MCP Enhances Agent Efficiency and Context\n\nIt’s the era of AI, and customer expectations are higher than ever. People want answers quickly, seamles",
+      "url": "https://developer.paypal.com/community/blog/paypal-mcp-agent-security"
+    },
+    {
+      "text": "Announcements",
+      "url": "https://developer.paypal.com/community/blog/tag/Announcements"
+    },
+    {
+      "text": "Learning",
+      "url": "https://developer.paypal.com/community/blog/tag/Learning"
+    },
+    {
+      "text": "Technology",
+      "url": "https://developer.paypal.com/community/blog/tag/Technology"
+    },
+    {
+      "text": "Javascript",
+      "url": "https://developer.paypal.com/community/blog/tag/javascript"
+    },
+    {
+      "text": "AI",
+      "url": "https://developer.paypal.com/community/blog/tag/AI"
+    },
+    {
+      "text": "Introducing PayPal JS SDK v6: A Leaner and More Flexible Way to Build New Payment Experiences\n\nWe’re excited to share that PayPal JS SDK v6 is here. This releas",
+      "url": "https://developer.paypal.com/community/blog/paypal-js-sdk-v6"
+    },
+    {
+      "text": "Technology",
+      "url": "https://developer.paypal.com/community/blog/tag/Technology"
+    },
+    {
+      "text": "Learning",
+      "url": "https://developer.paypal.com/community/blog/tag/Learning"
+    },
+    {
+      "text": "PYUSD on Stellar\n\nWHAT IS PYUSD? PYUSD is a stablecoin. Stablecoins are cryptocurrency designed to maintain a stable value while providing the benefits of block",
+      "url": "https://developer.paypal.com/community/blog/pyusd-on-stellar"
+    },
+    {
+      "text": "Agents",
+      "url": "https://developer.paypal.com/community/blog/tag/Agents"
+    },
+    {
+      "text": "AI",
+      "url": "https://developer.paypal.com/community/blog/tag/AI"
+    },
+    {
+      "text": "Announcements",
+      "url": "https://developer.paypal.com/community/blog/tag/Announcements"
+    }
+  ],
+  "text": "PayPal Developer Blog\n\nThe latest PayPal Developer releases, resources, and community updates\n\nFeatured\n\nPayPal + AG Grid workshop, part 1: sandbox setup and PayPal data retrieval\n\nEddie Jaoude\n\nNov 05, 2026\n\n14 MIN READ\n\nFeatured\n\nHow PayPal is governing agent skills at enterprise scale\n\nPayPal Cosmos.AI Agentic Platform Team\n\nOct 09, 2026\n\n8 MIN READ\n\nFeatured\n\nWhat We Learned Building PayPal's MCP Gateway\n\nPayPal Cosmos.AI Agentic Platform Team\n\nOct 08, 2026\n\n9 MIN READ\n\nAll\nNews\nLearning\nTechnology\n\nFeatured\n\nPayPal + AG Grid workshop, part 1: sandbox setup and PayPal data retrieval\n\nAs part of PayPal's AI Hackathon [https://paypalaihackathon.devpost.com/] which is taking place until November 12 2026, I had the opportunity to…\n\nEddie Jaoude\n\n5 days ago\n\n14 min read\n\nFeatured\n\nHow PayPal is governing agent skills at enterprise scale\n\nHow PayPal is governing agent skills at enterprise scale HOW PAYPAL IS GOVERNING AGENT SKILLS AT ENTERPRISE SCALE Teams keep the repositories…\n\nPayPal Cosmos.AI Agentic Platform Team\n\n2 months ago\n\n8 min read\n\nFeatured\n\nWhat We Learned Building PayPal's MCP Gateway\n\nAuthored by: Faiz Mohammed, Amy Wang & Suraj Kumar One enterprise connection for people, agents, and approved partners, with identity and polic…\n\nPayPal Cosmos.AI Agentic Platform Team\n\n2 months ago\n\n9 min read\n\nFeatured\n\nHackathon: Build What's Next with PayPal and AI\n\nBuild What's Next with PayPal and AI The PayPal AI Hackathon is now live through Nov 12, 2026. Your chance to win a share of $60,000+ in prizes…\n\nPayPal Tech Blog Team\n\n2 months ago\n\n3 min read\n\nFeatured\n\nWebMCP is here: PayPal is helping every merchant become agent-ready\n\nWebMCP is here: PayPal is helping every merchant become agent-ready Make your PayPal-powered storefront easier for AI assisants to discover, na…\n\nPayPal Tech Blog Team\n\n2 months ago\n\n5 min read\n\nTechnology\n\nCustomer Graph: PayPal's knowledge graph for unified customer entity\n\n> This work was developed with support from Deepika Khera and Karteek Chada INTRODUCTION As PayPal shifts toward automated decision-making, i…\n\nSimmi Mourya\n\n4 months ago\n\n14 min read\n\nFeatured\n\nOne Codebase, Two Clouds\n\nHow we run the same financial onboarding service across two independent production deployments — one on AWS, one on GCP — without forking the co…\n\nMounika Gampa\n\n4 months ago\n\n11 min read\n\nFeatured\n\nStop Giving AI More Documentation. Give It an API.\n\nI asked an AI coding assistant to generate a React component from a design mockup using our internal design library. It responded in seconds. Th…\n\nPadam Sandhu\n\n4 months ago\n\n12 min read\n\nTechnology\n\nStep-by-Step Guide: Setting Up PayPal Accounting Sync\n\nPAYPAL ACCOUNTING SYNC BOOKKEEPING SHOULDN'T EAT INTO YOUR DAY. CONNECT PAYPAL TO QUICKBOOKS ONCE, AND WE'LL HANDLE THE REST. PayPal Accoun…\n\nPayPal Tech Blog Team\n\n5 months ago\n\n9 min read\n\nFeatured\n\nThe Speed Trap : Why Fast Hashing Fails at Password Security\n\nAt PayPal, we process over 6 billion transactions annually across hundreds of millions of active accounts. Every one of those accounts is protec…\n\nMounika Gampa\n\n6 months ago\n\n18 min read\n\nFeatured\n\nA New Context Plugin for AI-Assisted Coding with PayPal SDKs\n\nThe hardest part of AI-assisted API integration isn't writing the code anymore: the newest models are highly capable. The problem is that their …\n\nPayPal Tech Blog Team\n\n6 months ago\n\n6 min read\n\nFeatured\n\nHelp reduce global customer loss by using a dual payment provider strategy with PayPal and Stripe\n\nA percentage of your customers want to use PayPal, so why are you leaving money on the table using just one payment provider? It is not uncommo…\n\nEddie Jaoude\n\n6 months ago\n\n8 min read\n\nFeatured\n\nBuilding Flexible Onboarding Workflows: How We Eliminated Code Deploys for Flow Changes\n\nTHE CORE PROBLEM: WORKFLOWS CHANGE; CODE SHOULDN'T Building a customer onboarding system for PayPal Balance accounts sounds straightforward unt…\n\nMounika Gampa\n\n6 months ago\n\n10 min read\n\nTechnology\n\nLearning\n\nWhy Immutable PDFs Matter: Lessons from a Financial Agreement Generation Approach\n\nContext At first glance, generating agreements dynamically sounds straightforward. In practice, it comes with a very strict constraint. Lega…\n\nMounika Gampa\n\n8 months ago\n\n10 min read\n\nAnnouncements\n\nLearning\n\nTechnology\n\nCurrency Exchange APIs, New Notebooks & More: Now Live in Postman\n\nPayPal’s Public Postman Workspace just leveled up. With the latest release, developers now have access to Currency Exchange APIs, richer flows, …\n\nFarshad Tavakoli\n\n11 months ago\n\n2 min read\n\nAgents\n\nAI\n\nAccelerating Agentic Payments with PayPal\n\nThe future of commerce is autonomous, and PayPal is at the forefront in enabling AI-driven payment experiences. Agentic commerce represents a pa…\n\nDibyani Das\n\n11 months ago\n\n6 min read\n\nLearning\n\nTechnology\n\nFeatured\n\nReducing PayPal API Call Volume with Smart Querying and Batch Operations\n\nPayPal's batch operations allow developers and businesses to process thousands of transactions simultaneously through a single API call, dramati…\n\nAnusha D Shanbhag\n\n12 months ago\n\n9 min read\n\nAgents\n\nAI\n\nBuilding Trust, Transparency, and Security in Payments\n\nArtificial intelligence is revolutionizing ecommerce payments by enhancing security, accelerating transaction speeds, and creating more intuitiv…\n\nDibyani Das\n\n13 months ago\n\n6 min read\n\nAgents\n\nAI\n\nBuilding Responsible AI for Payments and Lending\n\nArtificial Intelligence (AI) has emerged as a transformative force across industries, reshaping how products are designed, services are delivere…\n\nDibyani Das\n\n2 years ago\n\n6 min read\n\nAI\n\nAnnouncements\n\nLearning\n\nTechnology\n\nNews\n\nUpgrade Smarter with PayPal’s AI Assistant for JavaScript SDK v6\n\nPayPal’s release of JavaScript SDK v6 [https://developer.paypal.com/community/blog/paypal-js-sdk-v6/] marks a major step to deliver full feature…\n\nAnusha D Shanbhag\n\n2 years ago\n\n3 min read\n\nAgents\n\nAI\n\nHow PayPal’s MCP Enhances Agent Efficiency and Context\n\nIt’s the era of AI, and customer expectations are higher than ever. People want answers quickly, seamlessly, and safely, especially when it come…\n\nDibyani Das\n\n2 years ago\n\n4 min read\n\nAnnouncements\n\nLearning\n\nTechnology\n\nJavascript\n\nAI\n\nIntroducing PayPal JS SDK v6: A Leaner and More Flexible Way to Build New Payment Experiences\n\nWe’re excited to share that PayPal JS SDK v6 is here. This release marks a major step forward: it delivers full feature parity with the previous…\n\nAnusha D Shanbhag\n\n2 years ago\n\n3 min read\n\nTechnology\n\nLearning\n\nPYUSD on Stellar\n\nWHAT IS PYUSD? PYUSD is a stablecoin. Stablecoins are cryptocurrency designed to maintain a stable value while providing the benefits of blockc…\n\nMehak Jethmalani\n\n2 years ago\n\n8 min read\n\nAgents\n\nAI\n\nAnnouncements\n\nTechnology\n\nNews\n\nAgent Payments Protocol: Building Verifiable Trust for Agentic Commerce\n\nToday, PayPal announced its support for the Agent Payments Protocol (AP2) [https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol…\n\nPrakhar Mehrotra\n\n2 years ago\n\n9 min read\n\nTechnology\n\nAnnouncements\n\nPayPal Checkout Flows for Saved Payment Methods: Now Available in Postman\n\nWe’re excited to announce the latest addition to the PayPal Postman Collection: Checkout flows for Saved Payment Methods [https://www.postman.com/paypal/paypal-public-api-workspace/flows…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n2 min read\n\nAgents\n\nAI\n\nAgentic Commerce: The Future of Shopping, Powered by AI\n\nImagine a world where shopping is no longer a chore, but an intelligent experience handled for you by AI-powered agents.   Welcome to agentic c…\n\nDibyani Das\n\n2 years ago\n\n4 min read\n\nAgents\n\nAI\n\nDemocratizing Commerce with PayPal AI Toolkit\n\nArtificial intelligence is quickly moving from experimental labs into mainstream commerce, but a major question remains: who gets to build it? H…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n4 min read\n\nAgents\n\nAI\n\nThe Agent Economy: New Paths to Build and Earn\n\nWith the rise of agentic AI, we are entering an era where digital agents can think, reason, and act with autonomy. These agents are not just res…\n\nFarshad Tavakoli\n\n2 years ago\n\n4 min read\n\nAgents\n\nAI\n\nAI Is Rewriting Commerce\n\nThe way we experience commerce is evolving faster than ever. Artificial intelligence (AI) is no longer just a buzzword; it’s transforming how bu…\n\nFarshad Tavakoli\n\n2 years ago\n\n4 min read\n\nAgents\n\nAI\n\nPayPal's LLM Integration Quickstart Guide\n\nIn the evolving AI landscape, Large Language Models (LLMs) aren’t just for generating text, they’re increasingly empowered to take real actions.…\n\nDibyani Das\n\n2 years ago\n\n2 min read\n\nAgents\n\nAI\n\nRevolutionizing Shipping: PayPal Package Tracking Solution\n\nIn the world of e-commerce, disputes over shipping and delivery can be costly, frustrating, and time-consuming, for both merchants and customers…\n\nDibyani Das\n\n2 years ago\n\n3 min read\n\nAgents\n\nAI\n\nBest Practices for Prompt Engineering\n\nEffective prompt engineering is the foundation for leveraging AI agents in transformative ways. Whether you're creating invoices, managing trans…\n\nDibyani Das\n\n2 years ago\n\n2 min read\n\nAgents\n\nAI\n\nEnabling Agentic Payments with PayPal: Pioneering the Future of Commerce\n\nThe commerce landscape is undergoing a seismic shift. As artificial intelligence continues to reshape industries, agentic commerce, a paradigm w…\n\nDibyani Das\n\n2 years ago\n\n4 min read\n\nLearning\n\nTechnology\n\nPYUSD on Arbitrum\n\nWe are excited to announce that PayPal USD is now available on Arbitrum —, the fast, cost-efficient, developer-focused Layer 2 blockchain protoc…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n7 min read\n\nAgents\n\nAI\n\nScalable AI Tools: PayPal Meets Amazon Bedrock\n\nInnovation in AI development has taken another leap forward! PayPal is proud to announce a game-changing enhancement to its agent toolkit: integ…\n\nDibyani Das\n\n2 years ago\n\n4 min read\n\nAgents\n\nAI\n\nPayPal’s AI Summit 2025: Embracing “AI Native” and Redefining the Future\n\nIn an era where artificial intelligence (AI) is rapidly transforming industries, PayPal has decisively embraced the challenge of being at the fo…\n\nDibyani Das\n\n2 years ago\n\n6 min read\n\nAgents\n\nAI\n\nHarnessing Commerce Agents: Essential Best Practices\n\nE-commerce is rapidly evolving, and businesses need to find innovative ways to meet rising customer expectations. PayPal's Model Context Protoco…\n\nDibyani Das\n\n2 years ago\n\n3 min read\n\nTechnology\n\nAnnouncements\n\nNews\n\n2025 PayPal x Google Cloud Bounty Challenge Winners\n\nThe 2025 PayPal x Google Cloud bounty challenge brought together teams from around the world all working toward the same goal: building the next…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n4 min read\n\nFeatured\n\nAgents\n\nAI\n\nPayPal Integration in Claude: Revolutionizing Commerce\n\nToday,the world of AI-powered productivity reaches an exciting milestone for PayPal users. Anthropic [https://www.anthropic.com/], the creator …\n\nDibyani Das\n\n2 years ago\n\n3 min read\n\nAgents\n\nAI\n\nFeatured\n\nPowering the Next Generation of Commerce: PayPal MCP Server Now Available in the Windsurf MCP Store\n\nPayPal MCP server is now part of the Windsurf MCP Store. This integration represents a major step forward in enabling intelligent payment proces…\n\nDibyani Das\n\n2 years ago\n\n2 min read\n\nAgents\n\nAI\n\nThe Shift and Opportunity: Advent of Agentic Commerce\n\nCommerce as we know it is transforming. The intersection of artificial intelligence (AI) and everyday consumer experiences has initiated a new e…\n\nDibyani Das\n\n2 years ago\n\n4 min read\n\nAgents\n\nAI\n\nEmpowering Payments : At the Speed of AI\n\nAt the dawn of e-commerce and online payments, instilling trust in the digital economy was a formidable task. Fast-forward to today, as agentic …\n\nDibyani Das\n\n2 years ago\n\n3 min read\n\nAgents\n\nAI\n\nMeet the MCP Server Quickstart Guide: Your Fast Track to Building AI with PayPal\n\nThe world of payments is evolving fast, and developers are right at the heart of it. Whether you're building a new app, integrating intelligent …\n\nPayPal Tech Blog Team\n\n2 years ago\n\n2 min read\n\nAgents\n\nAI\n\nExpanding PayPal MCP Server Capabilities: Search, Add to Cart, and Checkout for Gift Cards\n\nWe’re excited to announce a new release that expands the capabilities of PayPal’s remote MCP server*. This update introduces a powerful set of t…\n\nFarshad Tavakoli\n\n2 years ago\n\n4 min read\n\nAgents\n\nAI\n\nThe Future of Commerce: PayPal’s Agentic AI\n\nCommerce is at a turning point. We are entering an era of agentic commerce and agentic AI, one where intelligent agents, rather than developers …\n\nDibyani Das\n\n2 years ago\n\n4 min read\n\nAI\n\nAgents\n\nDeveloper’s Quickstart Guide to PayPal’s Agent Toolkit\n\nPayPal has released the agent toolkit quickstart guide [https://www.paypal.ai/docs/tools/agent-toolkit-quickstart] to accelerate the development…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n3 min read\n\nAgents\n\nAI\n\nTechnology\n\nVibe Code Your Way to Commerce with PayPal and Replit\n\nPayPal, a global leader in payments technology, and Replit, a cutting-edge coding platform, together present an extraordinary opportunity for de…\n\nDibyani Das\n\n2 years ago\n\n4 min read\n\nAgents\n\nAI\n\nTransforming Omni-Commerce Platforms with the Power of PayPal AI\n\nAs the digital commerce landscape continues to evolve, developers are increasingly tasked with creating solutions that cater to diverse shopper …\n\nDibyani Das\n\n2 years ago\n\n8 min read\n\nAI\n\nAgents\n\nAnnouncements\n\nTechnology\n\nNews\n\nUpdate: Additional Tools in PayPal’s Agent Toolkit and MCP Server\n\nIf you're a developer working with merchants to power agentic customer service workflows and craft innovative checkout experiences, PayPal has j…\n\nFarshad Tavakoli\n\n2 years ago\n\n2 min read\n\nTechnology\n\nA Deep Dive into PYUSD and Solana Token Extensions\n\nOver $300 million of PayPal USD (PYUSD) [https://www.paypal.com/us/digital-wallet/manage-money/crypto/pyusd]—the open, fully backed, US dollar-d…\n\nMehak Jethmalani\n\n2 years ago\n\n15 min read\n\nAgents\n\nAI\n\nTechnology\n\nNews\n\nAnnouncements\n\nUnlocking Real-Time Performance on PayPal’s Remote MCP Server\n\nIn the rapidly evolving landscape of AI, the Model Context Protocol (MCP) has emerged as the standard protocol for communication between AI mode…\n\nRyan Kelly\n\n2 years ago\n\n2 min read\n\nAI\n\nAgents\n\nTechnology\n\nNews\n\nCheckout\n\nPayPal at POST/CON 2025: Powering the Future of Agentic Commerce\n\nLast week at POST/CON 2025 in Los Angeles, PayPal joined thousands of developers, API leaders, and innovators to explore the future of intellige…\n\nFarshad Tavakoli\n\n2 years ago\n\n3 min read\n\nAI\n\nTechnology\n\nFortify Your Business Using PayPal’s Risk and Fraud Management Solutions\n\nFraud is constantly evolving, becoming not only more sophisticated but also more accessible. For every dollar lost to fraud, businesses can incu…\n\nDibyani Das\n\n2 years ago\n\n6 min read\n\nAgents\n\nAI\n\nAnnouncements\n\nLearning\n\nTechnology\n\nNews\n\nExpanding PayPal’s Remote MCP Server Tools\n\nBuilding on the earlier releases of PayPal's MCP server [https://developer.paypal.com/community/blog/paypal-model-context-protocol/]* and agent …\n\nFarshad Tavakoli\n\n2 years ago\n\n3 min read\n\nNews\n\nAnnouncing the Winners of the PayPal Dev Days 2025 Hackathon\n\nThe energy. The ideas. The code. PayPal Dev Days 2025 brought together some of the most creative minds in tech for an unforgettable Hackathon—an…\n\nKaren Bajza-Terlouw\n\n2 years ago\n\n3 min read\n\nAI\n\nTechnology\n\nMeet Your New Coding Partner: Building with Agentic AI\n\nThe future of software development is being shaped by agentic AI, systems that can make decisions, act, and learn on the fly. Developers are now…\n\nDibyani Das\n\n2 years ago\n\n9 min read\n\nAgents\n\nAI\n\nAnnouncements\n\nTechnology\n\nNews\n\nFeatured\n\nPayPal Remote MCP Server Now Supports Anthropic API\n\nYesterday, we announced [https://developer.paypal.com/community/blog/openai-paypal-mcp/] PayPal’s remote Model Context Protocol (MCP)* server su…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n2 min read\n\nAI\n\nAgents\n\nAnnouncements\n\nTechnology\n\nNews\n\nFeatured\n\nPayPal Remote MCP Server Now Supports OpenAI\n\nAt PayPal, we continue to make it easier for developers to access our products and services. In early April, PayPal adopted MCP [https://developer.paypal.com/community/blog/paypal-model-context-protocol…\n\nFarshad Tavakoli\n\n2 years ago\n\n3 min read\n\nAgents\n\nAI\n\nTechnology\n\nHow PayPal’s Latest AI Innovations Are Transforming Payment Integrations\n\nAt PayPal, our mission has always been clear: to simplify and streamline integration across all our services. But in today’s fast-evolving digit…\n\nDibyani Das\n\n2 years ago\n\n7 min read\n\nTechnology\n\nLearning\n\nGet Instant Testnet PYUSD—Powered by Google Cloud\n\nTesting Web3 applications comes with many challenges. One of the biggest is how to obtain the test tokens you need to simulate real-world usage.…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n4 min read\n\nTechnology\n\nUsing PYUSD for Cross-Border Payments\n\nTraditional cross-border payments are often costly and time-consuming. Whether used for B2B payments, global remittances, or paying contractors,…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n10 min read\n\nAnnouncements\n\nTechnology\n\nNavigating the New App Store Policies\n\nNote: This guide is intended for mobile apps selling digital products and services. If your app sells physical goods and/or services performed o…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n4 min read\n\nAnnouncements\n\nNews\n\nRedirect your iOS in-App Purchases to the Browser\n\nWith recent changes in App Store policies following the Epic vs. Apple ruling, mobile apps can now direct users to external payment methods for …\n\nPayPal Tech Blog Team\n\n2 years ago\n\n2 min read\n\nTechnology\n\nEnable and Configure Two-Factor Authentication\n\nAs cyber threats continue to grow, protecting your online accounts has become a top priority. Securing your financial transactions is more impor…\n\nDibyani Das\n\n2 years ago\n\n6 min read\n\nTechnology\n\nAnnouncements\n\nNews\n\nCheckout\n\nPayPal’s AI-Powered Tool for Developers using Visual Studio Code\n\nNote: This blog is for informational purposed only and contains forward-looking statements, projections, and assumptions. These are not guarante…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n3 min read\n\nAnnouncements\n\nTechnology\n\nCheckout\n\nBuild Smarter with PayPal: New API Collections, Flows, and Testing Tools\n\nANNOUNCING THE NEW PAYPAL PARTNER APIS COLLECTION We're excited to unveil a brand-new public collection designed to supercharge how platforms, …\n\nPayPal Tech Blog Team\n\n2 years ago\n\n2 min read\n\nTechnology\n\nSecure Your API Credentials\n\nImagine you're about to head out for a weekend getaway and, feeling a bit too confident, you tuck your house keys under the doormat. You figure,…\n\nDibyani Das\n\n2 years ago\n\n9 min read\n\nNews\n\nUnlock the Future of E-Commerce with the PayPal Demo Portal!\n\nHave you ever struggled to communicate your PayPal integration needs to your developer or merchant? Are you fully aware of the incredible custom…\n\nJayanth M\n\n2 years ago\n\n3 min read\n\nTechnology\n\nPayment Links in PayPal\n\nPayment links are interactive URLs or scannable codes created to facilitate fast and efficient online transactions. When users select a payment …\n\nDibyani Das\n\n2 years ago\n\n10 min read\n\nNews\n\nTechnology\n\nAI\n\nAgents\n\nPayPal Releases Agent Toolkit to Accelerate Commerce\n\nBuilding on the release of PayPal’s MCP servers [https://developer.paypal.com/community/blog/paypal-model-context-protocol/], PayPal is excited …\n\nAsish Mohanty\n\n2 years ago\n\n4 min read\n\nNews\n\nTechnology\n\nPayPal Begins Rollout of MCP Servers to Accelerate Agentic Commerce\n\nAt PayPal, we strive to make it easier for developers to access our services. Today, we are taking the first step to allow developers to embrace…\n\nPrakhar Mehrotra\n\n2 years ago\n\n4 min read\n\nTechnology\n\nLearning\n\nImproved Integration Experience with Advanced Server-Side SDKs\n\nWe are thrilled to launch our next generation of PayPal Server-Side Software Development Kits (SDKs), which will vastly improve the integration …\n\nTodd Hashimoto\n\n2 years ago\n\n3 min read\n\nNews\n\nPayPal Dev Days 2025: Building Smarter Commerce\n\nWe are thrilled to host our next Dev Days. PayPal hosted its inaugural developer conference last year and it was a tremendous experience for all…\n\nDibyani Das\n\n2 years ago\n\n5 min read\n\nNews\n\nBuilding the Future of Stablecoin Interoperability: PYUSD and LayerZero\n\nMoving stablecoins cross-chain using bridges is expensive, risky, and slow. With PYUSD’s new LayerZero integration, you can now programmatically…\n\nDibyani Das\n\n2 years ago\n\n6 min read\n\nNews\n\nBreaking New Ground: Winning Solutions from the PYUSD Portal Hackathon on Solana\n\nThe first-ever Global PYUSD Portal Hackathon brought together over 250 developers from around the world to explore innovations using PayPal USD …\n\nDibyani Das\n\n2 years ago\n\n5 min read\n\nLearning\n\nHow converting and accepting multiple currencies works with PayPal\n\nWith over 160 currencies in circulation globally, the ability to manage currency conversion and accept multiple currencies has become vital for …\n\nDibyani Das\n\n2 years ago\n\n5 min read\n\nLearning\n\nTechnology\n\nEnhancing your Shopify Experience with PayPal Checkout\n\nPayPal Checkout [https://developer.paypal.com/docs/checkout/] with Shopify is a smart way to make the shopping experience smoother for both you …\n\nDibyani Das\n\n2 years ago\n\n4 min read\n\nLearning\n\nTechnology\n\nTesting Your PayPal Integration: Best Practices\n\nIntegrating PayPal into your website or app is a powerful way to offer customers a seamless and secure payment experience. Whether you're adding…\n\nDibyani Das\n\n2 years ago\n\n4 min read\n\nLearning\n\nTechnology\n\nNews\n\nModernize Your WordPress Payments with PayPal's Expanded Checkout\n\nIn ecommerce, secure and seamless payments are essential for a great customer experience. WordPress makes website creation easy with its flexibi…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n7 min read\n\nLearning\n\nTechnology\n\nNews\n\nMaster QuickBooks Online Integration with PayPal for Seamless Payment Processing\n\nQuickBooks Online is a leading accounting software developed by Intuit that allows businesses to track income, manage expenses, and stay tax-rea…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n7 min read\n\nTechnology\n\nLearning\n\nNews\n\nBreaking New Ground: Winning Solutions from the PYUSD Portal Hackathon on Solana\n\nThe first-ever Global PYUSD Portal Hackathon brought together over 250 developers from around the world to explore innovations using PayPalUSD (…\n\nMehak Jethmalani\n\n2 years ago\n\n5 min read\n\nTechnology\n\nLearning\n\nNews\n\nHow to use ENS Names for Easy PYUSD Payments\n\nSending crypto payments to Web3 wallet addresses can be cumbersome and prone to errors. However, using simpler ENS names over PayPal and Venmo m…\n\nMehak Jethmalani\n\n2 years ago\n\n7 min read\n\nTechnology\n\nLearning\n\nUnderstanding the PayPal API Error: PERMISSION_DENIED\n\nFor merchants integrating PayPal's robust platform into their e-commerce operations, understanding and troubleshooting API errors is crucial. On…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n3 min read\n\nTechnology\n\nLearning\n\nUnderstanding the INVALID_RESOURCE_ID Error in PayPal APIs\n\nWhen working with PayPal APIs, you might encounter various error messages that can be both perplexing and frustrating. One common error is the '…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n5 min read\n\nTechnology\n\nLearning\n\nUnderstanding the ‘INVALID_REQUEST’ Error in PayPal REST APIs\n\nWhen working with PayPal REST APIs, you might encounter various errors that can disrupt your operations. One such error is the \"INVALID_REQUEST\"…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n2 min read\n\nTechnology\n\nLearning\n\nUnderstanding and Resolving PayPal API Error: INVALID_CART_TOTAL\n\nAs an online merchant, encountering API errors can be a frustrating experience, especially when they disrupt the smooth flow of transactions for…\n\nPayPal Tech Blog Team\n\n2 years ago\n\n3 min read\n\nTechnology\n\nLearning\n\nUnderstanding and resolving the PayPal AUTHORIZATION_ERROR\n\nIn the world of online transactions, ensuring secure and seamless payment processes is crucial for both merchants and customers. PayPal, a leadi…\n\nPayPal Tech",
+  "title": "PayPal Developer Community Blog",
+  "url": "https://developer.paypal.com/community/blog/"
+}

@@ -1,0 +1,419 @@
+{
+  "links": [
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login?ref=top-nav-login"
+    },
+    {
+      "text": "Sign up",
+      "url": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button"
+    },
+    {
+      "text": "Join a hackathon",
+      "url": "https://paypalaihackathon.devpost.com/updates#join-a-hackathon"
+    },
+    {
+      "text": "Devpost\n      Participate in our public hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Devpost for Teams\n      Access your company's private hackathons",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Login",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://paypalaihackathon.devpost.com/updates#host-a-hackathon"
+    },
+    {
+      "text": "Devpost\n      Grow your developer ecosystem and promote your platform",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Host a public hackathon",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Devpost for Teams\n      Drive innovation, collaboration, and retention within your organization",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Host an internal hackathon",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "AI hackathons",
+      "url": "https://info.devpost.com/product/ai-hackathons"
+    },
+    {
+      "text": "Customer hackathons",
+      "url": "https://info.devpost.com/product/customer-hackathons"
+    },
+    {
+      "text": "Employee hackathons",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Public hackathons",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Resources",
+      "url": "https://paypalaihackathon.devpost.com/updates#resources"
+    },
+    {
+      "text": "Blog\n      \n      \n        Insights into hackathon planning and participation",
+      "url": "https://info.devpost.com/blog"
+    },
+    {
+      "text": "Customer stories\n      \n      \n        Inspiration from peers and other industry leaders",
+      "url": "https://info.devpost.com/customer-stories"
+    },
+    {
+      "text": "Planning guides\n      \n      \n        Best practices for planning online and in-person hackathons",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Webinars & events\n      \n      \n        Upcoming events and on-demand recordings",
+      "url": "https://info.devpost.com/webinar-events"
+    },
+    {
+      "text": "Help desk\n      \n      \n        Common questions and support documentation",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Join a hackathon",
+      "url": "https://paypalaihackathon.devpost.com/updates#"
+    },
+    {
+      "text": "Back",
+      "url": "https://paypalaihackathon.devpost.com/updates#"
+    },
+    {
+      "text": "Devpost\n      Participate in our public hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Devpost for Teams\n      Access your company's private hackathons",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Login",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://paypalaihackathon.devpost.com/updates#"
+    },
+    {
+      "text": "Back",
+      "url": "https://paypalaihackathon.devpost.com/updates#"
+    },
+    {
+      "text": "Devpost\n      Grow your developer ecosystem and promote your platform",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Host a public hackathon",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Devpost for Teams\n      Drive innovation, collaboration, and retention within your organization",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Host an internal hackathon",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "AI hackathons",
+      "url": "https://info.devpost.com/product/ai-hackathons"
+    },
+    {
+      "text": "Customer hackathons",
+      "url": "https://info.devpost.com/product/customer-hackathons"
+    },
+    {
+      "text": "Employee hackathons",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Public hackathons",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Resources",
+      "url": "https://paypalaihackathon.devpost.com/updates#"
+    },
+    {
+      "text": "Back",
+      "url": "https://paypalaihackathon.devpost.com/updates#"
+    },
+    {
+      "text": "Blog\n      \n      \n        Insights into hackathon planning and participation",
+      "url": "https://info.devpost.com/blog"
+    },
+    {
+      "text": "Customer stories\n      \n      \n        Inspiration from peers and other industry leaders",
+      "url": "https://info.devpost.com/customer-stories"
+    },
+    {
+      "text": "Planning guides\n      \n      \n        Best practices for planning online and in-person hackathons",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Webinars & events\n      \n      \n        Upcoming events and on-demand recordings",
+      "url": "https://info.devpost.com/webinar-events"
+    },
+    {
+      "text": "Help desk\n      \n      \n        Common questions and support documentation",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login?ref=top-nav-login"
+    },
+    {
+      "text": "Sign up",
+      "url": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button"
+    },
+    {
+      "text": "PayPal AI Hackathon",
+      "url": "https://paypalaihackathon.devpost.com/"
+    },
+    {
+      "text": "GMT+5:30",
+      "url": "https://devpost.com/settings/preferences_and_eligibility#eligibility-section"
+    },
+    {
+      "text": "Join hackathon",
+      "url": "https://paypalaihackathon.devpost.com/register?flow%5Bdata%5D%5Bchallenge_id%5D=31302&flow%5Bname%5D=register_for_challenge"
+    },
+    {
+      "text": "Descend",
+      "url": "https://paypalaihackathon.devpost.com/updates#"
+    },
+    {
+      "text": "Overview",
+      "url": "https://paypalaihackathon.devpost.com/"
+    },
+    {
+      "text": "My projects",
+      "url": "https://devpost.com/submit-to/31302-paypal-ai-hackathon/manage/submissions"
+    },
+    {
+      "text": "Participants (32326)",
+      "url": "https://paypalaihackathon.devpost.com/participants"
+    },
+    {
+      "text": "Resources",
+      "url": "https://paypalaihackathon.devpost.com/resources"
+    },
+    {
+      "text": "Rules",
+      "url": "https://paypalaihackathon.devpost.com/rules"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://paypalaihackathon.devpost.com/project-gallery"
+    },
+    {
+      "text": "Updates",
+      "url": "https://paypalaihackathon.devpost.com/updates"
+    },
+    {
+      "text": "Discussions",
+      "url": "https://paypalaihackathon.devpost.com/forum_topics"
+    },
+    {
+      "text": "FAQs",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs"
+    },
+    {
+      "text": "3 days left: submissions close Thursday at noon PST 🚨",
+      "url": "https://paypalaihackathon.devpost.com/updates/47308-3-days-left-submissions-close-thursday-at-noon-pst"
+    },
+    {
+      "text": "Submission checklist: it's go time! ⏳",
+      "url": "https://paypalaihackathon.devpost.com/updates/47307-submission-checklist-it-s-go-time"
+    },
+    {
+      "text": "Read more",
+      "url": "https://paypalaihackathon.devpost.com/updates/47307-submission-checklist-it-s-go-time"
+    },
+    {
+      "text": "Lights, camera, PayPal! Video tips and how judging works 🎬",
+      "url": "https://paypalaihackathon.devpost.com/updates/47306-lights-camera-paypal-video-tips-and-how-judging-works"
+    },
+    {
+      "text": "Read more",
+      "url": "https://paypalaihackathon.devpost.com/updates/47306-lights-camera-paypal-video-tips-and-how-judging-works"
+    },
+    {
+      "text": "Two weeks to go: get your project checked early 🥇",
+      "url": "https://paypalaihackathon.devpost.com/updates/47305-two-weeks-to-go-get-your-project-checked-early"
+    },
+    {
+      "text": "Read more",
+      "url": "https://paypalaihackathon.devpost.com/updates/47305-two-weeks-to-go-get-your-project-checked-early"
+    },
+    {
+      "text": "The PayPal build session recording is up",
+      "url": "https://paypalaihackathon.devpost.com/updates/46851-the-paypal-build-session-recording-is-up"
+    },
+    {
+      "text": "https://bit.ly/paypalai26recue",
+      "url": "https://bit.ly/paypalai26recue"
+    },
+    {
+      "text": "PayPal Developer Docs",
+      "url": "https://developer.paypal.com/"
+    },
+    {
+      "text": "PayPal AI Tools",
+      "url": "https://developer.paypal.com/ai-tools/get-started"
+    },
+    {
+      "text": "PayPal AI Toolkit (GitHub)",
+      "url": "https://github.com/paypal/AI-Toolkit"
+    },
+    {
+      "text": "PayPal Sandbox",
+      "url": "https://sandbox.paypal.com/"
+    },
+    {
+      "text": "PayPal Postman collection",
+      "url": "https://postman.com/paypal"
+    },
+    {
+      "text": "PayPal example code",
+      "url": "https://github.com/paypal-examples/docs-examples"
+    },
+    {
+      "text": "Read more",
+      "url": "https://paypalaihackathon.devpost.com/updates/46851-the-paypal-build-session-recording-is-up"
+    },
+    {
+      "text": "FAQs",
+      "url": "https://paypalaihackathon.devpost.com/updates/46849-faqs"
+    },
+    {
+      "text": "FAQs page",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs"
+    },
+    {
+      "text": "PayPal Discord",
+      "url": "https://discord.com/invite/sJ2G6DyvSK"
+    },
+    {
+      "text": "Live Build Session Oct 6",
+      "url": "https://paypalaihackathon.devpost.com/updates/46772-live-build-session-oct-6"
+    },
+    {
+      "text": "Read more",
+      "url": "https://paypalaihackathon.devpost.com/updates/46772-live-build-session-oct-6"
+    },
+    {
+      "text": "About",
+      "url": "https://info.devpost.com/about"
+    },
+    {
+      "text": "Careers",
+      "url": "https://info.devpost.com/careers"
+    },
+    {
+      "text": "Contact",
+      "url": "https://info.devpost.com/contact"
+    },
+    {
+      "text": "Help",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Browse hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Explore projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://info.devpost.com/"
+    },
+    {
+      "text": "Hackathon guides",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Your projects",
+      "url": "https://devpost.com/portfolio/redirect?page=projects"
+    },
+    {
+      "text": "Your hackathons",
+      "url": "https://devpost.com/portfolio/redirect?page=hackathons"
+    },
+    {
+      "text": "Settings",
+      "url": "https://devpost.com/settings"
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/devpost"
+    },
+    {
+      "text": "Discord",
+      "url": "https://discord.com/invite/HP4BhW3hnp"
+    },
+    {
+      "text": "Facebook",
+      "url": "https://www.facebook.com/devposthacks"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/devpost/"
+    },
+    {
+      "text": "Community guidelines",
+      "url": "https://info.devpost.com/legal/community-guidelines"
+    },
+    {
+      "text": "Security",
+      "url": "https://info.devpost.com/legal/security"
+    },
+    {
+      "text": "CA notice",
+      "url": "https://info.devpost.com/legal/california-consumer-privacy-act"
+    },
+    {
+      "text": "Privacy policy",
+      "url": "https://info.devpost.com/legal/privacy-policy"
+    },
+    {
+      "text": "Terms of service",
+      "url": "https://info.devpost.com/legal/terms-of-service"
+    }
+  ],
+  "text": "Join a hackathon \nHost a hackathon \nResources \nLog in\nSign up\nPayPal AI Hackathon\nDeadline: Nov 13, 2026 @ 1:30am GMT+5:30 \nJoin hackathon\nOverview\nMy projects\nParticipants (32326)\nResources\nRules\nProject gallery\nUpdates\nFAQs\n\nabout 3 hours ago\n\n3 days left: submissions close Thursday at noon PST 🚨\n\nHi Builders,\n\nSubmissions close Thursday, November 12 at 12:00 pm PST (3:00 pm EST, 8:00 pm GMT, Friday 1:30 am IST).\n\n🚨 Upload your video today. Processing can take hours, so get it on YouTube and linked now, even if you keep polishing the rest. You can edit your submission until the deadline, so submit now and refine later.\n\n⚠️ After the deadline, don't touch anything: no commits, no README edits, no swapping your video. Leave everything as-is until the winner announcement.\n\nCan't wait to see what you've built! 🎉\n\n4 days ago\n\nSubmission checklist: it's go time! ⏳\n\nHi Builders,\n\nOne week left! Submissions close Thursday, November 12 at 12:00 pm PST. Submit today to still get an early eligibility check.\n\n📋 Checklist\n\nProject meaningfully uses PayPal (sandbox is fine) and AI\nJudges can run it: hosted demo URL or run instructions in your repo\nPublic repo on GitHub, GitLab, or Bitbucket with a README and open source license\nPublic YouTube video under 3 minutes\nSponsor tools selected on the form if you're going for a sponsor prize\nTeammates invited and accepted\n\n🔌 Keep your demo, test credentials, and any trials or credits active until winners are…\n\nRead more\n\n7 days ago\n\nLights, camera, PayPal! Video tips and how judging works 🎬\n\nHi Builders,\n\n10 days to go! Your video is often the first thing judges see, so make it count.\n\n🎬 Video tips\n\nUnder 3 minutes, on YouTube, set to public.\nOpen with the problem and who it's for, then show PayPal and AI working end to end.\nCut loading screens and setup steps. An AI voiceover is fine.\nUpload early. Processing can take hours.\n\n🧑‍⚖️ How judging works\n\nStage One: after the Nov 12 deadline, the review team checks each project for a working build, a public repo with an open source license, a public video under…\n\nRead more\n\n12 days ago\n\nTwo weeks to go: get your project checked early 🥇\n\nHi Builders,\n\nSubmissions close Thursday, November 12 at 12:00 pm PST. Submit by Thursday, Nov 5 and our review team will check your project for eligibility early and flag anything to fix. You can keep editing until the deadline.\n\n🏆 How to stand out\n\nMake PayPal and AI impossible to miss. Name both in your description, \"Built With\" section, and video, and show them working.\nGive judges something to run: a hosted demo URL or clear run instructions in your repo.\nHide your API keys. Use environment variables, never commit secrets.\n\n💰 $69,750 in prizes, including $12,000 for 1st…\n\nRead more\n\nabout 1 month ago\n\nThe PayPal build session recording is up\nHi Builders,\n\nThe recording of Start Building with PayPal is now on YouTube: https://bit.ly/paypalai26recue\n\nJo, Marco, and Eddie from PayPal's DevRel team cover the hackathon rules and prizes, the PayPal AI Toolkit, and a full sandbox setup. The chapters are in the video description, so you can jump to what you need.\n\nLinks from the session:\n- PayPal Developer Docs\n- PayPal AI Tools\n- PayPal AI Toolkit (GitHub)\n- PayPal Sandbox\n- PayPal Postman collection\n- PayPal example code\n\nIf you joined live, we'd appreciate your feedback! The survey is short, and your answers help us and PayPal decide…\n\nRead more\n\nabout 1 month ago\n\nFAQs\n\nHi everyone!\n\nWe've started a FAQs page for this hackathon. Please check this page as your question may have already been answered!\n\nIf you have any questions regarding the Sponsor tools or PayPal, please head over to the PayPal Discord. \n\nabout 1 month ago\n\nLive Build Session Oct 6\n\n\n\nHi Builders,\n\nPayPal's DevRel team is kicking things off with a live build session before you start building.\n\nStart Building with PayPal\nOct 6 — 9am PT / 12pm ET — Zoom\n\nJo Franchetti, Marco Podien, and Eddie Jaoude will walk through:\n\nGetting your sandbox environment set up from scratch\nThe PayPal APIs and SDKs you'll actually use for this hackathon\nHow to pair them with AI to build agents, automations, and new payment experiences\nLive examples going from idea to working prototype\n\nLive Demo + Q&A. Whether you're still deciding what to build or already have an idea, this…\n\nRead more\n\nDevpost\nAbout\nCareers\nContact\nHelp\nHackathons\nBrowse hackathons\nExplore projects\nHost a hackathon\nHackathon guides\nPortfolio\nYour projects\nYour hackathons\nSettings\nConnect\n Twitter\n Discord\n Facebook\n LinkedIn\n© 2026 Devpost, Inc. All rights reserved.\nCommunity guidelines\nSecurity\nCA notice\nPrivacy policy\nTerms of service",
+  "title": "PayPal AI Hackathon: Build what’s next with PayPal and AI - Devpost",
+  "url": "https://paypalaihackathon.devpost.com/updates"
+}

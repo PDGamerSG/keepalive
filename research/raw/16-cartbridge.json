@@ -1,0 +1,375 @@
+{
+  "links": [
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login?ref=top-nav-login"
+    },
+    {
+      "text": "Sign up",
+      "url": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button"
+    },
+    {
+      "text": "Join a hackathon",
+      "url": "https://devpost.com/software/cartbridge-ai#join-a-hackathon"
+    },
+    {
+      "text": "Devpost\n      Participate in our public hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Devpost for Teams\n      Access your company's private hackathons",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Login",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://devpost.com/software/cartbridge-ai#host-a-hackathon"
+    },
+    {
+      "text": "Devpost\n      Grow your developer ecosystem and promote your platform",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Host a public hackathon",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Devpost for Teams\n      Drive innovation, collaboration, and retention within your organization",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Host an internal hackathon",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "AI hackathons",
+      "url": "https://info.devpost.com/product/ai-hackathons"
+    },
+    {
+      "text": "Customer hackathons",
+      "url": "https://info.devpost.com/product/customer-hackathons"
+    },
+    {
+      "text": "Employee hackathons",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Public hackathons",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Resources",
+      "url": "https://devpost.com/software/cartbridge-ai#resources"
+    },
+    {
+      "text": "Blog\n      \n      \n        Insights into hackathon planning and participation",
+      "url": "https://info.devpost.com/blog"
+    },
+    {
+      "text": "Customer stories\n      \n      \n        Inspiration from peers and other industry leaders",
+      "url": "https://info.devpost.com/customer-stories"
+    },
+    {
+      "text": "Planning guides\n      \n      \n        Best practices for planning online and in-person hackathons",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Webinars & events\n      \n      \n        Upcoming events and on-demand recordings",
+      "url": "https://info.devpost.com/webinar-events"
+    },
+    {
+      "text": "Help desk\n      \n      \n        Common questions and support documentation",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Join a hackathon",
+      "url": "https://devpost.com/software/cartbridge-ai#"
+    },
+    {
+      "text": "Back",
+      "url": "https://devpost.com/software/cartbridge-ai#"
+    },
+    {
+      "text": "Devpost\n      Participate in our public hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Devpost for Teams\n      Access your company's private hackathons",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Login",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://devpost.com/software/cartbridge-ai#"
+    },
+    {
+      "text": "Back",
+      "url": "https://devpost.com/software/cartbridge-ai#"
+    },
+    {
+      "text": "Devpost\n      Grow your developer ecosystem and promote your platform",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Host a public hackathon",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Devpost for Teams\n      Drive innovation, collaboration, and retention within your organization",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Host an internal hackathon",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "AI hackathons",
+      "url": "https://info.devpost.com/product/ai-hackathons"
+    },
+    {
+      "text": "Customer hackathons",
+      "url": "https://info.devpost.com/product/customer-hackathons"
+    },
+    {
+      "text": "Employee hackathons",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Public hackathons",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Resources",
+      "url": "https://devpost.com/software/cartbridge-ai#"
+    },
+    {
+      "text": "Back",
+      "url": "https://devpost.com/software/cartbridge-ai#"
+    },
+    {
+      "text": "Blog\n      \n      \n        Insights into hackathon planning and participation",
+      "url": "https://info.devpost.com/blog"
+    },
+    {
+      "text": "Customer stories\n      \n      \n        Inspiration from peers and other industry leaders",
+      "url": "https://info.devpost.com/customer-stories"
+    },
+    {
+      "text": "Planning guides\n      \n      \n        Best practices for planning online and in-person hackathons",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Webinars & events\n      \n      \n        Upcoming events and on-demand recordings",
+      "url": "https://info.devpost.com/webinar-events"
+    },
+    {
+      "text": "Help desk\n      \n      \n        Common questions and support documentation",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login?ref=top-nav-login"
+    },
+    {
+      "text": "Sign up",
+      "url": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button"
+    },
+    {
+      "text": "Like 1",
+      "url": "https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bsoftware_id%5D=1526945&flow%5Bname%5D=like_software&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Fcartbridge-ai"
+    },
+    {
+      "text": "Comment",
+      "url": "https://devpost.com/software/cartbridge-ai#updates"
+    },
+    {
+      "text": "STORY",
+      "url": "https://devpost.com/software/cartbridge-ai"
+    },
+    {
+      "text": "UPDATES",
+      "url": "https://devpost.com/software/cartbridge-ai#updates"
+    },
+    {
+      "text": "SUBMISSION HISTORY",
+      "url": "https://devpost.com/software/cartbridge-ai#submission-history"
+    },
+    {
+      "text": "angular.js",
+      "url": "https://devpost.com/software/built-with/angular-js"
+    },
+    {
+      "text": "css",
+      "url": "https://devpost.com/software/built-with/css"
+    },
+    {
+      "text": "google",
+      "url": "https://devpost.com/software/built-with/google--2"
+    },
+    {
+      "text": "html5",
+      "url": "https://devpost.com/software/built-with/html5"
+    },
+    {
+      "text": "java",
+      "url": "https://devpost.com/software/built-with/java"
+    },
+    {
+      "text": "javascript",
+      "url": "https://devpost.com/software/built-with/javascript"
+    },
+    {
+      "text": "maven",
+      "url": "https://devpost.com/software/built-with/maven"
+    },
+    {
+      "text": "paypal",
+      "url": "https://devpost.com/software/built-with/paypal"
+    },
+    {
+      "text": "scss",
+      "url": "https://devpost.com/software/built-with/scss"
+    },
+    {
+      "text": "typescript",
+      "url": "https://devpost.com/software/built-with/typescript"
+    },
+    {
+      "text": "GitHub Repo",
+      "url": "https://github.com/Nikhitha999-nikki/CartBridge-AI.git"
+    },
+    {
+      "text": "PayPal AI Hackathon",
+      "url": "https://paypalaihackathon.devpost.com/"
+    },
+    {
+      "text": "Nikhitha Malapula",
+      "url": "https://devpost.com/Nikhitha999-nikki"
+    },
+    {
+      "text": "Like 1",
+      "url": "https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bsoftware_id%5D=1526945&flow%5Bname%5D=like_software&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Fcartbridge-ai"
+    },
+    {
+      "text": "Nikhitha Malapula",
+      "url": "https://devpost.com/Nikhitha999-nikki"
+    },
+    {
+      "text": "6 days ago",
+      "url": "https://devpost.com/software/cartbridge-ai/updates/868244"
+    },
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login"
+    },
+    {
+      "text": "sign up for Devpost",
+      "url": "https://secure.devpost.com/users/register?flow%5Bdata%5D%5Bcommentable_id%5D=868244&flow%5Bname%5D=comment_on_software_update&return_to=https%3A%2F%2Fdevpost.com%2Fsoftware%2Fcartbridge-ai"
+    },
+    {
+      "text": "About",
+      "url": "https://info.devpost.com/about"
+    },
+    {
+      "text": "Careers",
+      "url": "https://info.devpost.com/careers"
+    },
+    {
+      "text": "Contact",
+      "url": "https://info.devpost.com/contact"
+    },
+    {
+      "text": "Help",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Browse hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Explore projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://info.devpost.com/"
+    },
+    {
+      "text": "Hackathon guides",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Your projects",
+      "url": "https://devpost.com/portfolio/redirect?page=projects"
+    },
+    {
+      "text": "Your hackathons",
+      "url": "https://devpost.com/portfolio/redirect?page=hackathons"
+    },
+    {
+      "text": "Settings",
+      "url": "https://devpost.com/settings"
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/devpost"
+    },
+    {
+      "text": "Discord",
+      "url": "https://discord.com/invite/HP4BhW3hnp"
+    },
+    {
+      "text": "Facebook",
+      "url": "https://www.facebook.com/devposthacks"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/devpost/"
+    },
+    {
+      "text": "Community guidelines",
+      "url": "https://info.devpost.com/legal/community-guidelines"
+    },
+    {
+      "text": "Security",
+      "url": "https://info.devpost.com/legal/security"
+    },
+    {
+      "text": "CA notice",
+      "url": "https://info.devpost.com/legal/california-consumer-privacy-act"
+    },
+    {
+      "text": "Privacy policy",
+      "url": "https://info.devpost.com/legal/privacy-policy"
+    },
+    {
+      "text": "Terms of service",
+      "url": "https://info.devpost.com/legal/terms-of-service"
+    }
+  ],
+  "text": "Join a hackathon \nHost a hackathon \nResources \nLog in\nSign up\nCartBridge AI\n\nAI-Powered Checkout Recovery Assistant for Safer PayPal Payments\n\n Like 1  Comment\nSTORY\nUPDATES\nSUBMISSION HISTORY\n\n1\n2\n3\n4\nInspiration\n\nOnline shoppers sometimes face payment interruptions, checkout delays, or uncertainty about whether their payment was successful. This confusion can lead to abandoned purchases and repeated payment attempts, potentially resulting in duplicate charges.\n\nWe wanted to build a solution that helps shoppers understand what happened during checkout and guides them toward safe next steps. This inspired us to create CartBridge AI, an intelligent checkout recovery assistant that complements existing payment infrastructure.\n\nWhat it does\n\nCartBridge AI helps shoppers recover from confusing checkout situations through contextual AI-assisted guidance and backend payment verification.\n\nKey features include:\n\nPayPal Sandbox Integration: Enables shoppers to complete payments through PayPal Sandbox.\nPayment Verification: The Spring Boot backend verifies PayPal order details, payment status, amount, and currency before confirming a successful payment.\nDuplicate Payment Prevention: Implements idempotency and payment-state checks to reduce duplicate payment attempts.\nAI Recovery Assistant: Analyzes the shopper's reported checkout problem alongside backend checkout context and provides an explanation, recommended next action, and safety guidance.\nFallback Recovery Guidance: Provides safe server-generated advice when Gemini is unavailable or AI assistance cannot be completed.\nMerchant Dashboard: Displays checkout activity, payment statuses, and recovery history.\nHow we built it\n\nWe developed CartBridge AI using a full-stack architecture.\n\nFrontend: Angular, TypeScript, and SCSS provide the storefront, PayPal checkout experience, recovery assistant interface, and merchant dashboard.\n\nBackend: Java 17 and Spring Boot handle checkout sessions, product information, payment operations, payment verification, and recovery workflows.\n\nPayment Integration: We integrated the PayPal REST Orders API and PayPal JavaScript SDK using PayPal Sandbox. The backend verifies payment details before marking a transaction as completed.\n\nAI Integration: Google Gemini API is integrated for contextual checkout recovery advice. We also implemented a fallback mechanism to ensure shoppers receive safe guidance when the AI service is unavailable.\n\nSafety: The recovery assistant does not execute payments or independently declare transactions successful. Payment confirmation depends on backend verification through PayPal.\n\nChallenges we faced\nIntegrating the PayPal Sandbox checkout and handling the order approval and capture lifecycle.\nEnsuring payment status, amount, currency, and order details are verified by the backend.\nPreventing duplicate payment operations through idempotency and state validation.\nHandling AI service timeouts and availability issues without interrupting the recovery experience.\nDesigning recovery recommendations that remain safe and consistent with the actual backend payment state.\nConnecting checkout activity and recovery history to the merchant dashboard.\nWhat we learned\n\nBuilding CartBridge AI helped us understand practical payment integration, REST API development, backend payment verification, idempotency, AI integration, error handling, and full-stack application development.\n\nWe also learned that AI-powered payment assistance must be grounded in verified transaction information. An AI recommendation should never replace authoritative payment verification.\n\nWhat's next\n\nFuture improvements include persistent database storage, secure merchant-scoped dashboard access, enhanced recovery analytics, and improved AI availability.\n\nBuilt for PayPal AI Hackathon 2026\n\nCartBridge AI is a prototype designed to complement existing payment infrastructure and make checkout recovery safer, clearer, and more informative.\n\nBuilt With\nai\nangular.js\ncss\ngeminiapi\ngenerative\ngoogle\nhtml5\njava\njavascript\nmaven\npaypal\nrestfulapi\nsandbox\nscss\nsdk\nspringboot\ntypescript\nTry it out\n GitHub Repo\nSUBMITTED TO\n\nPayPal AI Hackathon\n\nCREATED BY\nNikhitha Malapula \n\n\n Like 1 1 person likes this: \nUpdates\n\nNikhitha Malapula started this project — 6 days ago\n\nLeave feedback in the comments!\n\nLog in or sign up for Devpost to join the conversation.\n\nSubmission history\nDevpost\nAbout\nCareers\nContact\nHelp\nHackathons\nBrowse hackathons\nExplore projects\nHost a hackathon\nHackathon guides\nPortfolio\nYour projects\nYour hackathons\nSettings\nConnect\n Twitter\n Discord\n Facebook\n LinkedIn\n© 2026 Devpost, Inc. All rights reserved.\nCommunity guidelines\nSecurity\nCA notice\nPrivacy policy\nTerms of service",
+  "title": "CartBridge AI | Devpost",
+  "url": "https://devpost.com/software/cartbridge-ai"
+}

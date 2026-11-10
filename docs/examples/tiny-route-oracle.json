@@ -1,0 +1,76 @@
+{
+  "description": "Design oracle, not an executed application test. Contract distance limit: 4500 m. V1 visits A,B,C; V2 empty.",
+  "routes": [
+    {
+      "vehicleId": "V1",
+      "stopIds": [
+        "A",
+        "B",
+        "C"
+      ],
+      "loadGrams": 60000,
+      "distanceMeters": 4200,
+      "schedule": [
+        {
+          "stopId": "A",
+          "arrivalSeconds": 32700,
+          "serviceStartSeconds": 32700,
+          "departureSeconds": 33000
+        },
+        {
+          "stopId": "B",
+          "arrivalSeconds": 33240,
+          "serviceStartSeconds": 33300,
+          "departureSeconds": 33600
+        },
+        {
+          "stopId": "C",
+          "arrivalSeconds": 33870,
+          "serviceStartSeconds": 33870,
+          "departureSeconds": 34170
+        }
+      ],
+      "returnSeconds": 34620
+    },
+    {
+      "vehicleId": "V2",
+      "stopIds": [],
+      "loadGrams": 0,
+      "distanceMeters": 0,
+      "schedule": [],
+      "returnSeconds": 32400
+    }
+  ],
+  "totalDistanceMeters": 4200,
+  "pass": true,
+  "knownMutations": [
+    {
+      "change": "Remove B from the artifact",
+      "expectedViolation": "MISSING_STOP"
+    },
+    {
+      "change": "Repeat A in the artifact",
+      "expectedViolation": "DUPLICATE_STOP"
+    },
+    {
+      "change": "Assign all stops to V2",
+      "expectedViolation": "CAPACITY"
+    },
+    {
+      "change": "V1 visits C,B,A",
+      "expectedViolation": "WINDOW"
+    },
+    {
+      "change": "New correctly hashed contract with maxTotalDistanceMeters 4199",
+      "expectedViolation": "DISTANCE_LIMIT"
+    },
+    {
+      "change": "New correctly hashed input and contract with V1 shift ending 34619",
+      "expectedViolation": "SHIFT"
+    },
+    {
+      "change": "Change the artifact contractHash without changing the contract",
+      "expectedViolation": "BINDING"
+    }
+  ]
+}

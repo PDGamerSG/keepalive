@@ -1,0 +1,208 @@
+{
+  "fullTextLength": 3853,
+  "links": [
+    {
+      "text": "/llms.txt",
+      "url": "https://docs.ollama.com/llms.txt"
+    },
+    {
+      "text": "Skip to main content",
+      "url": "https://docs.ollama.com/capabilities/structured-outputs#content-area"
+    },
+    {
+      "text": "Ollama home page",
+      "url": "https://ollama.com/"
+    },
+    {
+      "text": "Welcome",
+      "url": "https://docs.ollama.com/"
+    },
+    {
+      "text": "Quickstart",
+      "url": "https://docs.ollama.com/quickstart"
+    },
+    {
+      "text": "Cloud",
+      "url": "https://docs.ollama.com/cloud"
+    },
+    {
+      "text": "Streaming",
+      "url": "https://docs.ollama.com/capabilities/streaming"
+    },
+    {
+      "text": "Thinking",
+      "url": "https://docs.ollama.com/capabilities/thinking"
+    },
+    {
+      "text": "Structured Outputs",
+      "url": "https://docs.ollama.com/capabilities/structured-outputs"
+    },
+    {
+      "text": "Decision",
+      "url": "https://docs.ollama.com/capabilities/decision"
+    },
+    {
+      "text": "Vision",
+      "url": "https://docs.ollama.com/capabilities/vision"
+    },
+    {
+      "text": "Embeddings",
+      "url": "https://docs.ollama.com/capabilities/embeddings"
+    },
+    {
+      "text": "Speech",
+      "url": "https://docs.ollama.com/capabilities/speech"
+    },
+    {
+      "text": "Tool calling",
+      "url": "https://docs.ollama.com/capabilities/tool-calling"
+    },
+    {
+      "text": "Web search",
+      "url": "https://docs.ollama.com/capabilities/web-search"
+    },
+    {
+      "text": "CLI Reference",
+      "url": "https://docs.ollama.com/cli"
+    },
+    {
+      "text": "Modelfile Reference",
+      "url": "https://docs.ollama.com/modelfile"
+    },
+    {
+      "text": "Context length",
+      "url": "https://docs.ollama.com/context-length"
+    },
+    {
+      "text": "Linux",
+      "url": "https://docs.ollama.com/linux"
+    },
+    {
+      "text": "macOS",
+      "url": "https://docs.ollama.com/macos"
+    },
+    {
+      "text": "Windows",
+      "url": "https://docs.ollama.com/windows"
+    },
+    {
+      "text": "Docker",
+      "url": "https://docs.ollama.com/docker"
+    },
+    {
+      "text": "Importing a Model",
+      "url": "https://docs.ollama.com/import"
+    },
+    {
+      "text": "FAQ",
+      "url": "https://docs.ollama.com/faq"
+    },
+    {
+      "text": "Hardware support",
+      "url": "https://docs.ollama.com/gpu"
+    },
+    {
+      "text": "Troubleshooting",
+      "url": "https://docs.ollama.com/troubleshooting"
+    },
+    {
+      "text": "Sign in",
+      "url": "https://ollama.com/signin"
+    },
+    {
+      "text": "Download",
+      "url": "https://ollama.com/download"
+    },
+    {
+      "text": "Guide",
+      "url": "https://docs.ollama.com/"
+    },
+    {
+      "text": "Integrations",
+      "url": "https://docs.ollama.com/integrations"
+    },
+    {
+      "text": "API Reference",
+      "url": "https://docs.ollama.com/api/introduction"
+    },
+    {
+      "text": "Ollama home page",
+      "url": "https://ollama.com/"
+    },
+    {
+      "text": "Sign in",
+      "url": "https://ollama.com/signin"
+    },
+    {
+      "text": "Download",
+      "url": "https://ollama.com/download"
+    },
+    {
+      "text": "Download",
+      "url": "https://ollama.com/download"
+    },
+    {
+      "text": "Guide",
+      "url": "https://docs.ollama.com/"
+    },
+    {
+      "text": "Integrations",
+      "url": "https://docs.ollama.com/integrations"
+    },
+    {
+      "text": "API Reference",
+      "url": "https://docs.ollama.com/api/introduction"
+    },
+    {
+      "text": "​",
+      "url": "https://docs.ollama.com/capabilities/structured-outputs#generating-structured-json"
+    },
+    {
+      "text": "​",
+      "url": "https://docs.ollama.com/capabilities/structured-outputs#generating-structured-json-with-a-schema"
+    },
+    {
+      "text": "​",
+      "url": "https://docs.ollama.com/capabilities/structured-outputs#example-extract-structured-data"
+    },
+    {
+      "text": "​",
+      "url": "https://docs.ollama.com/capabilities/structured-outputs#example-vision-with-structured-outputs"
+    },
+    {
+      "text": "​",
+      "url": "https://docs.ollama.com/capabilities/structured-outputs#tips-for-reliable-structured-outputs"
+    },
+    {
+      "text": "Previous",
+      "url": "https://docs.ollama.com/capabilities/thinking"
+    },
+    {
+      "text": "Decision\nClassify text, estimate yes/no probabilities, and score ordered criteria.\nNext",
+      "url": "https://docs.ollama.com/capabilities/decision"
+    },
+    {
+      "text": "Generating structured JSON",
+      "url": "https://docs.ollama.com/capabilities/structured-outputs#generating-structured-json"
+    },
+    {
+      "text": "Generating structured JSON with a schema",
+      "url": "https://docs.ollama.com/capabilities/structured-outputs#generating-structured-json-with-a-schema"
+    },
+    {
+      "text": "Example: Extract structured data",
+      "url": "https://docs.ollama.com/capabilities/structured-outputs#example-extract-structured-data"
+    },
+    {
+      "text": "Example: Vision with structured outputs",
+      "url": "https://docs.ollama.com/capabilities/structured-outputs#example-vision-with-structured-outputs"
+    },
+    {
+      "text": "Tips for reliable structured outputs",
+      "url": "https://docs.ollama.com/capabilities/structured-outputs#tips-for-reliable-structured-outputs"
+    }
+  ],
+  "text": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nOllama home page\nSearch...\n⌘K\nGet started\nWelcome\nQuickstart\nCloud\nCapabilities\nStreaming\nThinking\nStructured Outputs\nDecision\nVision\nEmbeddings\nSpeech\nTool calling\nWeb search\nMore information\nCLI Reference\nModelfile Reference\nContext length\nLinux\nmacOS\nWindows\nDocker\nImporting a Model\nFAQ\nHardware support\nTroubleshooting\nSign in\nDownload\nGuide\nIntegrations\nAPI Reference\nCapabilities\nStructured Outputs\nCopy page\nOllama’s cloud currently does not support structured outputs.\nStructured outputs let you enforce a JSON schema on model responses so you can reliably extract structured data, describe images, or keep every reply consistent.\n​\nGenerating structured JSON\ncURL\nPython\nJavaScript\ncurl -X POST http://localhost:11434/api/chat -H \"Content-Type: application/json\" -d '{\n  \"model\": \"gpt-oss\",\n  \"messages\": [{\"role\": \"user\", \"content\": \"Tell me about Canada in one line\"}],\n  \"stream\": false,\n  \"format\": \"json\"\n}'\n\n​\nGenerating structured JSON with a schema\nProvide a JSON schema to the format field.\nIt is ideal to also pass the JSON schema as a string in the prompt to ground the model’s response.\ncURL\nPython\nJavaScript\ncurl -X POST http://localhost:11434/api/chat -H \"Content-Type: application/json\" -d '{\n  \"model\": \"gpt-oss\",\n  \"messages\": [{\"role\": \"user\", \"content\": \"Tell me about Canada.\"}],\n  \"stream\": false,\n  \"format\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"name\": {\"type\": \"string\"},\n      \"capital\": {\"type\": \"string\"},\n      \"languages\": {\n        \"type\": \"array\",\n        \"items\": {\"type\": \"string\"}\n      }\n    },\n    \"required\": [\"name\", \"capital\", \"languages\"]\n  }\n}'\n\n​\nExample: Extract structured data\nDefine the objects you want returned and let the model populate the fields:\nfrom ollama import chat\nfrom pydantic import BaseModel\n\nclass Pet(BaseModel):\n  name: str\n  animal: str\n  age: int\n  color: str | None\n  favorite_toy: str | None\n\nclass PetList(BaseModel):\n  pets: list[Pet]\n\nresponse = chat(\n  model='gpt-oss',\n  messages=[{'role': 'user', 'content': 'I have two cats named Luna and Loki...'}],\n  format=PetList.model_json_schema(),\n)\n\npets = PetList.model_validate_json(response.message.content)\nprint(pets)\n\n​\nExample: Vision with structured outputs\nVision models accept the same format parameter, enabling deterministic descriptions of images:\nfrom ollama import chat\nfrom pydantic import BaseModel\nfrom typing import Literal, Optional\n\nclass Object(BaseModel):\n  name: str\n  confidence: float\n  attributes: str\n\nclass ImageDescription(BaseModel):\n  summary: str\n  objects: list[Object]\n  scene: str\n  colors: list[str]\n  time_of_day: Literal['Morning', 'Afternoon', 'Evening', 'Night']\n  setting: Literal['Indoor', 'Outdoor', 'Unknown']\n  text_content: Optional[str] = None\n\nresponse = chat(\n  model='gemma4',\n  messages=[{\n    'role': 'user',\n    'content': 'Describe this photo and list the objects you detect.',\n    'images': ['path/to/image.jpg'],\n  }],\n  format=ImageDescription.model_json_schema(),\n  options={'temperature': 0},\n)\n\nimage_description = ImageDescription.model_validate_json(response.message.content)\nprint(image_description)\n\n​\nTips for reliable structured outputs\nDefine schemas with Pydantic (Python) or Zod (JavaScript) so they can be reused for validation.\nLower the temperature (e.g., set it to 0) for more deterministic completions.\nStructured outputs work through the OpenAI-compatible API via response_format\nPrevious\nDecision\nClassify text, estimate yes/no probabilities, and score ordered criteria.\nNext\nOn this page\nGenerating structured JSON\nGenerating structured JSON with a schema\nExample: Extract structured data\nExample: Vision with structured outputs\nTips for reliable structured outputs",
+  "title": "Structured Outputs - Ollama",
+  "url": "https://docs.ollama.com/capabilities/structured-outputs"
+}

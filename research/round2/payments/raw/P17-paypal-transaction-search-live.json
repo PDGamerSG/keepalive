@@ -1,0 +1,153 @@
+{
+  "fullTextLength": 14383,
+  "headings": [
+    "List transactions",
+    "Authorization",
+    "Query Parameters",
+    "Header Parameters",
+    "Response Body",
+    "200\n\napplication/json",
+    "400\n\napplication/json",
+    "403\n\napplication/json",
+    "500\n\napplication/json",
+    "default\n\napplication/json"
+  ],
+  "links": [
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get.md",
+      "text": "View as Markdown"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/schema.json",
+      "text": "API Spec (JSON)"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/schema.yaml",
+      "text": "API Spec (YAML)"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get.md",
+      "text": "View as Markdown"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/schema.json",
+      "text": "API Spec (JSON)"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/schema.yaml",
+      "text": "API Spec (YAML)"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#authorization",
+      "text": "Authorization"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters-query",
+      "text": "Query Parameters"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.transaction_id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v1/#definition-order",
+      "text": "order ID"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.transaction_type",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.transaction_status",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.transaction_amount",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.transaction_currency",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.start_date",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.end_date",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.payment_instrument_type",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.store_id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.terminal_id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.fields",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/#definition-transaction_info",
+      "text": "transaction_info"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/#definition-payer_info",
+      "text": "payer_info"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/#definition-shipping_info",
+      "text": "shipping_info"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/#definition-auction_info",
+      "text": "auction_info"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/#definition-cart_info",
+      "text": "cart_info"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/#definition-incentive_info",
+      "text": "incentive_info"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/#definition-store_info",
+      "text": "store_info"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.balance_affecting_records_only",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.page_size",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.query.page",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters-header",
+      "text": "Header Parameters"
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#parameters.header.paypal-enforce-iso8601-format",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/transaction-search/v1/search-get#response-body",
+      "text": "Response Body"
+    }
+  ],
+  "retrievedAt": "2026-11-09T21:02:49.684Z",
+  "text": "List transactions\nCopy for LLM\n\nView as Markdown\n\nAPI Spec (JSON)\n\nAPI Spec (YAML)\n\nCompact mode\nHides field descriptions and other prose for a more compact, scannable view of the API reference.\nLists transactions. Specify one or more query parameters to filter the transaction that appear in the response.\nNotes:\nIf you specify one or more optional query parameters, the ending_balance response field is empty.\nIt takes a maximum of three hours for executed transactions to appear in the list transactions call.\nThis call lists transaction for the previous three years.\nServer URL\nhttps://api-m.sandbox.paypal.com/\nGET\n/\nv1\n/\nreporting\n/\ntransactions\nSend\nAuthorization\nHeader\nQuery\nAuthorization\nAuthorization\nBearer <token>\nFLOW\nClient Credentials\nTOKEN URL\nhttps://api-m.sandbox.paypal.com/v1/oauth2/token\nIN\nheader\n\nSCOPES\n\nTransactions Search\nhttps://uri.paypal.com/services/reporting/search/read\nQuery Parameters\ntransaction_id\nstring\nOptional\nFilters the transactions in the response by a PayPal transaction ID. A valid transaction ID is 17 characters long, except for an order ID, which is 19 characters long.\nNote: A transaction ID is not unique in the reporting system. The response can list two transactions with the same ID. One transaction can be balance affecting while the other is non-balance affecting.\nLength\n17 <= length <= 19\ntransaction_type\nstring\nOptional\nFilters the transactions in the response by a PayPal transaction event code. See [Transaction event codes](/docs/integration/direct/transaction-search/transaction-event-codes/).\ntransaction_status\nstring\nOptional\nFilters the transactions in the response by a PayPal transaction status code. Value is:\nStatus code\tDescription\nD\tPayPal or merchant rules denied the transaction.\nP\tThe transaction is pending. The transaction was created but waits for another payment process to complete, such as an ACH transaction, before the status changes to S.\nS\tThe transaction successfully completed without a denial and after any pending statuses.\nV\tA successful transaction was reversed and funds were refunded to the original sender.\ntransaction_amount\nstring\nOptional\nFilters the transactions in the response by a gross transaction amount range. Specify the range as ` TO `, where `` is the lower limit of the gross PayPal transaction amount and `` is the upper limit of the gross transaction amount. Specify the amounts in lower denominations. For example, to search for transactions from $5.00 to $10.05, specify `[500 TO 1005]`.\nNote:The values must be URL encoded.\ntransaction_currency\nstring\nOptional\nFilters the transactions in the response by a [three-character ISO-4217 currency code](/api/rest/reference/currency-codes/) for the PayPal transaction currency.\nstart_date\nstring\nRequired\nFilters the transactions in the response by a start date and time, in [Internet date and time format](https://tools.ietf.org/html/rfc3339#section-5.6). Seconds are required. Fractional seconds are optional.\nMatch\n^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])[T,t]([0-1][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)([.][0-9]+)?([Zz]|[+-][0-9]{2}:[0-9]{2})$\nLength\n20 <= length <= 64\nend_date\nstring\nRequired\nFilters the transactions in the response by an end date and time, in [Internet date and time format](https://tools.ietf.org/html/rfc3339#section-5.6). Seconds are required. Fractional seconds are optional. The maximum supported range is 31 days.\nMatch\n^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])[T,t]([0-1][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)([.][0-9]+)?([Zz]|[+-][0-9]{2}:[0-9]{2})$\nLength\n20 <= length <= 64\npayment_instrument_type\nstring\nOptional\nFilters the transactions in the response by a payment instrument type. Value is either:\nCREDITCARD. Returns a direct credit card transaction with a corresponding value.\nDEBITCARD. Returns a debit card transaction with a corresponding value.\nIf you omit this parameter, the API does not apply this filter.\nstore_id\nstring\nOptional\nFilters the transactions in the response by a store ID.\nterminal_id\nstring\nOptional\nFilters the transactions in the response by a terminal ID.\nfields\nstring\nOptional\nIndicates which fields appear in the response. Value is a single field or a comma-separated list of fields. The transaction_info value returns only the transaction details in the response. To include all fields in the response, specify fields=all. Valid fields are:\ntransaction_info. The transaction information. Includes the ID of the PayPal account of the payee, the PayPal-generated transaction ID, the PayPal-generated base ID, the PayPal reference ID type, the transaction event code, the date and time when the transaction was initiated and was last updated, the transaction amounts including the PayPal fee, any discounts, insurance, the transaction status, and other information about the transaction.\npayer_info. The payer information. Includes the PayPal customer account ID and the payer's email address, primary phone number, name, country code, address, and whether the payer is verified or unverified.\nshipping_info. The shipping information. Includes the recipient's name, the shipping method for this order, the shipping address for this order, and the secondary address associated with this order.\nauction_info. The auction information. Includes the name of the auction site, the auction site URL, the ID of the customer who makes the purchase in the auction, and the date and time when the auction closes.\ncart_info. The cart information. Includes an array of item details, whether the item amount or the shipping amount already includes tax, and the ID of the invoice for PayPal-generated invoices.\nincentive_info. An array of incentive detail objects. Each object includes the incentive, such as a special offer or coupon, the incentive amount, and the incentive program code that identifies a merchant loyalty or incentive program.\nstore_info. The store information. Includes the ID of the merchant store and the terminal ID for the checkout stand in the merchant store.\nDefault\n\"transaction_info\"\nbalance_affecting_records_only\nstring\nOptional\nIndicates whether the response includes only balance-impacting transactions or all transactions. Value is either:\nY. The default. The response includes only balance transactions.\nN. The response includes all transactions.\nDefault\n\"Y\"\npage_size\ninteger\nOptional\nThe number of items to return in the response. So, the combination of `page=1` and `page_size=20` returns the first 20 items. The combination of `page=2` and `page_size=20` returns the next 20 items.\nDefault\n100\nRange\n1 <= value <= 500\npage\ninteger\nOptional\nThe zero-relative start index of the entire list of items that are returned in the response. So, the combination of `page=1` and `page_size=20` returns the first 20 items.\nDefault\n1\nRange\n1 <= value <= 2147483647\nHeader Parameters\nPayPal-Enforce-ISO8601-Format\nboolean\nOptional\nTo switch between the new (ISO standard) and old date time format and the platform changes, include PayPal-Enforce-ISO8601-Format in the header. When this value is set to true, the APIs will support the new date time format and platform changes.\nNote: You can use the same header in the sandbox as well.\nDefault\n\"false\"\nResponse Body\n200\n\napplication/json\n\n400\n\napplication/json\n\n403\n\napplication/json\n\n500\n\napplication/json\n\ndefault\n\napplication/json\n\ncURL\nJavaScript\nGo\nPython\nJava\nC#\nRust\ncurl -X GET \"https://api-m.sandbox.paypal.com/v1/reporting/transactions?start_date=stringstringstringst&end_date=stringstringstringst\" \\\n  -H \"Authorization: Bearer \"\n200\n400\n403\n500\ndefault\n\nThis response sample is auto-generated from the schema. Values are placeholders, not real data.\n\n{\n  \"transaction_details\": [\n    {\n      \"transaction_info\": {\n        \"paypal_account_id\": \"string\",\n        \"transaction_id\": \"string\",\n        \"paypal_reference_id\": \"string\",\n        \"paypal_reference_id_type\": \"ODR\",\n        \"transaction_event_code\": \"strin\",\n        \"transaction_initiation_date\": \"stringstringstringst\",\n        \"transaction_updated_date\": \"stringstringstringst\",\n        \"transaction_amount\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"fee_amount\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"discount_amount\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"insurance_amount\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"sales_tax_amount\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"shipping_amount\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"shipping_discount_amount\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"shipping_tax_amount\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"other_amount\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"tip_amount\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"transaction_status\": \"s\",\n        \"transaction_subject\": \"string\",\n        \"transaction_note\": \"string\",\n        \"payment_tracking_id\": \"string\",\n        \"bank_reference_id\": \"string\",\n        \"ending_balance\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"available_balance\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"invoice_id\": \"string\",\n        \"custom_field\": \"string\",\n        \"protection_eligibility\": \"st\",\n        \"credit_term\": \"string\",\n        \"credit_transactional_fee\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"credit_promotional_fee\": {\n          \"currency_code\": \"str\",\n          \"value\": \"string\"\n        },\n        \"annual_percentage_rate\": \"string\",\n        \"payment_method_type\": \"string\",\n        \"instrument_type\": \"string\",\n        \"instrument_sub_type\": \"string\",\n        \"decline_code\": \"string\"\n      },\n      \"payer_info\": {\n        \"account_id\": \"string\",\n        \"email_address\": \"string\",\n        \"phone_number\": {\n          \"country_code\": \"str\",\n          \"national_number\": \"string\",\n          \"extension_number\": \"string\"\n        },\n        \"address_status\": \"s\",\n        \"payer_status\": \"s\",\n        \"payer_name\": {\n          \"prefix\": \"string\",\n          \"given_name\": \"string\",\n          \"surname\": \"string\",\n          \"middle_name\": \"string\",\n          \"suffix\": \"string\",\n          \"alternate_full_name\": \"string\",\n          \"full_name\": \"string\"\n        },\n        \"country_code\": \"st\",\n        \"address\": {\n          \"line1\": \"string\",\n          \"line2\": \"string\",\n          \"city\": \"string\",\n          \"state\": \"string\",\n          \"country_code\": \"st\",\n          \"postal_code\": \"string\"\n        }\n      },\n      \"shipping_info\": {\n        \"name\": \"string\",\n        \"method\": \"string\",\n        \"address\": {\n          \"line1\": \"string\",\n          \"line2\": \"string\",\n          \"city\": \"string\",\n          \"state\": \"string\",\n          \"country_code\": \"st\",\n          \"postal_code\": \"string\"\n        },\n        \"secondary_shipping_address\": {\n          \"line1\": \"string\",\n          \"line2\": \"string\",\n          \"city\": \"string\",\n          \"state\": \"string\",\n          \"country_code\": \"st\",\n          \"postal_code\": \"string\"\n        }\n      },\n      \"cart_info\": {\n        \"item_details\": [\n          {\n            \"item_code\": \"string\",\n            \"item_name\": \"string\",\n            \"item_description\": \"string\",\n            \"item_options\": \"string\",\n            \"item_quantity\": \"string\",\n            \"item_unit_price\": {\n              \"currency_code\": \"str\",\n              \"value\": \"string\"\n            },\n            \"item_amount\": {\n              \"currency_code\": \"str\",\n              \"value\": \"string\"\n            },\n            \"discount_amount\": {\n              \"currency_code\": \"str\",\n              \"value\": \"string\"\n            },\n            \"adjustment_amount\": {\n              \"currency_code\": \"str\",\n              \"value\": \"string\"\n            },\n            \"gift_wrap_amount\": {\n              \"currency_code\": \"str\",\n              \"value\": \"string\"\n            },\n            \"tax_percentage\": \"string\",\n            \"tax_amounts\": [\n              {\n                \"tax_amount\": {\n                  \"currency_code\": \"str\",\n                  \"value\": \"string\"\n                }\n              }\n            ],\n            \"basic_shipping_amount\": {\n              \"currency_code\": \"str\",\n              \"value\": \"string\"\n            },\n            \"extra_shipping_amount\": {\n              \"currency_code\": \"str\",\n              \"value\": \"string\"\n            },\n            \"handling_amount\": {\n              \"currency_code\": \"str\",\n              \"value\": \"string\"\n            },\n            \"insurance_amount\": {\n              \"currency_code\": \"str\",\n              \"value\": \"string\"\n            },\n            \"total_item_amount\": {\n              \"currency_code\": \"str\",\n              \"value\": \"string\"\n            },\n            \"invoice_number\": \"string\",\n            \"checkout_options\": [\n              {\n                \"checkout_option_name\": \"string\",\n                \"checkout_option_value\": \"string\"\n              }\n            ]\n          }\n        ],\n        \"tax_inclusive\": false,\n        \"paypal_invoice_id\": \"string\"\n      },\n      \"store_info\": {\n        \"store_id\": \"string\",\n        \"terminal_id\": \"string\"\n      },\n      \"auction_info\": {\n        \"auction_site\": \"string\",\n        \"auction_item_site\": \"http://example.com\",\n        \"auction_buyer_id\": \"string\",\n        \"auction_closing_date\": \"stringstringstringst\"\n      },\n      \"incentive_info\": {\n        \"incentive_details\": [\n          {\n            \"incentive_type\": \"string\",\n            \"incentive_code\": \"string\",\n            \"incentive_amount\": {\n              \"currency_code\": \"str\",\n              \"value\": \"string\"\n            },\n            \"incentive_program_code\": \"string\"\n          }\n        ]\n      }\n    }\n  ],\n  \"account_number\": \"string\",\n  \"start_date\": \"stringstringstringst\",\n  \"end_date\": \"stringstringstringst\",\n  \"last_refreshed_datetime\": \"stringstringstringst\",\n  \"page\": 0,\n  \"total_items\": 0,\n  \"total_pages\": 0,\n  \"links\": [\n    {\n      \"href\": \"string\",\n      \"rel\": \"string\",\n      \"method\": \"GET\"\n    }\n  ]\n}",
+  "title": "List transactions - Transactions v1 | PayPal Developer",
+  "url": "https://developer.paypal.com/api/transaction-search/v1/search-get"
+}

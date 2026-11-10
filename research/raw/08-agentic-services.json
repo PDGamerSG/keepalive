@@ -1,0 +1,271 @@
+{
+  "links": [
+    {
+      "text": "Business",
+      "url": "https://developer.paypal.com/get-started"
+    },
+    {
+      "text": "Platforms and marketplaces",
+      "url": "https://developer.paypal.com/platforms/overview"
+    },
+    {
+      "text": "Enterprise",
+      "url": "https://developer.paypal.com/braintree"
+    },
+    {
+      "text": "Log In",
+      "url": "https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdashboard%2F&intent=developer&ctxId=ul1794254950626"
+    },
+    {
+      "text": "Sign Up",
+      "url": "https://www.paypal.com/webapps/mpp/account-selection?intent=developer&country.x=US&locale.x=en_US"
+    },
+    {
+      "text": "Get started",
+      "url": "https://developer.paypal.com/get-started"
+    },
+    {
+      "text": "Payments",
+      "url": "https://developer.paypal.com/payments"
+    },
+    {
+      "text": "Revenue",
+      "url": "https://developer.paypal.com/revenue"
+    },
+    {
+      "text": "Developer resources",
+      "url": "https://developer.paypal.com/developer-resources"
+    },
+    {
+      "text": "Business",
+      "url": "https://developer.paypal.com/get-started"
+    },
+    {
+      "text": "Platforms and marketplaces",
+      "url": "https://developer.paypal.com/platforms/overview"
+    },
+    {
+      "text": "Enterprise",
+      "url": "https://developer.paypal.com/braintree"
+    },
+    {
+      "text": "Get started",
+      "url": "https://developer.paypal.com/get-started"
+    },
+    {
+      "text": "Payments",
+      "url": "https://developer.paypal.com/payments"
+    },
+    {
+      "text": "Revenue",
+      "url": "https://developer.paypal.com/revenue"
+    },
+    {
+      "text": "Developer resources",
+      "url": "https://developer.paypal.com/developer-resources"
+    },
+    {
+      "text": "FAQs",
+      "url": "https://www.paypal.com/cshelp/technical"
+    },
+    {
+      "text": "Account help",
+      "url": "https://www.paypal.com/cshelp/contact-us"
+    },
+    {
+      "text": "Technical support",
+      "url": "https://www.paypal.com/cshelp/technical"
+    },
+    {
+      "text": "API Status",
+      "url": "https://www.paypal-status.com/api/production/"
+    },
+    {
+      "text": "JavaScript SDK",
+      "url": "https://developer.paypal.com/sdk/js/set-up"
+    },
+    {
+      "text": "React SDK",
+      "url": "https://developer.paypal.com/sdk/react/reference"
+    },
+    {
+      "text": "REST API",
+      "url": "https://developer.paypal.com/api"
+    },
+    {
+      "text": "Server SDKs",
+      "url": "https://developer.paypal.com/serversdk"
+    },
+    {
+      "text": "Codes",
+      "url": "https://developer.paypal.com/api/codes/"
+    },
+    {
+      "text": "Webhook events",
+      "url": "https://developer.paypal.com/api/rest/webhooks/"
+    },
+    {
+      "text": "iOS",
+      "url": "https://developer.paypal.com/sdk/ios/overview"
+    },
+    {
+      "text": "Android",
+      "url": "https://developer.paypal.com/sdk/android/overview"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developer.paypal.com/revenue"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developer.paypal.com/payouts/overview"
+    },
+    {
+      "text": "About agentic commerce services",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about"
+    },
+    {
+      "text": "About agentic commerce services",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about"
+    },
+    {
+      "text": "View as Markdown",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about.md"
+    },
+    {
+      "text": "View as Markdown",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about.md"
+    },
+    {
+      "text": "this form",
+      "url": "https://www.paypal.ai/us/home#form"
+    },
+    {
+      "text": "PayPal's AI resources for developers",
+      "url": "https://developer.paypal.com/ai-tools/get-started/"
+    },
+    {
+      "text": "Benefits",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about#benefits"
+    },
+    {
+      "text": "Store Sync",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about#store-sync"
+    },
+    {
+      "text": "Store Sync",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about#store-sync"
+    },
+    {
+      "text": "Agent Ready",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about#agent-ready"
+    },
+    {
+      "text": "Agent Ready",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about#agent-ready"
+    },
+    {
+      "text": "Agent Ready overview",
+      "url": "https://developer.paypal.com/agent-ready/overview"
+    },
+    {
+      "text": "Store Sync",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about#store-sync"
+    },
+    {
+      "text": "get the PayPal extension from the Visual Studio Marketplace",
+      "url": "https://marketplace.visualstudio.com/items?itemName=PayPal.vscode-paypal"
+    },
+    {
+      "text": "Payouts FAQs\n\nFind answers to common questions about PayPal Payouts, including fees, sending limits, recipient countries, currencies, payment confirmation, and issue resolution.",
+      "url": "https://developer.paypal.com/payouts/faqs"
+    },
+    {
+      "text": "Overview\n\nNext Page",
+      "url": "https://developer.paypal.com/agent-ready/overview"
+    },
+    {
+      "text": "ON THIS PAGE",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about#"
+    },
+    {
+      "text": "Benefits",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about#benefits"
+    },
+    {
+      "text": "Agent Ready",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about#agent-ready"
+    },
+    {
+      "text": "Store Sync",
+      "url": "https://developer.paypal.com/agentic-commerce-services/about#store-sync"
+    },
+    {
+      "text": "GitHub repo",
+      "url": "https://github.com/paypal"
+    },
+    {
+      "text": "Postman repo",
+      "url": "https://www.postman.com/paypal"
+    },
+    {
+      "text": "PayPal.com",
+      "url": "https://paypal.com/"
+    },
+    {
+      "text": "llms.txt",
+      "url": "https://developer.paypal.com/llms.txt"
+    },
+    {
+      "text": "Developer blog",
+      "url": "https://developer.paypal.com/community/blog/"
+    },
+    {
+      "text": "Community",
+      "url": "https://developer.paypal.com/community"
+    },
+    {
+      "text": "Help Center",
+      "url": "https://www.paypal.com/cshelp/technical"
+    },
+    {
+      "text": "Sign up for updates",
+      "url": "https://developer.paypal.com/community/developer-program"
+    },
+    {
+      "text": "X",
+      "url": "https://x.com/paypaldev"
+    },
+    {
+      "text": "YouTube",
+      "url": "https://www.youtube.com/@paypaldev"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/paypaldev"
+    },
+    {
+      "text": "Discord",
+      "url": "https://developer.paypal.com/discord"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://www.paypal.com/legalhub/privacy-full"
+    },
+    {
+      "text": "Terms of Service",
+      "url": "https://www.paypal.com/legalhub/useragreement-full"
+    },
+    {
+      "text": "Developer Agreement",
+      "url": "https://www.paypal.com/legalhub/paypal/xdeveloper-full"
+    },
+    {
+      "text": "Manage cookies and learn more",
+      "url": "https://www.paypal.com/myaccount/privacy/cookiePrefs?locale=en_US"
+    }
+  ],
+  "text": "Business\nPlatforms and marketplaces\nEnterprise\nSearch...\n⌘ K\nLog In\nSign Up\nGet started\nPayments\nRevenue\nDeveloper resources\nHelp\nAPIs & SDKs\nREVENUE\nOverview\n\nBILLING\n\nInvoicing\nOffer subscriptions\n\nSEND PAYOUTS\n\nOverview\nUse PayPal Payouts\nPayouts reference\n\nAGENTIC COMMERCE SERVICES\n\nAbout agentic commerce services\nAgent ready\n\nOPERATIONAL SUPPORT\n\nManaging disputes\nFraud and risk management\nLog in with PayPal\nReports\nTrack orders\nAbout agentic commerce services\nAgentic commerce services overview\nOverview of PayPal's agentic commerce services, which enable merchants to create AI-powered shopping experiences for customers.\n\nLast updated: October 14, 2026\n\nCopy for LLM\n\nView as Markdown\n\nMerchants can use PayPal's agentic commerce services to create AI-powered shopping experiences, so customers can shop using everyday language. These services help customers find products, manage their shopping carts, and complete purchases across different online stores and platforms.\n\nTo access and use agentic commerce services, merchants must complete this form to contact the AI team at PayPal and request access. The PayPal Agentic Commerce Services team will follow up after your form submission to guide you through onboarding.\n\nFor information about some of PayPal's other AI offerings, see PayPal's AI resources for developers.\n\nBenefits\n\nPayPal's agentic commerce services offer several key advantages to help merchants build successful AI-powered shopping experiences:\n\nEasy setup: Connect your product listings to PayPal's partners like Wix, Commerce (BigCommerce & Feedonomics), and Shopware to make your products easy for customers to find and buy.\nBetter product discovery and more sales: Help customers find your products through AI shopping assistants that understand what they're looking for, turning conversations into purchases and boosting sales.\nKeep control of your customer relationships: With Store Sync, you stay in charge of your business. You control your brand appearance and customer communications for all AI-powered transactions.\nConnect once to reach many platforms: With Store Sync and Agent Ready, you can connect to PayPal once and reach customers across multiple AI shopping platforms.\nAgent Ready\n\nAgent Ready enables merchants to accept payments through AI assistants with minimal changes to their current payment setup. This includes things like accepting payments for customers who are shopping through a store's shopping bot within ChatGPT. Instead of building separate connections for each AI platform, you can use your existing PayPal tools while PayPal handles security and compatibility across different platforms. Agent Ready can grow with your business, supporting both supervised and automatic shopping scenarios. For more information see Agent Ready overview.\n\nStore Sync\n\nStore Sync enables merchants to make their products discoverable by AI shopping assistants and lets customers place orders directly into your existing order management systems. Customers can tell an AI assistant what they want, and the AI can connect to your store to help find products, manage shopping carts, and complete purchases without leaving their chosen AI platform. For more information, please complete the form above and we’ll reach out to you soon.\n\nFor help with code snippets and API references, including migration, get the PayPal extension from the Visual Studio Marketplace.\n\nPayouts FAQs\n\nFind answers to common questions about PayPal Payouts, including fees, sending limits, recipient countries, currencies, payment confirmation, and issue resolution.\n\nOverview\n\nNext Page\n\nON THIS PAGE\nBenefits\nAgent Ready\nStore Sync\n\nResources\n\nGitHub repo\n\nPostman repo\n\nPayPal.com\n\nllms.txt\n\nWhere to find us\n\nDeveloper blog\n\nCommunity\n\nHelp Center\n\nSign up for updates\n\nWhere to hear from us\n\nX\n\nYouTube\n\nLinkedIn\n\nDiscord\n\nLegal\n\nPrivacy Policy\n\nTerms of Service\n\nDeveloper Agreement\n\n© 2026 PayPal. All rights reserved.\n\nIf you accept cookies, we'll use them to improve and customise your experience and enable our partners to show you personalised PayPal ads when you visit other sites. Manage cookies and learn more\nAccept\nDecline\nClose\nFeedback",
+  "title": "Agentic commerce services overview | PayPal Developer",
+  "url": "https://developer.paypal.com/agentic-commerce-services/about"
+}

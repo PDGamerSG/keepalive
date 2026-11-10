@@ -1,0 +1,368 @@
+{
+  "fullTextLength": 13782,
+  "links": [
+    {
+      "text": "Business",
+      "url": "https://developer.paypal.com/get-started"
+    },
+    {
+      "text": "Platforms and marketplaces",
+      "url": "https://developer.paypal.com/platforms/overview"
+    },
+    {
+      "text": "Enterprise",
+      "url": "https://developer.paypal.com/braintree"
+    },
+    {
+      "text": "Get started",
+      "url": "https://developer.paypal.com/get-started"
+    },
+    {
+      "text": "Payments",
+      "url": "https://developer.paypal.com/payments"
+    },
+    {
+      "text": "Revenue",
+      "url": "https://developer.paypal.com/revenue"
+    },
+    {
+      "text": "Developer resources",
+      "url": "https://developer.paypal.com/developer-resources"
+    },
+    {
+      "text": "FAQs",
+      "url": "https://www.paypal.com/cshelp/technical"
+    },
+    {
+      "text": "Account help",
+      "url": "https://www.paypal.com/cshelp/contact-us"
+    },
+    {
+      "text": "Technical support",
+      "url": "https://www.paypal.com/cshelp/technical"
+    },
+    {
+      "text": "API Status",
+      "url": "https://www.paypal-status.com/api/production/"
+    },
+    {
+      "text": "JavaScript SDK",
+      "url": "https://developer.paypal.com/sdk/js/set-up"
+    },
+    {
+      "text": "React SDK",
+      "url": "https://developer.paypal.com/sdk/react/reference"
+    },
+    {
+      "text": "REST API",
+      "url": "https://developer.paypal.com/api"
+    },
+    {
+      "text": "Server SDKs",
+      "url": "https://developer.paypal.com/serversdk"
+    },
+    {
+      "text": "Codes",
+      "url": "https://developer.paypal.com/api/codes/"
+    },
+    {
+      "text": "Webhook events",
+      "url": "https://developer.paypal.com/api/rest/webhooks/"
+    },
+    {
+      "text": "iOS",
+      "url": "https://developer.paypal.com/sdk/ios/overview"
+    },
+    {
+      "text": "Android",
+      "url": "https://developer.paypal.com/sdk/android/overview"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developer.paypal.com/developer-resources"
+    },
+    {
+      "text": "Upgrade older integrations",
+      "url": "https://developer.paypal.com/upgrade"
+    },
+    {
+      "text": "Make a checkout AI-ready",
+      "url": "https://developer.paypal.com/ai-tools/get-started"
+    },
+    {
+      "text": "API statuses",
+      "url": "https://www.paypal-status.com/api/production/"
+    },
+    {
+      "text": "Apps, scopes, and credentials",
+      "url": "https://developer.paypal.com/apps-scopes-and-credentials"
+    },
+    {
+      "text": "Security guidelines",
+      "url": "https://developer.paypal.com/security-guidelines"
+    },
+    {
+      "text": "Server-side SDK",
+      "url": "https://developer.paypal.com/serversdk/java/getting-started/how-to-get-started"
+    },
+    {
+      "text": "Donation SDK",
+      "url": "https://developer.paypal.com/sdk/donate"
+    },
+    {
+      "text": "Get started",
+      "url": "https://developer.paypal.com/api/get-started"
+    },
+    {
+      "text": "Make API requests",
+      "url": "https://developer.paypal.com/api/make-api-requests"
+    },
+    {
+      "text": "Handle API responses",
+      "url": "https://developer.paypal.com/api/handle-api-responses"
+    },
+    {
+      "text": "Rate limiting",
+      "url": "https://developer.paypal.com/api/rate-limiting"
+    },
+    {
+      "text": "REST API references",
+      "url": "https://developer.paypal.com/api/rest"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developer.paypal.com/ai-tools/get-started"
+    },
+    {
+      "text": "Agent toolkit",
+      "url": "https://developer.paypal.com/ai-tools/toolkit"
+    },
+    {
+      "text": "Agent tools",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools"
+    },
+    {
+      "text": "Build with an LLM",
+      "url": "https://developer.paypal.com/ai-tools/build-with-llm"
+    },
+    {
+      "text": "MCP server",
+      "url": "https://developer.paypal.com/ai-tools/mcp-server"
+    },
+    {
+      "text": "Prompts",
+      "url": "https://developer.paypal.com/ai-tools/prompts"
+    },
+    {
+      "text": "Credit card number generator",
+      "url": "https://developer.paypal.com/credit-card-number-generator"
+    },
+    {
+      "text": "IBAN generator",
+      "url": "https://developer.paypal.com/iban-generator"
+    },
+    {
+      "text": "VS Code extension",
+      "url": "https://developer.paypal.com/vs-code-extension"
+    },
+    {
+      "text": "Secure file transfer",
+      "url": "https://developer.paypal.com/secure-file-transfer"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developer.paypal.com/reference"
+    },
+    {
+      "text": "Country codes",
+      "url": "https://developer.paypal.com/reference/country-codes"
+    },
+    {
+      "text": "Currency codes",
+      "url": "https://developer.paypal.com/reference/currency-codes"
+    },
+    {
+      "text": "Locale codes",
+      "url": "https://developer.paypal.com/reference/locale-codes"
+    },
+    {
+      "text": "State codes",
+      "url": "https://developer.paypal.com/reference/state-codes"
+    },
+    {
+      "text": "Guidelines",
+      "url": "https://developer.paypal.com/reference/guidelines"
+    },
+    {
+      "text": "Product lifecycle",
+      "url": "https://developer.paypal.com/archive/product-lifecycle"
+    },
+    {
+      "text": "NVP/SOAP APIs",
+      "url": "https://developer.paypal.com/api/nvp-soap"
+    },
+    {
+      "text": "Agent tools",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools"
+    },
+    {
+      "text": "View as Markdown",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools.md"
+    },
+    {
+      "text": "View as Markdown",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools.md"
+    },
+    {
+      "text": "agent toolkit",
+      "url": "https://developer.paypal.com/ai-tools/toolkit/"
+    },
+    {
+      "text": "Catalog management",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#catalog-management"
+    },
+    {
+      "text": "Dispute management",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#dispute-management"
+    },
+    {
+      "text": "Invoices",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#invoices"
+    },
+    {
+      "text": "Payments",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#payments"
+    },
+    {
+      "text": "Reporting and insights",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#reporting-and-insights"
+    },
+    {
+      "text": "Shipment tracking",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#shipment-tracking"
+    },
+    {
+      "text": "Subscription management",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#subscription-management"
+    },
+    {
+      "text": "Additional tools for remote MCP server",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#additional-tools-for-remote-mcp-server"
+    },
+    {
+      "text": "remote MCP server",
+      "url": "https://developer.paypal.com/ai-tools/mcp-server#remote-mcp-server"
+    },
+    {
+      "text": "Agent toolkit\n\nPrevious Page",
+      "url": "https://developer.paypal.com/ai-tools/toolkit"
+    },
+    {
+      "text": "Build with an LLM\n\nNext Page",
+      "url": "https://developer.paypal.com/ai-tools/build-with-llm"
+    },
+    {
+      "text": "ON THIS PAGE",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#"
+    },
+    {
+      "text": "Catalog management",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#catalog-management"
+    },
+    {
+      "text": "Dispute management",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#dispute-management"
+    },
+    {
+      "text": "Invoices",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#invoices"
+    },
+    {
+      "text": "Payments",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#payments"
+    },
+    {
+      "text": "Reporting and insights",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#reporting-and-insights"
+    },
+    {
+      "text": "Shipment tracking",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#shipment-tracking"
+    },
+    {
+      "text": "Subscription management",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#subscription-management"
+    },
+    {
+      "text": "Additional tools for remote MCP server",
+      "url": "https://developer.paypal.com/ai-tools/agent-tools/#additional-tools-for-remote-mcp-server"
+    },
+    {
+      "text": "GitHub repo",
+      "url": "https://github.com/paypal"
+    },
+    {
+      "text": "Postman repo",
+      "url": "https://www.postman.com/paypal"
+    },
+    {
+      "text": "PayPal.com",
+      "url": "https://paypal.com/"
+    },
+    {
+      "text": "llms.txt",
+      "url": "https://developer.paypal.com/llms.txt"
+    },
+    {
+      "text": "Developer blog",
+      "url": "https://developer.paypal.com/community/blog/"
+    },
+    {
+      "text": "Community",
+      "url": "https://developer.paypal.com/community"
+    },
+    {
+      "text": "Help Center",
+      "url": "https://www.paypal.com/cshelp/technical"
+    },
+    {
+      "text": "Sign up for updates",
+      "url": "https://developer.paypal.com/community/developer-program"
+    },
+    {
+      "text": "X",
+      "url": "https://x.com/paypaldev"
+    },
+    {
+      "text": "YouTube",
+      "url": "https://www.youtube.com/@paypaldev"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/paypaldev"
+    },
+    {
+      "text": "Discord",
+      "url": "https://developer.paypal.com/discord"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://www.paypal.com/legalhub/privacy-full"
+    },
+    {
+      "text": "Terms of Service",
+      "url": "https://www.paypal.com/legalhub/useragreement-full"
+    },
+    {
+      "text": "Developer Agreement",
+      "url": "https://www.paypal.com/legalhub/paypal/xdeveloper-full"
+    },
+    {
+      "text": "Manage cookies and learn more",
+      "url": "https://www.paypal.com/myaccount/privacy/cookiePrefs?locale=en_US"
+    }
+  ],
+  "text": "Business\nPlatforms and marketplaces\nEnterprise\nSearch...\n⌘ K\nLog In\nSign Up\nGet started\nPayments\nRevenue\nDeveloper resources\nHelp\nAPIs & SDKs\nDEVELOPER RESOURCES\nOverview\nUpgrade older integrations\nMake a checkout AI-ready\nAPI statuses\n\nCREATE AN ACCOUNT\n\nApps, scopes, and credentials\nSecurity guidelines\n\nSDK\n\nJavaScript SDK v6\nJavaScript SDK v5\nServer-side SDK\nMobile SDKs\nDonation SDK\n\nAPI\n\nGet started\nMake API requests\nHandle API responses\nRate limiting\nREST API references\nAPI troubleshooting\nCodes\nWebhook events\n\nUPGRADE OLD INTEGRATIONS\n\nUpgrade hub\nPartner w/ commerce platforms\n\nTOOLS AND TESTING\n\nAI tools\nOverview\nAgent toolkit\nAgent tools\nBuild with an LLM\nMCP server\nPrompts\nCredit card number generator\nIBAN generator\nVS Code extension\nSandbox Testing\nNegative testing\nSecure file transfer\n\nREFERENCE\n\nOverview\nCountry codes\nCurrency codes\nLocale codes\nState codes\nGuidelines\n\nLEGACY INTEGRATIONS\n\nProduct lifecycle\nLegacy integration doc archive\nNVP/SOAP APIs\nAI tools\nAgent tools\nAgent tools reference\n\nLast updated: October 29, 2026\n\nCopy for LLM\n\nView as Markdown\n\nPayPal's agent toolkit includes the following tools.\n\nCatalog management\nFunctionality, Description, Parameters, Sample Prompt\nFunctionality\tDescription\tParameters\tSample Prompt\ncreate_product\tCreate a new product in the PayPal catalog.\tname (string, required): The name of the product.\n\ntype (string, required, enum): The type of the product. Allowed values are 'PHYSICAL', 'DIGITAL', 'SERVICE'.\tCreate a new product with the name {product_name} of type {product_type}.\nlist_product\tList products from the PayPal catalog. Pagination options are available.\tpage (number, optional): The specific page number to retrieve. The default behavior is to go to the first page.\n\npage_size (number, optional): The maximum number of products to return per page. The default behavior is to use a system-defined limit.\tList all products.\nshow_product_details\tShow details of a specific product from the PayPal catalog.\tproduct_id (string, required): The ID of the product to retrieve.\tShow the details for product id {product_id}.\nDispute management\nFunctionality, Description, Parameters, Sample Prompt\nFunctionality\tDescription\tParameters\tSample Prompt\nlist_disputes\tRetrieve a summary of all disputes with optional filtering.\tstatus (string, optional): Filter disputes by status, such as OPEN or RESOLVED.\tList all {status} disputes.\nget_dispute\tRetrieve detailed information about a specific dispute.\tdispute_id (string): The unique identifier of the dispute.\tGet details for dispute {dispute_id}.\naccept_dispute_claim\tAccept a dispute claim, resolving it in favor of the buyer.\tdispute_id (string): The unique identifier of the dispute.\tAccept the dispute with ID {dispute_id}.\nInvoices\nFunctionality, Description, Parameters, Sample Prompt\nFunctionality\tDescription\tParameters\tSample Prompt\ncreate_invoice\tCreate a new invoice in the PayPal system.\trecipient_email: Email address of the invoice recipient.\n\nitems: List of items or services to include in the invoice:\n- name (string): Name of the item.\n- quantity (number): Quantity of the item.\n- unit_price (number): Price per unit of the item.\tCreate an invoice for {customer_email} including 2 hours of consulting at $150 per hour.\nlist_invoices\tList invoices. Pagination and filtering options are available.\tpage (number, optional): Page number for pagination.\n\npage_size (number, optional): Number of invoices per page.\n\nstatus (string, optional): Filter invoices by status (such as SENT or PAID).\tList all {status} invoices on page {page} with {page_size} invoices per page.\nget_invoice\tRetrieve details about a specific invoice.\tinvoice_id (string): The unique identifier of the invoice.\tWhat are the details of invoice {invoice_id}?\nsend_invoice\tSend an existing invoice to the specified recipient.\tinvoice_id (string): The unique identifier of the invoice to be sent.\tSend invoice {invoice_id} to the client.\nsend_invoice_reminder\tSend a reminder for an existing invoice.\tinvoice_id (string): The unique identifier of the invoice.\tSend a reminder for invoice {invoice_id}.\ncancel_sent_invoice\tCancel a sent invoice.\tinvoice_id (string): The unique identifier of the invoice to cancel.\tCancel the sent invoice {invoice_id}.\ngenerate_invoice_qr_code\tGenerate a QR code for an invoice.\tinvoice_id (string): The unique identifier of the invoice.\tGenerate a QR code for invoice {invoice_id}.\nPayments\nFunctionality, Description, Parameters, Sample Prompt\nFunctionality\tDescription\tParameters\tSample Prompt\ncreate_order\tCreate an order in the PayPal system based on the provided details.\titems (array): List of items to include in the order each item should have:\n- name (string): Name of the item.\n- quantity (number): Quantity of the item.\n- unit_price (number): Price per unit of the item.\n\ncurrency (string): Currency code, such as USD or EUR.\tPlace an order for {quantity} units of '{item_name}' at ${unit_price} each.\ncreate_refund\tProcess a refund for a captured payment.\tcapture_id (string): The unique identifier of the captured payment to refund.\n\namount (number, optional): The refund amount. If not specified, a refund is for the full amount of the purchase.\n\ncurrency (string, optional): Currency code for the refund, such as USD or EUR.\tProcess a refund for capture {capture_id}.\n\nProcess a refund for order {order_id}.\nget_order\tGet details of a specific payment.\tpayment_id (string, required)\tWhat are the details of payment {payment_id}?\nget_refund\tGet the details for a specific refund.\trefund_id (string): The unique identifier of the refund.\tGet details for refund {refund_id}.\npay_order\tCapture payment for an authorized order.\torder_id (string): The unique identifier of the order to capture.\tCapture payment for order {order_id}.\nReporting and insights\nFunctionality, Description, Parameters, Sample Prompt\nFunctionality\tDescription\tParameters\tSample Prompt\nget_merchant_insights\tRetrieve business intelligence metrics and analytics for a merchant, filtered by start date, end date, insight type, and time interval.\tstart_date (string, required): The start date range to filter insights.\n\nend_date (string, required): The end date range to filter insights.\n\ninsight_type (str, required): The type of insight to retrieve. It can be \"ORDERS\" or \"SALES\"\n\ntime_interval (str, required): The time periods used for segmenting metrics data. It can be \"DAILY\", \"WEEKLY\", \"MONTHLY\", \"QUARTERLY\", or \"YEARLY\"\tGive me insights on my sales data from 01/01/2025 to 02/01/2025 using daily time intervals.\nlist_transaction\tList all transactions. Pagination and filtering options are available.\tstart_date (string, optional): The start date for filtering transactions. The default value is 31 days.\n\nend_date (string, optional): The end date for filtering transactions.\tGet the list of my transactions for the last {days} days.\nShipment tracking\nFunctionality, Description, Parameters, Sample Prompt\nFunctionality\tDescription\tParameters\tSample Prompt\ncreate_shipment_tracking\tCreate shipment tracking information for a PayPal transaction.\ttracking_number (string, required): The tracking number for the shipment.\n\ntransaction_id (string, required): The transaction ID associated with the shipment.\n\ncarrier (string, required): The carrier handling the shipment, such as FEDEX or UPS.\n\norder_id: (string, optional): The order ID for the shipment.\n\nstatus: (string, optional, enum): The current status of the shipment. Allowed values are [\"ON_HOLD\", \"SHIPPED\", \"DELIVERED\", \"CANCELLED\", \"LOCAL_PICKUP\"]. The default value is \"SHIPPED\".\tAdd tracking number '{tracking_number}' with carrier '{carrier}' to PayPal order ID {order_id}.\nget_shipment_tracking\tGet shipment tracking information for a specific shipment.\torder_id (string, required): The order ID for the shipment.\n\ntransaction_id (string, optional): The transaction ID associated with the shipment.\tGet the tracking number for PayPal order ID {order_id}.\nupdate_shipment_tracking\tUpdate shipment tracking information for a specific shipment.\ttransaction_id (string, required): The transaction ID for the shipment.\n\ntracking_number (string, required): The tracking number for the shipment that you want to update.\n\nnew_tracking_number (string, optional): The new tracking number for the shipment if you're updating its tracking number.\n\nstatus (string, required): The status of the shipment. It can be \"CANCELLED\", \"DELIVERED\", \"LOCAL_PICKUP\", \"ON_HOLD\", or \"SHIPPED\".\n\ncarrier (string, optional): The carrier that is handling the shipment, such as FEDEX or UPS.\tUpdate the shipment tracking info for transaction_id '{transaction_id}' with tracking number '{tracking_number}' and status '{status}' to carrier '{carrier}' and use the new_tracking_number '{new_tracking_number}'.\nSubscription management\nFunctionality, Description, Parameters, Sample Prompt\nFunctionality\tDescription\tParameters\tSample Prompt\ncancel_subscription\tCancel an active subscription.\tsubscription_id (string, required): The ID of the subscription to cancel.\n\nreason (string, optional): Cancellation reason.\tCancel the subscription id {subscription_id}.\ncreate_subscription\tCreate a new subscription.\tplan_id (string, required): The ID of the subscription plan.\n\nsubscriber (object, optional): The subscriber information:\n- name (string, optional): The name of the subscriber.\n- email (string, optional): The email address of the subscriber.\tCreate a subscription for plan id {plan_id} with subscriber name as {subscriber_name} with email address {subscriber_email}.\ncreate_subscription_plan\tCreate a new subscription plan.\tproduct_id (string, required): The ID of the product.\n\nname (string, required): The plan name.\n\nbilling_cycles (array, required): An array of billing cycles for trial and regular billing. A plan can have at most 2 trial cycles and only 1 regular cycle:\n- tenure_type (string, required): [REGULAR|TRIAL].\n- sequence (integer, required): The order of this cycle.\n- frequency (integer, required): Frequency details.\n- interval_unit (string, required): [DAY|WEEK|MONTH|YEAR].\n\npayment_preferences (object, required): Payment preferences for the subscription.\n\nauto_bill_outstanding (boolean, optional): Automatically bill outstanding amount (default: true).\tCreate a {interval_unit} PayPal subscription plan for product '{product_name}' with billing cycle '{billing_cycle}', price '{price} {currency}'. Set trial period cycle to '{trial_period}'.\nlist_subscription_plans\tList subscription plans.\tproduct_id (number, optional): List the subscription plans for a specific product.\n\npage (number, optional): The page number to retrieve (default: first page).\n\npage_size (number, optional): The maximum number of products to return per page (default: system-defined limit).\tList all subscription plans.\nshow_subscription_details\tShow details of a specific subscription.\tsubscription_id (string, required): The ID of the subscription to retrieve.\tShow the details for subscription id {subscription_id}.\nshow_subscription_plan_details\tShow details of a specific subscription plan.\tbilling_plan_id (string, required): The ID of the subscription plan to retrieve.\tShow the details for plan id {billing_plan_id}.\nupdate_subscription\tUpdate an existing subscription.\tsubscription_id (string, required): The ID of the subscription to update.\tUpdate the PayPal subscription ID {subscription_id} to billing cycle {billing_cycle} and price {price}.\nAdditional tools for remote MCP server\n\nPayPal's remote MCP server offers more tools for product search and checkout using PayPal for payments. These tools are for gift cards only.\n\nTo use these tools in your MCP client, you provide an extra argument. For example, if you are using Claude, add a header parameter, as shown in the following example.\n\n{\n  \"mcpServers\": {\n    \"paypal-commerce-ai\": {\n      \"command\": \"npx\",\n      \"args\": [\n        \"mcp-remote\",\n        \"https://mcp.paypal.com/sse\",\n        //Pass additional header parameter to see the commerce tools. \n        \"--header\",\n        \"x-feature-flags: commerce:true\"\n      ]\n    }\n  }\n}\nFunctionality, Description, Sample prompt\nFunctionality\tDescription\tSample prompt\nsearch_product\tFind gift card products in the PayPal catalog.\n\nThis tool searches the catalog for gift cards that meet your criteria. It returns product information that includes pricing, availability, and purchase options.\tFind available gift cards.\n\nShow me gift cards that cost less than $50.\ncreate_cart\tOpen a new shopping cart with specified items and shipping preferences.\n\nThis tool creates a new shopping cart with the selected gift cards. It handles cart initialization, item configuration, and preparing the cart for checkout.\tAdd a $50 gift card to my cart.\ncheckout_cart\tFinalize a shopping cart to complete the purchase process.\n\nThis tool processes the final checkout for a configured shopping cart using PayPal for payment. It handles payment processing, transaction validation, and purchase confirmation.\tComplete checkout for my current cart using PayPal.\n\nAgent toolkit\n\nPrevious Page\n\nBuild with an LLM\n\nNext Page\n\nON THIS PAGE\nCatalog management\nDispute management\nInvoices\nPayments\nReporting and insights\nShipment tracking\nSubscription management\nAdditional tools for remote MCP server\n\nResources\n\nGitHub repo\n\nPostman repo\n\nPayPal.com\n\nllms.txt\n\nWhere to find us\n\nDeveloper blog\n\nCommunity\n\nHelp Center\n\nSign up for updates\n\nWhere to hear from us\n\nX\n\nYouTube\n\nLinkedIn\n\nDiscord\n\nLegal\n\nPrivacy Policy\n\nTerms of Service\n\nDeveloper Agreement\n\n© 2026 PayPal. All rights reserved.\n\nIf you accept cookies, we'll use them to improve and customise your experience and enable our partners to show you personalised PayPal ads when you visit other sites. Manage cookies and learn more\nAccept\nDecline\nClose\nFeedback",
+  "title": "Agent tools reference | PayPal Developer",
+  "url": "https://developer.paypal.com/ai-tools/agent-tools/"
+}

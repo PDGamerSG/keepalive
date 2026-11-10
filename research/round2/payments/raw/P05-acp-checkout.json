@@ -1,0 +1,77 @@
+{
+  "fullTextLength": 71,
+  "headings": [
+    "404",
+    "This page could not be found."
+  ],
+  "links": [
+    {
+      "href": "https://www.agenticcommerce.dev/",
+      "text": "Agentic Commerce Protocol"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs",
+      "text": "Docs"
+    },
+    {
+      "href": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+      "text": "GitHub"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs",
+      "text": "Introduction"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs/getting-started/quickstart",
+      "text": "Quickstart"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs/getting-started/sellers",
+      "text": "Sellers"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs/concepts/architecture",
+      "text": "Architecture"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs/concepts/capability-negotiation",
+      "text": "Capability negotiation"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs/concepts/extensions",
+      "text": "Extensions"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs/concepts/lifecycle",
+      "text": "Lifecycle"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs/concepts/security",
+      "text": "Security"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs/reference/checkout",
+      "text": "Checkout"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs/reference/payments",
+      "text": "Payments"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs/reference/webhooks",
+      "text": "Webhooks"
+    },
+    {
+      "href": "https://www.agenticcommerce.dev/docs/changelog",
+      "text": "Changelog"
+    },
+    {
+      "href": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+      "text": "GitHub"
+    }
+  ],
+  "retrievedAt": "2026-11-09T20:59:39.913Z",
+  "text": "Agentic Commerce Protocol\nDocs\nGitHub\n404\nThis page could not be found.",
+  "title": "Agentic Commerce Protocol",
+  "url": "https://www.agenticcommerce.dev/docs/checkout"
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "buyer-plan/v1",
+  "routes": [
+    {
+      "vehicleId": "VAN-1",
+      "stopIds": [
+        "A",
+        "B",
+        "C"
+      ]
+    }
+  ]
+}

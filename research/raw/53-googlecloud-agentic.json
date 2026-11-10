@@ -1,0 +1,284 @@
+{
+  "fullTextLength": 7030,
+  "links": [
+    {
+      "text": "Jump to Content",
+      "url": "https://cloud.google.com/blog/#content"
+    },
+    {
+      "text": "Cloud",
+      "url": "https://cloud.google.com/"
+    },
+    {
+      "text": "Blog",
+      "url": "https://cloud.google.com/blog/"
+    },
+    {
+      "text": "Contact sales",
+      "url": "https://cloud.google.com/contact/"
+    },
+    {
+      "text": "Get started for free",
+      "url": "https://console.cloud.google.com/freetrial/"
+    },
+    {
+      "text": "Cloud",
+      "url": "https://cloud.google.com/"
+    },
+    {
+      "text": "Blog",
+      "url": "https://cloud.google.com/blog/"
+    },
+    {
+      "text": "Developers & Practitioners",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners"
+    },
+    {
+      "text": "Transform with Google Cloud",
+      "url": "https://cloud.google.com/transform"
+    },
+    {
+      "text": "AI & Machine Learning",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning"
+    },
+    {
+      "text": "API Management",
+      "url": "https://cloud.google.com/blog/products/api-management"
+    },
+    {
+      "text": "Application Development",
+      "url": "https://cloud.google.com/blog/products/application-development"
+    },
+    {
+      "text": "Application Modernization",
+      "url": "https://cloud.google.com/blog/products/application-modernization"
+    },
+    {
+      "text": "Chrome Enterprise",
+      "url": "https://cloud.google.com/blog/products/chrome-enterprise"
+    },
+    {
+      "text": "Compute",
+      "url": "https://cloud.google.com/blog/products/compute"
+    },
+    {
+      "text": "Containers & Kubernetes",
+      "url": "https://cloud.google.com/blog/products/containers-kubernetes"
+    },
+    {
+      "text": "Data Analytics",
+      "url": "https://cloud.google.com/blog/products/data-analytics"
+    },
+    {
+      "text": "Databases",
+      "url": "https://cloud.google.com/blog/products/databases"
+    },
+    {
+      "text": "DevOps & SRE",
+      "url": "https://cloud.google.com/blog/products/devops-sre"
+    },
+    {
+      "text": "Maps & Geospatial",
+      "url": "https://cloud.google.com/blog/topics/maps-geospatial"
+    },
+    {
+      "text": "Infrastructure",
+      "url": "https://cloud.google.com/blog/products/infrastructure"
+    },
+    {
+      "text": "Infrastructure Modernization",
+      "url": "https://cloud.google.com/blog/products/infrastructure-modernization"
+    },
+    {
+      "text": "Networking",
+      "url": "https://cloud.google.com/blog/products/networking"
+    },
+    {
+      "text": "Productivity & Collaboration",
+      "url": "https://cloud.google.com/blog/products/productivity-collaboration"
+    },
+    {
+      "text": "SAP on Google Cloud",
+      "url": "https://cloud.google.com/blog/products/sap-google-cloud"
+    },
+    {
+      "text": "Storage & Data Transfer",
+      "url": "https://cloud.google.com/blog/products/storage-data-transfer"
+    },
+    {
+      "text": "Sustainability",
+      "url": "https://cloud.google.com/blog/topics/sustainability"
+    },
+    {
+      "text": "Security & Identity",
+      "url": "https://cloud.google.com/blog/products/identity-security"
+    },
+    {
+      "text": "Threat Intelligence",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence"
+    },
+    {
+      "text": "IT Leaders",
+      "url": "https://cloud.google.com/transform"
+    },
+    {
+      "text": "Partners",
+      "url": "https://cloud.google.com/blog/topics/partners"
+    },
+    {
+      "text": "Startups & SMB",
+      "url": "https://cloud.google.com/blog/topics/startups"
+    },
+    {
+      "text": "Training & Certifications",
+      "url": "https://cloud.google.com/blog/topics/training-certifications"
+    },
+    {
+      "text": "Inside Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/inside-google-cloud"
+    },
+    {
+      "text": "Google Cloud Next & Events",
+      "url": "https://cloud.google.com/blog/topics/google-cloud-next"
+    },
+    {
+      "text": "Google Cloud Consulting",
+      "url": "https://cloud.google.com/blog/topics/consulting"
+    },
+    {
+      "text": "Google Maps Platform",
+      "url": "https://mapsplatform.google.com/resources/blog/"
+    },
+    {
+      "text": "Google Workspace",
+      "url": "https://workspace.google.com/blog"
+    },
+    {
+      "text": "Financial Services",
+      "url": "https://cloud.google.com/blog/topics/financial-services"
+    },
+    {
+      "text": "Healthcare & Life Sciences",
+      "url": "https://cloud.google.com/blog/topics/healthcare-life-sciences"
+    },
+    {
+      "text": "Manufacturing",
+      "url": "https://cloud.google.com/blog/topics/manufacturing"
+    },
+    {
+      "text": "Media & Entertainment",
+      "url": "https://cloud.google.com/blog/products/media-entertainment"
+    },
+    {
+      "text": "Public Sector",
+      "url": "https://cloud.google.com/blog/topics/public-sector"
+    },
+    {
+      "text": "Retail",
+      "url": "https://cloud.google.com/blog/topics/retail"
+    },
+    {
+      "text": "Supply Chain",
+      "url": "https://cloud.google.com/blog/topics/supply-chain-logistics"
+    },
+    {
+      "text": "Telecommunications",
+      "url": "https://cloud.google.com/blog/topics/telecommunications"
+    },
+    {
+      "text": "Developers & Practitioners",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners"
+    },
+    {
+      "text": "Transform with Google Cloud",
+      "url": "https://cloud.google.com/transform"
+    },
+    {
+      "text": "Contact sales",
+      "url": "https://cloud.google.com/contact/"
+    },
+    {
+      "text": "Get started for free",
+      "url": "https://console.cloud.google.com/freetrial/"
+    },
+    {
+      "text": "Try now",
+      "url": "https://business.gemini.google/?utm_source=cloud.google.com/blog&utm_medium=et&utm_campaign=FY26-Q2-GLOBAL-GLO27877-physicalevent-er-next26-mc-105752"
+    },
+    {
+      "text": "Google Cloud’s Conversational Commerce agent",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-conversational-commerce-agent-on-vertex-ai?e=48754805"
+    },
+    {
+      "text": "Agent2Agent (A2A) Protocol",
+      "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/develop/a2a"
+    },
+    {
+      "text": "Agent Payments Protocol",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol?e=48754805"
+    },
+    {
+      "text": "Model Context Protocol",
+      "url": "https://cloud.google.com/discover/what-is-model-context-protocol?e=48754805&hl=en"
+    },
+    {
+      "text": "Agent Development Kit",
+      "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/agent-development-kit/overview"
+    },
+    {
+      "text": "Agentic commerce holds massive opportunity",
+      "url": "https://cloud.google.com/transform/agentic-commerce-retailers-can-prepare-for-the-new-shopping-era-ai"
+    },
+    {
+      "text": "here",
+      "url": "https://cloud.google.com/contact?e=48754805&hl=en"
+    },
+    {
+      "text": "Financial Services",
+      "url": "https://cloud.google.com/blog/topics/financial-services"
+    },
+    {
+      "text": "Customers",
+      "url": "https://cloud.google.com/blog/topics/customers"
+    },
+    {
+      "text": "Financial Services\nHow Nammu21 automates syndicated loans on Google Cloud Universal Ledger\n\nBy Chang Yang Jiao • 5-minute read",
+      "url": "https://cloud.google.com/blog/topics/financial-services/how-nammu21-automates-syndicated-loans-on-google-cloud-universal-ledger"
+    },
+    {
+      "text": "Financial Services\nEasy to integrate, compliant by design: Bringing the Swiss Franc to Google Cloud Universal Ledger\n\nBy Nathaniel Zollinger • 7-minute read",
+      "url": "https://cloud.google.com/blog/topics/financial-services/easy-to-integrate-compliant-by-design-bringing-the-swiss-franc-to-google-cloud-universal-ledger"
+    },
+    {
+      "text": "Financial Services\nIntroducing Google Cloud’s U4 compute: Enabling ultra-low latency trading\n\nBy Disha Chopra • 8-minute read",
+      "url": "https://cloud.google.com/blog/topics/financial-services/ultra-low-latency-solution-with-u4-enables-high-velocity-trading"
+    },
+    {
+      "text": "Data Analytics\nAccelerating analytics: PayPal’s journey with Managed Service for Apache Spark\n\nBy Vinod Ganesan • 3-minute read",
+      "url": "https://cloud.google.com/blog/products/data-analytics/paypals-journey-with-managed-service-for-apache-spark"
+    },
+    {
+      "text": "Google Cloud",
+      "url": "https://cloud.google.com/"
+    },
+    {
+      "text": "Google Cloud Products",
+      "url": "https://cloud.google.com/products/"
+    },
+    {
+      "text": "Privacy",
+      "url": "https://myaccount.google.com/privacypolicy?hl=en"
+    },
+    {
+      "text": "Terms",
+      "url": "https://myaccount.google.com/termsofservice?hl=en"
+    },
+    {
+      "text": "Cookies management controls",
+      "url": "https://cloud.google.com/blog/#"
+    }
+  ],
+  "text": "Jump to Content\nCloud\nBlog\nSolutions & technology\nEcosystem\nDevelopers & Practitioners\nTransform with Google Cloud\nContact sales\nGet started for free\nFinancial Services\nIntroducing an agentic commerce solution for merchants from PayPal and Google Cloud\nOctober 28, 2025\nRohit Bhat\n\nGeneral Manager, Managing Director, Google Cloud\n\nBrian Peters\n\nVP, Strategic Partnerships Innovation, PayPal\n\nTry Gemini today\n\nThe front door to AI in the workplace\n\nTry now\n\nModern consumers demand a seamless, personalized shopping journey, from initial product discovery all the way to final purchase. With the rise of agentic AI, merchants now have an opportunity to deliver a truly assistive and cohesive experience across every touchpoint.\n\nThat’s why today, building on our goal of transforming commerce, PayPal and Google Cloud are thrilled to announce that we’re bringing agentic shopping experiences to life with a new offering that combines Google Cloud’s Conversational Commerce agent with payments powered by PayPal. \n\nThis combination will allow merchants to rapidly deploy agentic commerce experiences directly on their own digital surfaces to drive more consumer engagement, personalization, and conversion. Merchants are able to maintain full control over the agent’s tone, look, and the customer relationship.\n\nHow it works\n\nThe PayPal Agent will communicate securely with the merchant’s agent over the open  Agent2Agent (A2A) Protocol, as well as being integrated with the Agent Payments Protocol (AP2) — a payments layer built on top of A2A and the Model Context Protocol (MCP) that provides trust, accountability, and fraud controls.\n\nA2A Protocol is an open standard designed to enable AI agents to communicate, collaborate and delegate tasks to one another across organizations. AP2 provides a set of requirements, including Verifiable Digital Credentials, which secure agentic transactions.\n\nSmooth, simple shopping journeys: The power of agent collaboration\n\nWith this new offering, merchants will have the option to adopt Google Cloud’s Conversational Commerce Agent or build their own agents using Google’s Agent Development Kit (ADK). Fully brand-compliant and acting as an intelligent sales associate for the merchant, the Conversational Commerce Agent is designed to engage shoppers in natural, human-like conversations, guiding them all the way from initial intent and product discovery to a completed purchase. \n\nOnce deployed, the merchant’s commerce agent can understand complex requests, suggest relevant products, answer questions, and personally assist the user through their shopping journeys. During product discovery and selection, the merchant’s commerce agent engages the PayPal Agent through A2A to provide context on the user's shopping history, based on permissioned data, to help improve product recommendations. \n\nOnce a customer is ready to check out, the PayPal Agent, in line with AP2, will provide a seamless and secure checkout experience within the conversational interface. The PayPal Agent can also surface payment method recommendations and check \"buy now, pay later\" eligibility.  With the shopper’s consent, merchant agents will then connect to the PayPal Agent in an authenticated manner, and authorize the transaction on a trusted surface.\n\nConsumer trust at the core \n\nAgentic commerce holds massive opportunity, but also exposes potential challenges around control, risk, and fraud, which Google Cloud and PayPal are proactively addressing.\n\nAP2 is an open protocol that’s payment-method agnostic, thanks to its development by Google in collaboration with more than 100 industry partners. AP2 provides a common, secure language for AI agents to transact on behalf of users, extending the core constructs of the A2A Protocol and MCP to establish the essential foundation for secure, accountable, and authorized commerce. \n\nAP2 uses mandates — tamper-proof, cryptographically-signed digital contracts that provide verifiable proof of user intent. These mandates are signed by Verifiable Digital Credentials (VDCs), creating a non-repudiable audit trail.\n\nFor example:\n\nCart Mandate: The foundational credential used when the user is present to authorize a purchase. Cart Mandates are generated by the merchant and cryptographically signed by the user (typically via their device), binding authorization to a specific transaction.\n\nPayment Mandate: A separate VDC shared with the payment network and issuer to provide visibility into the agentic nature of the transaction, helping the network and issuer build trust and assess risk. This credential contains signals for AI agent presence and the transaction modality (e.g. Human Present vs. Not Present).\n\nEssentially, AP2 provides the critical foundation for trusted, agent-led payments, providing verifiable intent and establishing clear transaction accountability. Instead of inferring action, trust is anchored to deterministic, non-repudiable proof of intent from the user, which directly addresses the risk of agent error. Payment mandates act as the foundational evidence for every transaction, creating a secure, unchangeable audit trail that helps payment networks to establish clear and fair principles for accountability and dispute resolution. \n\nFor example, with PayPal’s AP2-compliant agent, merchants will be able to have the assurance that a user was present to authorize the payment. Instead of using APIs, it will connect agents using AP2, helping ensure users, merchants, and payment providers can confidently initiate and transact with agent-driven payments.\n\nWith today’s announcement, Google Cloud and PayPal are proud to work together to provide a largely out-of-the-box solution for merchants who want to deploy agentic commerce experiences without building the complex framework from scratch, all while owning the experience and relationship with the consumer. Building the solution using A2A and AP2 protocols ensures  safety and security throughout the process.\n\nTo learn more, contact your Google Cloud sales representative or reach us here.\n\nDisclaimer: The video shown in this post is for informational purposes only and contains forward-looking statements, projections, and assumptions. These are not guarantees of future performance, and actual results and experiences may vary.\n\nPosted in\nFinancial Services\nCustomers\nRelated articles\nFinancial Services\nHow Nammu21 automates syndicated loans on Google Cloud Universal Ledger\n\nBy Chang Yang Jiao • 5-minute read\n\nFinancial Services\nEasy to integrate, compliant by design: Bringing the Swiss Franc to Google Cloud Universal Ledger\n\nBy Nathaniel Zollinger • 7-minute read\n\nFinancial Services\nIntroducing Google Cloud’s U4 compute: Enabling ultra-low latency trading\n\nBy Disha Chopra • 8-minute read\n\nData Analytics\nAccelerating analytics: PayPal’s journey with Managed Service for Apache Spark\n\nBy Vinod Ganesan • 3-minute read\n\nFooter Links\nFollow us\nGoogle Cloud\nGoogle Cloud Products\nPrivacy\nTerms\nHelp\nLanguage\n‪English‬\n‪Deutsch‬\n‪Français‬\n‪한국어‬\n‪日本語‬",
+  "title": "Introducing an agentic commerce solution for merchants from PayPal and Google Cloud | Google Cloud Blog",
+  "url": "https://cloud.google.com/blog/topics/financial-services/introducing-an-agentic-commerce-solution-for-merchants-from-paypal-and-google-cloud"
+}

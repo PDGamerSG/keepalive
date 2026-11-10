@@ -1,0 +1,55 @@
+{
+  "fullTextLength": 3829,
+  "headings": [
+    "CSV Injection",
+    "Excel-resistant mitigation",
+    "Important Community Links",
+    "Upcoming OWASP Global Events"
+  ],
+  "links": [
+    {
+      "href": "http://georgemauer.net/2017/10/07/csv-injection.html",
+      "text": "Stealing Google Docs via CSV Injection"
+    },
+    {
+      "href": "https://github.com/OWASP/www-community/blob/master/pages/attacks/CSV_Injection.md",
+      "text": "Edit on GitHub"
+    },
+    {
+      "href": "https://community.owasp.org/",
+      "text": "Community"
+    },
+    {
+      "href": "https://community.owasp.org/vulnerabilities",
+      "text": "Vulnerabilities"
+    },
+    {
+      "href": "https://community.owasp.org/controls",
+      "text": "Controls"
+    },
+    {
+      "href": "https://owasp.glueup.com/event/owasp-global-appsec-eu-2026-vienna-austria-162243/",
+      "text": "OWASP Global AppSec EU 2026 - Vienna, Austria"
+    },
+    {
+      "href": "https://owasp.glueup.com/event/owasp-2026-global-appsec-usa-san-francisco-ca-167174/",
+      "text": "OWASP Global AppSec USA 2026 - San Francisco, CA"
+    },
+    {
+      "href": "https://owasp.org/events/",
+      "text": "OWASP Global AppSec EU 2027 - Vienna, Austria"
+    },
+    {
+      "href": "https://owasp.org/events/",
+      "text": "OWASP Global AppSec USA 2027 - Atlanta, GA"
+    },
+    {
+      "href": "https://owasp.org/events/",
+      "text": "OWASP Global AppSec EU 2028 - Vienna, Austria"
+    }
+  ],
+  "retrievedAt": "2026-11-09T21:01:02.398Z",
+  "text": "CSV Injection\nAuthor: Timo Goosen, Albinowax\nContributor(s): kingthorin, Prasun Srivastav\n\n\nCSV Injection, also known as Formula Injection, occurs when websites embed untrusted input inside CSV files.\n\nWhen a spreadsheet program such as Microsoft Excel or LibreOffice Calc is used to open a CSV, any cells starting with = will be interpreted by the software as a formula. Maliciously crafted formulas can be used for three key attacks:\n\nHijacking the user’s computer by exploiting vulnerabilities in the spreadsheet software, such as CVE-2014-3524.\nHijacking the user’s computer by exploiting the user’s tendency to ignore security warnings in spreadsheets that they downloaded from their own website.\nExfiltrating contents from the spreadsheet, or other open spreadsheets.\n\nThis attack is difficult to mitigate, and explicitly disallowed from quite a few bug bounty programs. To remediate it, ensure that no cells begin with any of the following characters:\n\n⚠️ Important (Microsoft Excel behavior)\n\nMicrosoft Excel may remove quotes or escape characters from CSV cells when a file is saved and re-opened. As a result, commonly suggested CSV injection mitigations may fail and previously escaped formulas may become active again.\n\nEquals to (=)\nPlus (+)\nMinus (-)\nAt (@)\nTab (0x09)\nCarriage return (0x0D)\nLine feed (0x0A)\nFull-width (double-byte) variants of formula-initiating characters such as ＝, ＋, －, and ＠, which may be interpreted as formulas in some locales (e.g., Japanese environments).\n\nKeep in mind that it is not sufficient to make sure that the untrusted user input does not start with these characters. You also need to take care of the field separator (e.g., ,, ;) and quotes (e.g., \", '), as attackers could use this to start a new cell and then have the dangerous character in the middle of the user input, but at the beginning of a cell.\n\nAlternatively, apply the following sanitization to each field of the CSV, so that their content will be read as text by the spreadsheet editor:\n\nWrap each cell field in double quotes\nPrepend each cell field with a single quote\nEscape every double quote using an additional double quote\n\nNote: The above techniques are not reliable in Microsoft Excel after saving and re-opening the CSV file.\n\nTwo examples:\n\nInput\tEscaped Output\n=1+2\";=1+2\t\"'=1+2\"\";=1+2\"\n=1+2'\" ;,=1+2\t\"'=1+2'\"\" ;,=1+2\"\nExcel-resistant mitigation\n\nTo reliably prevent formula execution in Microsoft Excel, prefix any cell starting with =, +, -, or @ with a tab character (0x09) inside the quoted field.\n\nThis behavior has been observed in Microsoft Excel and may differ in other spreadsheet applications.\n\nInput\tEscaped Output\n=1+2\t\"\\t=1+2\"\n\n⚠️ Trade-off\n\nThe tab character remains part of the underlying data and may affect downstream processing if the CSV is later imported programmatically. This mitigation is best suited for CSV files intended for human viewing in spreadsheet applications.\n\nThere is no universal CSV sanitization strategy that is safe for all spreadsheet applications and all downstream consumers.\n\nFor further information, please refer to the following articles:\n\nStealing Google Docs via CSV Injection\nEdit on GitHub\nThe OWASP® Foundation works to improve the security of software through its community-led open source software projects, hundreds of chapters worldwide, tens of thousands of members, and by hosting local and global conferences.\nImportant Community Links\nCommunity\nAttacks (You are here)\nVulnerabilities\nControls\nUpcoming OWASP Global Events\nOWASP Global AppSec EU 2026 - Vienna, Austria\nJune 22-26, 2026\nOWASP Global AppSec USA 2026 - San Francisco, CA\nNovember 2-6, 2026\nOWASP Global AppSec EU 2027 - Vienna, Austria\nJune 21-25, 2027\nOWASP Global AppSec USA 2027 - Atlanta, GA\nSeptember 20-24, 2027\nOWASP Global AppSec EU 2028 - Vienna, Austria\nJune 19-23, 2028",
+  "title": "CSV Injection | OWASP Foundation",
+  "url": "https://community.owasp.org/attacks/CSV_Injection"
+}

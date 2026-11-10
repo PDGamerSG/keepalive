@@ -1,0 +1,104 @@
+{
+  "fullTextLength": 13522,
+  "links": [
+    {
+      "text": "Back to Community Blog",
+      "url": "https://developer.paypal.com/community/blog"
+    },
+    {
+      "text": "Agents",
+      "url": "https://developer.paypal.com/community/blog/PayPal-Agent-Payments-Protocol/"
+    },
+    {
+      "text": "AI",
+      "url": "https://developer.paypal.com/community/blog/PayPal-Agent-Payments-Protocol/"
+    },
+    {
+      "text": "Announcements",
+      "url": "https://developer.paypal.com/community/blog/PayPal-Agent-Payments-Protocol/"
+    },
+    {
+      "text": "Technology",
+      "url": "https://developer.paypal.com/community/blog/PayPal-Agent-Payments-Protocol/"
+    },
+    {
+      "text": "News",
+      "url": "https://developer.paypal.com/community/blog/PayPal-Agent-Payments-Protocol/"
+    },
+    {
+      "text": "Agent Payments Protocol (AP2)",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol"
+    },
+    {
+      "text": "Agent2Agent (A2A)",
+      "url": "https://github.com/a2aproject/A2A"
+    },
+    {
+      "text": "Model Context Protocol (MCP)",
+      "url": "https://modelcontextprotocol.io/docs/getting-started/intro"
+    },
+    {
+      "text": "Agents",
+      "url": "https://developer.paypal.com/community/blog/tag/Agents"
+    },
+    {
+      "text": "AI",
+      "url": "https://developer.paypal.com/community/blog/tag/AI"
+    },
+    {
+      "text": "Announcements",
+      "url": "https://developer.paypal.com/community/blog/tag/Announcements"
+    },
+    {
+      "text": "Technology",
+      "url": "https://developer.paypal.com/community/blog/tag/Technology"
+    },
+    {
+      "text": "News",
+      "url": "https://developer.paypal.com/community/blog/tag/News"
+    },
+    {
+      "text": "Technology\n\nLearning\n\nNews\n\nA Faster Guest Checkout: How to Integrate Fastlane by PayPal\n\nDibyani Das",
+      "url": "https://developer.paypal.com/community/blog/faster-checkout-integration-guide"
+    },
+    {
+      "text": "Technology\n\nExploring the Growth of Real Time Payment Systems\n\nDibyani Das",
+      "url": "https://developer.paypal.com/community/blog/real-time-payments"
+    },
+    {
+      "text": "Technology\n\nPay by Bank for E-Commerce | Using Bank Accounts to Make Purchases with SMBs [ACH]\n\nDibyani Das",
+      "url": "https://developer.paypal.com/community/blog/bank-account-ach"
+    },
+    {
+      "text": "Reference",
+      "url": "https://developer.paypal.com/reference/"
+    },
+    {
+      "text": "PayPal.com",
+      "url": "https://www.paypal.com/"
+    },
+    {
+      "text": "Privacy",
+      "url": "https://www.paypal.com/myaccount/privacy/privacyhub?_ga=1.14097599.947497879.1704302180"
+    },
+    {
+      "text": "Cookies",
+      "url": "https://www.paypal.com/myaccount/privacy/cookiePrefs?_ga=1.20912176.947497879.1704302180"
+    },
+    {
+      "text": "Support",
+      "url": "https://developer.paypal.com/support/"
+    },
+    {
+      "text": "Legal",
+      "url": "https://www.paypal.com/us/webapps/mpp/ua/legalhub-full?_ga=1.20912176.947497879.1704302180"
+    },
+    {
+      "text": "Manage cookies and learn more",
+      "url": "https://www.paypal.com/myaccount/privacy/cookiePrefs?locale=en_US"
+    }
+  ],
+  "text": "Back to Community Blog\nAgents\nAI\nAnnouncements\nTechnology\nNews\nAgent Payments Protocol: Building Verifiable Trust for Agentic Commerce\n\nPrakhar Mehrotra\n\nSept 16, 2025\n\n13 min read\n\nToday, PayPal announced its support for the Agent Payments Protocol (AP2), an open, interoperable extension to Agent2Agent (A2A) protocol and the Model Context Protocol (MCP) that defines a common standard for agent-driven payments.\n\nProposed by Google in collaboration with PayPal and other industry partners, AP2 is designed to ensure that as AI agents begin to shop and pay on behalf of users, that transactions remain secure, auditable, and accountable across the payments ecosystem. AP2 does this by defining a set of handshake mechanisms for transactions. Specifically, it offers standard ways to verifiably capture user intent for both real-time fiat and crypto transactions, as well as delayed transactions that are executed by an agent under pre-approved conditions (e.g. buying a pair of sneakers when a price condition is met). \n\nPayPal’s global infrastructure, risk management systems, and two-sided network have been built over decades to provide the trust, compliance, and auditability that AP2 requires. By supporting AP2, we seek to enable PayPal merchants and partners to accept agent-driven payments. \n\nAP2 Brings Trust to Agent-Driven Payments  \n\nToday’s payments infrastructure is predicated on direct human interaction at checkout, where authentication, authorization, and accountability are bound to the user’s real-time presence. As AI agents begin to discover products, assemble carts, and initiate payments autonomously, the traditional assumptions underlying human-driven payment flows begin to break down. Without a common standard, the result would be fragmented integrations, inconsistent data signals for risk engines, elevated fraud exposure, and ambiguity in accountability assignment across merchants, issuers, and networks. \n\nAP2 introduces a framework that ensures agent-driven transactions are verifiable, auditable and interoperable through four core elements:  \n\nMandates are cryptographically signed records of user intent that anchor each transaction to verifiable evidence. AP2 defines three types of mandates: \n\nCart Mandate (“Human-Present” or “HP”), where the merchant signs the cart to guarantee fulfillment, and the user signs to approve it. \n\nIntent Mandate (“Human-Not-Present” or “HNP”), where the user pre-approves defined conditions (e.g., budget, product categories, or timing) that authorize an agent to act later. \n\nPayment Mandate, which is a minimal credential derived from a Cart or Intent Mandate and appended to the authorization, providing issuers and networks with visibility into agent presence and modality (HP/HNP) without altering network flows. \n\nAll mandates are expressed as W3C Verifiable Credentials, ensuring tamper resistance, portability, and interoperability across the ecosystem. Mandates embed cryptographically verifiable consent into authorization flows, providing merchants with dispute-grade evidence, issuers with consistent agent-presence signals and consumers with non-repudiable proof of intent.  \n\nRoles are core AP2 constructs and serve to delineate responsibilities for ecosystem participants, ensuring sensitive data is only handled by the appropriate entities. This includes: \n\nUser as the originator of intent. \n\nAgent as the executor of tasks on behalf of the user. \n\nCredential Provider who secures payment methods and manages authentication. \n\nMerchant Endpoint / Processor who receives mandates and executes settlement. \n\nIssuer / Network who authorizes transactions using standard risk models supplemented by mandate context. \n\nThis role separation confines PCI data and authentication to credential providers, limits merchant and agent exposure, and is designed to enforce accountability across the transaction lifecycle.  \n\nTrust model is anchored today by signed mandates and curated allow-lists of trusted participants. Over time, AP2 will progress toward real-time identity assurance using open internet standards such as HTTPS, DNS ownership, and mutual TLS. This staged design is intended to enable immediate adoption with curated trust while providing a path to stronger, standards-based verification as infrastructure matures. \n\nAccountability tied to real-world entities such as the user, merchant or the issuer, and not the agent. Cryptographic audit trails are designed to ensure that disputes are resolved with verifiable evidence, keeping accountability predictable and fair for merchants, issues, and consumers in agent-driven transactions. \n\nImplementing AP2 \n\nAP2 establishes a specification for how agent-driven payments must operate. PayPal is well positioned to integrate this standard, leveraging infrastructure already scaled across billions of transactions, multiple payment rails, and approximately 200 markets. Here are a few key ways AP2 could be applied across PayPal: \n\nVerifying Consent: PayPal enforces strong authentication in a number of ways, including device keys, biometrics, and adaptive step-ups. The processing stack could embed mandate artifacts into ISO 8583 and API flows and link them to tokenized credentials, so issuers and networks can receive agent-presence context without requiring changes to existing systems. PayPal’s fraud engines then could ingest mandate metadata such as modality and linkage, incorporating it into machine-learning models trained on global transaction data. Together, these capabilities are positioned to make AP2 mandates actionable at scale through PayPal, giving merchants stronger dispute protection, issuers clearer risk signals, consumers confidence in delegated payments, and developers APIs to simplify mandate capture. \n\nEnsuring Role Separation: PayPal’s architecture in many ways reflects the role boundaries that AP2 specifies. The PayPal wallet manages credentials and consent. Checkout mediates the transaction context, and Braintree and PayPal core systems route authorization and settlement to issuers and networks. This structure can minimize PCI exposure and reduce agent access to sensitive data, with sensitive elements and authentication handled by specialized entities and secure elements in the payment infrastructure. These boundaries can be reinforced by compliance frameworks such as AML/KYC, GDPR/CCPA, PSD2, and RBI mandates across many markets. This offers the practical effect of lowering merchant compliance burden, making governance mor predictable for issuers and regulators, giving consumers potentially greater confidence that data is secure-by-design, and making way for SDKs for developers that abstract away PCI complexity. \n\nEstablishing Identity: In the near term, AP2 anticipates curated allow-lists and registries among agents, credential providers, and merchants. PayPal’s onboarding and credential-provider vetting is positioned to serve this function, with device fingerprinting, velocity controls, and tokenization propagated through network integrations. Over time, the trust framework is expected to incorporate open internet standards such as HTTPs with verified domains (DNS/DNSSEC) and mutual TLS. PayPal’s system is positioned to adopt these anchors as they mature. Benefits would include higher merchant approval rates with fewer unnecessary step-ups, richer risk context for issuers, smoother agent-driven checkout for consumers, and access to trust primitives via APIs for developers.\n\nResolving Disputes: PayPal’s Seller Protection and dispute workflows adjudicate billions annually with structured evidence such as authentication logs, delivery confirmation, and chargeback data. Incorporating Cart, Intent, and Payment mandates into these pipelines could add cryptographic artifacts that can be validated independently. This would equip merchants with stronger representment packages, issuers with verifiable custody of intent, consumers with protection from unauthorized agent activity, and developers with mandate-linked receipts they can surface in apps and commerce flows. \n\nScaling Adoption: PayPal’s global reach spanning approximately 200 markets and dozens of currencies provides the scale that can help integrate AP2 into existing commerce rails as adoption begins. Mandates can flow through existing authorization packets; role separation would be reinforced by the wallet, checkout, and processing layers; trust would advance through registries and open standards, and accountability would be supported through Seller Protection enhanced with mandate evidence. This continuity could then enable merchants to accept agent-driven payments without reworking checkout; help issuers and networks to gain visibility into agent activity without new infrastructure; enable consumers to transact with confidence in delegated commerce; and allow developers to adopt AP2 through SDKs and APIs rather than custom integrations. \n\nBuilding on the above, additional opportunities to apply AP2 across PayPal include:  \n\nPayment Mandate pilots: Embedding Payment Mandate credentials in authorization flows so issuers and networks see agent presence and modality, while pilots to validate approval lift, step-up accuracy, and ecosystem readiness. \n\nChallenge orchestration: Standardizing redirect challenges (3DS2/OTP); completing them on trusted credential provider or issuer surfaces; propagating the results to avoid duplicate step-ups; and supporting re-entry for human-not-present flows. \n\nDispute and accountability evidence: Extending Seller Protection workflows with Cart and Intent Mandates, mandate IDs and signatures, and creating a cryptographic chain of proof that keeps accountability anchored with real entities.  \n\nTrust and policy frameworks: Moving from curated allow-lists to real-time identity using open standards such as HTTPS, DNSSEC, and mutual TLS, while enforcing tokenization and challenge thresholds consistently across markets.  \n\nEcosystem enablement: Delivering APIs and adapters for mandate creation and storage; exposing loyalty and branding in agent surfaces; and provide analytics separating agentic vs. non-agentic traffic to measure outcomes and adoption. \n\nBenefits Offered by AP2  \n\nBy applying AP2 across PayPal and our networks, processors, and wallets, it can translate into measurable benefits for merchants, consumers, issuers, and developers. Below is a list of potential benefits that AP2 offers. \n\nMerchants \n\nAccept agent-initiated payments through existing PayPal and Braintree integrations without reworking checkout. \n\nImprove approval rates with Payment mandates that give issuers the context they need to green-light transactions. \n\nResolve disputes faster with mandate-based evidence that strengthens Seller Protection. \n\nConsumers \n\nApprove purchases through explicit, signed mandates that define exactly what an agent can do. \n\nKeep control over budgets, categories, and timing for human-not-present scenarios. \n\nGain transparency with auditable receipts and confidence that liability never shifts unfairly. \n\nIssuers and Networks \n\nBenefit from agent modality and linkage through compact Payment mandates embedded in authorization. \n\nApply existing risk models with richer inputs, reducing unnecessary step-ups and false declines. \n\nPreserve continuity of today’s fraud and dispute frameworks while gaining cryptographic audit trails. \n\nDevelopers \n\nUse PayPal SDKs and APIs to capture mandates and pass Payment mandates with authorizations. \n\nRoll out incrementally: start with human-present flows, then extend to human-not-present and new rails. \n\nMonitor adoption and traffic with analytics that separate agentic and non-agentic transactions. \n\nNext: Extending AP2 for commerce use cases \n\nAP2 lays the groundwork for trusted, verifiable agentic payments by separating roles, anchoring consent in signed mandates, and giving issuers and networks the visibility they need. PayPal is committed to supporting AP2 and sees it as an essential foundation for the ecosystem. \n\nYet, payments represent just one dimension in an agentic commerce paradigm where agents must search, compare, and decide on behalf of users. The same principles of openness, privacy, verifiable intent, and accountability in AP2 must extend upstream to commerce use cases in a consistent manner, such as when agents perform commerce tasks, surface merchant brand and loyalty, optimize payment method selection, and work to preserve value for both consumers and merchants.  \n\nBuilding on AP2, PayPal is leading an effort with participating companies to extend AP2 with a standard developed for commerce use cases. Building on the strong foundation of AP2, we envision a future where agent-ready payments and commerce use cases are both practical and scalable worldwide. \n\nAgents\nAI\nAnnouncements\nTechnology\nNews\n\nShare this post:\n\nRecommended\n\nTechnology\n\nLearning\n\nNews\n\nA Faster Guest Checkout: How to Integrate Fastlane by PayPal\n\nDibyani Das\n\nJan 23, 2025\n\n8 MIN READ\n\nTechnology\n\nExploring the Growth of Real Time Payment Systems\n\nDibyani Das\n\nJan 23, 2025\n\n5 MIN READ\n\nTechnology\n\nPay by Bank for E-Commerce | Using Bank Accounts to Make Purchases with SMBs [ACH]\n\nDibyani Das\n\nJan 23, 2025\n\n5 MIN READ\n\nReference\nPayPal.com\nPrivacy\nCookies\nSupport\nLegal\nContact\nIf you accept cookies, we'll use them to improve and customise your experience and enable our partners to show you personalised PayPal ads when you visit other sites. Manage cookies and learn more\nAccept\nDecline\nClose\nFeedback",
+  "title": "PayPal Community Blog | Agent Payments Protocol: Building Verifiable Trust for Agentic Commerce",
+  "url": "https://developer.paypal.com/community/blog/PayPal-Agent-Payments-Protocol/"
+}

@@ -1,0 +1,697 @@
+{
+  "id": "O02",
+  "retrievedAt": "2026-11-09T20:58:49.018Z",
+  "links": [
+    {
+      "text": "Skip to main content",
+      "url": "https://developers.google.com/optimization/routing/routing_options#main-content"
+    },
+    {
+      "text": "OR-Tools",
+      "url": "https://developers.google.com/optimization"
+    },
+    {
+      "text": "OR-Tools",
+      "url": "https://developers.google.com/optimization"
+    },
+    {
+      "text": "OR API",
+      "url": "https://developers.google.com/optimization/service"
+    },
+    {
+      "text": "English",
+      "url": "https://developers.google.com/optimization/routing/routing_options"
+    },
+    {
+      "text": "Deutsch",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=de"
+    },
+    {
+      "text": "Español",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=es"
+    },
+    {
+      "text": "Español – América Latina",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=es-419"
+    },
+    {
+      "text": "Français",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=fr"
+    },
+    {
+      "text": "Indonesia",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=id"
+    },
+    {
+      "text": "Italiano",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=it"
+    },
+    {
+      "text": "Polski",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=pl"
+    },
+    {
+      "text": "Português – Brasil",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=pt-br"
+    },
+    {
+      "text": "Tiếng Việt",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=vi"
+    },
+    {
+      "text": "Türkçe",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=tr"
+    },
+    {
+      "text": "Русский",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=ru"
+    },
+    {
+      "text": "עברית",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=he"
+    },
+    {
+      "text": "العربيّة",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=ar"
+    },
+    {
+      "text": "فارسی",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=fa"
+    },
+    {
+      "text": "हिंदी",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=hi"
+    },
+    {
+      "text": "বাংলা",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=bn"
+    },
+    {
+      "text": "ภาษาไทย",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=th"
+    },
+    {
+      "text": "中文 – 简体",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=zh-cn"
+    },
+    {
+      "text": "中文 – 繁體",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=zh-tw"
+    },
+    {
+      "text": "日本語",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=ja"
+    },
+    {
+      "text": "한국어",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=ko"
+    },
+    {
+      "text": "OR-Tools",
+      "url": "https://developers.google.com/optimization"
+    },
+    {
+      "text": "Installation",
+      "url": "https://developers.google.com/optimization/install"
+    },
+    {
+      "text": "Guides",
+      "url": "https://developers.google.com/optimization/introduction"
+    },
+    {
+      "text": "Reference",
+      "url": "https://developers.google.com/optimization/reference"
+    },
+    {
+      "text": "Examples",
+      "url": "https://developers.google.com/optimization/examples"
+    },
+    {
+      "text": "Support",
+      "url": "https://developers.google.com/optimization/support"
+    },
+    {
+      "text": "\n    \n  \n  \n    \n      \n      \n    \n  \n  \n  \n  ",
+      "url": "https://developers.google.com/optimization"
+    },
+    {
+      "text": "\n    \n          \n    Google\n    \n  OR-Tools\n        \n  ",
+      "url": "https://developers.google.com/optimization"
+    },
+    {
+      "text": "\n  \n    \n      OR-Tools\n   \n    \n  \n  ",
+      "url": "https://developers.google.com/optimization"
+    },
+    {
+      "text": "\n  \n    \n      Installation\n   \n    \n  \n  ",
+      "url": "https://developers.google.com/optimization/install"
+    },
+    {
+      "text": "\n  \n    \n      Guides\n   \n    \n  \n  ",
+      "url": "https://developers.google.com/optimization/introduction"
+    },
+    {
+      "text": "\n  \n    \n      Reference\n   \n    \n  \n  ",
+      "url": "https://developers.google.com/optimization/reference"
+    },
+    {
+      "text": "\n  \n    \n      Examples\n   \n    \n  \n  ",
+      "url": "https://developers.google.com/optimization/examples"
+    },
+    {
+      "text": "\n  \n    \n      Support\n   \n    \n  \n  ",
+      "url": "https://developers.google.com/optimization/support"
+    },
+    {
+      "text": "\n  \n    \n      OR API\n   \n    \n  \n  ",
+      "url": "https://developers.google.com/optimization/service"
+    },
+    {
+      "text": "About OR-Tools",
+      "url": "https://developers.google.com/optimization/introduction"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developers.google.com/optimization/introduction/get_started"
+    },
+    {
+      "text": "C++",
+      "url": "https://developers.google.com/optimization/introduction/cpp"
+    },
+    {
+      "text": "Python",
+      "url": "https://developers.google.com/optimization/introduction/python"
+    },
+    {
+      "text": "Java",
+      "url": "https://developers.google.com/optimization/introduction/java"
+    },
+    {
+      "text": ".Net",
+      "url": "https://developers.google.com/optimization/introduction/dotnet"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developers.google.com/optimization/math_opt"
+    },
+    {
+      "text": "Basic example",
+      "url": "https://developers.google.com/optimization/math_opt/basic_example"
+    },
+    {
+      "text": "Constraint Programming with CP-SAT",
+      "url": "https://developers.google.com/optimization/cp"
+    },
+    {
+      "text": "Using the CP-SAT Solver",
+      "url": "https://developers.google.com/optimization/cp/cp_solver"
+    },
+    {
+      "text": "Solving a CP Problem",
+      "url": "https://developers.google.com/optimization/cp/cp_example"
+    },
+    {
+      "text": "Cryptarithmetic",
+      "url": "https://developers.google.com/optimization/cp/cryptarithmetic"
+    },
+    {
+      "text": "The N-queens Problem",
+      "url": "https://developers.google.com/optimization/cp/queens"
+    },
+    {
+      "text": "Setting Solver Limits",
+      "url": "https://developers.google.com/optimization/cp/cp_tasks"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developers.google.com/optimization/flow"
+    },
+    {
+      "text": "Maximum Flows",
+      "url": "https://developers.google.com/optimization/flow/maxflow"
+    },
+    {
+      "text": "Minimum Cost Flows",
+      "url": "https://developers.google.com/optimization/flow/mincostflow"
+    },
+    {
+      "text": "Assignment as a Min Cost Flow Problem",
+      "url": "https://developers.google.com/optimization/flow/assignment_min_cost_flow"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developers.google.com/optimization/lp"
+    },
+    {
+      "text": "MPSolver Interface",
+      "url": "https://developers.google.com/optimization/lp/mpsolver"
+    },
+    {
+      "text": "Solving an LP Problem",
+      "url": "https://developers.google.com/optimization/lp/lp_example"
+    },
+    {
+      "text": "Advanced LP Solving",
+      "url": "https://developers.google.com/optimization/lp/lp_advanced"
+    },
+    {
+      "text": "The Stigler Diet Problem",
+      "url": "https://developers.google.com/optimization/lp/stigler_diet"
+    },
+    {
+      "text": "Service for Apps Script",
+      "url": "https://developers.google.com/apps-script/reference/optimization"
+    },
+    {
+      "text": "Mathematical background for PDLP",
+      "url": "https://developers.google.com/optimization/lp/pdlp_math"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developers.google.com/optimization/mip"
+    },
+    {
+      "text": "Solving a MIP Problem",
+      "url": "https://developers.google.com/optimization/mip/mip_example"
+    },
+    {
+      "text": "Using Arrays to Define a Model",
+      "url": "https://developers.google.com/optimization/mip/mip_var_array"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developers.google.com/optimization/assignment"
+    },
+    {
+      "text": "Solving an Assignment Problem",
+      "url": "https://developers.google.com/optimization/assignment/assignment_example"
+    },
+    {
+      "text": "Assignment with Teams of Workers",
+      "url": "https://developers.google.com/optimization/assignment/assignment_teams"
+    },
+    {
+      "text": "Assignment with Task Sizes",
+      "url": "https://developers.google.com/optimization/assignment/assignment_cp"
+    },
+    {
+      "text": "Assignment with Allowed Groups",
+      "url": "https://developers.google.com/optimization/assignment/assignment_groups"
+    },
+    {
+      "text": "Linear Sum Assignment Solver",
+      "url": "https://developers.google.com/optimization/assignment/linear_assignment"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developers.google.com/optimization/pack"
+    },
+    {
+      "text": "The Knapsack Problem",
+      "url": "https://developers.google.com/optimization/pack/knapsack"
+    },
+    {
+      "text": "Multiple Knapsacks",
+      "url": "https://developers.google.com/optimization/pack/multiple_knapsack"
+    },
+    {
+      "text": "Bin Packing Problem",
+      "url": "https://developers.google.com/optimization/pack/bin_packing"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developers.google.com/optimization/routing"
+    },
+    {
+      "text": "Traveling Salesperson Problem",
+      "url": "https://developers.google.com/optimization/routing/tsp"
+    },
+    {
+      "text": "Vehicle Routing Problem",
+      "url": "https://developers.google.com/optimization/routing/vrp"
+    },
+    {
+      "text": "Capacity Constraints",
+      "url": "https://developers.google.com/optimization/routing/cvrp"
+    },
+    {
+      "text": "Pickups and Deliveries",
+      "url": "https://developers.google.com/optimization/routing/pickup_delivery"
+    },
+    {
+      "text": "Time Window Constraints",
+      "url": "https://developers.google.com/optimization/routing/vrptw"
+    },
+    {
+      "text": "Dimensions",
+      "url": "https://developers.google.com/optimization/routing/dimensions"
+    },
+    {
+      "text": "Resource Constraints",
+      "url": "https://developers.google.com/optimization/routing/cvrptw_resources"
+    },
+    {
+      "text": "Penalties and Dropping Visits",
+      "url": "https://developers.google.com/optimization/routing/penalties"
+    },
+    {
+      "text": "Common Routing Tasks",
+      "url": "https://developers.google.com/optimization/routing/routing_tasks"
+    },
+    {
+      "text": "Routing Options",
+      "url": "https://developers.google.com/optimization/routing/routing_options"
+    },
+    {
+      "text": "Google Directions API",
+      "url": "https://developers.google.com/optimization/routing/google_direction"
+    },
+    {
+      "text": "Original CP Solver",
+      "url": "https://developers.google.com/optimization/routing/original_cp_solver"
+    },
+    {
+      "text": "Overview",
+      "url": "https://developers.google.com/optimization/scheduling"
+    },
+    {
+      "text": "Employee Scheduling",
+      "url": "https://developers.google.com/optimization/scheduling/employee_scheduling"
+    },
+    {
+      "text": "The Job Shop Problem",
+      "url": "https://developers.google.com/optimization/scheduling/job_shop"
+    },
+    {
+      "text": "Search limits",
+      "url": "https://developers.google.com/optimization/routing/routing_options#search_limits"
+    },
+    {
+      "text": "First solution strategy",
+      "url": "https://developers.google.com/optimization/routing/routing_options#first_solution_strategy"
+    },
+    {
+      "text": "Search status",
+      "url": "https://developers.google.com/optimization/routing/routing_options#search_status"
+    },
+    {
+      "text": "Local search options",
+      "url": "https://developers.google.com/optimization/routing/routing_options#local_search_options"
+    },
+    {
+      "text": "Propagation control",
+      "url": "https://developers.google.com/optimization/routing/routing_options#propagation_control"
+    },
+    {
+      "text": "Home",
+      "url": "https://developers.google.com/"
+    },
+    {
+      "text": "Products",
+      "url": "https://developers.google.com/products"
+    },
+    {
+      "text": "OR-Tools",
+      "url": "https://developers.google.com/optimization"
+    },
+    {
+      "text": "Guides",
+      "url": "https://developers.google.com/optimization/introduction"
+    },
+    {
+      "text": "Search limits",
+      "url": "https://developers.google.com/optimization/routing/routing_options#search_limits"
+    },
+    {
+      "text": "First solution strategy",
+      "url": "https://developers.google.com/optimization/routing/routing_options#first_solution_strategy"
+    },
+    {
+      "text": "Search status",
+      "url": "https://developers.google.com/optimization/routing/routing_options#search_status"
+    },
+    {
+      "text": "Local search options",
+      "url": "https://developers.google.com/optimization/routing/routing_options#local_search_options"
+    },
+    {
+      "text": "Propagation control",
+      "url": "https://developers.google.com/optimization/routing/routing_options#propagation_control"
+    },
+    {
+      "text": "Time limits",
+      "url": "https://developers.google.com/optimization/routing/routing_tasks#time_limits"
+    },
+    {
+      "text": "Changing the search strategy",
+      "url": "https://developers.google.com/optimization/routing/tsp#search_strategy"
+    },
+    {
+      "text": "Guided Local Search",
+      "url": "http://en.wikipedia.org/wiki/Guided_Local_Search"
+    },
+    {
+      "text": "Simulated Annealing",
+      "url": "http://en.wikipedia.org/wiki/Simulated_annealing"
+    },
+    {
+      "text": "Tabu Search",
+      "url": "http://en.wikipedia.org/wiki/Tabu_search"
+    },
+    {
+      "text": "Creative Commons Attribution 4.0 License",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "text": "Apache 2.0 License",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    {
+      "text": "Google Developers Site Policies",
+      "url": "https://developers.google.com/site-policies"
+    },
+    {
+      "text": "Discussion forum",
+      "url": "https://groups.google.com/forum/#!forum/or-tools-discuss"
+    },
+    {
+      "text": "Discord",
+      "url": "https://discord.gg/ENkQrdf"
+    },
+    {
+      "text": "GitHub",
+      "url": "http://github.com/google/or-tools"
+    },
+    {
+      "text": "Stack Overflow",
+      "url": "http://stackoverflow.com/questions/tagged/or-tools+or+cp-sat"
+    },
+    {
+      "text": "Google AI Forum",
+      "url": "https://discuss.ai.google.dev/"
+    },
+    {
+      "text": "Google Developer Program",
+      "url": "https://developers.google.com/program"
+    },
+    {
+      "text": "Google Developer Groups",
+      "url": "https://developers.google.com/community"
+    },
+    {
+      "text": "Google Developer Experts",
+      "url": "https://developers.google.com/community/experts"
+    },
+    {
+      "text": "Accelerators",
+      "url": "https://developers.google.com/community/accelerators"
+    },
+    {
+      "text": "Google Cloud & NVIDIA",
+      "url": "https://developers.google.com/community/nvidia"
+    },
+    {
+      "text": "Blog",
+      "url": "https://googledevelopers.blogspot.com/"
+    },
+    {
+      "text": "Bluesky",
+      "url": "https://bsky.app/profile/developers.google.com"
+    },
+    {
+      "text": "Instagram",
+      "url": "https://www.instagram.com/googlefordevs/"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/showcase/googledevelopers/"
+    },
+    {
+      "text": "X (Twitter)",
+      "url": "https://twitter.com/googledevs"
+    },
+    {
+      "text": "YouTube",
+      "url": "https://www.youtube.com/user/GoogleDevelopers"
+    },
+    {
+      "text": "Android",
+      "url": "https://developer.android.com/"
+    },
+    {
+      "text": "Chrome",
+      "url": "https://developer.chrome.com/"
+    },
+    {
+      "text": "Firebase",
+      "url": "https://firebase.google.com/"
+    },
+    {
+      "text": "Google AI Studio",
+      "url": "https://aistudio.google.com/"
+    },
+    {
+      "text": "Google Antigravity",
+      "url": "https://antigravity.google/"
+    },
+    {
+      "text": "Google Cloud",
+      "url": "https://cloud.google.com/"
+    },
+    {
+      "text": "Google Play",
+      "url": "https://play.google.com/console/about/"
+    },
+    {
+      "text": "View all",
+      "url": "https://developers.google.com/products"
+    },
+    {
+      "text": "Android",
+      "url": "https://developer.android.com/"
+    },
+    {
+      "text": "Chrome",
+      "url": "https://developer.chrome.com/home"
+    },
+    {
+      "text": "Firebase",
+      "url": "https://firebase.google.com/"
+    },
+    {
+      "text": "Google Cloud Platform",
+      "url": "https://cloud.google.com/"
+    },
+    {
+      "text": "Google AI",
+      "url": "https://ai.google.dev/"
+    },
+    {
+      "text": "All products",
+      "url": "https://developers.google.com/products"
+    },
+    {
+      "text": "Terms",
+      "url": "https://developers.google.com/terms/site-terms"
+    },
+    {
+      "text": "Privacy",
+      "url": "https://policies.google.com/privacy"
+    },
+    {
+      "text": "\n          Manage cookies\n        ",
+      "url": "https://developers.google.com/optimization/routing/routing_options#"
+    },
+    {
+      "text": "English",
+      "url": "https://developers.google.com/optimization/routing/routing_options"
+    },
+    {
+      "text": "Deutsch",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=de"
+    },
+    {
+      "text": "Español",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=es"
+    },
+    {
+      "text": "Español – América Latina",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=es-419"
+    },
+    {
+      "text": "Français",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=fr"
+    },
+    {
+      "text": "Indonesia",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=id"
+    },
+    {
+      "text": "Italiano",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=it"
+    },
+    {
+      "text": "Polski",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=pl"
+    },
+    {
+      "text": "Português – Brasil",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=pt-br"
+    },
+    {
+      "text": "Tiếng Việt",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=vi"
+    },
+    {
+      "text": "Türkçe",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=tr"
+    },
+    {
+      "text": "Русский",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=ru"
+    },
+    {
+      "text": "עברית",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=he"
+    },
+    {
+      "text": "العربيّة",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=ar"
+    },
+    {
+      "text": "فارسی",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=fa"
+    },
+    {
+      "text": "हिंदी",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=hi"
+    },
+    {
+      "text": "বাংলা",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=bn"
+    },
+    {
+      "text": "ภาษาไทย",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=th"
+    },
+    {
+      "text": "中文 – 简体",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=zh-cn"
+    },
+    {
+      "text": "中文 – 繁體",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=zh-tw"
+    },
+    {
+      "text": "日本語",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=ja"
+    },
+    {
+      "text": "한국어",
+      "url": "https://developers.google.com/optimization/routing/routing_options?hl=ko"
+    }
+  ],
+  "text": "Skip to main content\nOR-Tools\nOR-Tools\nOR API\n/\nOR-Tools\nInstallation\nGuides\nReference\nExamples\nSupport\nGet Started\nMathOpt\nCP-SAT\nNetwork Flows\nLinear Optimization\nInteger Optimization\nAssignment\nPacking\nRouting\nOverview\nTraveling Salesperson Problem\nVehicle Routing Problem\nCapacity Constraints\nPickups and Deliveries\nTime Window Constraints\nDimensions\nResource Constraints\nPenalties and Dropping Visits\nCommon Routing Tasks\nRouting Options\nGoogle Directions API\nOriginal CP Solver\nScheduling\nHome\nProducts\nOR-Tools\nGuides\nSend feedback\nRouting Options\nOn this page\nSearch limits\nFirst solution strategy\nSearch status\nLocal search options\nPropagation control\nPage Summary\n\nThis section describes some of the options for the routing solver.\n\nSearch limits\n\nSearch limits terminate the solver after it reaches a specified limit, such as the maximum length of time, or number of solutions found. You can set a search limit through the solver's search parameters. See Time limits for an example.\n\nThe following table describes the most common search limits.\n\nName\tType\tDefault\tDescription\nsolution_limit\tint64\tkint64max\tLimit to the number of solutions generated during the search.\ntime_limit.seconds\tint64\tkint64max\tLimit in seconds to the time spent : in the search.\nlns_time_limit.seconds\tint64\t100\tLimit in seconds to the time spent in : the completion search for each local search neighbor.\nFirst solution strategy\n\nThe first solution strategy is the method the solver uses to find an initial solution. The following table lists the options for first_solution_strategy.\n\nOption\tDescription\nAUTOMATIC\tLets the solver detect which strategy to use according to the model being solved.\nPATH_CHEAPEST_ARC\tStarting from a route \"start\" node, connect it to the node which produces the cheapest route segment, then extend the route by iterating on the last node added to the route.\nPATH_MOST_CONSTRAINED_ARC\tSimilar to PATH_CHEAPEST_ARC, but arcs are evaluated with a comparison-based selector which will favor the most constrained arc first. To assign a selector to the routing model, use the method ArcIsMoreConstrainedThanArc().\nEVALUATOR_STRATEGY\tSimilar to PATH_CHEAPEST_ARC, except that arc costs are evaluated using the function passed to SetFirstSolutionEvaluator().\nSAVINGS\tSavings algorithm (Clarke & Wright). Reference Clarke, G. & Wright, J.W. \"Scheduling of Vehicles from a Central Depot to a Number of Delivery Points\" , Operations Research, Vol. 12, 1964, pp. 568-581.\nSWEEP\tSweep algorithm (Wren & Holliday). Reference Anthony Wren & Alan Holliday Computer Scheduling of Vehicles from One or More Depots to a Number of Delivery Points Operational Research Quarterly (1970-1977), Vol. 23, No. 3 (Sep., 1972), pp. 333-344.\nCHRISTOFIDES\tChristofides algorithm (actually a variant of the Christofides algorithm using a maximal matching instead of a maximum matching, which does not guarantee the 3/2 factor of the approximation on a metric travelling salesperson). Works on generic vehicle routing models by extending a route until no nodes can be inserted on it. Reference Nicos Christofides, Worst-case analysis of a new heuristic for the travelling salesman problem, Report 388, Graduate School of Industrial Administration, CMU, 1976.\nALL_UNPERFORMED\tMake all nodes inactive. Only finds a solution if nodes are optional (are element of a disjunction constraint with a finite penalty cost).\nBEST_INSERTION\tIteratively build a solution by inserting the cheapest node at its cheapest position; the cost of insertion is based on the global cost function of the routing model. As of 2/2012, only works on models with optional nodes (with finite penalty costs).\nPARALLEL_CHEAPEST_INSERTION\tIteratively build a solution by inserting the cheapest node at its cheapest position; the cost of insertion is based on the arc cost function. Is faster than BEST_INSERTION.\nLOCAL_CHEAPEST_INSERTION\tIteratively build a solution by inserting each node at its cheapest position; the cost of insertion is based on the arc cost function. Differs from PARALLEL_CHEAPEST_INSERTION by the node selected for insertion; here nodes are considered in their order of creation. Is faster than PARALLEL_CHEAPEST_INSERTION.\nGLOBAL_CHEAPEST_ARC\tIteratively connect two nodes which produce the cheapest route segment.\nLOCAL_CHEAPEST_ARC\tSelect the first node with an unbound successor and connect it to the node which produces the cheapest route segment.\nFIRST_UNBOUND_MIN_VALUE\tSelect the first node with an unbound successor and connect it to the first available node. This is equivalent to the CHOOSE_FIRST_UNBOUND strategy combined with ASSIGN_MIN_VALUE (cf. constraint_solver.h).\nSearch status\n\nYou can return the status of a search using the routing model's status method. Here's the Python code to print the status of a search:\n\nprint(\"Solver status: \", solver.status())\n\nThis prints an integer with the following meanings:\n\nValue\tDescription\n0\tROUTING_NOT_SOLVED: Problem not solved yet.\n1\tROUTING_SUCCESS: Problem solved successfully.\n2\tROUTING_PARTIAL_SUCCESS_LOCAL_OPTIMUM_NOT_REACHED: Problem solved successfully after calling RoutingModel.Solve(), except that a local optimum has not been reached. Leaving more time would allow improving the solution.\n3\tROUTING_FAIL: No solution found to the problem.\n4\tROUTING_FAIL_TIMEOUT: Time limit reached before finding a solution.\n5\tROUTING_INVALID: Model, model parameters, or flags are not valid.\n6\tROUTING_INFEASIBLE: Problem proven to be infeasible.\nLocal search options\n\nThe following table lists the options for local search strategies (also called metaheuristics). See Changing the search strategy for examples of setting these options.\n\nOption\tDescription\nAUTOMATIC\tLets the solver select the metaheuristic.\nGREEDY_DESCENT\tAccepts improving (cost-reducing) local search neighbors until a local minimum is reached.\nGUIDED_LOCAL_SEARCH\tUses guided local search to escape local minima. (cf. Guided Local Search) this is generally the most efficient metaheuristic for vehicle routing.\nSIMULATED_ANNEALING\tUses simulated annealing to escape local minima (cf. Simulated Annealing).\nTABU_SEARCH\tUses tabu search to escape local minima (cf. Tabu Search).\nGENERIC_TABU_SEARCH\tUses tabu search on the objective value of solution to escape local minima.\nPropagation control\nName\tType\tDefault\tDescription\nuse_full_propagation\tbool\ttrue\tUse constraints with full propagation in routing model (instead of light propagation only). Full propagation is only necessary when using depth-first search or for models which require strong propagation to finalize the value of secondary variables. Changing this setting to true will slow down the search in most cases and increase memory consumption in all cases.\nSend feedback\n\nExcept as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.\n\nLast updated 2026-03-18 UTC.\n\nDiscussion forum\nVisit our forum\nDiscord\nJoin Google OR-Tools Discord server\nGitHub\nDownload our code\nStack Overflow\nAsk questions using the or-tools or cp-sat tags\nEngage\nGoogle AI Forum\nGoogle Developer Program\nGoogle Developer Groups\nGoogle Developer Experts\nAccelerators\nGoogle Cloud & NVIDIA\nConnect\nBlog\nBluesky\nInstagram\nLinkedIn\nX (Twitter)\nYouTube\nBuild\nAndroid\nChrome\nFirebase\nGoogle AI Studio\nGoogle Antigravity\nGoogle Cloud\nGoogle Play\nView all\nAndroid\nChrome\nFirebase\nGoogle Cloud Platform\nGoogle AI\nAll products\nTerms\nPrivacy\nInfo\nChat\nAPI",
+  "title": "Routing Options  |  OR-Tools  |  Google for Developers",
+  "url": "https://developers.google.com/optimization/routing/routing_options"
+}

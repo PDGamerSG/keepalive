@@ -1,0 +1,775 @@
+{
+  "links": [
+    {
+      "text": "Skip to content",
+      "url": "https://github.com/paypal/AI-Toolkit#start-of-content"
+    },
+    {
+      "text": "Sign in",
+      "url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fpaypal%2FAI-Toolkit"
+    },
+    {
+      "text": "Pricing",
+      "url": "https://github.com/pricing"
+    },
+    {
+      "text": "Sign in",
+      "url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fpaypal%2FAI-Toolkit"
+    },
+    {
+      "text": "Sign up",
+      "url": "https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=paypal%2FAI-Toolkit"
+    },
+    {
+      "text": "Reload",
+      "url": "https://github.com/paypal/AI-Toolkit"
+    },
+    {
+      "text": "Reload",
+      "url": "https://github.com/paypal/AI-Toolkit"
+    },
+    {
+      "text": "Reload",
+      "url": "https://github.com/paypal/AI-Toolkit"
+    },
+    {
+      "text": "paypal",
+      "url": "https://github.com/paypal"
+    },
+    {
+      "text": "AI-Toolkit",
+      "url": "https://github.com/paypal/AI-Toolkit"
+    },
+    {
+      "text": "Code",
+      "url": "https://github.com/paypal/AI-Toolkit"
+    },
+    {
+      "text": "Issues\n2\n (2)",
+      "url": "https://github.com/paypal/AI-Toolkit/issues"
+    },
+    {
+      "text": "Pull requests",
+      "url": "https://github.com/paypal/AI-Toolkit/pulls"
+    },
+    {
+      "text": "Actions",
+      "url": "https://github.com/paypal/AI-Toolkit/actions"
+    },
+    {
+      "text": "Security and quality",
+      "url": "https://github.com/paypal/AI-Toolkit/security"
+    },
+    {
+      "text": "Insights",
+      "url": "https://github.com/paypal/AI-Toolkit/pulse"
+    },
+    {
+      "text": "AI-Toolkit",
+      "url": "https://github.com/paypal/AI-Toolkit"
+    },
+    {
+      "text": "Notifications",
+      "url": "https://github.com/login?return_to=%2Fpaypal%2FAI-Toolkit"
+    },
+    {
+      "text": "Fork14\n (14)",
+      "url": "https://github.com/login?return_to=%2Fpaypal%2FAI-Toolkit"
+    },
+    {
+      "text": "Star47\n (47)",
+      "url": "https://github.com/login?return_to=%2Fpaypal%2FAI-Toolkit"
+    },
+    {
+      "text": "developer.paypal.com/",
+      "url": "https://developer.paypal.com/"
+    },
+    {
+      "text": "claude",
+      "url": "https://github.com/topics/claude"
+    },
+    {
+      "text": "claude-code",
+      "url": "https://github.com/topics/claude-code"
+    },
+    {
+      "text": "claude-code-plugin",
+      "url": "https://github.com/topics/claude-code-plugin"
+    },
+    {
+      "text": "claude-skills",
+      "url": "https://github.com/topics/claude-skills"
+    },
+    {
+      "text": "codex",
+      "url": "https://github.com/topics/codex"
+    },
+    {
+      "text": "codex-plugin",
+      "url": "https://github.com/topics/codex-plugin"
+    },
+    {
+      "text": "commands",
+      "url": "https://github.com/topics/commands"
+    },
+    {
+      "text": "mcp",
+      "url": "https://github.com/topics/mcp"
+    },
+    {
+      "text": "paypal",
+      "url": "https://github.com/topics/paypal"
+    },
+    {
+      "text": "paypal-api",
+      "url": "https://github.com/topics/paypal-api"
+    },
+    {
+      "text": "paypal-checkout",
+      "url": "https://github.com/topics/paypal-checkout"
+    },
+    {
+      "text": "skills",
+      "url": "https://github.com/topics/skills"
+    },
+    {
+      "text": "Readme",
+      "url": "https://github.com/paypal/AI-Toolkit#readme-ov-file"
+    },
+    {
+      "text": "Apache-2.0 license",
+      "url": "https://github.com/paypal/AI-Toolkit#Apache-2.0-1-ov-file"
+    },
+    {
+      "text": "Code of conduct",
+      "url": "https://github.com/paypal/AI-Toolkit#coc-ov-file"
+    },
+    {
+      "text": "Contributing",
+      "url": "https://github.com/paypal/AI-Toolkit#contributing-ov-file"
+    },
+    {
+      "text": "Security policy",
+      "url": "https://github.com/paypal/AI-Toolkit#security-ov-file"
+    },
+    {
+      "text": "Activity",
+      "url": "https://github.com/paypal/AI-Toolkit/activity"
+    },
+    {
+      "text": "Custom properties",
+      "url": "https://github.com/paypal/AI-Toolkit/custom-properties"
+    },
+    {
+      "text": "14 forks",
+      "url": "https://github.com/paypal/AI-Toolkit/forks"
+    },
+    {
+      "text": "Report repository",
+      "url": "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fpaypal%2FAI-Toolkit&report=paypal+%28user%29"
+    },
+    {
+      "text": "5 Branches",
+      "url": "https://github.com/paypal/AI-Toolkit/branches"
+    },
+    {
+      "text": "2 Tags",
+      "url": "https://github.com/paypal/AI-Toolkit/tags"
+    },
+    {
+      "text": "ArnabZ-77",
+      "url": "https://github.com/paypal/AI-Toolkit/commits?author=ArnabZ-77"
+    },
+    {
+      "text": "feat: add Vault, Payouts, Webhooks and merchant-initiated codes to ex…",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/89ac03f4f7fe27a45163ebeae44a61899735cdd4"
+    },
+    {
+      "text": "89ac03f",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/89ac03f4f7fe27a45163ebeae44a61899735cdd4"
+    },
+    {
+      "text": "16 Commits",
+      "url": "https://github.com/paypal/AI-Toolkit/commits/main/"
+    },
+    {
+      "text": ".agents/plugins",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.agents/plugins"
+    },
+    {
+      "text": ".agents/plugins",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.agents/plugins"
+    },
+    {
+      "text": "feat: add OpenAI Codex plugin support, bump version to 1.1.0, and upd…",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/086cce7011c32448fcd5a86a37a2f927084b0241"
+    },
+    {
+      "text": ".bob",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.bob"
+    },
+    {
+      "text": ".bob",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.bob"
+    },
+    {
+      "text": "feat: add IBM Bob support (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/d2fd6b36875892551b70bbb46d23d77e003a0480"
+    },
+    {
+      "text": "#41",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/41"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/d2fd6b36875892551b70bbb46d23d77e003a0480"
+    },
+    {
+      "text": ".claude-plugin",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.claude-plugin"
+    },
+    {
+      "text": ".claude-plugin",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.claude-plugin"
+    },
+    {
+      "text": "feat: add Cursor plugin support (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/638cc9e603c6a49944919a4625dc8bf37fb975ae"
+    },
+    {
+      "text": "#32",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/32"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/638cc9e603c6a49944919a4625dc8bf37fb975ae"
+    },
+    {
+      "text": ".codex-plugin",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.codex-plugin"
+    },
+    {
+      "text": ".codex-plugin",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.codex-plugin"
+    },
+    {
+      "text": "feat: add Cursor plugin support (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/638cc9e603c6a49944919a4625dc8bf37fb975ae"
+    },
+    {
+      "text": "#32",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/32"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/638cc9e603c6a49944919a4625dc8bf37fb975ae"
+    },
+    {
+      "text": ".cursor-plugin",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.cursor-plugin"
+    },
+    {
+      "text": ".cursor-plugin",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.cursor-plugin"
+    },
+    {
+      "text": "feat: add Cursor plugin support (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/638cc9e603c6a49944919a4625dc8bf37fb975ae"
+    },
+    {
+      "text": "#32",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/32"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/638cc9e603c6a49944919a4625dc8bf37fb975ae"
+    },
+    {
+      "text": ".github",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.github"
+    },
+    {
+      "text": ".github",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.github"
+    },
+    {
+      "text": "feat: add pull request template and ignore node_modules (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/310b4962f0e5b3d09ff1c909d96ad5e226703ecb"
+    },
+    {
+      "text": "#24",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/24"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/310b4962f0e5b3d09ff1c909d96ad5e226703ecb"
+    },
+    {
+      "text": ".husky",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.husky"
+    },
+    {
+      "text": ".husky",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/.husky"
+    },
+    {
+      "text": "feat: add husky pre-commit tooling (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/a9c0586fe495b1e5d18fc6660c87dccb984eb207"
+    },
+    {
+      "text": "#23",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/23"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/a9c0586fe495b1e5d18fc6660c87dccb984eb207"
+    },
+    {
+      "text": "assets",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/assets"
+    },
+    {
+      "text": "assets",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/assets"
+    },
+    {
+      "text": "feat: add Cursor plugin support (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/638cc9e603c6a49944919a4625dc8bf37fb975ae"
+    },
+    {
+      "text": "#32",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/32"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/638cc9e603c6a49944919a4625dc8bf37fb975ae"
+    },
+    {
+      "text": "commands",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/commands"
+    },
+    {
+      "text": "commands",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/commands"
+    },
+    {
+      "text": "feat: add Vault, Payouts, Webhooks and merchant-initiated codes to ex…",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/89ac03f4f7fe27a45163ebeae44a61899735cdd4"
+    },
+    {
+      "text": "hooks",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/hooks"
+    },
+    {
+      "text": "hooks",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/hooks"
+    },
+    {
+      "text": "Add marketplace/plugin metadata, LICENSE, package manifests, and hook…",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/c93cbfe5b0b16ef920670ce7d6afabdf7e79c7a3"
+    },
+    {
+      "text": "skills",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/skills"
+    },
+    {
+      "text": "skills",
+      "url": "https://github.com/paypal/AI-Toolkit/tree/main/skills"
+    },
+    {
+      "text": "feat: updated webhook skill (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/1401791aca82568525bd60aa40aaeb3e9a9615d0"
+    },
+    {
+      "text": "#37",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/37"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/1401791aca82568525bd60aa40aaeb3e9a9615d0"
+    },
+    {
+      "text": ".gitignore",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/.gitignore"
+    },
+    {
+      "text": ".gitignore",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/.gitignore"
+    },
+    {
+      "text": "feat: add husky pre-commit tooling (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/a9c0586fe495b1e5d18fc6660c87dccb984eb207"
+    },
+    {
+      "text": "#23",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/23"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/a9c0586fe495b1e5d18fc6660c87dccb984eb207"
+    },
+    {
+      "text": ".markdownlint.json",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/.markdownlint.json"
+    },
+    {
+      "text": ".markdownlint.json",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/.markdownlint.json"
+    },
+    {
+      "text": "feat: updated webhook skill (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/1401791aca82568525bd60aa40aaeb3e9a9615d0"
+    },
+    {
+      "text": "#37",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/37"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/1401791aca82568525bd60aa40aaeb3e9a9615d0"
+    },
+    {
+      "text": ".mcp.json",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/.mcp.json"
+    },
+    {
+      "text": ".mcp.json",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/.mcp.json"
+    },
+    {
+      "text": "Adding mcp json",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/bedb081a9b26399882896787c400ef428480d8aa"
+    },
+    {
+      "text": ".prettierrc.json",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/.prettierrc.json"
+    },
+    {
+      "text": ".prettierrc.json",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/.prettierrc.json"
+    },
+    {
+      "text": "feat: add husky pre-commit tooling (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/a9c0586fe495b1e5d18fc6660c87dccb984eb207"
+    },
+    {
+      "text": "#23",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/23"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/a9c0586fe495b1e5d18fc6660c87dccb984eb207"
+    },
+    {
+      "text": "CONTRIBUTING.md",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/CONTRIBUTING.md"
+    },
+    {
+      "text": "CONTRIBUTING.md",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/CONTRIBUTING.md"
+    },
+    {
+      "text": "feat: add IBM Bob support (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/d2fd6b36875892551b70bbb46d23d77e003a0480"
+    },
+    {
+      "text": "#41",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/41"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/d2fd6b36875892551b70bbb46d23d77e003a0480"
+    },
+    {
+      "text": "LICENSE",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/LICENSE"
+    },
+    {
+      "text": "LICENSE",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/LICENSE"
+    },
+    {
+      "text": "Add marketplace/plugin metadata, LICENSE, package manifests, and hook…",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/c93cbfe5b0b16ef920670ce7d6afabdf7e79c7a3"
+    },
+    {
+      "text": "README.md",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/README.md"
+    },
+    {
+      "text": "README.md",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/README.md"
+    },
+    {
+      "text": "feat: add IBM Bob support (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/d2fd6b36875892551b70bbb46d23d77e003a0480"
+    },
+    {
+      "text": "#41",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/41"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/d2fd6b36875892551b70bbb46d23d77e003a0480"
+    },
+    {
+      "text": "SECURITY.md",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/SECURITY.md"
+    },
+    {
+      "text": "SECURITY.md",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/SECURITY.md"
+    },
+    {
+      "text": "docs: remove paypal.ai references and add security policy (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/fb672f6fce64c81911df59b8cd00bfd4db2de307"
+    },
+    {
+      "text": "#30",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/30"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/fb672f6fce64c81911df59b8cd00bfd4db2de307"
+    },
+    {
+      "text": "package-lock.json",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/package-lock.json"
+    },
+    {
+      "text": "package-lock.json",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/package-lock.json"
+    },
+    {
+      "text": "feat: add Cursor plugin support (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/638cc9e603c6a49944919a4625dc8bf37fb975ae"
+    },
+    {
+      "text": "#32",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/32"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/638cc9e603c6a49944919a4625dc8bf37fb975ae"
+    },
+    {
+      "text": "package.json",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/package.json"
+    },
+    {
+      "text": "package.json",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/package.json"
+    },
+    {
+      "text": "feat: add IBM Bob support (",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/d2fd6b36875892551b70bbb46d23d77e003a0480"
+    },
+    {
+      "text": "#41",
+      "url": "https://github.com/paypal/AI-Toolkit/pull/41"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/paypal/AI-Toolkit/commit/d2fd6b36875892551b70bbb46d23d77e003a0480"
+    },
+    {
+      "text": "README",
+      "url": "https://github.com/paypal/AI-Toolkit#"
+    },
+    {
+      "text": "Code of conduct",
+      "url": "https://github.com/paypal/AI-Toolkit#"
+    },
+    {
+      "text": "Contributing",
+      "url": "https://github.com/paypal/AI-Toolkit#"
+    },
+    {
+      "text": "Apache-2.0 license",
+      "url": "https://github.com/paypal/AI-Toolkit#"
+    },
+    {
+      "text": "Security",
+      "url": "https://github.com/paypal/AI-Toolkit#"
+    },
+    {
+      "text": "https://developer.paypal.com",
+      "url": "https://developer.paypal.com/"
+    },
+    {
+      "text": "MCP OAuth authentication",
+      "url": "https://bob.ibm.com/docs/ide/configuration/mcp/mcp-oauth"
+    },
+    {
+      "text": "PayPal Developer Dashboard",
+      "url": "https://developer.paypal.com/dashboard/applications/sandbox"
+    },
+    {
+      "text": "CONTRIBUTING.md",
+      "url": "https://github.com/paypal/AI-Toolkit/blob/main/CONTRIBUTING.md"
+    },
+    {
+      "text": "Conventional Commits",
+      "url": "https://www.conventionalcommits.org/en/v1.0.0/"
+    },
+    {
+      "text": "PayPal Developer Docs",
+      "url": "https://developer.paypal.com/docs/"
+    },
+    {
+      "text": "PayPal REST API Reference",
+      "url": "https://developer.paypal.com/api/rest/"
+    },
+    {
+      "text": "PayPal MCP Server",
+      "url": "https://developer.paypal.com/ai-tools/mcp-server.md"
+    },
+    {
+      "text": "PayPal Agent Toolkit",
+      "url": "https://github.com/paypal/agent-toolkit"
+    },
+    {
+      "text": "PayPal Developer Dashboard",
+      "url": "https://developer.paypal.com/dashboard"
+    },
+    {
+      "text": "PayPal Developer Discord",
+      "url": "http://developer.paypal.com/discord"
+    },
+    {
+      "text": "developer.paypal.com/",
+      "url": "https://developer.paypal.com/"
+    },
+    {
+      "text": "claude",
+      "url": "https://github.com/topics/claude"
+    },
+    {
+      "text": "claude-code",
+      "url": "https://github.com/topics/claude-code"
+    },
+    {
+      "text": "claude-code-plugin",
+      "url": "https://github.com/topics/claude-code-plugin"
+    },
+    {
+      "text": "claude-skills",
+      "url": "https://github.com/topics/claude-skills"
+    },
+    {
+      "text": "codex",
+      "url": "https://github.com/topics/codex"
+    },
+    {
+      "text": "codex-plugin",
+      "url": "https://github.com/topics/codex-plugin"
+    },
+    {
+      "text": "commands",
+      "url": "https://github.com/topics/commands"
+    },
+    {
+      "text": "mcp",
+      "url": "https://github.com/topics/mcp"
+    },
+    {
+      "text": "paypal",
+      "url": "https://github.com/topics/paypal"
+    },
+    {
+      "text": "paypal-api",
+      "url": "https://github.com/topics/paypal-api"
+    },
+    {
+      "text": "paypal-checkout",
+      "url": "https://github.com/topics/paypal-checkout"
+    },
+    {
+      "text": "skills",
+      "url": "https://github.com/topics/skills"
+    },
+    {
+      "text": "Readme",
+      "url": "https://github.com/paypal/AI-Toolkit#readme-ov-file"
+    },
+    {
+      "text": "Apache-2.0 license",
+      "url": "https://github.com/paypal/AI-Toolkit#Apache-2.0-1-ov-file"
+    },
+    {
+      "text": "Code of conduct",
+      "url": "https://github.com/paypal/AI-Toolkit#coc-ov-file"
+    },
+    {
+      "text": "Contributing",
+      "url": "https://github.com/paypal/AI-Toolkit#contributing-ov-file"
+    },
+    {
+      "text": "Security policy",
+      "url": "https://github.com/paypal/AI-Toolkit#security-ov-file"
+    },
+    {
+      "text": "Activity",
+      "url": "https://github.com/paypal/AI-Toolkit/activity"
+    },
+    {
+      "text": "Custom properties",
+      "url": "https://github.com/paypal/AI-Toolkit/custom-properties"
+    },
+    {
+      "text": "14 forks",
+      "url": "https://github.com/paypal/AI-Toolkit/forks"
+    },
+    {
+      "text": "Report repository",
+      "url": "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fpaypal%2FAI-Toolkit&report=paypal+%28user%29"
+    },
+    {
+      "text": "Releases",
+      "url": "https://github.com/paypal/AI-Toolkit/releases"
+    },
+    {
+      "text": "v1.1.0\nLatest",
+      "url": "https://github.com/paypal/AI-Toolkit/releases/tag/v1.1.0"
+    },
+    {
+      "text": "+ 1 release",
+      "url": "https://github.com/paypal/AI-Toolkit/releases"
+    },
+    {
+      "text": "Contributors",
+      "url": "https://github.com/paypal/AI-Toolkit/graphs/contributors"
+    },
+    {
+      "text": "Terms",
+      "url": "https://docs.github.com/site-policy/github-terms/github-terms-of-service"
+    },
+    {
+      "text": "Privacy",
+      "url": "https://docs.github.com/site-policy/privacy-policies/github-privacy-statement"
+    },
+    {
+      "text": "Security",
+      "url": "https://github.com/security"
+    },
+    {
+      "text": "Status",
+      "url": "https://www.githubstatus.com/"
+    },
+    {
+      "text": "Community",
+      "url": "https://github.community/"
+    },
+    {
+      "text": "Docs",
+      "url": "https://docs.github.com/"
+    },
+    {
+      "text": "Contact",
+      "url": "https://support.github.com/?tags=dotcom-footer"
+    }
+  ],
+  "text": "Skip to content\nNavigation Menu\nProducts\nDevelopers\nBusinesses\nResources\nPricing\nSearch\n/\nSign in\nSign up\npaypal\nAI-Toolkit\nRepository navigation\nCode\nIssues\n2\n (2)\nPull requests\nActions\nSecurity and quality\nInsights\nAI-Toolkit\nPublic\nNotifications\nFork14\n (14)\nStar47\n (47)\nmain\n5 Branches\n2 Tags\nCode\nLatest commit\nArnabZ-77\nfeat: add Vault, Payouts, Webhooks and merchant-initiated codes to ex…\n89ac03f\n · \nHistory\n16 Commits\nFolders and files\nName\tLast commit message\tLast commit date\n\n.agents/plugins\n\t\nfeat: add OpenAI Codex plugin support, bump version to 1.1.0, and upd…\n\t\n\n\n.bob\n\t\nfeat: add IBM Bob support (#41)\n\t\n\n\n.claude-plugin\n\t\nfeat: add Cursor plugin support (#32)\n\t\n\n\n.codex-plugin\n\t\nfeat: add Cursor plugin support (#32)\n\t\n\n\n.cursor-plugin\n\t\nfeat: add Cursor plugin support (#32)\n\t\n\n\n.github\n\t\nfeat: add pull request template and ignore node_modules (#24)\n\t\n\n\n.husky\n\t\nfeat: add husky pre-commit tooling (#23)\n\t\n\n\nassets\n\t\nfeat: add Cursor plugin support (#32)\n\t\n\n\ncommands\n\t\nfeat: add Vault, Payouts, Webhooks and merchant-initiated codes to ex…\n\t\n\n\nhooks\n\t\nAdd marketplace/plugin metadata, LICENSE, package manifests, and hook…\n\t\n\n\nskills\n\t\nfeat: updated webhook skill (#37)\n\t\n\n\n.gitignore\n\t\nfeat: add husky pre-commit tooling (#23)\n\t\n\n\n.markdownlint.json\n\t\nfeat: updated webhook skill (#37)\n\t\n\n\n.mcp.json\n\t\nAdding mcp json\n\t\n\n\n.prettierrc.json\n\t\nfeat: add husky pre-commit tooling (#23)\n\t\n\n\nCONTRIBUTING.md\n\t\nfeat: add IBM Bob support (#41)\n\t\n\n\nLICENSE\n\t\nAdd marketplace/plugin metadata, LICENSE, package manifests, and hook…\n\t\n\n\nREADME.md\n\t\nfeat: add IBM Bob support (#41)\n\t\n\n\nSECURITY.md\n\t\ndocs: remove paypal.ai references and add security policy (#30)\n\t\n\n\npackage-lock.json\n\t\nfeat: add Cursor plugin support (#32)\n\t\n\n\npackage.json\n\t\nfeat: add IBM Bob support (#41)\n\t\nRepository files navigation\nREADME\nCode of conduct\nContributing\nApache-2.0 license\nSecurity\nPayPal AI Toolkit\n\nA plugin that integrates PayPal's APIs and MCP server into your AI coding workflow. Get AI-assisted help with PayPal payments, subscriptions, invoices, disputes, and more — in Claude Code, OpenAI Codex, Cursor, IBM Bob, and other compatible agents.\n\nFeatures\nBest practices Skill — auto-injects PayPal API knowledge when you're working on payment integrations\nCommands — quick reference commands for common developer tasks (Claude Code and Cursor)\nHooks — automatically checks PayPal best practices before writing integration code\nMCP Server integration — connects your agent to PayPal's sandbox MCP servers for direct API operations via natural language\n\nInstallation\nPrerequisites\nA PayPal Developer account at https://developer.paypal.com\nA PayPal sandbox access token\nClaude Code (claude --version), OpenAI Codex (codex --version), Cursor, and/or IBM Bob\nClaude Code\n\nPayPal AI Toolkit is available on the official Anthropic marketplace, which Claude Code adds automatically. Install it with:\n\n/plugin install paypal@claude-plugins-official\n\n\nThen run /reload-plugins to activate it.\n\nLocal / development install\n\nTo work on the plugin itself, clone the repo and load it directly instead:\n\ngit clone https://github.com/paypal/AI-Toolkit.git\n\nThen start Claude Code with the plugin loaded:\n\ncd your-project/\nclaude --plugin-dir /path/to/AI-Toolkit\nOpenAI Codex\n\nAdd the PayPal marketplace, then install the plugin:\n\ncodex plugin marketplace add paypal/AI-Toolkit\ncodex plugin add paypal@paypal-ai-toolkit\nLocal / development install\ngit clone https://github.com/paypal/AI-Toolkit.git\ncodex plugin marketplace add /path/to/AI-Toolkit\ncodex plugin add paypal@paypal-ai-toolkit\n\nRestart Codex after installing so skills and the sandbox MCP server load.\n\nCursor\n\nAdd this repository as a marketplace, then install the plugin:\n\ncursor-agent plugin marketplace add https://github.com/paypal/AI-Toolkit\n\nThen open Customize (or type /plugin) and install paypal at user or project scope.\n\nOnce the plugin is listed on the Cursor marketplace, you can also install it from chat with /add-plugin paypal.\n\nLocal / development install\n\nLoad the checkout directly (no marketplace or admin setting required):\n\ngit clone https://github.com/paypal/AI-Toolkit.git\ncursor-agent --plugin-dir /path/to/AI-Toolkit\n\nYou can also copy the repo into Cursor's local plugin folder. This requires Allow Local Plugin Imports (Dashboard → Settings → Security & Identity → Marketplace and Plugins), which is off by default on some teams. Symlinks that point outside this folder are skipped:\n\ngit clone https://github.com/paypal/AI-Toolkit.git ~/.cursor/plugins/local/paypal\n\ncursor-agent plugin marketplace add only accepts a git URL (for example https://github.com/paypal/AI-Toolkit), not a local path.\n\nRestart Cursor or run Developer: Reload Window, then confirm skills, commands, and paypal-sandbox in Customize.\n\nIBM Bob\n\nClone the repository and open it in IBM Bob (Bob IDE or Bob Shell):\n\ngit clone https://github.com/paypal/AI-Toolkit.git\ncd AI-Toolkit\n\nIBM Bob automatically discovers and loads skills from .bob/skills/ and the sandbox MCP server from .bob/mcp.json. The Bob config connects to https://mcp.sandbox.paypal.com/mcp over Streamable HTTP and contains no credentials. When Bob first connects, it prompts you to authenticate in your browser (see MCP OAuth authentication). Check the connection status under Settings → MCP. IBM Bob users can skip the sandbox access token section below.\n\nConfigure your sandbox access token\n\nGenerate a sandbox access token:\n\ncurl -X POST https://api-m.sandbox.paypal.com/v1/oauth2/token \\\n  -u \"YOUR_SANDBOX_CLIENT_ID:YOUR_SANDBOX_CLIENT_SECRET\" \\\n  -d \"grant_type=client_credentials\" \\\n  | jq -r .access_token\n\nGet the client ID and secret from the PayPal Developer Dashboard.\n\nPaste the single-line value into your agent's config.\n\nClaude Code — merge into the existing \"env\" block in ~/.claude/settings.json:\n\n\"env\": {\n  \"PAYPAL_SANDBOX_ACCESS_TOKEN\": \"A21AA…\"\n}\n\nOpenAI Codex — merge into ~/.codex/config.toml:\n\n[shell_environment_policy.set]\nPAYPAL_SANDBOX_ACCESS_TOKEN = \"A21AA…\"\n\nCursor — after installing the plugin, open Customize → Plugins → PayPal → Configure and paste the token. Cursor stores it and substitutes ${PAYPAL_SANDBOX_ACCESS_TOKEN} in .mcp.json. A GUI-launched Cursor does not inherit export from ~/.zshrc.\n\nFully quit and reopen the agent (close the app — not just /clear).\n\nIn Claude Code, run /paypal:setup to verify. In Codex, Cursor, or IBM Bob, ask the agent to list PayPal MCP tools or create a sandbox invoice.\n\nUse the agent config or Cursor plugin Configure panel, not ~/.zshrc. GUI launches don't source ~/.zshrc, and a line-wrapped export embeds a newline in the token that breaks the HTTP header.\n\nTokens expire in up to 8 hours depending on scope — check the expires_in field in the response. Run /paypal:setup refresh when you hit a 401.\n\nCommands\n\nSlash commands are available in Claude Code and Cursor. Codex uses the same skills and MCP server through natural language.\n\nCommand\tDescription\n/paypal:doctor [symptom]\tScan your codebase for PayPal integration issues\n/paypal:explain-error <code>\tExplain a PayPal error code with causes and fixes\n/paypal:sandbox [topic]\tSandbox setup, test accounts, and testing tips\n/paypal:setup [mode]\tConfigure the plugin, verify MCP, refresh tokens\n/paypal:test-accounts [topic]\tTest cards, BNPL, Venmo, webhooks, and scenarios\nExamples\n/paypal:explain-error INSTRUMENT_DECLINED\n/paypal:explain-error 422 UNPROCESSABLE_ENTITY\n/paypal:sandbox subscriptions\n/paypal:sandbox webhooks\n/paypal:setup\n/paypal:doctor webhooks not firing\n\nMCP Server\n\nThe plugin connects to PayPal's sandbox MCP server, which exposes tools for:\n\nOrders & Payments — create orders, capture payments, process refunds\nInvoices — create, send, manage, and generate QR codes for invoices\nSubscriptions — manage billing plans and subscriptions\nDisputes — list and respond to buyer disputes\nCatalog — manage products and pricing\nShipment — create and track shipments\nReporting — list transactions, get merchant insights\nTransport and environments\n\nThe server uses SSE at the /sse path. paypal-sandbox activates once you set PAYPAL_SANDBOX_ACCESS_TOKEN in ~/.claude/settings.json (Claude Code), ~/.codex/config.toml (Codex), or Customize → Plugins → PayPal → Configure (Cursor). IBM Bob uses Streamable HTTP at /mcp with OAuth instead.\n\nSkills\n\nThe paypal-best-practices skill is automatically invoked when your agent detects you're working on PayPal integrations. It provides:\n\nRecommended APIs and deprecated APIs to avoid\nAuthentication and credential best practices\nOrders, Subscriptions, and Invoices API flows\nWebhook verification and security guidance\nError handling patterns\nSandbox testing guidance\n\nThe paypal-routing skill routes PayPal-related questions to the right command or reference file and is not directly user-invocable.\n\nHooks\n\nA PreToolUse hook checks whether a file edit touches PayPal SDK, API, or checkout code. If it does, the agent is required to consult the paypal-best-practices skill and the correct SDK version reference (v5 or v6) before writing the code.\n\nPlugin Structure\nAI-Toolkit/\n├── .agents/\n│   └── plugins/\n│       └── marketplace.json     # Codex marketplace catalog\n├── .bob/\n│   ├── mcp.json                 # IBM Bob MCP server config\n│   └── skills/                  # Symlinks to skills/ for IBM Bob\n├── .claude-plugin/\n│   ├── marketplace.json     # Claude Code marketplace registry\n│   └── plugin.json          # Claude Code plugin manifest\n├── .codex-plugin/\n│   └── plugin.json          # Codex plugin manifest\n├── .cursor-plugin/\n│   ├── marketplace.json     # Cursor marketplace catalog\n│   └── plugin.json          # Cursor plugin manifest\n├── .mcp.json                # PayPal sandbox MCP server (SSE)\n├── skills/\n│   ├── paypal-best-practices/\n│   │   ├── SKILL.md         # Auto-injected best practices context\n│   │   └── references/      # Topic-specific integration guides\n│   └── paypal-routing/\n│       └── SKILL.md         # Intent routing (non-user-invocable)\n├── commands/\n│   ├── doctor.md            # /paypal:doctor\n│   ├── explain-error.md     # /paypal:explain-error\n│   ├── sandbox.md           # /paypal:sandbox\n│   ├── setup.md             # /paypal:setup\n│   └── test-accounts.md     # /paypal:test-accounts\n├── hooks/\n│   └── hooks.json           # Pre-write best-practices check\n├── LICENSE                  # Apache-2.0\n├── CONTRIBUTING.md          # Contribution and commit guidelines\n└── README.md\n\nContributing\n\nSee CONTRIBUTING.md for how to report issues, develop locally, and submit pull requests.\n\nCommit messages and PR titles should follow Conventional Commits, for example:\n\nfeat: allow provided config object to extend other configs\n\nResources\nPayPal Developer Docs\nPayPal REST API Reference\nPayPal MCP Server\nPayPal Agent Toolkit\nPayPal Developer Dashboard\nPayPal Developer Discord\nAbout\n\nA plugin that integrates PayPal's APIs and MCP server across multiple AI coding agents (Claude Code, Cursor and more) into your development workflow.\n\ndeveloper.paypal.com/\nTopics\nclaude\nclaude-code\nclaude-code-plugin\nclaude-skills\ncodex\ncodex-plugin\ncommands\nmcp\npaypal\npaypal-api\npaypal-checkout\nskills\nResources\nReadme\nApache-2.0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nActivity\nCustom properties\nStars\n47 stars\nWatchers\n2 watching\nForks\n14 forks\nReport repository\nReleases\n2\n (2)\nv1.1.0\nLatest\n+ 1 release\nContributors\n8\n (8)\nFooter\n© 2026 GitHub, Inc.\nFooter navigation\nTerms\nPrivacy\nSecurity\nStatus\nCommunity\nDocs\nContact\nManage cookies\nDo not share my personal information",
+  "title": "GitHub - paypal/AI-Toolkit: A plugin that integrates PayPal's APIs and MCP server across multiple AI coding agents (Claude Code, Cursor and more) into your development workflow. · GitHub",
+  "url": "https://github.com/paypal/AI-Toolkit"
+}

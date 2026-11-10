@@ -1,0 +1,368 @@
+{
+  "fullTextLength": 14156,
+  "links": [
+    {
+      "text": "Enterprise omnichannel",
+      "url": "https://developer.paypal.com/braintree/in-person/"
+    },
+    {
+      "text": "Build donation buttons",
+      "url": "https://developer.paypal.com/sdk/donate"
+    },
+    {
+      "text": "Add authorize and capture",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture"
+    },
+    {
+      "text": "View as Markdown",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture.md"
+    },
+    {
+      "text": "View as Markdown",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture.md"
+    },
+    {
+      "text": "How it works",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#how-it-works"
+    },
+    {
+      "text": "Know before you code",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#know-before-you-code"
+    },
+    {
+      "text": "You need a developer account to get sandbox credentials",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#you-need-a-developer-account-to-get-sandbox-credentials"
+    },
+    {
+      "text": "Dashboard",
+      "url": "https://developer.paypal.com/dashboard/"
+    },
+    {
+      "text": "Read the guide",
+      "url": "https://developer.paypal.com/sandbox-testing/overview"
+    },
+    {
+      "text": "PayPal Checkout",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#paypal-checkout"
+    },
+    {
+      "text": "JavaScript SDK:",
+      "url": "https://developer.paypal.com/sdk/js/reference"
+    },
+    {
+      "text": "Orders REST API:",
+      "url": "https://developer.paypal.com/api/orders/v2"
+    },
+    {
+      "text": "Payments REST API:",
+      "url": "https://developer.paypal.com/api/payments/v2"
+    },
+    {
+      "text": "PayPal Checkout",
+      "url": "https://developer.paypal.com/checkout"
+    },
+    {
+      "text": "Explore PayPal APIs with Postman",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#explore-paypal-apis-with-postman"
+    },
+    {
+      "text": "Postman guide",
+      "url": "https://developer.paypal.com/api/rest/postman"
+    },
+    {
+      "text": "1. Separate authorize and capture in the approval intent",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#1-separate-authorize-and-capture-in-the-approval-intent"
+    },
+    {
+      "text": "2. Authorize payment",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#2-authorize-payment"
+    },
+    {
+      "text": "Step result",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#step-result"
+    },
+    {
+      "text": "3. Capture order and authorization IDs",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#3-capture-order-and-authorization-ids"
+    },
+    {
+      "text": "4. Save order information",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#4-save-order-information"
+    },
+    {
+      "text": "Sample request",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#sample-request"
+    },
+    {
+      "text": "Show order details",
+      "url": "https://developer.paypal.com/api/orders/v2/orders-get"
+    },
+    {
+      "text": "Step result",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#step-result-1"
+    },
+    {
+      "text": "Sample response",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#sample-response"
+    },
+    {
+      "text": "5. Reauthorize payment",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#5-reauthorize-payment"
+    },
+    {
+      "text": "Sample request",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#sample-request-1"
+    },
+    {
+      "text": "Reauthorize authorized payment",
+      "url": "https://developer.paypal.com/api/payments/v2/authorizations-reauthorize"
+    },
+    {
+      "text": "access token",
+      "url": "https://developer.paypal.com/api/rest/authentication/"
+    },
+    {
+      "text": "API idempotency",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency"
+    },
+    {
+      "text": "Step result",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#step-result-2"
+    },
+    {
+      "text": "Sample response",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#sample-response-1"
+    },
+    {
+      "text": "6. Capture payment",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#6-capture-payment"
+    },
+    {
+      "text": "Sample request",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#sample-request-2"
+    },
+    {
+      "text": "Capture authorized payment",
+      "url": "https://developer.paypal.com/api/payments/v2/authorizations-capture"
+    },
+    {
+      "text": "access token",
+      "url": "https://developer.paypal.com/api/rest/authentication/"
+    },
+    {
+      "text": "API idempotency",
+      "url": "https://developer.paypal.com/api/rest/reference/idempotency"
+    },
+    {
+      "text": "Step result",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#step-result-3"
+    },
+    {
+      "text": "refund the transaction",
+      "url": "https://developer.paypal.com/api/payments/v2/captures-refund"
+    },
+    {
+      "text": "Sample response",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#sample-response-2"
+    },
+    {
+      "text": "Next steps and customizations",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#next-steps-and-customizations"
+    },
+    {
+      "text": "Test integration\n\nTest in the sandbox environment before going live.",
+      "url": "https://developer.paypal.com/sandbox-testing/overview"
+    },
+    {
+      "text": "Go live\n\nMove from PayPal's production environment to go live.",
+      "url": "https://developer.paypal.com/api/rest/production/"
+    },
+    {
+      "text": "Implement 3D Secure\n\nAuthenticate cardholders through card issuers.",
+      "url": "https://developer.paypal.com/expanded/3d-secure"
+    },
+    {
+      "text": "Authorization and honor period\n\nAuthorization and capture timing for 2-step payments.",
+      "url": "https://developer.paypal.com/docs/checkout/advanced/authorization-honor/"
+    },
+    {
+      "text": "Payments API\n\nLearn more about the Payments API.",
+      "url": "https://developer.paypal.com/api/payments/v2"
+    },
+    {
+      "text": "Void an authorization\n\nCancel an authorized payment using the Payments API.",
+      "url": "https://developer.paypal.com/api/payments/v2#authorizations_void"
+    },
+    {
+      "text": "Handle a refund\n\nRefund a captured payment using the Payments API.",
+      "url": "https://developer.paypal.com/api/payments/v2#captures_refund"
+    },
+    {
+      "text": "Recurring payments\n\nPrevious Page",
+      "url": "https://developer.paypal.com/v5/checkout/recurring"
+    },
+    {
+      "text": "Handle buyer errors\n\nUse onError callbacks and alternate checkout pages to effectively manage and handle buyer checkout errors, ensuring a smooth payment experience.",
+      "url": "https://developer.paypal.com/v5/checkout/handle-errors"
+    },
+    {
+      "text": "ON THIS PAGE",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#"
+    },
+    {
+      "text": "How it works",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#how-it-works"
+    },
+    {
+      "text": "Know before you code",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#know-before-you-code"
+    },
+    {
+      "text": "You need a developer account to get sandbox credentials",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#you-need-a-developer-account-to-get-sandbox-credentials"
+    },
+    {
+      "text": "PayPal Checkout",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#paypal-checkout"
+    },
+    {
+      "text": "Explore PayPal APIs with Postman",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#explore-paypal-apis-with-postman"
+    },
+    {
+      "text": "1. Separate authorize and capture in the approval intent",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#1-separate-authorize-and-capture-in-the-approval-intent"
+    },
+    {
+      "text": "2. Authorize payment",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#2-authorize-payment"
+    },
+    {
+      "text": "Step result",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#step-result"
+    },
+    {
+      "text": "3. Capture order and authorization IDs",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#3-capture-order-and-authorization-ids"
+    },
+    {
+      "text": "4. Save order information",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#4-save-order-information"
+    },
+    {
+      "text": "Sample request",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#sample-request"
+    },
+    {
+      "text": "Step result",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#step-result-1"
+    },
+    {
+      "text": "Sample response",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#sample-response"
+    },
+    {
+      "text": "5. Reauthorize payment",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#5-reauthorize-payment"
+    },
+    {
+      "text": "Sample request",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#sample-request-1"
+    },
+    {
+      "text": "Step result",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#step-result-2"
+    },
+    {
+      "text": "Sample response",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#sample-response-1"
+    },
+    {
+      "text": "6. Capture payment",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#6-capture-payment"
+    },
+    {
+      "text": "Sample request",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#sample-request-2"
+    },
+    {
+      "text": "Step result",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#step-result-3"
+    },
+    {
+      "text": "Sample response",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#sample-response-2"
+    },
+    {
+      "text": "Next steps and customizations",
+      "url": "https://developer.paypal.com/v5/checkout/auth-capture#next-steps-and-customizations"
+    },
+    {
+      "text": "GitHub repo",
+      "url": "https://github.com/paypal"
+    },
+    {
+      "text": "Postman repo",
+      "url": "https://www.postman.com/paypal"
+    },
+    {
+      "text": "PayPal.com",
+      "url": "https://paypal.com/"
+    },
+    {
+      "text": "llms.txt",
+      "url": "https://developer.paypal.com/llms.txt"
+    },
+    {
+      "text": "Developer blog",
+      "url": "https://developer.paypal.com/community/blog/"
+    },
+    {
+      "text": "Community",
+      "url": "https://developer.paypal.com/community"
+    },
+    {
+      "text": "Help Center",
+      "url": "https://www.paypal.com/cshelp/technical"
+    },
+    {
+      "text": "Sign up for updates",
+      "url": "https://developer.paypal.com/community/developer-program"
+    },
+    {
+      "text": "X",
+      "url": "https://x.com/paypaldev"
+    },
+    {
+      "text": "YouTube",
+      "url": "https://www.youtube.com/@paypaldev"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/paypaldev"
+    },
+    {
+      "text": "Discord",
+      "url": "https://developer.paypal.com/discord"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://www.paypal.com/legalhub/privacy-full"
+    },
+    {
+      "text": "Terms of Service",
+      "url": "https://www.paypal.com/legalhub/useragreement-full"
+    },
+    {
+      "text": "Developer Agreement",
+      "url": "https://www.paypal.com/legalhub/paypal/xdeveloper-full"
+    },
+    {
+      "text": "Manage cookies and learn more",
+      "url": "https://www.paypal.com/myaccount/privacy/cookiePrefs?locale=en_US"
+    }
+  ],
+  "text": "Business\nPlatforms and marketplaces\nEnterprise\nSearch...\n⌘ K\nLog In\nSign Up\nGet started\nPayments\nRevenue\nDeveloper resources\nHelp\nAPIs & SDKs\nPAYMENTS\nOverview\nPayment methods\nUpgrade older integrations\n\nONLINE PAYMENTS\n\nHow does the Orders API work?\n\nPAYMENT METHODS\n\nDigital wallets\nPayPal\nPayPal overview\nBuild a PayPal checkout\nManage transactions\nPayPal Checkout troubleshooting\nJavaScript SDK v5\nGetting started\nOne-time payments\nRecurring payments\nImprove checkout conversion\nAdd authorize and capture\nHandle buyer errors\nHandle funding failures\nHandle overcharges\nHandle uncaptured payments\nPass on a buyer ID\nSave recurring payment methods\nShow a funding source\nShow payment methods\nUse for one-page apps\nAdd input validation\nEnhance customer experience\nBest practices\nVenmo\nApple Pay\nGoogle Pay\nUse low-code/no-code solutions\nPay Later\nCards\nBank redirects\nVouchers\nDeferred payments\nCryptocurrency\nReference\n\nSAVE PAYMENT METHODS\n\nSave with purchase\nSave without purchase\nJavaScript SDK v5\n\nIN-PERSON PAYMENTS\n\nPoint of sale (Zettle)\nPayment SDK (Zettle)\nEnterprise omnichannel\n\nACCEPT DONATIONS\n\nBuild donation buttons\nDigital wallets\nPayPal\nJavaScript SDK v5\nImprove checkout conversion\nAdd authorize and capture\nAuthorize a payment and capture funds later\nUse PayPal's authorize and capture model to hold funds, verify stock, and finalize payments later.\n\nLast updated: October 14, 2026\n\nJavaScript SDK v5\nSTANDARD\nDIRECT MERCHANT\nCopy for LLM\n\nView as Markdown\n\nThe PayPal Checkout integration supports a 2-step authorize and capture payment model.\n\nAuthorize a buyer's funds before you capture them, then settle the purchase later. An authorization places a hold on the funds and is valid for 29 days. For example, use authorize and capture to complete a task before finalizing the payment, such as verifying that you have the item in stock.\n\nHow it works\nThe payer checks out and provides a payment method.\nYou authorize the payment.\nA hold is placed on the payment method until you are ready to capture payment.\nYou finalize the transaction and capture the payment.\nThe payer's payment method is charged.\nKnow before you code\nYou need a developer account to get sandbox credentials\n\nPayPal uses the following REST API credentials, which you can get from the developer dashboard:\n\nClient ID: Authenticates your account with PayPal and identifies an app in your sandbox.\nClient secret: Authorizes an app in your sandbox. Keep this secret safe and don't share it.\n\nDashboard\n\nRead the guide\n\nPayPal Checkout\n\nThis feature modifies an existing PayPal Checkout integration and uses the following:\n\nJavaScript SDK: Adds PayPal-supported payment methods.\nOrders REST API: Create, update, retrieve, authorize, and capture orders.\nPayments REST API: Authorize, capture, retrieve, and refund payments.\n\nPayPal Checkout\n\nExplore PayPal APIs with Postman\n\nYou can use Postman to explore and test PayPal APIs. Learn more in our Postman guide.\n\n1. Separate authorize and capture in the approval intent\n\nThe default approval intent of the JavaScript SDK is to both authorize the transaction and capture payment immediately. To split authorize and capture into separate actions, add &intent=authorize to the JavaScript SDK script tag, as shown in the following example:\n\n<script\n  src=\"https://www.paypal.com/sdk/js?client-id=CLIENT_ID&intent=authorize\">\n</script>\n2. Authorize payment\n\nThe onApprove function in the default integration captures the payment immediately. Replace the existing onApprove function with the following code. This code authorizes the payment but doesn't capture it.\n\nonApprove: function(data) {\n  // Authorize the transaction\n  return fetch('/my-server/authorize-paypal-order', {\n    method: 'post',\n    body: JSON.stringify({\n      orderID: data.orderID\n    })\n  })\n  .then(response => response.json())\n  .then((authorizePayload) => {\n      // Get the authorization id from your payload\n      const authorizationID = authorizePayload.authorizationID;\n      // Optional message given to purchaser\n      alert(`\n        You have authorized this transaction.\n        Order ID: ${data.orderID}\n        Authorization ID: ${authorizationID}\n      `);\n      // Later you can use your server to validate and capture the transaction\n    });\n  })\n}\nStep result\n\nA successful authorization results in:\n\nA Pending transaction in your business account.\nA hold on the money that is valid for 29 days. After a successful authorization, capture the payment within the 3-day honor period. Payment capture is subject to risk and money availability.\n\nYou can use your server-side code to capture the order ID and authorization ID passed in the fetch method in the onApprove function.\n\n3. Capture order and authorization IDs\n\nEach server implementation is different. Make sure you have logic in your server-side code to receive the order ID and authorization ID that you pass from the client-side JavaScript fetch function.\n\n4. Save order information\n\nCopy the following code and modify it to save the details to your server-side database:\n\nSample request\n\nAPI endpoint used: Show order details\n\ncurl -v -X GET https://api-m.sandbox.paypal.com/v2/checkout/orders/48S239579N169645 \\\\\n  -H \"Content-Type: application/json\" \\\\\n  -H \"Authorization: Bearer ACCESS-TOKEN\" \\\\\n\nModify the code\n\nAfter you copy the code in the sample request, modify the following:\n\nAccess-Token - Your access token.\nOrder ID - In the URI for the API call, replace the sample ID with your order ID. In this example, the sample order ID is 48S239579N169645.\nStep result\n\nA successful request results in the following:\n\nA return status code of HTTP 200 OK.\nA JSON response body containing order details that you can save to your server-side database.\n\nAfter you capture the order details, you can complete any business tasks, such as verifying you have the item in stock, before you capture the payment.\n\nSample response\n{\n  \"id\": \"48S239579N1696452\",\n  \"intent\": \"AUTHORIZE\",\n  \"purchase_units\": [{\n    \"reference_id\": \"default\",\n    \"amount\": {\n      \"currency_code\": \"USD\",\n      \"value\": \"30.00\"\n    },\n    \"payee\": {\n      \"email_address\": \"payee@example.com\",\n      \"merchant_id\": \"JK9AB28SRU4XL\"\n    },\n    \"shipping\": {\n      \"name\": {\n        \"full_name\": \"Firstname Lastname\"\n      },\n      \"address\": {\n        \"address_line_1\": \"123 Main St.\",\n        \"admin_area_2\": \"Anytown\",\n        \"admin_area_1\": \"CA\",\n        \"postal_code\": \"12345\",\n        \"country_code\": \"US\"\n      }\n    },\n    \"payments\": {\n      \"authorizations\": [{\n        \"status\": \"CREATED\",\n        \"id\": \"66P728836U784324A\",\n        \"amount\": {\n          \"currency_code\": \"USD\",\n          \"value\": \"30.00\"\n        },\n        \"seller_protection\": {\n          \"status\": \"ELIGIBLE\",\n          \"dispute_categories\": [\"ITEM_NOT_RECEIVED\", \"UNAUTHORIZED_TRANSACTION\"]\n        },\n        \"expiration_time\": \"2020-01-01T15:57:51Z\",\n        \"links\": [{\n          \"href\": \"https://api-m.sandbox.paypal.com/v2/payments/authorizations/66P728836U784324A\",\n          \"rel\": \"self\",\n          \"method\": \"GET\"\n        }, {\n          \"href\": \"https://api-m.sandbox.paypal.com/v2/payments/authorizations/66P728836U784324A/capture\",\n          \"rel\": \"capture\",\n          \"method\": \"POST\"\n        }, {\n          \"href\": \"https://api-m.sandbox.paypal.com/v2/payments/authorizations/66P728836U784324A/void\",\n          \"rel\": \"void\",\n          \"method\": \"POST\"\n        }, {\n          \"href\": \"https://api-m.sandbox.paypal.com/v2/payments/authorizations/66P728836U784324A/reauthorize\",\n          \"rel\": \"reauthorize\",\n          \"method\": \"POST\"\n        }, {\n          \"href\": \"https://api-m.sandbox.paypal.com/v2/checkout/orders/48S239579N1696452\",\n          \"rel\": \"up\",\n          \"method\": \"GET\"\n        }],\n        \"create_time\": \"2020-02-03T15:57:51Z\",\n        \"update_time\": \"2020-02-03T15:57:51Z\"\n      }]\n    }\n  }],\n  \"payer\": {\n    \"name\": {\n      \"given_name\": \"Firstname\",\n      \"surname\": \"Lastname\"\n    },\n    \"email_address\": \"payer@example.com\",\n    \"payer_id\": \"8Y7QBG68GYPHQ\",\n    \"address\": {\n      \"country_code\": \"US\"\n    }\n  },\n  \"create_time\": \"2020-02-03T15:57:17Z\",\n  \"update_time\": \"2020-02-03T15:57:51Z\",\n  \"links\": [{\n    \"href\": \"https://api-m.sandbox.paypal.com/v2/checkout/orders/48S239579N1696452\",\n    \"rel\": \"self\",\n    \"method\": \"GET\"\n  }],\n  \"status\": \"COMPLETED\"\n}\n5. Reauthorize payment\n\nIf you haven't captured the payment within 3 days of authorization, you can reauthorize the payment to make sure the money is still available.\n\nYou can issue multiple reauthorizations within the 29-day authorization period after the honor period expires. A reauthorization generates a new authorization ID and restarts the 3-day honor period. Use the new authorization ID on subsequent captures.\n\nIf you reauthorize on the 27th day of the authorization period, you get only 2 days of the honor period.\n\nTo reauthorize a payment, copy the following code and modify it.\n\nSample request\n\nAPI endpoint used: Reauthorize authorized payment\n\ncurl -v -X POST https://api-m.sandbox.paypal.com/v2/payments/authorizations/66P728836U784324A/reauthorize \\\\\n  -H \"Content-Type: application/json\" \\\\\n  -H \"Authorization: Bearer ACCESS-TOKEN\" \\\\\n  -H \"PayPal-Request-Id: PAYPAL-REQUEST-ID\" \\\\\n\nModify the code\n\nAfter you copy the code in the sample request, modify the following:\n\nAccess-Token - Your access token.\nAuthorization ID - In the URI of the API call, replace the sample ID with your authorization ID. In this example, the authorization ID is 66P728836U784324A.\nPAYPAL-REQUEST-ID - Replace the sample ID with a unique alphanumeric ID that you generate. The PayPal request ID helps prevent duplicate authorizations if the API call is interrupted. For more information, see API idempotency.\nStep result\n\nA successful request results in the following:\n\nA return status code of HTTP 201 Created.\nA JSON response body containing a new authorization ID that you can use to capture the payment.\nSample response\n{\n  \"id\": \"8AA831015G517922L\",\n  \"status\": \"CREATED\",\n  \"links\": [{\n    \"rel\": \"self\",\n    \"method\": \"GET\",\n    \"href\": \"https://api-m.paypal.com/v2/payments/authorizations/8AA831015G517922L\"\n  }, {\n    \"rel\": \"capture\",\n    \"method\": \"POST\",\n    \"href\": \"https://api-m.paypal.com/v2/payments/authorizations/8AA831015G517922L/capture\"\n  }, {\n    \"rel\": \"void\",\n    \"method\": \"POST\",\n    \"href\": \"https://api-m.paypal.com/v2/payments/authorizations/8AA831015G517922L/void\"\n  }, {\n    \"rel\": \"reauthorize\",\n    \"method\": \"POST\",\n    \"href\": \"https://api-m.paypal.com/v2/payments/authorizations/8AA831015G517922L/reauthorize\"\n  }]\n}\n6. Capture payment\n\nTo capture the payment, copy the following code and modify it.\n\nSample request\n\nAPI endpoint used: Capture authorized payment\n\ncurl -v -X POST https://api-m.sandbox.paypal.com/v2/payments/authorizations/66P728836U784324A/capture \\\\\n  -H \"Content-Type: application/json\" \\\\\n  -H \"Authorization: Bearer ACCESS-TOKEN\" \\\\\n  -H \"PayPal-Request-Id: PAYPAL-REQUEST-ID\" \\\\\n\nModify the code\n\nAfter you copy the code in the sample request, modify the following:\n\nACCESS-TOKEN - Your access token.\nAuthorization ID - In the URI for the API call, replace the sample ID with your authorization ID. The authorization ID is either the original authorization ID or the ID from reauthorizing the transaction. In this example, the authorization ID is 66P728836U784324A.\nPAYPAL-REQUEST-ID - Replace the sample ID with a unique alphanumeric ID you generate. The PayPal request ID helps prevent duplicate authorizations if the API call is interrupted. For more information, see API idempotency.\nStep result\n\nA successful request results in the following:\n\nA return status code of HTTP 201 Created.\nA JSON response body containing details for the captured payment. Use the that is ID returned if you need to refund the transaction in the future.\nThe transaction in your business account changes from Pending to Completed.\nSample response\n{\n  \"id\": \"5KA38057EC136584R\",\n  \"status\": \"COMPLETED\",\n  \"links\": [{\n    \"href\": \"https://api-m.sandbox.paypal.com/v2/payments/captures/5KA38057EC136584R\",\n    \"rel\": \"self\",\n    \"method\": \"GET\"\n  }, {\n    \"href\": \"https://api-m.sandbox.paypal.com/v2/payments/captures/5KA38057EC136584R/refund\",\n    \"rel\": \"refund\",\n    \"method\": \"POST\"\n  }, {\n    \"href\": \"https://api-m.sandbox.paypal.com/v2/payments/authorizations/66P728836U784324A\",\n    \"rel\": \"up\",\n    \"method\": \"GET\"\n  }]\n}\nNext steps and customizations\nTest integration\n\nTest in the sandbox environment before going live.\n\nGo live\n\nMove from PayPal's production environment to go live.\n\nImplement 3D Secure\n\nAuthenticate cardholders through card issuers.\n\nAuthorization and honor period\n\nAuthorization and capture timing for 2-step payments.\n\nPayments API\n\nLearn more about the Payments API.\n\nVoid an authorization\n\nCancel an authorized payment using the Payments API.\n\nHandle a refund\n\nRefund a captured payment using the Payments API.\n\nRecurring payments\n\nPrevious Page\n\nHandle buyer errors\n\nUse onError callbacks and alternate checkout pages to effectively manage and handle buyer checkout errors, ensuring a smooth payment experience.\n\nON THIS PAGE\nHow it works\nKnow before you code\nYou need a developer account to get sandbox credentials\nPayPal Checkout\nExplore PayPal APIs with Postman\n1. Separate authorize and capture in the approval intent\n2. Authorize payment\nStep result\n3. Capture order and authorization IDs\n4. Save order information\nSample request\nStep result\nSample response\n5. Reauthorize payment\nSample request\nStep result\nSample response\n6. Capture payment\nSample request\nStep result\nSample response\nNext steps and customizations\n\nResources\n\nGitHub repo\n\nPostman repo\n\nPayPal.com\n\nllms.txt\n\nWhere to find us\n\nDeveloper blog\n\nCommunity\n\nHelp Center\n\nSign up for updates\n\nWhere to hear from us\n\nX\n\nYouTube\n\nLinkedIn\n\nDiscord\n\nLegal\n\nPrivacy Policy\n\nTerms of Service\n\nDeveloper Agreement\n\n© 2026 PayPal. All rights reserved.\n\nIf you accept cookies, we'll use them to improve and customise your experience and enable our partners to show you personalised PayPal ads when you visit other sites. Manage cookies and learn more\nAccept\nDecline\nClose\nFeedback",
+  "title": "Authorize a payment and capture funds later | PayPal Developer",
+  "url": "https://developer.paypal.com/v5/checkout/auth-capture"
+}

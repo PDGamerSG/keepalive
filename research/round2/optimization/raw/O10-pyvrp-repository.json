@@ -1,0 +1,821 @@
+{
+  "id": "O10",
+  "retrievedAt": "2026-11-09T21:00:48.729Z",
+  "links": [
+    {
+      "text": "Skip to content",
+      "url": "https://github.com/PyVRP/PyVRP#start-of-content"
+    },
+    {
+      "text": "Sign in",
+      "url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FPyVRP%2FPyVRP"
+    },
+    {
+      "text": "Pricing",
+      "url": "https://github.com/pricing"
+    },
+    {
+      "text": "Sign in",
+      "url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FPyVRP%2FPyVRP"
+    },
+    {
+      "text": "Sign up",
+      "url": "https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=PyVRP%2FPyVRP"
+    },
+    {
+      "text": "Reload",
+      "url": "https://github.com/PyVRP/PyVRP"
+    },
+    {
+      "text": "Reload",
+      "url": "https://github.com/PyVRP/PyVRP"
+    },
+    {
+      "text": "Reload",
+      "url": "https://github.com/PyVRP/PyVRP"
+    },
+    {
+      "text": "PyVRP",
+      "url": "https://github.com/PyVRP"
+    },
+    {
+      "text": "PyVRP",
+      "url": "https://github.com/PyVRP/PyVRP"
+    },
+    {
+      "text": "Code",
+      "url": "https://github.com/PyVRP/PyVRP"
+    },
+    {
+      "text": "Issues\n30\n (30)",
+      "url": "https://github.com/PyVRP/PyVRP/issues"
+    },
+    {
+      "text": "Pull requests\n3\n (3)",
+      "url": "https://github.com/PyVRP/PyVRP/pulls"
+    },
+    {
+      "text": "Discussions",
+      "url": "https://github.com/PyVRP/PyVRP/discussions"
+    },
+    {
+      "text": "Actions",
+      "url": "https://github.com/PyVRP/PyVRP/actions"
+    },
+    {
+      "text": "Security and quality",
+      "url": "https://github.com/PyVRP/PyVRP/security"
+    },
+    {
+      "text": "Insights",
+      "url": "https://github.com/PyVRP/PyVRP/pulse"
+    },
+    {
+      "text": "PyVRP",
+      "url": "https://github.com/PyVRP/PyVRP"
+    },
+    {
+      "text": "Sponsor",
+      "url": "https://github.com/sponsors/PyVRP"
+    },
+    {
+      "text": "Notifications",
+      "url": "https://github.com/login?return_to=%2FPyVRP%2FPyVRP"
+    },
+    {
+      "text": "Fork164\n (164)",
+      "url": "https://github.com/login?return_to=%2FPyVRP%2FPyVRP"
+    },
+    {
+      "text": "Star730\n (730)",
+      "url": "https://github.com/login?return_to=%2FPyVRP%2FPyVRP"
+    },
+    {
+      "text": "pyvrp.org/",
+      "url": "https://pyvrp.org/"
+    },
+    {
+      "text": "cpp",
+      "url": "https://github.com/topics/cpp"
+    },
+    {
+      "text": "logistics",
+      "url": "https://github.com/topics/logistics"
+    },
+    {
+      "text": "multi-depot",
+      "url": "https://github.com/topics/multi-depot"
+    },
+    {
+      "text": "operations-research",
+      "url": "https://github.com/topics/operations-research"
+    },
+    {
+      "text": "optimization",
+      "url": "https://github.com/topics/optimization"
+    },
+    {
+      "text": "orienteering",
+      "url": "https://github.com/topics/orienteering"
+    },
+    {
+      "text": "pickup-delivery",
+      "url": "https://github.com/topics/pickup-delivery"
+    },
+    {
+      "text": "python",
+      "url": "https://github.com/topics/python"
+    },
+    {
+      "text": "rich-vrp",
+      "url": "https://github.com/topics/rich-vrp"
+    },
+    {
+      "text": "route-optimization",
+      "url": "https://github.com/topics/route-optimization"
+    },
+    {
+      "text": "time-windows",
+      "url": "https://github.com/topics/time-windows"
+    },
+    {
+      "text": "vehicle-routing-problem",
+      "url": "https://github.com/topics/vehicle-routing-problem"
+    },
+    {
+      "text": "vrp",
+      "url": "https://github.com/topics/vrp"
+    },
+    {
+      "text": "Readme",
+      "url": "https://github.com/PyVRP/PyVRP#readme-ov-file"
+    },
+    {
+      "text": "MIT license",
+      "url": "https://github.com/PyVRP/PyVRP#MIT-1-ov-file"
+    },
+    {
+      "text": "Code of conduct",
+      "url": "https://github.com/PyVRP/PyVRP#coc-ov-file"
+    },
+    {
+      "text": "Activity",
+      "url": "https://github.com/PyVRP/PyVRP/activity"
+    },
+    {
+      "text": "Custom properties",
+      "url": "https://github.com/PyVRP/PyVRP/custom-properties"
+    },
+    {
+      "text": "164 forks",
+      "url": "https://github.com/PyVRP/PyVRP/forks"
+    },
+    {
+      "text": "Report repository",
+      "url": "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FPyVRP%2FPyVRP&report=PyVRP+%28user%29"
+    },
+    {
+      "text": "4 Branches",
+      "url": "https://github.com/PyVRP/PyVRP/branches"
+    },
+    {
+      "text": "40 Tags",
+      "url": "https://github.com/PyVRP/PyVRP/tags"
+    },
+    {
+      "text": "N-Wouda",
+      "url": "https://github.com/PyVRP/PyVRP/commits?author=N-Wouda"
+    },
+    {
+      "text": "Get versions from file, not embedded (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/b6d59e0056f280eb6b2779d23aa1d90c7486f883"
+    },
+    {
+      "text": "#1216",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1216"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/b6d59e0056f280eb6b2779d23aa1d90c7486f883"
+    },
+    {
+      "text": "b6d59e0",
+      "url": "https://github.com/PyVRP/PyVRP/commit/b6d59e0056f280eb6b2779d23aa1d90c7486f883"
+    },
+    {
+      "text": "735 Commits",
+      "url": "https://github.com/PyVRP/PyVRP/commits/main/"
+    },
+    {
+      "text": ".github",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/.github"
+    },
+    {
+      "text": ".github",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/.github"
+    },
+    {
+      "text": "Bump workflow action dependencies (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/3c3ecced87dd652f4c7ca73025ce15379866d42e"
+    },
+    {
+      "text": "#1215",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1215"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/3c3ecced87dd652f4c7ca73025ce15379866d42e"
+    },
+    {
+      "text": "benchmarks",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/benchmarks"
+    },
+    {
+      "text": "benchmarks",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/benchmarks"
+    },
+    {
+      "text": "Add CodSpeed benchmarks for PDPTW (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/27a6f6a70566298323c3200f350b2bddaddde48d"
+    },
+    {
+      "text": "#1177",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1177"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/27a6f6a70566298323c3200f350b2bddaddde48d"
+    },
+    {
+      "text": "buildtools",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/buildtools"
+    },
+    {
+      "text": "buildtools",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/buildtools"
+    },
+    {
+      "text": "Add spdlog for C++ logging (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/fd9e84774bbb0508e398c177cb4240c0aae9eb97"
+    },
+    {
+      "text": "#1056",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1056"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/fd9e84774bbb0508e398c177cb4240c0aae9eb97"
+    },
+    {
+      "text": "docs",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/docs"
+    },
+    {
+      "text": "docs",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/docs"
+    },
+    {
+      "text": "Get versions from file, not embedded (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/b6d59e0056f280eb6b2779d23aa1d90c7486f883"
+    },
+    {
+      "text": "#1216",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1216"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/b6d59e0056f280eb6b2779d23aa1d90c7486f883"
+    },
+    {
+      "text": "instances @ dfd50b1",
+      "url": "https://github.com/PyVRP/Instances/tree/dfd50b1ba61140ee7768b17fd5d3da6bc0a09a9e"
+    },
+    {
+      "text": "instances @ dfd50b1",
+      "url": "https://github.com/PyVRP/Instances/tree/dfd50b1ba61140ee7768b17fd5d3da6bc0a09a9e"
+    },
+    {
+      "text": "Update instances",
+      "url": "https://github.com/PyVRP/PyVRP/commit/2ca6374c2b47b6dd8fd434085dc600d4b6f095c8"
+    },
+    {
+      "text": "notebooks",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/notebooks"
+    },
+    {
+      "text": "notebooks",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/notebooks"
+    },
+    {
+      "text": "Rename ClientGroup to MutuallyExclusiveGroup (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/34120e9836fae924cac2431d9a3ca14c85221304"
+    },
+    {
+      "text": "#1213",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1213"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/34120e9836fae924cac2431d9a3ca14c85221304"
+    },
+    {
+      "text": "pyvrp",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/pyvrp"
+    },
+    {
+      "text": "pyvrp",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/pyvrp"
+    },
+    {
+      "text": "Rename ClientGroup to MutuallyExclusiveGroup (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/34120e9836fae924cac2431d9a3ca14c85221304"
+    },
+    {
+      "text": "#1213",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1213"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/34120e9836fae924cac2431d9a3ca14c85221304"
+    },
+    {
+      "text": "subprojects",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/subprojects"
+    },
+    {
+      "text": "subprojects",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/subprojects"
+    },
+    {
+      "text": "Add spdlog for C++ logging (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/fd9e84774bbb0508e398c177cb4240c0aae9eb97"
+    },
+    {
+      "text": "#1056",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1056"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/fd9e84774bbb0508e398c177cb4240c0aae9eb97"
+    },
+    {
+      "text": "tests",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/tests"
+    },
+    {
+      "text": "tests",
+      "url": "https://github.com/PyVRP/PyVRP/tree/main/tests"
+    },
+    {
+      "text": "Rename ClientGroup to MutuallyExclusiveGroup (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/34120e9836fae924cac2431d9a3ca14c85221304"
+    },
+    {
+      "text": "#1213",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1213"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/34120e9836fae924cac2431d9a3ca14c85221304"
+    },
+    {
+      "text": ".clang-format",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/.clang-format"
+    },
+    {
+      "text": ".clang-format",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/.clang-format"
+    },
+    {
+      "text": "Add a link to the v0.11.0 docs",
+      "url": "https://github.com/PyVRP/PyVRP/commit/7f86aa080ab91ee09d3eb2f265d619e91b606645"
+    },
+    {
+      "text": ".gitignore",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/.gitignore"
+    },
+    {
+      "text": ".gitignore",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/.gitignore"
+    },
+    {
+      "text": "Rework tutorials (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/e012bfc078e8436541079dd5651599c504c8fc3e"
+    },
+    {
+      "text": "#1004",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1004"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/e012bfc078e8436541079dd5651599c504c8fc3e"
+    },
+    {
+      "text": ".gitmodules",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/.gitmodules"
+    },
+    {
+      "text": ".gitmodules",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/.gitmodules"
+    },
+    {
+      "text": "Use fully qualified URL in PyVRP/Instances submodule",
+      "url": "https://github.com/PyVRP/PyVRP/commit/ceb686cd88a501c9d938abacf38b304856cc1ae9"
+    },
+    {
+      "text": ".pre-commit-config.yaml",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/.pre-commit-config.yaml"
+    },
+    {
+      "text": ".pre-commit-config.yaml",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/.pre-commit-config.yaml"
+    },
+    {
+      "text": "Bump some stale pre-commit dependencies (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/592d52b3a42bef94c9fa2b3cd353ff855a1534fd"
+    },
+    {
+      "text": "#1207",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1207"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/592d52b3a42bef94c9fa2b3cd353ff855a1534fd"
+    },
+    {
+      "text": ".readthedocs.yaml",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/.readthedocs.yaml"
+    },
+    {
+      "text": ".readthedocs.yaml",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/.readthedocs.yaml"
+    },
+    {
+      "text": "Add spdlog for C++ logging (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/fd9e84774bbb0508e398c177cb4240c0aae9eb97"
+    },
+    {
+      "text": "#1056",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1056"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/fd9e84774bbb0508e398c177cb4240c0aae9eb97"
+    },
+    {
+      "text": "CITATION.cff",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/CITATION.cff"
+    },
+    {
+      "text": "CITATION.cff",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/CITATION.cff"
+    },
+    {
+      "text": "Update citation details (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/e5a445af9de57c96215afe0dacc89043bc17eefd"
+    },
+    {
+      "text": "#658",
+      "url": "https://github.com/PyVRP/PyVRP/pull/658"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/e5a445af9de57c96215afe0dacc89043bc17eefd"
+    },
+    {
+      "text": "LICENSE.md",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/LICENSE.md"
+    },
+    {
+      "text": "LICENSE.md",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/LICENSE.md"
+    },
+    {
+      "text": "Remove TU/e from LICENSE.md",
+      "url": "https://github.com/PyVRP/PyVRP/commit/f3a20acbf4e27549ced2c31a54e980acbff821dc"
+    },
+    {
+      "text": "README.md",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/README.md"
+    },
+    {
+      "text": "README.md",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/README.md"
+    },
+    {
+      "text": "Rename ClientGroup to MutuallyExclusiveGroup (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/34120e9836fae924cac2431d9a3ca14c85221304"
+    },
+    {
+      "text": "#1213",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1213"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/34120e9836fae924cac2431d9a3ca14c85221304"
+    },
+    {
+      "text": "gcovr.cfg",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/gcovr.cfg"
+    },
+    {
+      "text": "gcovr.cfg",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/gcovr.cfg"
+    },
+    {
+      "text": "Simplify code coverage builds (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/e7a4f6700302d9462f12ef1ae9a4e007c7c41dc7"
+    },
+    {
+      "text": "#557",
+      "url": "https://github.com/PyVRP/PyVRP/pull/557"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/e7a4f6700302d9462f12ef1ae9a4e007c7c41dc7"
+    },
+    {
+      "text": "meson.build",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/meson.build"
+    },
+    {
+      "text": "meson.build",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/meson.build"
+    },
+    {
+      "text": "Rename ClientGroup to MutuallyExclusiveGroup (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/34120e9836fae924cac2431d9a3ca14c85221304"
+    },
+    {
+      "text": "#1213",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1213"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/34120e9836fae924cac2431d9a3ca14c85221304"
+    },
+    {
+      "text": "pyproject.toml",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/pyproject.toml"
+    },
+    {
+      "text": "pyproject.toml",
+      "url": "https://github.com/PyVRP/PyVRP/blob/main/pyproject.toml"
+    },
+    {
+      "text": "Bump minimum version to Python 3.12 (",
+      "url": "https://github.com/PyVRP/PyVRP/commit/1d8b8702c0447abf70525d74ecf2beb7568317fe"
+    },
+    {
+      "text": "#1206",
+      "url": "https://github.com/PyVRP/PyVRP/pull/1206"
+    },
+    {
+      "text": ")",
+      "url": "https://github.com/PyVRP/PyVRP/commit/1d8b8702c0447abf70525d74ecf2beb7568317fe"
+    },
+    {
+      "text": "README",
+      "url": "https://github.com/PyVRP/PyVRP#"
+    },
+    {
+      "text": "Code of conduct",
+      "url": "https://github.com/PyVRP/PyVRP#"
+    },
+    {
+      "text": "MIT license",
+      "url": "https://github.com/PyVRP/PyVRP#"
+    },
+    {
+      "text": "Applied Routing",
+      "url": "https://appliedrouting.com/"
+    },
+    {
+      "text": "here",
+      "url": "https://pyvrp.org/"
+    },
+    {
+      "text": "Applied Routing",
+      "url": "https://appliedrouting.com/"
+    },
+    {
+      "text": "info@appliedrouting.com",
+      "url": "mailto:info@appliedrouting.com"
+    },
+    {
+      "text": "quickstart",
+      "url": "https://pyvrp.org/notebooks/quick_start.html"
+    },
+    {
+      "text": "Load and vehicle capacities",
+      "url": "https://pyvrp.org/notebooks/load.html"
+    },
+    {
+      "text": "Time and duration constraints",
+      "url": "https://pyvrp.org/notebooks/duration_constraints.html"
+    },
+    {
+      "text": "Profiles",
+      "url": "https://pyvrp.org/notebooks/profiles.html"
+    },
+    {
+      "text": "Optional clients",
+      "url": "https://pyvrp.org/notebooks/optional_clients.html"
+    },
+    {
+      "text": "Mutually exclusive groups",
+      "url": "https://pyvrp.org/notebooks/mutually_exclusive_groups.html"
+    },
+    {
+      "text": "Reloading",
+      "url": "https://pyvrp.org/notebooks/reloading.html"
+    },
+    {
+      "text": "Shipments",
+      "url": "https://pyvrp.org/notebooks/shipments.html"
+    },
+    {
+      "text": "this page",
+      "url": "https://pyvrp.org/dev/algorithm.html"
+    },
+    {
+      "text": "this notebook",
+      "url": "https://pyvrp.org/notebooks/pyvrp_implementation.html"
+    },
+    {
+      "text": "here",
+      "url": "https://pyvrp.org/setup/getting_help.html"
+    },
+    {
+      "text": "info@appliedrouting.com",
+      "url": "mailto:info@appliedrouting.com"
+    },
+    {
+      "text": "here",
+      "url": "https://pyvrp.org/dev/contributing.html"
+    },
+    {
+      "text": "https://doi.org/10.1287/ijoc.2023.0055",
+      "url": "https://doi.org/10.1287/ijoc.2023.0055"
+    },
+    {
+      "text": "arXiv",
+      "url": "https://arxiv.org/abs/2403.13795"
+    },
+    {
+      "text": "pyvrp.org/",
+      "url": "https://pyvrp.org/"
+    },
+    {
+      "text": "cpp",
+      "url": "https://github.com/topics/cpp"
+    },
+    {
+      "text": "logistics",
+      "url": "https://github.com/topics/logistics"
+    },
+    {
+      "text": "multi-depot",
+      "url": "https://github.com/topics/multi-depot"
+    },
+    {
+      "text": "operations-research",
+      "url": "https://github.com/topics/operations-research"
+    },
+    {
+      "text": "optimization",
+      "url": "https://github.com/topics/optimization"
+    },
+    {
+      "text": "orienteering",
+      "url": "https://github.com/topics/orienteering"
+    },
+    {
+      "text": "pickup-delivery",
+      "url": "https://github.com/topics/pickup-delivery"
+    },
+    {
+      "text": "python",
+      "url": "https://github.com/topics/python"
+    },
+    {
+      "text": "rich-vrp",
+      "url": "https://github.com/topics/rich-vrp"
+    },
+    {
+      "text": "route-optimization",
+      "url": "https://github.com/topics/route-optimization"
+    },
+    {
+      "text": "time-windows",
+      "url": "https://github.com/topics/time-windows"
+    },
+    {
+      "text": "vehicle-routing-problem",
+      "url": "https://github.com/topics/vehicle-routing-problem"
+    },
+    {
+      "text": "vrp",
+      "url": "https://github.com/topics/vrp"
+    },
+    {
+      "text": "Readme",
+      "url": "https://github.com/PyVRP/PyVRP#readme-ov-file"
+    },
+    {
+      "text": "MIT license",
+      "url": "https://github.com/PyVRP/PyVRP#MIT-1-ov-file"
+    },
+    {
+      "text": "Code of conduct",
+      "url": "https://github.com/PyVRP/PyVRP#coc-ov-file"
+    },
+    {
+      "text": "Activity",
+      "url": "https://github.com/PyVRP/PyVRP/activity"
+    },
+    {
+      "text": "Custom properties",
+      "url": "https://github.com/PyVRP/PyVRP/custom-properties"
+    },
+    {
+      "text": "164 forks",
+      "url": "https://github.com/PyVRP/PyVRP/forks"
+    },
+    {
+      "text": "Report repository",
+      "url": "https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FPyVRP%2FPyVRP&report=PyVRP+%28user%29"
+    },
+    {
+      "text": "Releases",
+      "url": "https://github.com/PyVRP/PyVRP/releases"
+    },
+    {
+      "text": "v0.14.1\nLatest",
+      "url": "https://github.com/PyVRP/PyVRP/releases/tag/v0.14.1"
+    },
+    {
+      "text": "+ 38 releases",
+      "url": "https://github.com/PyVRP/PyVRP/releases"
+    },
+    {
+      "text": "PyVRP",
+      "url": "https://github.com/PyVRP"
+    },
+    {
+      "text": "Learn more about GitHub Sponsors",
+      "url": "https://github.com/sponsors"
+    },
+    {
+      "text": "Contributors",
+      "url": "https://github.com/PyVRP/PyVRP/graphs/contributors"
+    },
+    {
+      "text": "Python\n55.5%",
+      "url": "https://github.com/PyVRP/PyVRP/search?l=python"
+    },
+    {
+      "text": "C++\n38.4%",
+      "url": "https://github.com/PyVRP/PyVRP/search?l=c%2B%2B"
+    },
+    {
+      "text": "Jupyter Notebook\n5.5%",
+      "url": "https://github.com/PyVRP/PyVRP/search?l=jupyter-notebook"
+    },
+    {
+      "text": "Other\n0.6%",
+      "url": "https://github.com/PyVRP/PyVRP/search?l=Other"
+    },
+    {
+      "text": "Terms",
+      "url": "https://docs.github.com/site-policy/github-terms/github-terms-of-service"
+    },
+    {
+      "text": "Privacy",
+      "url": "https://docs.github.com/site-policy/privacy-policies/github-privacy-statement"
+    },
+    {
+      "text": "Security",
+      "url": "https://github.com/security"
+    },
+    {
+      "text": "Status",
+      "url": "https://www.githubstatus.com/"
+    },
+    {
+      "text": "Community",
+      "url": "https://github.community/"
+    },
+    {
+      "text": "Docs",
+      "url": "https://docs.github.com/"
+    },
+    {
+      "text": "Contact",
+      "url": "https://support.github.com/?tags=dotcom-footer"
+    }
+  ],
+  "text": "Skip to content\nNavigation Menu\nProducts\nDevelopers\nBusinesses\nResources\nPricing\nSearch\n/\nSign in\nSign up\nPyVRP\nPyVRP\nRepository navigation\nCode\nIssues\n30\n (30)\nPull requests\n3\n (3)\nDiscussions\nActions\nSecurity and quality\nInsights\nPyVRP\nPublic\nSponsor\nNotifications\nFork164\n (164)\nStar730\n (730)\nmain\n4 Branches\n40 Tags\nCode\nLatest commit\nN-Wouda\nGet versions from file, not embedded (#1216)\nb6d59e0\n · \nHistory\n735 Commits\nFolders and files\nName\tLast commit message\tLast commit date\n\n.github\n\t\nBump workflow action dependencies (#1215)\n\t\n\n\nbenchmarks\n\t\nAdd CodSpeed benchmarks for PDPTW (#1177)\n\t\n\n\nbuildtools\n\t\nAdd spdlog for C++ logging (#1056)\n\t\n\n\ndocs\n\t\nGet versions from file, not embedded (#1216)\n\t\n\n\ninstances @ dfd50b1\n\t\nUpdate instances\n\t\n\n\nnotebooks\n\t\nRename ClientGroup to MutuallyExclusiveGroup (#1213)\n\t\n\n\npyvrp\n\t\nRename ClientGroup to MutuallyExclusiveGroup (#1213)\n\t\n\n\nsubprojects\n\t\nAdd spdlog for C++ logging (#1056)\n\t\n\n\ntests\n\t\nRename ClientGroup to MutuallyExclusiveGroup (#1213)\n\t\n\n\n.clang-format\n\t\nAdd a link to the v0.11.0 docs\n\t\n\n\n.gitignore\n\t\nRework tutorials (#1004)\n\t\n\n\n.gitmodules\n\t\nUse fully qualified URL in PyVRP/Instances submodule\n\t\n\n\n.pre-commit-config.yaml\n\t\nBump some stale pre-commit dependencies (#1207)\n\t\n\n\n.readthedocs.yaml\n\t\nAdd spdlog for C++ logging (#1056)\n\t\n\n\nCITATION.cff\n\t\nUpdate citation details (#658)\n\t\n\n\nLICENSE.md\n\t\nRemove TU/e from LICENSE.md\n\t\n\n\nREADME.md\n\t\nRename ClientGroup to MutuallyExclusiveGroup (#1213)\n\t\n\n\ngcovr.cfg\n\t\nSimplify code coverage builds (#557)\n\t\n\n\nmeson.build\n\t\nRename ClientGroup to MutuallyExclusiveGroup (#1213)\n\t\n\n\npyproject.toml\n\t\nBump minimum version to Python 3.12 (#1206)\n\t\nRepository files navigation\nREADME\nCode of conduct\nMIT license\n\n    \n\nPyVRP is an open-source, state-of-the-art vehicle routing problem (VRP) solver developed by Applied Routing. It currently supports VRPs with:\n\nPickups and deliveries (capacitated VRP, VRP with simultaneous pickup and delivery, VRP with backhaul, pickup and delivery VRP);\nVehicles of different capacities, costs, shift durations, routing profiles, and maximum distance and duration constraints (heterogeneous fleet VRP, site-dependent VRP);\nTime windows, client service durations, and release times (VRP with time windows and release times);\nMultiple depots (multi-depot VRP);\nReloading along routes at different reload depots (multi-trip VRP);\nOptional clients with prizes for visiting (prize collecting, team orienteering problem);\nMutually exclusive groups for choosing between alternatives (generalised VRP, VRP with multiple time windows);\n[Enterprise] Automatic break planning for EU and US hours-of-service regulations;\n[Enterprise] Vehicle-client and client-client compatibility constraints and sequencing relations;\n[Enterprise] Fairness constraints like load and shift duration balancing;\n[Enterprise] Soft clustering to encourage geographically compact routes.\n\nPyVRP is available on the Python package index as pyvrp. It may be installed in the usual way as\n\npip install pyvrp\n\n\nThe documentation is available here.\n\nTip\n\nUsing or evaluating PyVRP at your company? Applied Routing provides consulting, custom development, and PyVRP Enterprise, an extended and production-ready version of PyVRP. Get in touch at info@appliedrouting.com to join a private Slack channel with our team and discuss your use case, PyVRP features, or the roadmap.\n\nTutorials\n\nWe provide many tutorials that show how to use PyVRP to solve vehicle routing problems. The quickstart introduces PyVRP's modelling interface and is a great way to get started.\n\nThe following tutorials cover specific features in more detail:\n\nLoad and vehicle capacities: client pickups, deliveries, and multiple load dimensions.\nTime and duration constraints: time windows, service durations, release times, shifts and overtime.\nProfiles: different distances and durations for different vehicle types, and modelling access restrictions.\nOptional clients: using rewards to visit optional clients.\nMutually exclusive groups: modelling alternative services.\nReloading: vehicle reloading at depots during routes.\nShipments: paired pickup and delivery.\n\nFor those interested in PyVRP's underlying algorithm, see this page for a high-level description of the iterated local search algorithm, and this notebook for an implementation of the solve method using PyVRP's components.\n\nGetting help\n\nFeel free to open an issue or a new discussion thread here on GitHub. When writing your issue or discussion, please follow the instructions here. For professional support, contact us at info@appliedrouting.com.\n\nContributing\n\nWhile we are very grateful for any contributions you are willing to make, reviewing and maintaining third-party code takes a significant amount of our time. Before you start working on your contribution, please have a look here to get started. Make sure to discuss the change first in a GitHub issue. Feel free to open a new one if no appropriate issue already exists!\n\nHow to cite PyVRP\n\nIf you use PyVRP in your research, please consider citing the following paper:\n\nWouda, N.A., L. Lan, and W. Kool (2024). PyVRP: a high-performance VRP solver package. INFORMS Journal on Computing, 36(4): 943-955. https://doi.org/10.1287/ijoc.2023.0055\n\nOr, using the following BibTeX entry:\n\n@article{Wouda_Lan_Kool_PyVRP_2024,\n  doi = {10.1287/ijoc.2023.0055},\n  url = {https://doi.org/10.1287/ijoc.2023.0055},\n  year = {2024},\n  volume = {36},\n  number = {4},\n  pages = {943--955},\n  publisher = {INFORMS},\n  author = {Niels A. Wouda and Leon Lan and Wouter Kool},\n  title = {{PyVRP}: a high-performance {VRP} solver package},\n  journal = {INFORMS Journal on Computing},\n}\n\nA preprint of this paper is available on arXiv.\n\nAbout\n\nOpen-source, state-of-the-art vehicle routing problem solver in an easy-to-use Python package.\n\npyvrp.org/\nTopics\ncpp\nlogistics\nmulti-depot\noperations-research\noptimization\norienteering\npickup-delivery\npython\nrich-vrp\nroute-optimization\ntime-windows\nvehicle-routing-problem\nvrp\nResources\nReadme\nMIT license\nCode of conduct\nCode of conduct\nCite this repository\nActivity\nCustom properties\nStars\n730 stars\nWatchers\n9 watching\nForks\n164 forks\nReport repository\nReleases\n39\n (39)\nv0.14.1\nLatest\n+ 38 releases\nSponsor this project\nPyVRPPyVRP\nLearn more about GitHub Sponsors\nContributors\n10\n (10)\nLanguages\nPython\n55.5%\nC++\n38.4%\nJupyter Notebook\n5.5%\nOther\n0.6%\nFooter\n© 2026 GitHub, Inc.\nFooter navigation\nTerms\nPrivacy\nSecurity\nStatus\nCommunity\nDocs\nContact\nManage cookies\nDo not share my personal information",
+  "title": "GitHub - PyVRP/PyVRP: Open-source, state-of-the-art vehicle routing problem solver in an easy-to-use Python package. · GitHub",
+  "url": "https://github.com/PyVRP/PyVRP"
+}

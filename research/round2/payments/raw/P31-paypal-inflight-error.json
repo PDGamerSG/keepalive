@@ -1,0 +1,11 @@
+{
+  "fullTextLength": 437,
+  "headings": [
+    "PREVIOUS_REQUEST_IN_PROGRESS"
+  ],
+  "links": [],
+  "retrievedAt": "2026-11-09T21:05:15.583Z",
+  "text": "PREVIOUS_REQUEST_IN_PROGRESS\nMessage:\nA previous request on this resource is currently in progress. Please wait for sometime and try again. It is best to space out the initial and the subsequent request(s) to avoid receiving this error.\nDescription:\n\nThis scenario only occurs when making multiple API requests on the same resource within a very short duration. To resolve this, API callers need to make subsequent requests with a delay.",
+  "title": "PREVIOUS_REQUEST_IN_PROGRESS - Payments v2 | PayPal Developer",
+  "url": "https://developer.paypal.com/api/payments/v2/errors/previous_request_in_progress"
+}

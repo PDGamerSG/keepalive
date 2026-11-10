@@ -1,0 +1,355 @@
+{
+  "links": [
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login?ref=top-nav-login"
+    },
+    {
+      "text": "Sign up",
+      "url": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button"
+    },
+    {
+      "text": "Join a hackathon",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs#join-a-hackathon"
+    },
+    {
+      "text": "Devpost\n      Participate in our public hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Devpost for Teams\n      Access your company's private hackathons",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Login",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs#host-a-hackathon"
+    },
+    {
+      "text": "Devpost\n      Grow your developer ecosystem and promote your platform",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Host a public hackathon",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Devpost for Teams\n      Drive innovation, collaboration, and retention within your organization",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Host an internal hackathon",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "AI hackathons",
+      "url": "https://info.devpost.com/product/ai-hackathons"
+    },
+    {
+      "text": "Customer hackathons",
+      "url": "https://info.devpost.com/product/customer-hackathons"
+    },
+    {
+      "text": "Employee hackathons",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Public hackathons",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Resources",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs#resources"
+    },
+    {
+      "text": "Blog\n      \n      \n        Insights into hackathon planning and participation",
+      "url": "https://info.devpost.com/blog"
+    },
+    {
+      "text": "Customer stories\n      \n      \n        Inspiration from peers and other industry leaders",
+      "url": "https://info.devpost.com/customer-stories"
+    },
+    {
+      "text": "Planning guides\n      \n      \n        Best practices for planning online and in-person hackathons",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Webinars & events\n      \n      \n        Upcoming events and on-demand recordings",
+      "url": "https://info.devpost.com/webinar-events"
+    },
+    {
+      "text": "Help desk\n      \n      \n        Common questions and support documentation",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Join a hackathon",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs#"
+    },
+    {
+      "text": "Back",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs#"
+    },
+    {
+      "text": "Devpost\n      Participate in our public hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Devpost for Teams\n      Access your company's private hackathons",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Login",
+      "url": "https://devpost.team/"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs#"
+    },
+    {
+      "text": "Back",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs#"
+    },
+    {
+      "text": "Devpost\n      Grow your developer ecosystem and promote your platform",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Host a public hackathon",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Devpost for Teams\n      Drive innovation, collaboration, and retention within your organization",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Host an internal hackathon",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "AI hackathons",
+      "url": "https://info.devpost.com/product/ai-hackathons"
+    },
+    {
+      "text": "Customer hackathons",
+      "url": "https://info.devpost.com/product/customer-hackathons"
+    },
+    {
+      "text": "Employee hackathons",
+      "url": "https://info.devpost.com/product/devpost-for-teams"
+    },
+    {
+      "text": "Public hackathons",
+      "url": "https://info.devpost.com/product/public-hackathons"
+    },
+    {
+      "text": "Resources",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs#"
+    },
+    {
+      "text": "Back",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs#"
+    },
+    {
+      "text": "Blog\n      \n      \n        Insights into hackathon planning and participation",
+      "url": "https://info.devpost.com/blog"
+    },
+    {
+      "text": "Customer stories\n      \n      \n        Inspiration from peers and other industry leaders",
+      "url": "https://info.devpost.com/customer-stories"
+    },
+    {
+      "text": "Planning guides\n      \n      \n        Best practices for planning online and in-person hackathons",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Webinars & events\n      \n      \n        Upcoming events and on-demand recordings",
+      "url": "https://info.devpost.com/webinar-events"
+    },
+    {
+      "text": "Help desk\n      \n      \n        Common questions and support documentation",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Log in",
+      "url": "https://secure.devpost.com/users/login?ref=top-nav-login"
+    },
+    {
+      "text": "Sign up",
+      "url": "https://secure.devpost.com/users/register?ref_content=signup_global_nav&ref_feature=signup&ref_medium=button"
+    },
+    {
+      "text": "PayPal AI Hackathon",
+      "url": "https://paypalaihackathon.devpost.com/"
+    },
+    {
+      "text": "GMT+5:30",
+      "url": "https://devpost.com/settings/preferences_and_eligibility#eligibility-section"
+    },
+    {
+      "text": "Join hackathon",
+      "url": "https://paypalaihackathon.devpost.com/register?flow%5Bdata%5D%5Bchallenge_id%5D=31302&flow%5Bname%5D=register_for_challenge"
+    },
+    {
+      "text": "Descend",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs#"
+    },
+    {
+      "text": "Overview",
+      "url": "https://paypalaihackathon.devpost.com/"
+    },
+    {
+      "text": "My projects",
+      "url": "https://devpost.com/submit-to/31302-paypal-ai-hackathon/manage/submissions"
+    },
+    {
+      "text": "Participants (32326)",
+      "url": "https://paypalaihackathon.devpost.com/participants"
+    },
+    {
+      "text": "Resources",
+      "url": "https://paypalaihackathon.devpost.com/resources"
+    },
+    {
+      "text": "Rules",
+      "url": "https://paypalaihackathon.devpost.com/rules"
+    },
+    {
+      "text": "Project gallery",
+      "url": "https://paypalaihackathon.devpost.com/project-gallery"
+    },
+    {
+      "text": "Updates",
+      "url": "https://paypalaihackathon.devpost.com/updates"
+    },
+    {
+      "text": "Discussions",
+      "url": "https://paypalaihackathon.devpost.com/forum_topics"
+    },
+    {
+      "text": "FAQs",
+      "url": "https://paypalaihackathon.devpost.com/details/faqs"
+    },
+    {
+      "text": "Please reach out via the PayPal Discord",
+      "url": "https://discord.com/invite/sJ2G6DyvSK"
+    },
+    {
+      "text": "a free account",
+      "url": "https://developer.paypal.com/"
+    },
+    {
+      "text": "PayPal Discord",
+      "url": "https://discord.com/invite/sJ2G6DyvSK"
+    },
+    {
+      "text": "https://paypalaihackathon.devpost.com/rules",
+      "url": "https://paypalaihackathon.devpost.com/rules"
+    },
+    {
+      "text": "PayPal Discord",
+      "url": "https://discord.com/invite/sJ2G6DyvSK"
+    },
+    {
+      "text": "About",
+      "url": "https://info.devpost.com/about"
+    },
+    {
+      "text": "Careers",
+      "url": "https://info.devpost.com/careers"
+    },
+    {
+      "text": "Contact",
+      "url": "https://info.devpost.com/contact"
+    },
+    {
+      "text": "Help",
+      "url": "https://help.devpost.com/"
+    },
+    {
+      "text": "Browse hackathons",
+      "url": "https://devpost.com/hackathons"
+    },
+    {
+      "text": "Explore projects",
+      "url": "https://devpost.com/software"
+    },
+    {
+      "text": "Host a hackathon",
+      "url": "https://info.devpost.com/"
+    },
+    {
+      "text": "Hackathon guides",
+      "url": "https://info.devpost.com/guides"
+    },
+    {
+      "text": "Your projects",
+      "url": "https://devpost.com/portfolio/redirect?page=projects"
+    },
+    {
+      "text": "Your hackathons",
+      "url": "https://devpost.com/portfolio/redirect?page=hackathons"
+    },
+    {
+      "text": "Settings",
+      "url": "https://devpost.com/settings"
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/devpost"
+    },
+    {
+      "text": "Discord",
+      "url": "https://discord.com/invite/HP4BhW3hnp"
+    },
+    {
+      "text": "Facebook",
+      "url": "https://www.facebook.com/devposthacks"
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/company/devpost/"
+    },
+    {
+      "text": "Community guidelines",
+      "url": "https://info.devpost.com/legal/community-guidelines"
+    },
+    {
+      "text": "Security",
+      "url": "https://info.devpost.com/legal/security"
+    },
+    {
+      "text": "CA notice",
+      "url": "https://info.devpost.com/legal/california-consumer-privacy-act"
+    },
+    {
+      "text": "Privacy policy",
+      "url": "https://info.devpost.com/legal/privacy-policy"
+    },
+    {
+      "text": "Terms of service",
+      "url": "https://info.devpost.com/legal/terms-of-service"
+    }
+  ],
+  "text": "Join a hackathon \nHost a hackathon \nResources \nLog in\nSign up\nPayPal AI Hackathon\nDeadline: Nov 13, 2026 @ 1:30am GMT+5:30 \nJoin hackathon\nOverview\nMy projects\nParticipants (32326)\nResources\nRules\nProject gallery\nUpdates\nFAQs\n\nAny questions not answered here? Please reach out via the PayPal Discord!\n\n-\n\nQuestion: Is there a maximum number of members per team?\n\nAnswer: No. The Official Rules don't set a maximum team size, so you can enter solo, as a team, or as an organization. If you enter as a team, choose one member to be your Representative, who submits the project on the team's behalf. You can also be on more than one team and still enter on your own.\n\n-\n\nQuestion: Can I create a PayPal developer account from my country?\n\nAnswer: To build your project you'll use the free PayPal sandbox, with either an existing PayPal account or a free account. PayPal account sign-up options vary by country, so if you can't complete sign-up from where you live (for example, your country or phone number isn't offered), please ask the PayPal team in the PayPal Discord. Being able to open a PayPal account is separate from hackathon eligibility, which is covered in Section 3 of the Official Rules.\n\n-\n\nQuestion: I live in Brazil. Am I eligible to participate?\n\nAnswer: No. Section 3 of the Official Rules excludes residents of places where U.S. or local law prohibits participating in or receiving a prize in the hackathon, and Brazil is specifically listed, along with Quebec, Russia, Crimea, Cuba, Iran, North Korea, and any other country comprehensively sanctioned by the U.S. Treasury's Office of Foreign Assets Control (OFAC). This applies to every member of a team. Being able to register on Devpost does not make you eligible. Full rules: https://paypalaihackathon.devpost.com/rules\n\n-\n\nQuestion: How do I get access to the sponsor tools, and can I use more than one?\n\nAnswer: Each sponsor's page on the hackathon site explains how to access their tools. Using a sponsor tool is optional: any AI tool, model, or platform works, as long as PayPal integration is central to your project. You can use more than one sponsor tool, and you'll be considered for the sponsor prize of each tool you use, but a single project can win at most one Sponsor Prize plus either one Grand Prize or one Honorable Mention Prize (Section 8 of the Official Rules). For help with sponsor tool access or setup, ask in the PayPal Discord.\n\n-\n\nQuestion: How do I join a team or add teammates?\n\nAnswer: Teammates are added through your Devpost project, not through an accept/reject button in an email.\n\nMake sure every teammate has registered for the PayPal AI Hackathon.\nOne teammate starts the project from the hackathon site (Enter a submission).\nIn the project's team section, invite teammates by email or copy the team invite link and share it.\nEach teammate opens the link while logged in to their own Devpost account and accepts, and they'll appear as team members on the project.\n\n-\n\nDevpost\nAbout\nCareers\nContact\nHelp\nHackathons\nBrowse hackathons\nExplore projects\nHost a hackathon\nHackathon guides\nPortfolio\nYour projects\nYour hackathons\nSettings\nConnect\n Twitter\n Discord\n Facebook\n LinkedIn\n© 2026 Devpost, Inc. All rights reserved.\nCommunity guidelines\nSecurity\nCA notice\nPrivacy policy\nTerms of service",
+  "title": "PayPal AI Hackathon: Build what’s next with PayPal and AI - Devpost",
+  "url": "https://paypalaihackathon.devpost.com/details/faqs"
+}

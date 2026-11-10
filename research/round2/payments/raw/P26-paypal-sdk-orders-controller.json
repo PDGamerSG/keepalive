@@ -1,0 +1,462 @@
+{
+  "fullTextLength": 29473,
+  "headings": [
+    "Orders",
+    "Class Name",
+    "Methods",
+    "Create Order",
+    "Authentication",
+    "Parameters",
+    "Response Type",
+    "Example Usage",
+    "Errors",
+    "Get Order",
+    "Authentication",
+    "Parameters",
+    "Response Type",
+    "Example Usage",
+    "Errors",
+    "Patch Order",
+    "Authentication",
+    "Parameters",
+    "Response Type",
+    "Example Usage",
+    "Errors",
+    "Confirm Order",
+    "Authentication",
+    "Parameters",
+    "Response Type",
+    "Example Usage",
+    "Errors",
+    "Authorize Order",
+    "Authentication",
+    "Parameters",
+    "Response Type",
+    "Example Usage",
+    "Errors",
+    "Capture Order",
+    "Authentication",
+    "Parameters",
+    "Response Type",
+    "Example Usage",
+    "Errors",
+    "Create Order Tracking",
+    "Authentication",
+    "Parameters",
+    "Response Type",
+    "Example Usage",
+    "Errors",
+    "Update Order Tracking",
+    "Authentication",
+    "Parameters",
+    "Response Type",
+    "Example Usage",
+    "Errors"
+  ],
+  "links": [
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#orders",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#class-name",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#methods",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#create-order",
+      "text": "Create Order"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#get-order",
+      "text": "Get Order"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#patch-order",
+      "text": "Patch Order"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#confirm-order",
+      "text": "Confirm Order"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#authorize-order",
+      "text": "Authorize Order"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#capture-order",
+      "text": "Capture Order"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#create-order-tracking",
+      "text": "Create Order Tracking"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#update-order-tracking",
+      "text": "Update Order Tracking"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#create-order",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#authentication",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/auth/oauth-2-client-credentials-grant.md",
+      "text": "Oauth2"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#parameters",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/order-request.md",
+      "text": "OrderRequest"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#response-type",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/api-response.md",
+      "text": "ApiResponse"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/order.md",
+      "text": "Order"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#example-usage",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#errors",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#get-order",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#authentication-1",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/auth/oauth-2-client-credentials-grant.md",
+      "text": "Oauth2"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#parameters-1",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#response-type-1",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/api-response.md",
+      "text": "ApiResponse"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/order.md",
+      "text": "Order"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#example-usage-1",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#errors-1",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#patch-order",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/docs/checkout/advanced/processing/",
+      "text": "checkout"
+    },
+    {
+      "href": "https://developer.paypal.com/docs/multiparty/checkout/advanced/processing/",
+      "text": "multiparty checkout"
+    },
+    {
+      "href": "https://developer.paypal.com/api/rest/reference/orders/v2/errors/#patch-order",
+      "text": "Orders v2 errors"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#authentication-2",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/auth/oauth-2-client-credentials-grant.md",
+      "text": "Oauth2"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#parameters-2",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/patch.md",
+      "text": "Patch[] | undefined"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#response-type-2",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/api-response.md",
+      "text": "ApiResponse"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#example-usage-2",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#errors-2",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#confirm-order",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#authentication-3",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/auth/oauth-2-client-credentials-grant.md",
+      "text": "Oauth2"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#parameters-3",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/confirm-order-request.md",
+      "text": "ConfirmOrderRequest | undefined"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#response-type-3",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/api-response.md",
+      "text": "ApiResponse"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/order.md",
+      "text": "Order"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#example-usage-3",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#errors-3",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#authorize-order",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#authentication-4",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/auth/oauth-2-client-credentials-grant.md",
+      "text": "Oauth2"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#parameters-4",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/order-authorize-request.md",
+      "text": "OrderAuthorizeRequest | undefined"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#response-type-4",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/api-response.md",
+      "text": "ApiResponse"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/order-authorize-response.md",
+      "text": "OrderAuthorizeResponse"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#example-usage-4",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#errors-4",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#capture-order",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#authentication-5",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/auth/oauth-2-client-credentials-grant.md",
+      "text": "Oauth2"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#parameters-5",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/order-capture-request.md",
+      "text": "OrderCaptureRequest | undefined"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#response-type-5",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/api-response.md",
+      "text": "ApiResponse"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/order.md",
+      "text": "Order"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#example-usage-5",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md#errors-5",
+      "text": ""
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    },
+    {
+      "href": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/models/custom-error.md",
+      "text": "CustomError"
+    }
+  ],
+  "retrievedAt": "2026-11-09T21:04:47.601Z",
+  "text": "Orders\n\nUse the /orders resource to create, update, retrieve, authorize, capture and track orders.\n\nconst ordersController = new OrdersController(client);\nClass Name\n\nOrdersController\n\nMethods\nCreate Order\nGet Order\nPatch Order\nConfirm Order\nAuthorize Order\nCapture Order\nCreate Order Tracking\nUpdate Order Tracking\nCreate Order\n\nCreates an order. Merchants and partners can add Level 2 and 3 data to payments to reduce risk and payment processing costs. For more information about processing payments, see checkout or multiparty checkout. Note: For error handling and troubleshooting, see Orders v2 errors.\n\nasync createOrder(\n  {\n    body,\n    paypalMockResponse,\n    paypalRequestId,\n    paypalPartnerAttributionId,\n    paypalClientMetadataId,\n    prefer,\n    paypalAuthAssertion,\n  }: {\n    body: OrderRequest;\n    paypalMockResponse?: string;\n    paypalRequestId?: string;\n    paypalPartnerAttributionId?: string;\n    paypalClientMetadataId?: string;\n    prefer?: string;\n    paypalAuthAssertion?: string;\n  },\n  requestOptions?: RequestOptions\n): Promise<ApiResponse<Order>>\nAuthentication\n\nThis endpoint requires Oauth2\n\nParameters\nParameter\tType\tTags\tDescription\nbody\tOrderRequest\tBody, Required\t-\npaypalMockResponse\tstring | undefined\tHeader, Optional\tPayPal's REST API uses a request header to invoke negative testing in the sandbox. This header configures the sandbox into a negative testing state for transactions that include the merchant.\npaypalRequestId\tstring | undefined\tHeader, Optional\tThe server stores keys for 6 hours. The API callers can request the times to up to 72 hours by speaking to their Account Manager. It is mandatory for all single-step create order calls (E.g. Create Order Request with payment source information like Card, PayPal.vault_id, PayPal.billing_agreement_id, etc).\n\nConstraints: Minimum Length: 1, Maximum Length: 108\npaypalPartnerAttributionId\tstring | undefined\tHeader, Optional\tConstraints: Minimum Length: 1, Maximum Length: 36\npaypalClientMetadataId\tstring | undefined\tHeader, Optional\tConstraints: Minimum Length: 1, Maximum Length: 36\nprefer\tstring | undefined\tHeader, Optional\tThe preferred server response upon successful completion of the request. Value is: return=minimal. The server returns a minimal response to optimize communication between the API caller and the server. A minimal response includes the id, status and HATEOAS links. return=representation. The server returns a complete resource representation, including the current state of the resource.\n\nDefault: 'return=minimal'\n\nConstraints: Minimum Length: 1, Maximum Length: 25, Pattern: ^[a-zA-Z=,-]*$\npaypalAuthAssertion\tstring | undefined\tHeader, Optional\tAn API-caller-provided JSON Web Token (JWT) assertion that identifies the merchant. For details, see PayPal-Auth-Assertion.\nrequestOptions\tRequestOptions | undefined\tOptional\tPass additional request options.\nResponse Type\n\n200: A successful response to an idempotent request returns the HTTP 200 OK status code with a JSON response body that shows order details.\n\nThis method returns an ApiResponse instance. The result property of this instance returns the response data which is of type Order.\n\nExample Usage\nconst collect = {\n  body: {\n    intent: CheckoutPaymentIntent.Capture,\n    purchaseUnits: [\n      {\n        amount: {\n          currencyCode: 'currency_code6',\n          value: 'value0',\n        },\n      }\n    ],\n  },\n  prefer: 'return=minimal'\n}\n\ntry {\n  const response = await ordersController.createOrder(collect);\n\n  // Extracting fully parsed response body.\n  console.log(response.result);\n\n  // Extracting response status code.\n  console.log(response.statusCode);\n  // Extracting response headers.\n  console.log(response.headers);\n  // Extracting response body of type `string | Stream`\n  console.log(response.body);\n} catch (error) {\n  if (error instanceof ApiError) {\n    // Extracting response error status code.\n    console.log(error.statusCode);\n    // Extracting response error headers.\n    console.log(error.headers);\n    // Extracting response error body of type `string | Stream`.\n    console.log(error.body);\n    if (error instanceof CustomError) {\n      console.log(error.result);\n    }\n  }\n}\nErrors\nHTTP Status Code\tError Description\tException Class\n400\tRequest is not well-formed, syntactically incorrect, or violates schema.\tCustomError\n401\tAuthentication failed due to missing authorization header, or invalid authentication credentials.\tCustomError\n422\tThe requested action could not be performed, semantically incorrect, or failed business validation.\tCustomError\nDefault\tThe error response.\tCustomError\nGet Order\n\nShows details for an order, by ID. Note: For error handling and troubleshooting, see Orders v2 errors.\n\nasync getOrder(\n  {\n    id,\n    paypalMockResponse,\n    paypalAuthAssertion,\n    fields,\n  }: {\n    id: string;\n    paypalMockResponse?: string;\n    paypalAuthAssertion?: string;\n    fields?: string;\n  },\n  requestOptions?: RequestOptions\n): Promise<ApiResponse<Order>>\nAuthentication\n\nThis endpoint requires Oauth2\n\nParameters\nParameter\tType\tTags\tDescription\nid\tstring\tTemplate, Required\tThe ID of the order for which to show details.\n\nConstraints: Minimum Length: 1, Maximum Length: 36, Pattern: ^[A-Z0-9]+$\npaypalMockResponse\tstring | undefined\tHeader, Optional\tPayPal's REST API uses a request header to invoke negative testing in the sandbox. This header configures the sandbox into a negative testing state for transactions that include the merchant.\npaypalAuthAssertion\tstring | undefined\tHeader, Optional\tAn API-caller-provided JSON Web Token (JWT) assertion that identifies the merchant. For details, see PayPal-Auth-Assertion.\nfields\tstring | undefined\tQuery, Optional\tA comma-separated list of fields that should be returned for the order. Valid filter field is payment_source.\n\nConstraints: Pattern: ^[a-z_]*$\nrequestOptions\tRequestOptions | undefined\tOptional\tPass additional request options.\nResponse Type\n\n200: A successful request returns the HTTP 200 OK status code and a JSON response body that shows order details.\n\nThis method returns an ApiResponse instance. The result property of this instance returns the response data which is of type Order.\n\nExample Usage\nconst collect = {\n  id: 'id0'\n}\n\ntry {\n  const response = await ordersController.getOrder(collect);\n\n  // Extracting fully parsed response body.\n  console.log(response.result);\n\n  // Extracting response status code.\n  console.log(response.statusCode);\n  // Extracting response headers.\n  console.log(response.headers);\n  // Extracting response body of type `string | Stream`\n  console.log(response.body);\n} catch (error) {\n  if (error instanceof ApiError) {\n    // Extracting response error status code.\n    console.log(error.statusCode);\n    // Extracting response error headers.\n    console.log(error.headers);\n    // Extracting response error body of type `string | Stream`.\n    console.log(error.body);\n    if (error instanceof CustomError) {\n      console.log(error.result);\n    }\n  }\n}\nErrors\nHTTP Status Code\tError Description\tException Class\n401\tAuthentication failed due to missing authorization header, or invalid authentication credentials.\tCustomError\n404\tThe specified resource does not exist.\tCustomError\nDefault\tThe error response.\tCustomError\nPatch Order\n\nUpdates an order with a CREATED or APPROVED status. You cannot update an order with the COMPLETED status.\n\nTo make an update, you must provide a reference_id. If you omit this value with an order that contains only one purchase unit, PayPal sets the value to default which enables you to use the path: \"/purchase_units/@reference_id=='default'/{attribute-or-object}\". Merchants and partners can add Level 2 and 3 data to payments to reduce risk and payment processing costs. For more information about processing payments, see checkout or multiparty checkout.\n\nNote: For error handling and troubleshooting, see Orders v2 errors.\nPatchable attributes or objects:\n\n\nAttribute\tOp\tNotes\nintent\treplace\t\npayer\treplace, add\tUsing replace op for payer will replace the whole payer object with the value sent in request.\npurchase_units\treplace, add\t\npurchase_units[].custom_id\treplace, add, remove\t\npurchase_units[].description\treplace, add, remove\t\npurchase_units[].payee.email\treplace\t\npurchase_units[].shipping.name\treplace, add\t\npurchase_units[].shipping.email_address\treplace, add\t\npurchase_units[].shipping.phone_number\treplace, add\t\npurchase_units[].shipping.options\treplace, add\t\npurchase_units[].shipping.address\treplace, add\t\npurchase_units[].shipping.type\treplace, add\t\npurchase_units[].soft_descriptor\treplace, remove\t\npurchase_units[].amount\treplace\t\npurchase_units[].items\treplace, add, remove\t\npurchase_units[].invoice_id\treplace, add, remove\t\npurchase_units[].payment_instruction\treplace\t\npurchase_units[].payment_instruction.disbursement_mode\treplace\tBy default, disbursement_mode is INSTANT.\npurchase_units[].payment_instruction.payee_receivable_fx_rate_id\treplace, add, remove\t\npurchase_units[].payment_instruction.platform_fees\treplace, add, remove\t\npurchase_units[].supplementary_data.airline\treplace, add, remove\t\npurchase_units[].supplementary_data.card\treplace, add, remove\t\napplication_context.client_configuration\treplace, add\t\n\nasync patchOrder(\n  {\n    id,\n    paypalMockResponse,\n    paypalAuthAssertion,\n    body,\n  }: {\n    id: string;\n    paypalMockResponse?: string;\n    paypalAuthAssertion?: string;\n    body?: Patch[];\n  },\n  requestOptions?: RequestOptions\n): Promise<ApiResponse<void>>\nAuthentication\n\nThis endpoint requires Oauth2\n\nParameters\nParameter\tType\tTags\tDescription\nid\tstring\tTemplate, Required\tThe ID of the order to update.\n\nConstraints: Minimum Length: 1, Maximum Length: 36, Pattern: ^[A-Z0-9]+$\npaypalMockResponse\tstring | undefined\tHeader, Optional\tPayPal's REST API uses a request header to invoke negative testing in the sandbox. This header configures the sandbox into a negative testing state for transactions that include the merchant.\npaypalAuthAssertion\tstring | undefined\tHeader, Optional\tAn API-caller-provided JSON Web Token (JWT) assertion that identifies the merchant. For details, see PayPal-Auth-Assertion.\nbody\tPatch[] | undefined\tBody, Optional\tConstraints: Minimum Items: 0, Maximum Items: 32767\nrequestOptions\tRequestOptions | undefined\tOptional\tPass additional request options.\nResponse Type\n\n204: A successful request returns the HTTP 204 No Content status code with an empty object in the JSON response body.\n\nThis method returns an ApiResponse instance.\n\nExample Usage\nconst collect = {\n  id: 'id0',\n  body: [\n    {\n      op: PatchOp.Add,\n    }\n  ]\n}\n\ntry {\n  const response = await ordersController.patchOrder(collect);\n\n  // Extracting fully parsed response body.\n  console.log(response.result);\n\n  // Extracting response status code.\n  console.log(response.statusCode);\n  // Extracting response headers.\n  console.log(response.headers);\n  // Extracting response body of type `string | Stream`\n  console.log(response.body);\n} catch (error) {\n  if (error instanceof ApiError) {\n    // Extracting response error status code.\n    console.log(error.statusCode);\n    // Extracting response error headers.\n    console.log(error.headers);\n    // Extracting response error body of type `string | Stream`.\n    console.log(error.body);\n    if (error instanceof CustomError) {\n      console.log(error.result);\n    }\n  }\n}\nErrors\nHTTP Status Code\tError Description\tException Class\n400\tRequest is not well-formed, syntactically incorrect, or violates schema.\tCustomError\n401\tAuthentication failed due to missing authorization header, or invalid authentication credentials.\tCustomError\n404\tThe specified resource does not exist.\tCustomError\n422\tThe requested action could not be performed, semantically incorrect, or failed business validation.\tCustomError\nDefault\tThe error response.\tCustomError\nConfirm Order\n\nPayer confirms their intent to pay for the the Order with the given payment source.\n\nasync confirmOrder(\n  {\n    id,\n    paypalClientMetadataId,\n    paypalAuthAssertion,\n    prefer,\n    body,\n  }: {\n    id: string;\n    paypalClientMetadataId?: string;\n    paypalAuthAssertion?: string;\n    prefer?: string;\n    body?: ConfirmOrderRequest;\n  },\n  requestOptions?: RequestOptions\n): Promise<ApiResponse<Order>>\nAuthentication\n\nThis endpoint requires Oauth2\n\nParameters\nParameter\tType\tTags\tDescription\nid\tstring\tTemplate, Required\tThe ID of the order for which the payer confirms their intent to pay.\n\nConstraints: Minimum Length: 1, Maximum Length: 36, Pattern: ^[A-Z0-9]+$\npaypalClientMetadataId\tstring | undefined\tHeader, Optional\tConstraints: Minimum Length: 1, Maximum Length: 36\npaypalAuthAssertion\tstring | undefined\tHeader, Optional\tAn API-caller-provided JSON Web Token (JWT) assertion that identifies the merchant. For details, see PayPal-Auth-Assertion.\nprefer\tstring | undefined\tHeader, Optional\tThe preferred server response upon successful completion of the request. Value is: return=minimal. The server returns a minimal response to optimize communication between the API caller and the server. A minimal response includes the id, status and HATEOAS links. return=representation. The server returns a complete resource representation, including the current state of the resource.\n\nDefault: 'return=minimal'\n\nConstraints: Minimum Length: 1, Maximum Length: 25, Pattern: ^[a-zA-Z=]*$\nbody\tConfirmOrderRequest | undefined\tBody, Optional\t-\nrequestOptions\tRequestOptions | undefined\tOptional\tPass additional request options.\nResponse Type\n\n200: A successful request indicates that the payment source was added to the Order. A successful request returns the HTTP 200 OK status code with a JSON response body that shows order details.\n\nThis method returns an ApiResponse instance. The result property of this instance returns the response data which is of type Order.\n\nExample Usage\nconst collect = {\n  id: 'id0',\n  prefer: 'return=minimal'\n}\n\ntry {\n  const response = await ordersController.confirmOrder(collect);\n\n  // Extracting fully parsed response body.\n  console.log(response.result);\n\n  // Extracting response status code.\n  console.log(response.statusCode);\n  // Extracting response headers.\n  console.log(response.headers);\n  // Extracting response body of type `string | Stream`\n  console.log(response.body);\n} catch (error) {\n  if (error instanceof ApiError) {\n    // Extracting response error status code.\n    console.log(error.statusCode);\n    // Extracting response error headers.\n    console.log(error.headers);\n    // Extracting response error body of type `string | Stream`.\n    console.log(error.body);\n    if (error instanceof CustomError) {\n      console.log(error.result);\n    }\n  }\n}\nErrors\nHTTP Status Code\tError Description\tException Class\n400\tRequest is not well-formed, syntactically incorrect, or violates schema.\tCustomError\n403\tAuthorization failed due to insufficient permissions.\tCustomError\n422\tThe requested action could not be performed, semantically incorrect, or failed business validation.\tCustomError\n500\tAn internal server error has occurred.\tCustomError\nDefault\tThe error response.\tCustomError\nAuthorize Order\n\nAuthorizes payment for an order. To successfully authorize payment for an order, the buyer must first approve the order or a valid payment_source must be provided in the request. A buyer can approve the order upon being redirected to the rel:approve URL that was returned in the HATEOAS links in the create order response. Note: For error handling and troubleshooting, see Orders v2 errors.\n\nasync authorizeOrder(\n  {\n    id,\n    paypalMockResponse,\n    paypalRequestId,\n    prefer,\n    paypalClientMetadataId,\n    paypalAuthAssertion,\n    body,\n  }: {\n    id: string;\n    paypalMockResponse?: string;\n    paypalRequestId?: string;\n    prefer?: string;\n    paypalClientMetadataId?: string;\n    paypalAuthAssertion?: string;\n    body?: OrderAuthorizeRequest;\n  },\n  requestOptions?: RequestOptions\n): Promise<ApiResponse<OrderAuthorizeResponse>>\nAuthentication\n\nThis endpoint requires Oauth2\n\nParameters\nParameter\tType\tTags\tDescription\nid\tstring\tTemplate, Required\tThe ID of the order for which to authorize.\n\nConstraints: Minimum Length: 1, Maximum Length: 36, Pattern: ^[A-Z0-9]+$\npaypalMockResponse\tstring | undefined\tHeader, Optional\tPayPal's REST API uses a request header to invoke negative testing in the sandbox. This header configures the sandbox into a negative testing state for transactions that include the merchant.\npaypalRequestId\tstring | undefined\tHeader, Optional\tThe server stores keys for 6 hours. The API callers can request the times to up to 72 hours by speaking to their Account Manager. It is mandatory for all single-step create order calls (E.g. Create Order Request with payment source information like Card, PayPal.vault_id, PayPal.billing_agreement_id, etc).\n\nConstraints: Minimum Length: 1, Maximum Length: 108\nprefer\tstring | undefined\tHeader, Optional\tThe preferred server response upon successful completion of the request. Value is: return=minimal. The server returns a minimal response to optimize communication between the API caller and the server. A minimal response includes the id, status and HATEOAS links. return=representation. The server returns a complete resource representation, including the current state of the resource.\n\nDefault: 'return=minimal'\n\nConstraints: Minimum Length: 1, Maximum Length: 25, Pattern: ^[a-zA-Z=,-]*$\npaypalClientMetadataId\tstring | undefined\tHeader, Optional\tConstraints: Minimum Length: 1, Maximum Length: 36\npaypalAuthAssertion\tstring | undefined\tHeader, Optional\tAn API-caller-provided JSON Web Token (JWT) assertion that identifies the merchant. For details, see PayPal-Auth-Assertion.\nbody\tOrderAuthorizeRequest | undefined\tBody, Optional\t-\nrequestOptions\tRequestOptions | undefined\tOptional\tPass additional request options.\nResponse Type\n\n200: A successful response to an idempotent request returns the HTTP 200 OK status code with a JSON response body that shows authorized payment details.\n\nThis method returns an ApiResponse instance. The result property of this instance returns the response data which is of type OrderAuthorizeResponse.\n\nExample Usage\nconst collect = {\n  id: 'id0',\n  prefer: 'return=minimal'\n}\n\ntry {\n  const response = await ordersController.authorizeOrder(collect);\n\n  // Extracting fully parsed response body.\n  console.log(response.result);\n\n  // Extracting response status code.\n  console.log(response.statusCode);\n  // Extracting response headers.\n  console.log(response.headers);\n  // Extracting response body of type `string | Stream`\n  console.log(response.body);\n} catch (error) {\n  if (error instanceof ApiError) {\n    // Extracting response error status code.\n    console.log(error.statusCode);\n    // Extracting response error headers.\n    console.log(error.headers);\n    // Extracting response error body of type `string | Stream`.\n    console.log(error.body);\n    if (error instanceof CustomError) {\n      console.log(error.result);\n    }\n  }\n}\nErrors\nHTTP Status Code\tError Description\tException Class\n400\tRequest is not well-formed, syntactically incorrect, or violates schema.\tCustomError\n401\tAuthentication failed due to missing authorization header, or invalid authentication credentials.\tCustomError\n403\tThe authorized payment failed due to insufficient permissions.\tCustomError\n404\tThe specified resource does not exist.\tCustomError\n422\tThe requested action could not be performed, semantically incorrect, or failed business validation.\tCustomError\n500\tAn internal server error has occurred.\tCustomError\nDefault\tThe error response.\tCustomError\nCapture Order\n\nCaptures payment for an order. To successfully capture payment for an order, the buyer must first approve the order or a valid payment_source must be provided in the request. A buyer can approve the order upon being redirected to the rel:approve URL that was returned in the HATEOAS links in the create order response. Note: For error handling and troubleshooting, see Orders v2 errors.\n\nasync captureOrder(\n  {\n    id,\n    paypalMockResponse,\n    paypalRequestId,\n    prefer,\n    paypalClientMetadataId,\n    paypalAuthAssertion,\n    body,\n  }: {\n    id: string;\n    paypalMockResponse?: string;\n    paypalRequestId?: string;\n    prefer?: string;\n    paypalClientMetadataId?: string;\n    paypalAuthAssertion?: string;\n    body?: OrderCaptureRequest;\n  },\n  requestOptions?: RequestOptions\n): Promise<ApiResponse<Order>>\nAuthentication\n\nThis endpoint requires Oauth2\n\nParameters\nParameter\tType\tTags\tDescription\nid\tstring\tTemplate, Required\tThe ID of the order for which to capture a payment.\n\nConstraints: Minimum Length: 1, Maximum Length: 36, Pattern: ^[A-Z0-9]+$\npaypalMockResponse\tstring | undefined\tHeader, Optional\tPayPal's REST API uses a request header to invoke negative testing in the sandbox. This header configures the sandbox into a negative testing state for transactions that include the merchant.\npaypalRequestId\tstring | undefined\tHeader, Optional\tThe server stores keys for 6 hours. The API callers can request the times to up to 72 hours by speaking to their Account Manager. It is mandatory for all single-step create order calls (E.g. Create Order Request with payment source information like Card, PayPal.vault_id, PayPal.billing_agreement_id, etc).\n\nConstraints: Minimum Length: 1, Maximum Length: 108\nprefer\tstring | undefined\tHeader, Optional\tThe preferred server response upon successful completion of the request. Value is: return=minimal. The server returns a minimal response to optimize communication between the API caller and the server. A minimal response includes the id, status and HATEOAS links. return=representation. The server returns a complete resource representation, including the current state of the resource.\n\nDefault: 'return=minimal'\n\nConstraints: Minimum Length: 1, Maximum Length: 25, Pattern: ^[a-zA-Z=,-]*$\npaypalClientMetadataId\tstring | undefined\tHeader, Optional\tConstraints: Minimum Length: 1, Maximum Length: 36\npaypalAuthAssertion\tstring | undefined\tHeader, Optional\tAn API-caller-provided JSON Web Token (JWT) assertion that identifies the merchant. For details, see PayPal-Auth-Assertion.\nbody\tOrderCaptureRequest | undefined\tBody, Optional\t-\nrequestOptions\tRequestOptions | undefined\tOptional\tPass additional request options.\nResponse Type\n\n200: A successful response to an idempotent request returns the HTTP 200 OK status code with a JSON response body that shows captured payment details.\n\nThis method returns an ApiResponse instance. The result property of this instance returns the response data which is of type Order.\n\nExample Usage\nconst collect = {\n  id: 'id0',\n  prefer: 'return=minimal'\n}\n\ntry {\n  const response = await ordersController.captureOrder(collect);\n\n  // Extracting fully parsed response body.\n  console.log(response.result);\n\n  // Extracting response status code.\n  console.log(response.statusCode);\n  // Extracting response headers.\n  console.log(response.headers);\n  // Extracting response body of type `string | Stream`\n  console.log(response.body);\n} catch (error) {\n  if (error instanceof ApiError) {\n    // Extracting response error status code.\n    console.log(error.statusCode);\n    // Extracting response error headers.\n    console.log(error.headers);\n    // Extracting response error body of type `string | Stream`.\n    console.log(error.body);\n    if (error instanceof CustomError) {\n      console.log(error.result);\n    }\n  }\n}\nErrors\nHTTP Status Code\tError Description\tException Class\n400\tRequest is not well-formed, syntactically incorrect, or violates schema.\tCustomError\n401\tAuthentication failed due to missing authorization header, or invalid authentication credentials.\tCustomError\n403\tThe authorized payment failed due to insufficient permissions.\tCustomError\n404\tThe specified resource does not exist.\tCustomError\n422\tThe requested action could not be performed, semantically incorrect, or failed business validation.\tCustomError\n500\tAn internal server error has occurred.\tCustomError\nDefault\tThe error response.\tCustomError\nCreate Order Tracking\n\nAdds tracking information for an Order.\n\nasync createOrderTracking(\n  {\n    id,\n    body,\n    paypalAuthAssertion,\n  }: {\n    id: string;\n    body: OrderTrackerRequest;\n    paypalAuthAssertion?: string;\n  },\n  requestOptions?: RequestOptions\n): Promise<ApiResponse<Order>>\nAuthentication\n\nThis endpoint requires Oauth2\n\nParameters\nParameter\tType\tTags\tDescription\nid\tstring\tTemplate, Required\tThe ID of the order that the tracking information is associated with.\n\nConstraints: Minimum Length: 1, Maximum Length: 36, Pattern: ^[A-Z0-9]+$\nbody\tOrderTrackerRequest\tBody, Required\t-\npaypalAuthAssertion\tstring | undefined\tHeader, Optional\tAn API-caller-provided JSON Web Token (JWT) assertion that identifies the merchant. For details, see PayPal-Auth-Assertion.\nrequestOptions\tRequestOptions | undefined\tOptional\tPass additional request options.\nResponse Type\n\n200: A successful response to an idempotent request returns the HTTP 200 OK status code with a JSON response body that shows tracker details.\n\nThis method returns an ApiResponse instance. The result property of this instance returns the response data which is of type Order.\n\nExample Usage\nconst collect = {\n  id: 'id0',\n  body: {\n    captureId: 'capture_id8',\n    notifyPayer: false,\n  }\n}\n\ntry {\n  const response = await ordersController.createOrderTracking(collect);\n\n  // Extracting fully parsed response body.\n  console.log(response.result);\n\n  // Extracting response status code.\n  console.log(response.statusCode);\n  // Extracting response headers.\n  console.log(response.headers);\n  // Extracting response body of type `string | Stream`\n  console.log(response.body);\n} catch (error) {\n  if (error instanceof ApiError) {\n    // Extracting response error status code.\n    console.log(error.statusCode);\n    // Extracting response error headers.\n    console.log(error.headers);\n    // Extracting response error body of type `string | Stream`.\n    console.log(error.body);\n    if (error instanceof CustomError) {\n      console.log(error.result);\n    }\n  }\n}\nErrors\nHTTP Status Code\tError Description\tException Class\n400\tRequest is not well-formed, syntactically incorrect, or violates schema.\tCustomError\n403\tAuthorization failed due to insufficient permissions.\tCustomError\n404\tThe specified resource does not exist.\tCustomError\n422\tThe requested action could not be performed, semantically incorrect, or failed business validation.\tCustomError\n500\tAn internal server error has occurred.\tCustomError\nDefault\tThe error response.\tCustomError\nUpdate Order Tracking\n\nUpdates or cancels the tracking information for a PayPal order, by ID. Updatable attributes or objects: Attribute Op Notes items replace Using replace op for items will replace the entire items object with the value sent in request. notify_payer replace, add status replace Only patching status to CANCELLED is currently supported.\n\nasync updateOrderTracking(\n  {\n    id,\n    trackerId,\n    paypalAuthAssertion,\n    body,\n  }: {\n    id: string;\n    trackerId: string;\n    paypalAuthAssertion?: string;\n    body?: Patch[];\n  },\n  requestOptions?: RequestOptions\n): Promise<ApiResponse<void>>\nAuthentication\n\nThis endpoint requires Oauth2\n\nParameters\nParameter\tType\tTags\tDescription\nid\tstring\tTemplate, Required\tThe ID of the order that the tracking information is associated with.\n\nConstraints: Minimum Length: 1, Maximum Length: 36, Pattern: ^[A-Z0-9]+$\ntrackerId\tstring\tTemplate, Required\tThe order tracking ID.\n\nConstraints: Minimum Length: 1, Maximum Length: 36, Pattern: ^[A-Z0-9]+$\npaypalAuthAssertion\tstring | undefined\tHeader, Optional\tAn API-caller-provided JSON Web Token (JWT) assertion that identifies the merchant. For details, see PayPal-Auth-Assertion.\nbody\tPatch[] | undefined\tBody, Optional\tConstraints: Minimum Items: 0, Maximum Items: 32767\nrequestOptions\tRequestOptions | undefined\tOptional\tPass additional request options.\nResponse Type\n\n204: A successful request returns the HTTP 204 No Content status code with an empty object in the JSON response body.\n\nThis method returns an ApiResponse instance.\n\nExample Usage\nconst collect = {\n  id: 'id0',\n  trackerId: 'tracker_id2',\n  body: [\n    {\n      op: PatchOp.Add,\n    }\n  ]\n}\n\ntry {\n  const response = await ordersController.updateOrderTracking(collect);\n\n  // Extracting fully parsed response body.\n  console.log(response.result);\n\n  // Extracting response status code.\n  console.log(response.statusCode);\n  // Extracting response headers.\n  console.log(response.headers);\n  // Extracting response body of type `string | Stream`\n  console.log(response.body);\n} catch (error) {\n  if (error instanceof ApiError) {\n    // Extracting response error status code.\n    console.log(error.statusCode);\n    // Extracting response error headers.\n    console.log(error.headers);\n    // Extracting response error body of type `string | Stream`.\n    console.log(error.body);\n    if (error instanceof CustomError) {\n      console.log(error.result);\n    }\n  }\n}\nErrors\nHTTP Status Code\tError Description\tException Class\n400\tRequest is not well-formed, syntactically incorrect, or violates schema.\tCustomError\n403\tAuthorization failed due to insufficient permissions.\tCustomError\n404\tThe specified resource does not exist.\tCustomError\n422\tThe requested action could not be performed, semantically incorrect, or failed business validation.\tCustomError\n500\tAn internal server error has occurred.\tCustomError\nDefault\tThe error response.\tCustomError",
+  "title": "PayPal-TypeScript-Server-SDK/doc/controllers/orders.md at 2.5.0 · paypal/PayPal-TypeScript-Server-SDK · GitHub",
+  "url": "https://github.com/paypal/PayPal-TypeScript-Server-SDK/blob/2.5.0/doc/controllers/orders.md"
+}

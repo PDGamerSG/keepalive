@@ -1,0 +1,128 @@
+{
+  "auditedAtUtc": "2026-11-10T10:22:43.963654+00:00",
+  "command": "python3 research/audit_package.py",
+  "scope": "Research package integrity/static arithmetic only; no application verification.",
+  "pass": true,
+  "checks": [
+    {
+      "name": "JSON parse",
+      "pass": true,
+      "detail": {
+        "parsed": 212
+      }
+    },
+    {
+      "name": "Capture hashes",
+      "pass": true,
+      "detail": {
+        "unchangedRawFiles": 199,
+        "scope": "hash integrity, not truth or execution"
+      }
+    },
+    {
+      "name": "Local links and fences",
+      "pass": true,
+      "detail": {
+        "localLinks": 330,
+        "errors": []
+      }
+    },
+    {
+      "name": "Global constraints",
+      "pass": true,
+      "detail": {
+        "identicalConstraints": 11
+      }
+    },
+    {
+      "name": "Implementation document consistency",
+      "pass": true,
+      "detail": {
+        "baseTasks": 16,
+        "integratedStages": 8,
+        "authorityAndPlaceholderScan": "pass"
+      }
+    },
+    {
+      "name": "Deadline conversion",
+      "pass": true,
+      "detail": {
+        "UTC": "2026-11-12T20:00:00+00:00",
+        "IST": "2026-11-13T01:30:00+05:30",
+        "checkpointRemaining": "58h35m"
+      }
+    },
+    {
+      "name": "Base fixture arithmetic",
+      "pass": true,
+      "detail": {
+        "meters": 4200,
+        "nonemptyReturnSeconds": 34620,
+        "emptyVehicle": "checked"
+      }
+    },
+    {
+      "name": "Scenario fixture arithmetic",
+      "pass": true,
+      "detail": {
+        "enumeratedOrders": 6,
+        "onlyAccepted": [
+          "B",
+          "A",
+          "C"
+        ],
+        "rescueMeters": 4400,
+        "extraMeters": 400,
+        "minimumWindowMarginSeconds": 300,
+        "worstReturnSeconds": 37500,
+        "uniformExtraLegToleranceSeconds": 150,
+        "evidence": "static arithmetic; no solver/application run"
+      }
+    },
+    {
+      "name": "Envelope counterexample",
+      "pass": true,
+      "detail": {
+        "namedScenarioArrivals": [
+          21,
+          21
+        ],
+        "envelopeArrival": 40
+      }
+    },
+    {
+      "name": "Source catalog/reference integrity",
+      "pass": true,
+      "detail": {
+        "definedSourceAndOriginalQueryIds": 167,
+        "referencedSourceIds": 138,
+        "missingReferences": [],
+        "sourceCaptureStatuses": {
+          "OPENED_TEXT": 66,
+          "ERROR_PAGE": 6,
+          "SELECTED_EXCERPT": 1,
+          "GENERIC_LANDING": 1,
+          "PARTIAL_CAPTURE": 1,
+          "EXCERPTS_ONLY": 2,
+          "BLOCKED_CHALLENGE": 1,
+          "ENTRANT_SELF_REPORT": 3,
+          "LOADING_ONLY": 2,
+          "EMPTY_CAPTURE": 2,
+          "CODE_EXCERPTS_ONLY": 1,
+          "OPENED_SOURCE_WITH_REPORTED_LIMITS": 14
+        }
+      }
+    },
+    {
+      "name": "Research-only workspace",
+      "pass": true,
+      "detail": {
+        "applicationImplemented": false,
+        "modelExecuted": false,
+        "solverExecuted": false,
+        "paymentsExecuted": false,
+        "note": "Package audit checks documents and static fixtures only."
+      }
+    }
+  ]
+}

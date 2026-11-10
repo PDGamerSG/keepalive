@@ -1,0 +1,88 @@
+{
+  "links": [
+    {
+      "text": "MCP\nBETA",
+      "url": "https://routific.com/"
+    },
+    {
+      "text": "How it works",
+      "url": "https://mcp.routific.com/#how"
+    },
+    {
+      "text": "Setup",
+      "url": "https://mcp.routific.com/#setup"
+    },
+    {
+      "text": "Account tools",
+      "url": "https://mcp.routific.com/#tools"
+    },
+    {
+      "text": "Docs",
+      "url": "https://mcp.routific.com/#reference"
+    },
+    {
+      "text": "FAQ",
+      "url": "https://mcp.routific.com/#faq"
+    },
+    {
+      "text": "Feedback",
+      "url": "https://mcp.routific.com/#feedback"
+    },
+    {
+      "text": "routific.com",
+      "url": "https://routific.com/"
+    },
+    {
+      "text": "Sign up free",
+      "url": "https://plan.routific.com/signup?utm_source=mcp"
+    },
+    {
+      "text": "How to connect",
+      "url": "https://mcp.routific.com/#setup"
+    },
+    {
+      "text": "sign up free",
+      "url": "https://plan.routific.com/signup?utm_source=mcp"
+    },
+    {
+      "text": "Settings → Connectors",
+      "url": "https://claude.ai/settings/connectors"
+    },
+    {
+      "text": "Tell us",
+      "url": "mailto:support@routific.com?subject=Routific%20MCP%20use-case"
+    },
+    {
+      "text": "Share feedback",
+      "url": "mailto:support@routific.com?subject=Routific%20MCP%20beta%20feedback&body=Which%20assistant%20I%20used%20(Claude%2C%20ChatGPT%2C%20...)%3A%0A%0AWhat%20I%20asked%3A%0A%0AWhat%20happened%3A%0A%0AWhat%20I%20expected%20or%20wished%20for%3A%0A"
+    },
+    {
+      "text": "Report a problem",
+      "url": "mailto:support@routific.com?subject=Routific%20MCP%20beta%20%E2%80%94%20something%20went%20wrong&body=Which%20assistant%20I%20used%3A%0A%0AWhat%20I%20asked%3A%0A%0AWhat%20went%20wrong%20(the%20error%20message%20helps)%3A%0A%0AWhen%20it%20happened%20(date%2C%20time%2C%20time%20zone)%3A%0A"
+    },
+    {
+      "text": "Sign up free",
+      "url": "https://plan.routific.com/signup?utm_source=mcp"
+    },
+    {
+      "text": "How to connect",
+      "url": "https://mcp.routific.com/#setup"
+    },
+    {
+      "text": "API docs",
+      "url": "https://docs.routific.com/"
+    },
+    {
+      "text": "Privacy",
+      "url": "https://www.routific.com/privacy"
+    },
+    {
+      "text": "support@routific.com",
+      "url": "mailto:support@routific.com"
+    }
+  ],
+  "text": "MCP\nBETA\nHow it works\nSetup\nAccount tools\nDocs\nFAQ\nFeedback\nroutific.com\nROUTIFIC MCP SERVER\nBETA\nRoute optimization for your AI agent.\n\nOptimize routes right in your chat or connect your Routific account to see the routes on Routific.\n\nADD THE CONNECTOR\nhttps://mcp.routific.com/mcp\nCopy\nYour AI assistant\n● Routific connected\n↑\nReal output from the Routific MCP server. Works the same in Claude, ChatGPT, or any MCP client.\n↻ Replay\nHOW IT WORKS\nFrom chat to the map in Routific\n\nYour agent asks where you want the plan: right here in chat, or set up in your Routific account with a link to the map. Either way it optimizes once.\n\nAsk in chat\nStops, drivers, time windows — as much or little as you have.\n“Chat or map?”\nYour agent asks where you want the plan — unless you’ve already said.\nOptimized once\nIn chat with optimize_route · create_optimization, or straight into Routific with show_on_map.\nOpen in Routific\nOne link to the day’s routes on the map — adjust anything you like.\nDispatch\nSend the routes to your drivers’ phones — from chat, or from the Routific app.\nSign up free\nHow to connect\nAlready a Routific customer? Just connect — you’ll sign in when your assistant asks.\nSETUP\nConnect in under a minute\n\nPick your client. Quick routes work right away; when you ask for a bigger plan or a map, you’ll be asked to sign in with Routific — sign up free if you don’t have an account.\n\nClaude\nChatGPT\nClaude Code\nAny MCP client\nOpen Settings → Connectors in Claude (web or desktop).\nClick Add custom connector.\nName it Routific and paste the URL below.\nAsk Claude to optimize a route. When you want more, Claude asks you to sign in with Routific.\nhttps://mcp.routific.com/mcp\nCopy\nREFERENCE\nThe optimize_route tool\n\nOne tool, four parameters. Routific solves the underlying traveling-salesman problem and returns a schedule with machine-learned ETAs — not just a stop order.\n\nParameters\nNAME\tTYPE\tDESCRIPTION\nstops required\tstring[] · 2–8\tAddresses to visit, e.g. “800 Robson St, Vancouver, BC”. Include city + region for reliable geocoding.\nstart_address optional\tstring\tWhere the driver starts. Defaults to the first entry in stops.\nreturn_to_start optional\tboolean\tEnd the route back at the start. Default false.\ndeparture_time optional\tstring\t24h hh:mm departure used to compute ETAs. Default 09:00.\nResponse\nFIELD\tDESCRIPTION\nroute[]\tStops in optimal order: address, eta, departure, and distance_from_previous_m.\ntotal_travel_time_minutes\tDriving + service time for the whole route.\ntotal_distance_km\tTotal driving distance.\nunserved\tStops that couldn’t be routed, with the reason (e.g. address not found).\n8\nWhy the 8-stop limit — and why not to split bigger lists\n\noptimize_route is for quick answers, capped at 8 stops. Splitting a longer list into chunks and optimizing them separately does not produce an optimized route — the chunks are only locally optimal. For more stops, multiple drivers, or time windows, your agent uses create_optimization instead (sign in with Routific), which has no stop limit.\n\nWITH YOUR ROUTIFIC ACCOUNT\nEverything your agent can do in Routific\n\nSign in with Routific and your agent gets these tools on top of optimize_route. It works in your workspace as you, and checks with you before deleting orders or changing who drives a route.\n\nOptimization\n\nPlan whole fleets in chat — nothing is saved until you ask for the map.\n\ncreate_optimization\nOptimize any number of stops across several vehicles, with time windows, capacity, and tags.\nget_optimization\n·\nget_schedule_solution\nFollow the run and fetch the finished plan: each vehicle’s stops in order, with ETAs.\nPlan these 40 deliveries across 3 vans, 8am to 5pm.\nSee it on the map\n\nTurn a plan into real routes in Routific, and get a link to them.\n\nshow_on_map\nAdds the stops, creates a route per driver, optimizes them, and sends you an “Open in Routific” link — in one step.\ncreate_orders\n·\ncreate_routes\n·\nschedule_orders\nThe same building blocks one at a time, for adding to a day that’s already planned.\nYes — show me that on a map.\nOrders\n\nKeep the day’s orders up to date from chat.\n\nget_order\nStatus, tracking link, and proof-of-delivery photos.\nupdate_order\n·\nupdate_orders\nChange an address, time window, notes or tags — on one order or many at once, even on a scheduled route.\ndelete_order\n·\ndelete_orders\nASKS FIRST\nRemove cancelled orders, including ones already on a route.\nMove the Robson St delivery to after 2pm.\nDrivers & dispatch\n\nDecide who drives which route, then send the routes out.\n\nlist_drivers\nSee the drivers in your organization.\nassign_driver\nASKS FIRST\nPut a driver on a route, by name. On a published route it shows up in their app right away.\nunassign_driver\nASKS FIRST\nTake a driver off a route.\npublish_routes\nASKS FIRST\nSend the day’s routes to your drivers’ Routific app and start customer notifications.\nPut Priya on Van 2 for tomorrow, then send out the routes.\nRoutes & workspaces\n\nCheck how the day’s routes are shaping up.\n\nlist_routes\n·\nget_route_timeline\nA day’s routes, and each route’s stops in order with planned and actual arrival times.\nlist_schedules\nPast optimization runs.\nlist_workspaces\nPick the right workspace when your organization has more than one.\nHow is Van 2’s route looking for tomorrow?\n\nMissing something you’d want your agent to do? Tell us — your ideas shape what ships next.\n\nBETA\nYou’re early — help us shape it\n\nThe Routific MCP server is in beta. A quick note from you goes straight to the team building it, and it’s the fastest way to make your assistant better at routing. Good or bad, we’d love to hear how it went.\n\nShare feedback\nReport a problem\n💬\nWhat did you ask your assistant?\nThe exact prompt helps most.\n🗺️\nDid the route make sense?\nOdd stop orders, ETAs that felt off.\n✨\nWhat do you wish it could do?\nThe next tools come from requests like yours.\nFAQ\nGood questions\nWhat does “beta” mean here?\nIs it free?\nWhat happens when I sign in?\nWhat if I go over 100 orders on the free plan?\nWhere does my data go?\nHow are the ETAs calculated?\nDo I need exact addresses or coordinates?\nWhich MCP clients are supported?\nPlan, assign and dispatch from chat\n\nRoutific plans routes for entire fleets — multiple drivers, time windows, live tracking, and proof of delivery. Start free with 100 orders a month and plan it from your AI agent. Trusted by 1,000+ delivery businesses.\n\nSign up free\nHow to connect\n© 2026 Routific. Made in Vancouver 🇨🇦\nAPI docs\nPrivacy\nsupport@routific.com",
+  "title": "Routific MCP — Route Optimization for AI Agents",
+  "url": "https://mcp.routific.com/",
+  "retrievedAt": "2026-11-09T21:00:54.911Z"
+}

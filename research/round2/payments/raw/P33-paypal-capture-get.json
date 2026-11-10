@@ -1,0 +1,86 @@
+{
+  "fullTextLength": 2873,
+  "headings": [
+    "Show captured payment details",
+    "Authorization",
+    "Path Parameters",
+    "Header Parameters",
+    "Response Body",
+    "200\n\napplication/json",
+    "401\n\napplication/json",
+    "403\n\napplication/json",
+    "404\n\napplication/json",
+    "500\n\napplication/json",
+    "default\n\napplication/json"
+  ],
+  "links": [
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/captures-get.md",
+      "text": "View as Markdown"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/schema.json",
+      "text": "API Spec (JSON)"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/schema.yaml",
+      "text": "API Spec (YAML)"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/captures-get.md",
+      "text": "View as Markdown"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/schema.json",
+      "text": "API Spec (JSON)"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/schema.yaml",
+      "text": "API Spec (YAML)"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/authorizations-get",
+      "text": "API v2"
+    },
+    {
+      "href": "https://developer.paypal.com/api/deprecated/payments/v1/payment-create",
+      "text": "API v1"
+    },
+    {
+      "href": "https://developer.paypal.com/sdk/payment/v2/authorizations/authorizations-get",
+      "text": "SDK"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/captures-get#authorization",
+      "text": "Authorization"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/captures-get#parameters-path",
+      "text": "Path Parameters"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/captures-get#parameters.path.capture_id",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/captures-get#parameters-header",
+      "text": "Header Parameters"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/captures-get#parameters.header.authorization",
+      "text": ""
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/definitions/standard_header_schema",
+      "text": "standard_header_schema"
+    },
+    {
+      "href": "https://developer.paypal.com/api/payments/v2/captures-get#response-body",
+      "text": "Response Body"
+    }
+  ],
+  "retrievedAt": "2026-11-09T21:06:40.739Z",
+  "text": "Show captured payment details\nCopy for LLM\n\nView as Markdown\n\nAPI Spec (JSON)\n\nAPI Spec (YAML)\n\nCompact mode\nHides field descriptions and other prose for a more compact, scannable view of the API reference.\nAPI v2\nAPI v2\nAPI v1\nSDK\nShows details for a captured payment, by ID.\nServer URL\nhttps://api-m.sandbox.paypal.com/\nGET\n/\nv2\n/\npayments\n/\ncaptures\n/\n{capture_id}\nSend\nAuthorization\nPath\nHeader\nAuthorization\nAuthorization\nBearer <token>\nFLOW\nClient Credentials\nTOKEN URL\nhttps://api-m.sandbox.paypal.com/v1/oauth2/token\nIN\nheader\n\nSCOPES\n\nPermission to do non-real time payments like capture on authorization\nhttps://uri.paypal.com/services/payments/payment/authcapture\nPath Parameters\ncapture_id\nstring\nRequired\nThe PayPal-generated ID for the captured payment for which to show details.\nMatch\n^[\\S\\s]*$\nLength\n0 <= length <= 2147483647\nHeader Parameters\nAuthorization\nstring<standard_header_schema>\nOptional\nHolds authorization information for external API calls.\nMatch\n^.*$\nLength\n1 <= length <= 16000\nResponse Body\n200\n\napplication/json\n\n401\n\napplication/json\n\n403\n\napplication/json\n\n404\n\napplication/json\n\n500\n\napplication/json\n\ndefault\n\napplication/json\n\ncURL\nJavaScript\nGo\nPython\nJava\nC#\nRust\ncurl -X GET \"https://api-m.sandbox.paypal.com/v2/payments/captures/74L756601X447022Y\" \\\n  -H \"Authorization: Bearer A21AAGHr9qtiRRXH4oYcQokQgV99rGqEIfgrr8xHCclP0OzmD9KVgg5ppIIg1jzJgQkV4wd02svIvBJyg6cLFJjFow_SjBhxQ\"\n200\n401\n403\n404\n500\ndefault\n{\n  \"id\": \"74L756601X447022Y\",\n  \"amount\": {\n    \"currency_code\": \"USD\",\n    \"value\": \"100.00\"\n  },\n  \"final_capture\": true,\n  \"seller_protection\": {\n    \"status\": \"ELIGIBLE\",\n    \"dispute_categories\": [\n      \"ITEM_NOT_RECEIVED\",\n      \"UNAUTHORIZED_TRANSACTION\"\n    ]\n  },\n  \"seller_receivable_breakdown\": {\n    \"gross_amount\": {\n      \"currency_code\": \"USD\",\n      \"value\": \"100.00\"\n    },\n    \"paypal_fee\": {\n      \"currency_code\": \"USD\",\n      \"value\": \"3.98\"\n    },\n    \"net_amount\": {\n      \"currency_code\": \"USD\",\n      \"value\": \"96.02\"\n    }\n  },\n  \"invoice_id\": \"OrderInvoice-23_10_2024_12_27_32_pm\",\n  \"status\": \"COMPLETED\",\n  \"supplementary_data\": {\n    \"related_ids\": {\n      \"order_id\": \"25M43554V9523650M\",\n      \"authorization_id\": \"0T620041CK889853A\"\n    }\n  },\n  \"payee\": {\n    \"email_address\": \"merchant@example.com\",\n    \"merchant_id\": \"YXZY75W2GKDQE\"\n  },\n  \"create_time\": \"2024-10-23T20:55:19Z\",\n  \"update_time\": \"2024-10-23T20:55:19Z\",\n  \"links\": [\n    {\n      \"href\": \"https://api-m.sandbox.paypal.com/v2/payments/captures/74L756601X447022Y\",\n      \"rel\": \"self\",\n      \"method\": \"GET\"\n    },\n    {\n      \"href\": \"https://api-m.sandbox.paypal.com/v2/payments/captures/74L756601X447022Y/refund\",\n      \"rel\": \"refund\",\n      \"method\": \"POST\"\n    },\n    {\n      \"href\": \"https://api-m.sandbox.paypal.com/v2/payments/authorizations/0T620041CK889853A\",\n      \"rel\": \"up\",\n      \"method\": \"GET\"\n    }\n  ]\n}",
+  "title": "Show captured payment details - Payments v2 | PayPal Developer",
+  "url": "https://developer.paypal.com/api/payments/v2/captures-get"
+}

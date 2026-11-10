@@ -1,0 +1,37 @@
+{
+  "id": "O13",
+  "retrievedAt": "2026-11-09T21:02:35.640Z",
+  "links": [
+    {
+      "text": "Open Data Commons Open Database License",
+      "url": "https://opendatacommons.org/licenses/odbl/"
+    },
+    {
+      "text": "Creative Commons Attribution-ShareAlike 2.0 license",
+      "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    {
+      "text": "OSMF Licence page",
+      "url": "https://osmfoundation.org/Licence"
+    },
+    {
+      "text": "the licensing requirements",
+      "url": "https://osmfoundation.org/wiki/Licence"
+    },
+    {
+      "text": "Creative Commons Attribution 4.0 International licence (CC BY 4.0)",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "text": "Creative Commons Attribution 4.0 International licence (CC BY 4.0)",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "text": "NLSFI License",
+      "url": "https://www.maanmittauslaitos.fi/en/opendata-licence-version1"
+    }
+  ],
+  "text": "OpenStreetMap\nEdit\nHistory\nExport\nGPS Traces\nUser Diaries\nCommunities\nCopyright\nHelp\nDonate\nAbout\nLog In\nSign Up\nCopyright and License\n\nOpenStreetMap provides open map data for thousands of websites, mobile apps, and hardware devices. OpenStreetMap is built by a community of people like you who contribute and maintain mapping data about roads, trails, cafés, railway stations, and much more, all over the world.\n\nLearn more about OpenStreetMap and get started mapping! You can read more on the OpenStreetMap Blog, and subscribe to weeklyOSM. Find other mappers in your local OSM community. Support the project by joining the OSM Foundation and making a donation.\n\nOpenStreetMap licensing\n\nOpenStreetMap is open data, licensed under the Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF). In summary:\n\nYou are free to copy, distribute, transmit and adapt our data, as long as you credit OpenStreetMap and its contributors. If you alter or build upon our data, you may distribute the result only under the same license. The full legal code at Open Data Commons explains your rights and responsibilities.\n\nOur documentation is licensed under the Creative Commons Attribution-ShareAlike 2.0 license (CC BY-SA 2.0).\n\nRead more about using our data at the OSMF Licence page.\n\nHow to credit OpenStreetMap\n\nWhere you use OpenStreetMap data, you are required to do the following two things:\n\nProvide credit to OpenStreetMap by displaying our attribution notice.\nMake clear that the data is available under the Open Database License.\n\nFor the attribution notice, we have different requirements on how this should be displayed, depending on how you are using our data. For example, different rules apply on how to show the attribution notice depending on whether you have created a browsable map, a printed map or a static image. More details can be found in the attribution guidelines section of the licensing requirements.\n\nGenerally speaking, to make clear that the data is available under the Open Database License, you may link to this copyright page. If you are distributing OSM in data form, please name and link directly to the license(s). In media where links are not possible (e.g. printed works), please include the full URL on the page, e.g. https://www.openstreetmap.org/copyright.\n\nIn this example, the credit appears in the corner of the map:\n\nCopyright infringement\n\nOSM contributors are reminded never to add data from any copyrighted sources (e.g. Google Maps or printed maps) without explicit permission from the copyright holders.\n\nIf you believe that copyrighted material has been inappropriately added to the OpenStreetMap database or this site, please refer to our takedown procedure or file directly at our on-line filing page.\n\nTrademarks\n\nOpenStreetMap, the magnifying glass logo, and State of the Map are registered trademarks of the OpenStreetMap Foundation. If you have questions about your use of the marks, please see our Trademark Policy.\n\nAdditional services\n\nAlthough OpenStreetMap is open data, we cannot provide a free-of-charge map API or map tiles for third-parties. See our API Usage Policy, Tile Usage Policy and Nominatim Usage Policy.\n\nOur contributors\n\nOur contributors are thousands of individuals. We also include openly-licensed data from national mapping agencies and other sources, among them:\n\nAustria: Contains data from Stadt Wien (under CC BY), Land Vorarlberg and Land Tirol (under CC BY AT with amendments).\nAustralia: Incorporates or developed using Administrative Boundaries © Geoscape Australia licensed by the Commonwealth of Australia under Creative Commons Attribution 4.0 International licence (CC BY 4.0).\nCanada: Contains data from GeoBase®, GeoGratis (© Department of Natural Resources Canada), CanVec (© Department of Natural Resources Canada), and StatCan (Geography Division, Statistics Canada).\nCzechia: Contains data from the State Administration of Land Surveying and Cadastre licensed under Creative Commons Attribution 4.0 International licence (CC BY 4.0)\nFinland: Contains data from the National Land Survey of Finland's Topographic Database and other datasets, under the NLSFI License.\nFrance: Contains data sourced from Direction Générale des Impôts.\nCroatia: Contains data from the State Geodetic Administration of Croatia and National Open Data Portal (public information of Croatia).\nNetherlands: Contains © AND data, 2007\nNew Zealand: Contains data sourced from the LINZ Data Service and licensed for reuse under CC BY 4.0.\nSerbia: Contains data from the Serbian Geodetic Authority and National Open Data Portal (public information of Serbia), 2018.\nSlovenia: Contains data from the Surveying and Mapping Authority and Ministry of Agriculture, Forestry and Food (public information of Slovenia).\nSpain: Contains data sourced from the Spanish National Geographic Institute (IGN) and National Cartographic System (SCNE) licensed for reuse under CC BY 4.0.\nSouth Africa: Contains data sourced from Chief Directorate: National Geo-Spatial Information, State copyright reserved.\nUnited Kingdom: Contains Ordnance Survey data © Crown copyright and database right 2010-2023.\n\nFor further details of these, and other sources that have been used to help improve OpenStreetMap, please see the Contributors page on the OpenStreetMap Wiki.\n\nInclusion of data in OpenStreetMap does not imply that the original data provider endorses OpenStreetMap, provides any warranty, or accepts any liability.",
+  "title": "Copyright and License | OpenStreetMap",
+  "url": "https://www.openstreetmap.org/copyright"
+}

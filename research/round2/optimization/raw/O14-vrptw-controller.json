@@ -1,0 +1,69 @@
+{
+  "id": "O14",
+  "retrievedAt": "2026-11-09T21:02:36.988Z",
+  "links": [
+    {
+      "text": "Readme",
+      "url": "https://github.com/laser-ufpb/VRPTWController#readme-ov-file"
+    },
+    {
+      "text": "MIT license",
+      "url": "https://github.com/laser-ufpb/VRPTWController#MIT-1-ov-file"
+    },
+    {
+      "text": "Instances",
+      "url": "https://github.com/laser-ufpb/VRPTWController/tree/master/Instances"
+    },
+    {
+      "text": "Instances",
+      "url": "https://github.com/laser-ufpb/VRPTWController/tree/master/Instances"
+    },
+    {
+      "text": ".gitignore",
+      "url": "https://github.com/laser-ufpb/VRPTWController/blob/master/.gitignore"
+    },
+    {
+      "text": ".gitignore",
+      "url": "https://github.com/laser-ufpb/VRPTWController/blob/master/.gitignore"
+    },
+    {
+      "text": "LICENSE",
+      "url": "https://github.com/laser-ufpb/VRPTWController/blob/master/LICENSE"
+    },
+    {
+      "text": "LICENSE",
+      "url": "https://github.com/laser-ufpb/VRPTWController/blob/master/LICENSE"
+    },
+    {
+      "text": "README.md",
+      "url": "https://github.com/laser-ufpb/VRPTWController/blob/master/README.md"
+    },
+    {
+      "text": "README.md",
+      "url": "https://github.com/laser-ufpb/VRPTWController/blob/master/README.md"
+    },
+    {
+      "text": "README",
+      "url": "https://github.com/laser-ufpb/VRPTWController#"
+    },
+    {
+      "text": "MIT license",
+      "url": "https://github.com/laser-ufpb/VRPTWController#"
+    },
+    {
+      "text": "Readme",
+      "url": "https://github.com/laser-ufpb/VRPTWController#readme-ov-file"
+    },
+    {
+      "text": "MIT license",
+      "url": "https://github.com/laser-ufpb/VRPTWController#MIT-1-ov-file"
+    },
+    {
+      "text": "Docs",
+      "url": "https://docs.github.com/"
+    }
+  ],
+  "text": "Skip to content\nNavigation Menu\nProducts\nDevelopers\nBusinesses\nResources\nPricing\nSearch\n/\nSign in\nSign up\nlaser-ufpb\nVRPTWController\nRepository navigation\nCode\nIssues\nPull requests\nActions\nProjects\nSecurity and quality\nInsights\nVRPTWController\nPublic\nNotifications\nFork2\n (2)\nStar4\n (4)\nmaster\nBranches\nTags\nCode\nLatest commit\n \nHistory\n24 Commits\nFolders and files\nName\tLast commit message\tLast commit date\n\nInstances\n\t\n \n\t\n \n\n\nsrc\n\t\n \n\t\n \n\n\n.clang-format\n\t\n \n\t\n \n\n\n.gitignore\n\t\n \n\t\n \n\n\nCMakeLists.txt\n\t\n \n\t\n \n\n\nDummySolver.cpp\n\t\n \n\t\n \n\n\nLICENSE\n\t\n \n\t\n \n\n\nREADME.md\n\t\n \n\t\n \n\n\ngenScript1.sh\n\t\n \n\t\n \n\n\ngenScript2.sh\n\t\n \n\t\n \n\n\ngenScript3.sh\n\t\n \n\t\n \nRepository files navigation\nREADME\nMIT license\nVRPTWController\n\nVRPTWController is used to run and calculate score for the 12th DIMACS Implementation Challenge: VRPTW track. Specified in Competition Rules.\n\nInstallation\n\nLinux, MacOS & OpenBSD:\n\ngit clone https://github.com/laser-ufpb/VRPTWController\ncd VRPTWController\nmkdir build\ncd build\ncmake ..\nmake\n\nTesting the Controller with a dummy solver:\n\nmake test\n\nThe output will be at build/ as DIMACS-VRPTW-Dummy-R108.out.\n\nUsage example\nHow to run:\n./VRPTWController <Competitor ID> <Instance path> <CPU mark> <Time limit> <Instance BKS> <If BKS is optimal [0/1]> <Path to solver>\nExample:\n./VRPTWController Wolverine R108.txt 2064 1800 932.1 1 Solver1\nHow to run the instances:\n\nGenerating the script:\n\nsh genScript1.sh <Competitor ID> <CPU mark> <Solver path> > VRPTW-Script1.sh\n\nRunning the instances:\n\nsh VRPTW-Script1.sh\n\nto run all the instances, you also have to run the scripts genScript2.sh and genScript3.sh.\n\nExample:\nsh genScript1.sh Wolverine 2064 Solver1 > VRPTW-Script1.sh\nsh VRPTW-Script1.sh\n\nFor more examples and usage, please refer to the Competition Rules.\n\nHow to call the solver indirectly via shell script\n\nSuppose a file named solver has the following content:\n\n#!/usr/bin/env bash\n./real-solver $1 $2 \n\nTherefore, you can use solver (after calling chmod +x solver) instead of the original executable file real-solver (which could have other command-line arguments in addition to the two defined in the challenge rules).\n\nMeta\n\nBruno Passeti – bruno@bravadus.com.br (UFPB)\n\nRodrigo Ramalho – rodrigo@bravadus.com.br (UFPB)\n\nDistributed under the MIT license. See LICENSE for more information.\n\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nMIT license\nActivity\nCustom properties\nStars\n4 stars\nWatchers\n4 watching\nForks\n2 forks\nReport repository\nReleases\nPackages\nContributors\nLanguages\nFooter\n© 2026 GitHub, Inc.\nFooter navigation\nTerms\nPrivacy\nSecurity\nStatus\nCommunity\nDocs\nContact\nManage cookies\nDo not share my personal information",
+  "title": "GitHub - laser-ufpb/VRPTWController · GitHub",
+  "url": "https://github.com/laser-ufpb/VRPTWController"
+}

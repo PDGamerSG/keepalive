@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "route-input/v1",
+  "serviceDay": "2026-11-11",
+  "timeZone": "Asia/Kolkata",
+  "source": "SYNTHETIC",
+  "depotId": "D0",
+  "nodeIds": [
+    "D0",
+    "A",
+    "B",
+    "C"
+  ],
+  "stops": [
+    {
+      "id": "A",
+      "label": "Medical A",
+      "demandGrams": 20000,
+      "serviceSeconds": 300,
+      "windowOpenSeconds": 32400,
+      "windowCloseSeconds": 33000,
+      "xMeters": 1000,
+      "yMeters": 0
+    },
+    {
+      "id": "B",
+      "label": "Bakery B",
+      "demandGrams": 30000,
+      "serviceSeconds": 300,
+      "windowOpenSeconds": 33300,
+      "windowCloseSeconds": 34200,
+      "xMeters": 1800,
+      "yMeters": 0
+    },
+    {
+      "id": "C",
+      "label": "Customer C",
+      "demandGrams": 10000,
+      "serviceSeconds": 300,
+      "windowOpenSeconds": 32400,
+      "windowCloseSeconds": 34200,
+      "xMeters": 900,
+      "yMeters": 900
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "V1",
+      "capacityGrams": 100000,
+      "shiftStartSeconds": 32400,
+      "shiftEndSeconds": 36000
+    },
+    {
+      "id": "V2",
+      "capacityGrams": 40000,
+      "shiftStartSeconds": 32400,
+      "shiftEndSeconds": 36000
+    }
+  ],
+  "distanceMeters": [
+    [
+      0,
+      1000,
+      2000,
+      1500
+    ],
+    [
+      1000,
+      0,
+      800,
+      1300
+    ],
+    [
+      2000,
+      800,
+      0,
+      900
+    ],
+    [
+      1500,
+      1300,
+      900,
+      0
+    ]
+  ],
+  "travelSeconds": [
+    [
+      0,
+      300,
+      600,
+      450
+    ],
+    [
+      300,
+      0,
+      240,
+      390
+    ],
+    [
+      600,
+      240,
+      0,
+      270
+    ],
+    [
+      450,
+      390,
+      270,
+      0
+    ]
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "fullTextLength": 5509,
+  "links": [
+    {
+      "text": "Skip to content",
+      "url": "https://nodejs.org/en/about/previous-releases#main"
+    },
+    {
+      "text": "New security releases to be made available Wednesday, November 11, 2026",
+      "url": "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+    },
+    {
+      "text": "Learn",
+      "url": "https://nodejs.org/learn"
+    },
+    {
+      "text": "About",
+      "url": "https://nodejs.org/en/about"
+    },
+    {
+      "text": "Download",
+      "url": "https://nodejs.org/en/download"
+    },
+    {
+      "text": "Blog",
+      "url": "https://nodejs.org/en/blog"
+    },
+    {
+      "text": "Docs",
+      "url": "https://nodejs.org/docs/latest/api/"
+    },
+    {
+      "text": "Beta Docs",
+      "url": "https://beta.docs.nodejs.org/"
+    },
+    {
+      "text": "Contribute",
+      "url": "https://github.com/nodejs/node/blob/main/CONTRIBUTING.md"
+    },
+    {
+      "text": "About Node.js®",
+      "url": "https://nodejs.org/en/about"
+    }
+  ],
+  "text": "Skip to content\nNew security releases to be made available Wednesday, November 11, 2026\n×\nLearn\nAbout\nDownload\nBlog\nDocs\nBeta Docs\nContribute\nStart typing...\n⌘ K\nAbout Node.js\nAbout Node.js®\nNode.js Releases\nSecurity Reporting\nProject Governance\nPartners & Supporters\nBranding of Node.js\nEnd-of-Life (EOL)\nGet Involved\nGet Involved\nCollaboration Summit\nUpcoming Events\nContribute to Node.js\nCode of Conduct\nNode.js Releases\nCommercial support for versions past the Maintenance LTS phase is available through our OpenJS Ecosystem Sustainability Program partners\n\nMajor Node.js versions enter Current release status for six months, which gives library authors time to add support for them. Historically (up to Node.js 26), odd-numbered releases (9, 11, etc.) become unsupported after six months, and even-numbered releases (10, 12, etc.) move to Active LTS status and are ready for general use. Starting with Node.js 27, the release cycle will be annual and every major version will move to LTS status after its six-month Current phase (and six additional months of Alpha phase). LTS release status is \"long-term support\", which typically guarantees that critical bugs will be fixed for a total of 30 months. Production applications should only use Active LTS or Maintenance LTS releases.\n\nRelease Schedule\n\nFull details regarding the Node.js release schedule are available on GitHub.\n\nLooking for the latest release of a version branch?\nNode.js\tCodename\tFirst released\tLast updated\tStatus\t\nv27\t-\tOct 29, 2026\tOct 29, 2026\tAlpha\tDetails\nv26\tLithium\tMay 05, 2026\tOct 28, 2026\tLTS\tDetails\nv25\t-\tOct 15, 2025\tMar 31, 2026\tEOL\tDetails\nv24\tKrypton\tMay 06, 2025\tOct 27, 2026\tLTS\tDetails\nv23\t-\tOct 16, 2024\tMay 14, 2025\tEOL\tDetails\nv22\tJod\tApr 24, 2024\tOct 20, 2026\tLTS\tDetails\nv21\t-\tOct 17, 2023\tApr 10, 2024\tEOL\tDetails\nv20\tIron\tApr 17, 2023\tMar 24, 2026\tEOL\tDetails\nv19\t-\tOct 17, 2022\tApr 10, 2023\tEOL\tDetails\nv18\tHydrogen\tApr 18, 2022\tMar 27, 2025\tEOL\tDetails\nv17\t-\tOct 19, 2021\tJun 01, 2022\tEOL\tDetails\nv16\tGallium\tApr 20, 2021\tAug 08, 2023\tEOL\tDetails\nv15\t-\tOct 20, 2020\tApr 06, 2021\tEOL\tDetails\nv14\tFermium\tApr 21, 2020\tFeb 16, 2023\tEOL\tDetails\nv13\t-\tOct 22, 2019\tApr 29, 2020\tEOL\tDetails\nv12\tErbium\tApr 23, 2019\tApr 05, 2022\tEOL\tDetails\nv11\t-\tOct 23, 2018\tApr 30, 2019\tEOL\tDetails\nv10\tDubnium\tApr 24, 2018\tApr 06, 2021\tEOL\tDetails\nv9\t-\tOct 31, 2017\tJun 12, 2018\tEOL\tDetails\nv8\tCarbon\tMay 30, 2017\tDec 17, 2019\tEOL\tDetails\nv7\t-\tOct 25, 2016\tJul 11, 2017\tEOL\tDetails\nv6\tBoron\tApr 26, 2016\tApr 03, 2019\tEOL\tDetails\nv5\t-\tOct 29, 2015\tJun 23, 2016\tEOL\tDetails\nv4\tArgon\tSep 08, 2015\tMar 29, 2018\tEOL\tDetails\nv0\t-\tFeb 06, 2015\tFeb 22, 2017\tEOL\tDetails\nRecommended and community installation methods\n\nThe Node.js website provides several non-interactive installation methods on the Downloads page, including command-line interfaces (CLIs), operating system (OS) package managers (e.g., brew), and Node.js version managers (e.g., nvm).\n\nTo highlight and promote community contributions, the Node.js project introduced a revised Downloads page categorizing installation methods as either “Recommended” or “Community.” This provides users with increased flexibility and choice, while keeping a short, curated list for those who want a straightforward starting point.\n\nAnyone can propose a new installation method for the Downloads page. While the Node.js project makes the final call on what gets listed, proposals are evaluated against the criteria below.\n\n“Recommended” methods are selected for their reliability and close alignment with official releases, and meet the following criteria (in addition to all “Community” criteria):\n\n“Recommended” methods make new Node.js releases available simultaneously with the official release.\n“Recommended” methods use the official Node.js binaries without alteration, only building from source when pre-built binaries are not available.\n“Recommended” methods allow developers to install and use multiple versions of Node.js on a system concurrently.\n“Recommended” methods have a close relationship with the Node.js project, including direct communication channels.\n\n“Community” methods are additional installation methods also available on the Downloads page, and meet the following criteria:\n\n“Community” methods must support all currently supported, non-End-of-Life (EOL) Node.js versions.\n“Community” methods must function on at least one officially supported Operating System (OS), and must not be limited to a subset of OS distributions or versions.\n“Community” methods must be free to use and open source, must not be sold as a commercial product, and must not be a paid service.\nReading Time\n2 min\nContribute\nEdit this page\nTable of Contents\nRelease Schedule\nLooking for the latest release of a version branch?\nRecommended and community installation methods\nAbout Node.js\nNode.js Releases\nv26.13.0\nLatest LTS\nv27.0.0-alpha.0.0.0\nLatest Alpha\n\nCopyright OpenJS Foundation and Node.js contributors. All rights reserved. The OpenJS Foundation has registered trademarks and uses trademarks. For a list of trademarks of the OpenJS Foundation, please see our Trademark Policy and Trademark List. Trademarks and logos not indicated on the list of OpenJS Foundation trademarks are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.\n\nOpenJS Foundation\nAI Coding Assistants Policy\nBylaws\nCode of Conduct\nCookie Policy\nPrivacy Policy\nSecurity Policy\nTerms of Use\nTrademark List\nTrademark Policy",
+  "title": "Node.js — Node.js Releases",
+  "url": "https://nodejs.org/en/about/previous-releases"
+}

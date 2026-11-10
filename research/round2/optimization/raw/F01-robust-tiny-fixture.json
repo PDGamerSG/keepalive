@@ -1,0 +1,187 @@
+{
+  "fixtureVersion": "proofroute-research-fixture/v1",
+  "name": "Three scenarios, one route sequence",
+  "isSynthetic": true,
+  "input": {
+    "schemaVersion": "route-input/v2-proposal",
+    "serviceDay": "2026-11-10",
+    "timeZone": "Asia/Kolkata",
+    "source": "SYNTHETIC",
+    "depotId": "D0",
+    "nodeIds": [
+      "D0",
+      "A",
+      "B",
+      "C"
+    ],
+    "stops": [
+      {
+        "id": "A",
+        "label": "Medical A",
+        "demandGrams": 3000,
+        "serviceSeconds": 300,
+        "windowOpenSeconds": 32400,
+        "windowCloseSeconds": 34800,
+        "xMeters": null,
+        "yMeters": null
+      },
+      {
+        "id": "B",
+        "label": "Medical B",
+        "demandGrams": 3000,
+        "serviceSeconds": 300,
+        "windowOpenSeconds": 32400,
+        "windowCloseSeconds": 34500,
+        "xMeters": null,
+        "yMeters": null
+      },
+      {
+        "id": "C",
+        "label": "Flexible C",
+        "demandGrams": 2000,
+        "serviceSeconds": 300,
+        "windowOpenSeconds": 32400,
+        "windowCloseSeconds": 38400,
+        "xMeters": null,
+        "yMeters": null
+      }
+    ],
+    "vehicles": [
+      {
+        "id": "VAN-1",
+        "capacityGrams": 10000,
+        "shiftStartSeconds": 32400,
+        "shiftEndSeconds": 39600
+      }
+    ],
+    "distanceMeters": [
+      [
+        0,
+        1000,
+        1200,
+        3000
+      ],
+      [
+        1000,
+        0,
+        1000,
+        1200
+      ],
+      [
+        1200,
+        1000,
+        0,
+        1000
+      ],
+      [
+        1000,
+        2000,
+        2000,
+        0
+      ]
+    ],
+    "travelScenarios": [
+      {
+        "scenarioId": "NOMINAL",
+        "label": "Synthetic nominal",
+        "travelSeconds": [
+          [
+            0,
+            600,
+            840,
+            1200
+          ],
+          [
+            600,
+            0,
+            600,
+            720
+          ],
+          [
+            840,
+            480,
+            0,
+            600
+          ],
+          [
+            1200,
+            720,
+            600,
+            0
+          ]
+        ]
+      },
+      {
+        "scenarioId": "CORRIDOR_DELAY",
+        "label": "Synthetic A-to-B delay: +25 minutes",
+        "travelSeconds": [
+          [
+            0,
+            600,
+            840,
+            1200
+          ],
+          [
+            600,
+            0,
+            2100,
+            720
+          ],
+          [
+            840,
+            480,
+            0,
+            600
+          ],
+          [
+            1200,
+            720,
+            600,
+            0
+          ]
+        ]
+      },
+      {
+        "scenarioId": "CITY_SLOWDOWN",
+        "label": "Synthetic city slowdown: +4 minutes per moving leg",
+        "travelSeconds": [
+          [
+            0,
+            840,
+            1080,
+            1440
+          ],
+          [
+            840,
+            0,
+            840,
+            960
+          ],
+          [
+            1080,
+            720,
+            0,
+            840
+          ],
+          [
+            1440,
+            960,
+            840,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  "acceptance": {
+    "specVersion": "cvrptw-delivery-scenarios/v2-proposal",
+    "requiredScenarioIds": [
+      "NOMINAL",
+      "CORRIDOR_DELAY",
+      "CITY_SLOWDOWN"
+    ],
+    "maxTotalDistanceMeters": 4500,
+    "windowRule": "SERVICE_START_INCLUSIVE",
+    "sameRouteSequenceAcrossScenarios": true
+  }
+}

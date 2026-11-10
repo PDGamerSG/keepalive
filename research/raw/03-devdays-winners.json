@@ -1,0 +1,59 @@
+{
+  "links": [
+    {
+      "text": "Back to Community Blog",
+      "url": "https://developer.paypal.com/community/blog"
+    },
+    {
+      "text": "News",
+      "url": "https://developer.paypal.com/community/blog/winners-dev-days-hackathon/"
+    },
+    {
+      "text": "a lightning-round of demos",
+      "url": "https://youtu.be/cb-AnEcld_M?si=7yvewlpVBP98qjGr"
+    },
+    {
+      "text": "here",
+      "url": "https://www.linkedin.com/posts/activity-7326320562899685377-DKQB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAIHPywB5Fz3DM9-NiXU9zkAFO4IlAEmnt0"
+    },
+    {
+      "text": "here",
+      "url": "https://youtu.be/v0JKxyZZe2g?si=Rm3jwENC4bH_icc2"
+    },
+    {
+      "text": "News",
+      "url": "https://developer.paypal.com/community/blog/tag/News"
+    },
+    {
+      "text": "Reference",
+      "url": "https://developer.paypal.com/reference/"
+    },
+    {
+      "text": "PayPal.com",
+      "url": "https://www.paypal.com/"
+    },
+    {
+      "text": "Privacy",
+      "url": "https://www.paypal.com/myaccount/privacy/privacyhub?_ga=1.14097599.947497879.1704302180"
+    },
+    {
+      "text": "Cookies",
+      "url": "https://www.paypal.com/myaccount/privacy/cookiePrefs?_ga=1.20912176.947497879.1704302180"
+    },
+    {
+      "text": "Support",
+      "url": "https://developer.paypal.com/support/"
+    },
+    {
+      "text": "Legal",
+      "url": "https://www.paypal.com/us/webapps/mpp/ua/legalhub-full?_ga=1.20912176.947497879.1704302180"
+    },
+    {
+      "text": "Manage cookies and learn more",
+      "url": "https://www.paypal.com/myaccount/privacy/cookiePrefs?locale=en_US"
+    }
+  ],
+  "text": "Back to Community Blog\nNews\nAnnouncing the Winners of the PayPal Dev Days 2025 Hackathon\n\nKaren Bajza-Terlouw\n\nMay 29, 2025\n\n3 min read\n\nThe energy. The ideas. The code. PayPal Dev Days 2025 brought together some of the most creative minds in tech for an unforgettable Hackathon—and now it’s time to celebrate the teams that stood out and took home the top honors.  \n\nIn just under 24 hours of intense collaboration, innovation, and problem-solving, developers from around the globe gathered at the PayPal San Jose campus to tackle one of three unique challenges. From building agentic checkout flows to upgrading legacy applications and creating powerful apps on Replit, the competition was fierce and the creativity was next-level.\n\nHackathon Challenges Recap\n\n\n\nParticipants competed in one of the following categories:\n\nAgentic Integrations – Develop an agent that addresses a business challenges that leverages MCP Server, Agent Toolkit or PayPal APIs. \n\nVibe Coding with Replit – Build an application on Replit using PayPal integrations.\n\nUpgrade Your Legacy Integration – Bring your existing use case and work with the PayPal team to upgrade using the latest SDKs and beta products.\n\nAnd the Winners Are…\n\n\n\nOn Wednesday evening, a panel of PayPal engineering and product leaders selected the finalist teams who would compete live on stage during the closing keynote presentation.    \n\nAfter a lightning-round of demos (think shark tank style!) and careful deliberation by a panel of three PayPal executives, we’re thrilled to announce the winning teams:  \n\n1st Place – Team CrawlerPal\n\nJordi Montes and Neeraj Jhawar (who met onsite!), wowed the judges with their innovative project CrawlerPal—a paywall AI agent assistant built with PayPal APIs. The team took home $5,000 USD, $8,000 in Amazon AWS credits, and a subscription to Replit Core.\n\n\n\n\n\n\n\n2nd Place – Team Codebusters\n\nTeam Codebusters  modernized the PayPal integration for Shopware 6—a flexible, open-source, self-hosted eCommerce platform—by upgrading from the old JavaScript SDK (v5) to the beta PayPal JS SDK (v6). This improves performance, maintainability, and aligns with PayPal’s latest standards. The team took home $3,000 USD, $5,000 in Amazon AWS credits, and a subscription to Replit Core.\n\n\n\n\n\n\n\n\n\n3rd Place – Team Rosen\n\nCongratulations to team Rosen, Sida Zhang and Xiaobin Gu. They upgraded on Rosen, a global social trading app powered by PYUSD. The team took home $2,000 USD, $2,000 in Amazon AWS credits, and a subscription to Replit Core.\n\n\n\n\n\n\n\nCheck out this behind the scenes look into the teams experience here.\n\nCheck out the full awards ceremony here.\n\nA Huge Thank You\n\nTo every developer who participated: thank you for bringing your talent, your ideas, and your passion. Hackathons are always a reminder of what’s possible when we come together to build—and push the boundaries of what payments and fintech can do in this new age of agentic e-commerce.   \n\nFeeling inspired? Sign up for the PayPal Developer Newsletter to stay in the know of upcoming events and hackathons in your city.   \n\nWe can’t wait to see what you’ll build!\n\n\n\nNews\n\nShare this post:\n\nReference\nPayPal.com\nPrivacy\nCookies\nSupport\nLegal\nContact\nIf you accept cookies, we'll use them to improve and customise your experience and enable our partners to show you personalised PayPal ads when you visit other sites. Manage cookies and learn more\nAccept\nDecline\nClose\nFeedback",
+  "title": "PayPal Community Blog | Announcing the Winners of the PayPal Dev Days 2025 Hackathon",
+  "url": "https://developer.paypal.com/community/blog/winners-dev-days-hackathon/"
+}

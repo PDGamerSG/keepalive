@@ -1,0 +1,1 @@
+VAN-1 can carry at most 10 kg and works from 09:00 to 11:00. A can start service between 09:00 and 09:40. B can start service between 09:00 and 09:35. C can start service between 09:00 and 10:40. Each stop takes 5 minutes of service. Keep total route distance at most 4.5 km.
