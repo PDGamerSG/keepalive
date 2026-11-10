@@ -3,11 +3,13 @@
 import { useState } from "react";
 import type { Tier } from "@/lib/catalog";
 import type { TierId } from "@/lib/types";
+import { PERSONAS } from "@/lib/personas";
 
 export function SubscribeForm({ tiers }: { tiers: Tier[] }) {
   const [selected, setSelected] = useState<TierId>("standard");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [persona, setPersona] = useState<string>("regular");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -18,7 +20,7 @@ export function SubscribeForm({ tiers }: { tiers: Tier[] }) {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ tier: selected, name, email }),
+        body: JSON.stringify({ tier: selected, name, email, persona }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Could not start PayPal checkout");
@@ -67,6 +69,16 @@ export function SubscribeForm({ tiers }: { tiers: Tier[] }) {
           {busy ? "Opening PayPal…" : "Subscribe with PayPal"}
         </button>
       </div>
+      <label className="mt-3 flex flex-wrap items-center justify-end gap-2 text-xs text-muted">
+        Demo only: customer history the merchant already knows
+        <select className="input w-auto text-xs py-1" value={persona} onChange={(e) => setPersona(e.target.value)}>
+          {Object.entries(PERSONAS).map(([id, p]) => (
+            <option key={id} value={id}>
+              {p.label}
+            </option>
+          ))}
+        </select>
+      </label>
       {error && <p className="mt-3 text-sm text-danger">{error}</p>}
     </div>
   );

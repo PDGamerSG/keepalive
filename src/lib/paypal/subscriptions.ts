@@ -38,6 +38,20 @@ export interface PayPalSubscription {
 
 /** Create the Brewbox product + one monthly plan per tier, once. Idempotent via the store. */
 export async function ensureCatalog(): Promise<{ productId: string; plans: Record<TierId, string> }> {
+  // Hosted deployments can pin the catalog via env so restarts (ephemeral disk) don't create new plans.
+  const env = {
+    productId: process.env.PAYPAL_PRODUCT_ID,
+    plans: { lite: process.env.PAYPAL_PLAN_LITE, standard: process.env.PAYPAL_PLAN_STANDARD, premium: process.env.PAYPAL_PLAN_PREMIUM },
+  };
+  if (env.productId && env.plans.lite && env.plans.standard && env.plans.premium) {
+    const plans = env.plans as Record<TierId, string>;
+    if (readStore().config.productId !== env.productId) {
+      updateStore((s) => {
+        s.config = { productId: env.productId, plans };
+      });
+    }
+    return { productId: env.productId, plans };
+  }
   const existing = readStore().config;
   if (existing.productId && TIERS.every((t) => existing.plans[t.id])) {
     return { productId: existing.productId, plans: existing.plans as Record<TierId, string> };
