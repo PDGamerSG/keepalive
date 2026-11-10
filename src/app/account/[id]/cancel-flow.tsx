@@ -55,6 +55,9 @@ export function CancelFlow({ subscriptionId, status }: { subscriptionId: string;
   const decline = (o: PublicOffer) => run("thinking", () => post(`/api/retention/${session!.session_id}/decline`, { offerId: o.offer_id }));
   const cancel = () => run("cancelling", () => post(`/api/retention/${session!.session_id}/cancel`));
 
+  // Cancel must stay one click away, including for paused (SUSPENDED) subscribers.
+  const cancellable = status === "ACTIVE" || status === "SUSPENDED";
+
   if (status === "CANCELLED" && !session) {
     return (
       <div className="card p-8 text-center text-muted">
@@ -68,10 +71,10 @@ export function CancelFlow({ subscriptionId, status }: { subscriptionId: string;
       <div className="card p-8 flex flex-col items-center justify-center text-center">
         <h2 className="font-[family-name:var(--font-display)] text-2xl">Manage subscription</h2>
         <p className="mt-2 text-sm text-muted max-w-sm">Thinking of leaving? You can cancel at any time. It takes one click.</p>
-        <button className="btn btn-danger-ghost mt-6" onClick={start} disabled={!!busy || status !== "ACTIVE"}>
+        <button className="btn btn-danger-ghost mt-6" onClick={start} disabled={!!busy || !cancellable}>
           {busy ? "One sec…" : "Cancel subscription"}
         </button>
-        {status !== "ACTIVE" && <p className="mt-3 text-xs text-muted">Available while the subscription is ACTIVE (now {status}).</p>}
+        {!cancellable && <p className="mt-3 text-xs text-muted">Available once PayPal shows the subscription as active or paused (now {status}).</p>}
         {error && <p className="mt-3 text-sm text-danger">{error}</p>}
       </div>
     );

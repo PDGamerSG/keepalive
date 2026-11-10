@@ -132,8 +132,9 @@ export async function createSubscription(input: {
   return { id: sub.id, approveUrl: approve };
 }
 
+/** `fields=plan` is required: without it PayPal omits the (possibly overridden) price. */
 export function getSubscription(id: string) {
-  return paypal<PayPalSubscription>(`/v1/billing/subscriptions/${encodeURIComponent(id)}`);
+  return paypal<PayPalSubscription>(`/v1/billing/subscriptions/${encodeURIComponent(id)}?fields=plan`);
 }
 
 export async function suspendSubscription(id: string, reason: string, requestId?: string) {

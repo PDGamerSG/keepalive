@@ -101,14 +101,16 @@ export async function executeCancel(sub: Subscriber, reason: string, requestId: 
   if (fresh?.status !== "CANCELLED") {
     return { status: "failed", message: `PayPal reports ${fresh?.status}, expected CANCELLED` };
   }
+  // Nothing left to resume or restore on a cancelled subscription.
+  patchSubscriber(sub.id, { resumeAt: undefined, discountUntil: undefined });
   return { status: "executed", message: "Cancelled on PayPal. You won't be charged again." };
 }
 
 export async function resumeNow(id: string): Promise<Subscriber | undefined> {
   await activateSubscription(id, "KeepAlive: pause ended", `keepalive-resume-${id}-${Date.now()}`);
-  const fresh = await syncSubscriber(id);
+  await syncSubscriber(id);
   patchSubscriber(id, { resumeAt: undefined });
-  return fresh;
+  return getSubscriber(id);
 }
 
 export async function restoreListPrice(id: string): Promise<Subscriber | undefined> {
