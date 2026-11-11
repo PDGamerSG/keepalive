@@ -7,17 +7,19 @@ import { AllCommunityModule, ModuleRegistry, themeQuartz, type ColDef } from "ag
 import type { Metrics } from "@/lib/metrics";
 import type { MerchantPolicy } from "@/lib/policy";
 import type { AuditEvent, RetentionSession, StoreShape, Subscriber } from "@/lib/types";
+import { EmptyState } from "@/components/empty-state";
+import { PolicyEditor } from "./policy-editor";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 
 const gridTheme = themeQuartz.withParams({
-  accentColor: "#3b2416",
-  backgroundColor: "#fffdf9",
-  foregroundColor: "#2a1d14",
-  headerBackgroundColor: "#f2e6d6",
-  borderColor: "#e8dccb",
+  accentColor: "#45101f",
+  backgroundColor: "#fffaf0",
+  foregroundColor: "#2a1917",
+  headerBackgroundColor: "#ece2cd",
+  borderColor: "#d9ccb7",
   fontFamily: "inherit",
-  rowHoverColor: "#f7efe4",
+  rowHoverColor: "#f3ecde",
 });
 
 const REASON_LABEL: Record<string, string> = {
@@ -55,21 +57,27 @@ export function Dashboard(props: {
   events: AuditEvent[];
   policy: MerchantPolicy;
   catalog: StoreShape["config"];
+  connections: { paypal: boolean; ai: boolean; webhook: boolean };
 }) {
   const { metrics: m } = props;
   const router = useRouter();
   const [tab, setTab] = useState<Tab>("overview");
   const [busy, setBusy] = useState<string | null>(null);
   const [msg, setMsg] = useState<string | null>(null);
+  const [failed, setFailed] = useState(false);
 
   async function act(label: string, payload: unknown) {
     setBusy(label);
     setMsg(null);
+    setFailed(false);
     try {
-      await admin(payload);
+      const result = await admin(payload);
+      const errors = Object.values(result).filter(v => typeof v === "string" && v.startsWith("error:"));
+      if (errors.length) throw new Error(errors.join("; "));
       setMsg(`${label}: done`);
       router.refresh();
     } catch (e) {
+      setFailed(true);
       setMsg(`${label}: ${e instanceof Error ? e.message : e}`);
     } finally {
       setBusy(null);
@@ -87,60 +95,74 @@ export function Dashboard(props: {
 
   return (
     <div>
-      <div className="flex flex-wrap items-end justify-between gap-4">
+      <div className="page-heading">
         <div>
-          <p className="text-sm text-muted">Brewbox · merchant view</p>
-          <h1 className="font-[family-name:var(--font-display)] text-4xl">Retention desk</h1>
+          <h1>Retention desk</h1>
+          <p>Brewbox subscriptions, fair offers, and every PayPal outcome in one place.</p>
         </div>
-        <div className="flex gap-2">
+        <div className="heading-actions">
           {!props.catalog.productId && (
-            <button className="btn btn-paypal" disabled={!!busy} onClick={() => act("Create PayPal catalog", { action: "setup" })}>
-              Set up PayPal plans
+            <button className="btn btn-save" disabled={!!busy || !props.connections.paypal} onClick={() => act("Create PayPal catalog", { action: "setup" })}>
+              {busy === "Create PayPal catalog" ? "Creating plans…" : "Set up PayPal plans"}
             </button>
           )}
-          <button className="btn btn-ghost" disabled={!!busy} onClick={() => act("Sync with PayPal", { action: "sync-all" })}>
-            {busy === "Sync with PayPal" ? "Syncing…" : "↻ Sync with PayPal"}
+          <button className="btn btn-ghost" disabled={!!busy || !props.connections.paypal} onClick={() => act("Sync with PayPal", { action: "sync-all" })}>
+            {busy === "Sync with PayPal" ? "Syncing…" : "Sync with PayPal"}
           </button>
         </div>
       </div>
-      {msg && <p className="mt-2 text-sm text-muted">{msg}</p>}
+      {msg && <p role={failed ? "alert" : "status"} className={`notice mt-3 ${failed ? "notice-error" : "notice-success"}`}>{msg}</p>}
 
-      <div className="mt-6 grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+      <div className="metrics-strip" aria-label="Subscription metrics">
         {kpis.map((k) => (
-          <div key={k.label} className="card p-4">
-            <div className="text-xs text-muted">{k.label}</div>
-            <div className={`mt-1 text-2xl font-[family-name:var(--font-display)] ${k.accent ? "text-save" : ""}`}>{k.value}</div>
-            <div className="text-[11px] text-muted mt-1">{k.sub}</div>
+          <div key={k.label} className="metric">
+            <div className="metric-label">{k.label}</div>
+            <div className={`metric-value ${k.accent ? "text-save" : ""}`}>{k.value}</div>
+            <div className="metric-note">{k.sub}</div>
           </div>
         ))}
       </div>
+      <div className="connection-strip" aria-label="Service connections">
+        {[["Claude", props.connections.ai], ["PayPal", props.connections.paypal], ["Webhooks", props.connections.webhook]].map(([label, ready]) => (
+          <span key={String(label)}><i aria-hidden="true" className={`connection-dot ${ready ? "ready" : ""}`} />{label}: {ready ? "configured" : "not connected"}</span>
+        ))}
+      </div>
 
-      <div className="mt-8 flex gap-1 border-b border-line text-sm">
+      <div className="desk-tabs" role="tablist" aria-label="Merchant dashboard" onKeyDown={e => {
+        const tabs = [...e.currentTarget.querySelectorAll<HTMLButtonElement>('[role="tab"]')];
+        const at = tabs.indexOf(document.activeElement as HTMLButtonElement);
+        const index = e.key === "ArrowRight" ? (at + 1) % tabs.length : e.key === "ArrowLeft" ? (at + tabs.length - 1) % tabs.length : e.key === "Home" ? 0 : e.key === "End" ? tabs.length - 1 : -1;
+        if (index >= 0) { e.preventDefault(); tabs[index].focus(); tabs[index].click(); }
+      }}>
         {(
           [
             ["overview", "Overview"],
             ["subscribers", `Subscribers (${props.subscribers.length})`],
             ["conversations", `Conversations (${props.sessions.length})`],
-            ["paypal", "PayPal activity"],
+            ["paypal", "Activity"],
             ["policy", "Guardrails"],
           ] as [Tab, string][]
         ).map(([id, label]) => (
           <button
             key={id}
+            role="tab"
+            id={`tab-${id}`}
+            aria-controls="desk-panel"
+            aria-selected={tab === id}
+            tabIndex={tab === id ? 0 : -1}
             onClick={() => setTab(id)}
-            className={`px-4 py-2 -mb-px border-b-2 ${tab === id ? "border-espresso font-semibold" : "border-transparent text-muted"}`}
           >
             {label}
           </button>
         ))}
       </div>
 
-      <div className="mt-5">
+      <div className="mt-5" role="tabpanel" id="desk-panel" aria-labelledby={`tab-${tab}`} tabIndex={0}>
         {tab === "overview" && <Overview m={m} />}
         {tab === "subscribers" && <SubscriberGrid rows={props.subscribers} onAct={act} busy={!!busy} />}
         {tab === "conversations" && <Conversations sessions={props.sessions} subscribers={props.subscribers} />}
         {tab === "paypal" && <Activity events={props.events} />}
-        {tab === "policy" && <PolicyEditor initial={props.policy} />}
+        {tab === "policy" && <PolicyEditor initial={props.policy} adminToken={token()} />}
       </div>
     </div>
   );
@@ -153,7 +175,7 @@ function Overview({ m }: { m: Metrics }) {
     <div className="grid gap-4 md:grid-cols-2">
       <div className="card p-5">
         <h3 className="font-semibold">Why people try to leave</h3>
-        {reasons.length === 0 && <p className="text-sm text-muted mt-3">No conversations yet.</p>}
+        {reasons.length === 0 && <EmptyState title="Every conversation starts with why">Cancellation reasons will appear here after a subscriber talks to KeepAlive.</EmptyState>}
         <div className="mt-4 space-y-3">
           {reasons.map(([k, v]) => (
             <div key={k}>
@@ -170,7 +192,7 @@ function Overview({ m }: { m: Metrics }) {
       </div>
       <div className="card p-5">
         <h3 className="font-semibold">Offers: proposed vs accepted</h3>
-        {Object.keys(m.offersByType).length === 0 && <p className="text-sm text-muted mt-3">No offers yet.</p>}
+        {Object.keys(m.offersByType).length === 0 && <EmptyState title="Room for a fair offer">Pause, plan changes, and discounts will appear here as subscribers consider them.</EmptyState>}
         <table className="mt-3 w-full text-sm">
           <tbody>
             {Object.entries(m.offersByType).map(([type, v]) => (
@@ -183,7 +205,7 @@ function Overview({ m }: { m: Metrics }) {
           </tbody>
         </table>
         <p className="mt-4 text-xs text-muted">
-          Every accepted offer was executed and read back from PayPal Subscriptions (suspend, revise or price patch).
+          Completed saves are verified against PayPal. Plan changes count after the subscriber approves them in PayPal.
         </p>
       </div>
     </div>
@@ -254,7 +276,7 @@ function SubscriberGrid({
     [busy, onAct],
   );
   return (
-    <div style={{ height: 520 }}>
+    rows.length === 0 ? <div className="card"><EmptyState title="Your first subscriber starts here" href="/shop" action="Open Brewbox shop">Approved PayPal subscriptions will appear here with their current plan, price, and retention status.</EmptyState></div> : <div className="data-grid" style={{ height: 520 }}>
       <AgGridReact<Subscriber>
         theme={gridTheme}
         rowData={rows}
@@ -262,6 +284,7 @@ function SubscriberGrid({
         defaultColDef={{ sortable: true, resizable: true }}
         pagination
         paginationPageSize={20}
+        paginationPageSizeSelector={[20, 50, 100]}
         getRowId={(p) => p.data.id}
       />
     </div>
@@ -271,12 +294,12 @@ function SubscriberGrid({
 function Conversations({ sessions, subscribers }: { sessions: RetentionSession[]; subscribers: Subscriber[] }) {
   const [openId, setOpenId] = useState<string | null>(sessions[0]?.id ?? null);
   const name = (id: string) => subscribers.find((s) => s.id === id)?.name ?? id;
-  if (sessions.length === 0) return <p className="text-sm text-muted">No conversations yet.</p>;
+  if (sessions.length === 0) return <div className="card"><EmptyState title="No conversations yet" href="/agent" action="Explore the agent demo">When a subscriber asks to cancel, the conversation, offer, and outcome will be recorded here.</EmptyState></div>;
   return (
     <div className="space-y-2">
       {sessions.map((s) => (
         <div key={s.id} className="card">
-          <button className="w-full px-4 py-3 flex flex-wrap items-center gap-3 text-left text-sm" onClick={() => setOpenId(openId === s.id ? null : s.id)}>
+          <button aria-expanded={openId === s.id} aria-controls={`conversation-${s.id}`} className="w-full px-4 py-3 flex flex-wrap items-center gap-3 text-left text-sm" onClick={() => setOpenId(openId === s.id ? null : s.id)}>
             <span
               className={`pill ${
                 s.outcome === "saved" ? "bg-save-soft text-save" : s.outcome === "cancelled" ? "bg-red-50 text-danger" : "bg-crema"
@@ -286,11 +309,11 @@ function Conversations({ sessions, subscribers }: { sessions: RetentionSession[]
             </span>
             <b>{name(s.subscriptionId)}</b>
             <span className="text-muted">{REASON_LABEL[s.reason ?? ""] ?? "-"}</span>
-            {s.channel === "agent" && <span className="pill bg-blue-50 text-paypal">🤖 via AI agent</span>}
+            {s.channel === "agent" && <span className="pill bg-blue-50 text-paypal">Via AI agent</span>}
             <span className="ml-auto text-xs text-muted">{new Date(s.startedAt).toLocaleString()}</span>
           </button>
           {openId === s.id && (
-            <div className="border-t border-line px-4 py-3 grid gap-4 md:grid-cols-[1.4fr_1fr] text-sm">
+            <div id={`conversation-${s.id}`} className="border-t border-line px-4 py-3 grid gap-4 md:grid-cols-[1.4fr_1fr] text-sm break-words">
               <div className="space-y-2">
                 {s.messages.map((msg, i) => (
                   <div key={i}>
@@ -330,7 +353,7 @@ function Conversations({ sessions, subscribers }: { sessions: RetentionSession[]
 }
 
 function Activity({ events }: { events: AuditEvent[] }) {
-  if (events.length === 0) return <p className="text-sm text-muted">No activity yet.</p>;
+  if (events.length === 0) return <div className="card"><EmptyState title="A clear record of every action">PayPal calls, policy changes, AI usage, and webhook events appear here as they happen.</EmptyState></div>;
   return (
     <div className="card divide-y divide-line">
       {events.map((e) => (
@@ -339,78 +362,12 @@ function Activity({ events }: { events: AuditEvent[] }) {
           <span className={`pill ${e.type.startsWith("paypal") ? "bg-blue-50 text-paypal" : e.type.startsWith("guardrail") ? "bg-amber-50 text-warn" : "bg-crema"}`}>
             {e.type}
           </span>
-          <span className="flex-1">{e.summary}</span>
+          <span className="flex-1 min-w-0 break-words">{e.summary}</span>
           {typeof e.detail === "object" && e.detail !== null && "debugId" in e.detail && (e.detail as { debugId?: string }).debugId && (
             <span className="font-mono text-[11px] text-muted">debug_id {(e.detail as { debugId: string }).debugId}</span>
           )}
         </div>
       ))}
-    </div>
-  );
-}
-
-function PolicyEditor({ initial }: { initial: MerchantPolicy }) {
-  const [p, setP] = useState(initial);
-  const [msg, setMsg] = useState<string | null>(null);
-  const num = (k: keyof MerchantPolicy) => (e: React.ChangeEvent<HTMLInputElement>) => setP({ ...p, [k]: Number(e.target.value) });
-  const bool = (k: keyof MerchantPolicy) => (e: React.ChangeEvent<HTMLInputElement>) => setP({ ...p, [k]: e.target.checked });
-  async function save() {
-    setMsg(null);
-    const res = await fetch("/api/policy", {
-      method: "PUT",
-      headers: { "Content-Type": "application/json", "x-admin-token": token() },
-      body: JSON.stringify(p),
-    });
-    const data = await res.json();
-    setMsg(res.ok ? "Saved. The retention agent uses this policy from the next message on." : data.error);
-  }
-  return (
-    <div className="card p-5 grid gap-6 md:grid-cols-2">
-      <div className="space-y-4 text-sm">
-        <h3 className="font-semibold">Hard limits (enforced in code, not by the AI)</h3>
-        <label className="flex items-center gap-2">
-          <input type="checkbox" checked={p.allowPause} onChange={bool("allowPause")} /> Allow pauses, up to
-          <input className="input w-16" type="number" value={p.maxPauseMonths} onChange={num("maxPauseMonths")} /> months
-        </label>
-        <label className="flex items-center gap-2">
-          <input type="checkbox" checked={p.allowDowngrade} onChange={bool("allowDowngrade")} /> Allow downgrades (PayPal re-consent)
-        </label>
-        <label className="flex flex-wrap items-center gap-2">
-          <input type="checkbox" checked={p.allowDiscount} onChange={bool("allowDiscount")} /> Allow discounts up to
-          <input className="input w-16" type="number" value={p.maxDiscountPct} onChange={num("maxDiscountPct")} />% for up to
-          <input className="input w-16" type="number" value={p.maxDiscountMonths} onChange={num("maxDiscountMonths")} /> months
-        </label>
-        <label className="flex items-center gap-2">
-          Discounts only after
-          <input className="input w-20" type="number" value={p.minTenureDaysForDiscount} onChange={num("minTenureDaysForDiscount")} /> days of
-          tenure
-        </label>
-        <label className="flex items-center gap-2">
-          Monthly discount budget $
-          <input className="input w-24" type="number" value={p.monthlyDiscountBudgetUsd} onChange={num("monthlyDiscountBudgetUsd")} />
-        </label>
-        <label className="flex items-center gap-2">
-          Max offers per conversation
-          <input className="input w-16" type="number" value={p.maxOffersPerSession} onChange={num("maxOffersPerSession")} />
-        </label>
-      </div>
-      <div className="space-y-4 text-sm">
-        <h3 className="font-semibold">Guidance for the AI</h3>
-        <label className="block">
-          Brand voice
-          <textarea className="input mt-1 h-20" value={p.brandVoice} onChange={(e) => setP({ ...p, brandVoice: e.target.value })} />
-        </label>
-        <label className="block">
-          Merchant notes
-          <textarea className="input mt-1 h-28" value={p.merchantNotes} onChange={(e) => setP({ ...p, merchantNotes: e.target.value })} />
-        </label>
-        <div className="flex items-center gap-3">
-          <button className="btn btn-primary" onClick={save}>
-            Save guardrails
-          </button>
-          {msg && <span className="text-muted">{msg}</span>}
-        </div>
-      </div>
     </div>
   );
 }

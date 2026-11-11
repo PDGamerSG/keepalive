@@ -29,21 +29,25 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false }, { status: 400 });
   }
   if ((await readStore()).webhookIds.includes(event.id)) return NextResponse.json({ ok: true, duplicate: true });
-  await updateStore((s) => {
-    s.webhookIds.unshift(event.id);
-    s.webhookIds.length = Math.min(s.webhookIds.length, 1000);
-  });
-
   const subId = event.event_type.startsWith("BILLING.SUBSCRIPTION")
     ? event.resource?.id
     : event.resource?.billing_agreement_id;
-  await recordEvent({ type: "webhook", subscriptionId: subId, summary: `${event.event_type}${event.summary ? `: ${event.summary}` : ""}` });
   if (subId && (await getSubscriber(subId))) {
     try {
       await syncSubscriber(subId);
     } catch (e) {
       await recordEvent({ type: "webhook.sync_error", subscriptionId: subId, summary: String(e) });
+      // Leave the event unacknowledged so PayPal retries a temporary provider failure.
+      return NextResponse.json({ error: "Subscription sync failed; retry this event." }, { status: 503 });
     }
   }
+  const firstDelivery = await updateStore((s) => {
+    if (s.webhookIds.includes(event.id)) return false;
+    s.webhookIds.unshift(event.id);
+    s.webhookIds.length = Math.min(s.webhookIds.length, 1000);
+    return true;
+  });
+  if (!firstDelivery) return NextResponse.json({ ok: true, duplicate: true });
+  await recordEvent({ type: "webhook", subscriptionId: subId, summary: `${event.event_type}${event.summary ? `: ${event.summary}` : ""}` });
   return NextResponse.json({ ok: true });
 }

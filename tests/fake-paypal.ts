@@ -17,6 +17,7 @@ export function installFakePayPal() {
   const calls: { method: string; path: string; body: unknown; requestId?: string | null }[] = [];
   const seenRequestIds = new Map<string, Response>();
   let planCounter = 0;
+  let subCounter = 0;
 
   const json = (status: number, body?: unknown) =>
     new Response(body === undefined ? null : JSON.stringify(body), {
@@ -36,6 +37,12 @@ export function installFakePayPal() {
     if (path === "/v1/oauth2/token") return json(200, { access_token: "fake-token", expires_in: 32400 });
     if (path === "/v1/catalogs/products" && method === "POST") return json(201, { id: "PROD-FAKE" });
     if (path === "/v1/billing/plans" && method === "POST") return json(201, { id: `P-FAKE-${++planCounter}` });
+    if (path === "/v1/notifications/verify-webhook-signature") return json(200, { verification_status: "SUCCESS" });
+    if (path === "/v1/billing/subscriptions" && method === "POST") {
+      const id = `I-CHECKOUT-${++subCounter}`;
+      subs.set(id, { id, plan_id: (body as { plan_id: string }).plan_id, status: "APPROVAL_PENDING" });
+      return json(201, { id, links: [{ rel: "approve", href: `https://www.sandbox.paypal.com/checkout?token=${id}` }] });
+    }
 
     const m = path.match(/^\/v1\/billing\/subscriptions\/([^/]+)(?:\/(\w+))?$/);
     if (m) {

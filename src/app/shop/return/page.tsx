@@ -17,7 +17,6 @@ export default async function Return({ searchParams }: { searchParams: Promise<{
   }
   return (
     <div className="mx-auto max-w-xl px-4 py-16 text-center">
-      <div className="text-5xl">☕</div>
       <h1 className="font-[family-name:var(--font-display)] text-4xl mt-3">Welcome to Brewbox, {sub?.name.split(" ")[0]}!</h1>
       <p className="mt-3 text-muted">
         {sub && tier(sub.tier).name} plan · ${sub?.priceUsd}/month · PayPal status{" "}

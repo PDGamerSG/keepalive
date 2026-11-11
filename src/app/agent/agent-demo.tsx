@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { EmptyState } from "@/components/empty-state";
 
 type Entry =
   | { kind: "agent"; text: string }
@@ -47,9 +48,11 @@ const toolLabel: Record<string, string> = {
 export function AgentDemo({
   subscribers,
   mcpUrl,
+  available,
 }: {
   subscribers: { id: string; label: string; email: string }[];
   mcpUrl: string;
+  available: boolean;
 }) {
   const [subId, setSubId] = useState(subscribers[0]?.id ?? "");
   const [brief, setBrief] = useState(PRESETS[0].brief);
@@ -60,7 +63,8 @@ export function AgentDemo({
   const bottom = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    bottom.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    if (!run && !busy) return;
+    bottom.current?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block: "nearest" });
   }, [run, busy]);
 
   async function call(url: string, payload: unknown) {
@@ -71,6 +75,7 @@ export function AgentDemo({
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Request failed");
       setRun(data);
+      return data;
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally {
@@ -82,43 +87,45 @@ export function AgentDemo({
     setRun({ id: "", status: "running", transcript: [{ kind: "human", text: brief }] });
     call("/api/agent-demo", { subscriptionId: subId, brief });
   };
-  const answer = (approve: boolean | null) => {
+  const answer = async (approve: boolean | null) => {
     const c = comment;
-    setComment("");
-    call(`/api/agent-demo/${run!.id}`, { answer: c, approve });
+    if (await call(`/api/agent-demo/${run!.id}`, { answer: c, approve })) setComment("");
   };
 
   const sub = subscribers.find((s) => s.id === subId);
+  const waiting = run?.status === "waiting_human";
 
   return (
-    <div className="mt-8 grid gap-6 lg:grid-cols-[340px_1fr]">
+    <div className="mt-8 grid gap-6 lg:grid-cols-[340px_minmax(0,1fr)]">
       <div className="space-y-4">
         <div className="card p-5 space-y-3">
-          <h2 className="font-semibold">1 · The human&apos;s brief</h2>
+          <h2 className="font-semibold">Tell your agent what you need</h2>
           {subscribers.length === 0 ? (
             <p className="text-sm text-muted">
               No ACTIVE subscriptions yet. <a className="underline" href="/shop">Subscribe in the shop</a> first.
             </p>
           ) : (
-            <select className="input" value={subId} onChange={(e) => setSubId(e.target.value)} disabled={busy}>
+            <label className="field-label">Subscription<select className="input" value={subId} onChange={(e) => setSubId(e.target.value)} disabled={busy || waiting}>
               {subscribers.map((s) => (
                 <option key={s.id} value={s.id}>
                   {s.label}
                 </option>
               ))}
-            </select>
+            </select></label>
           )}
           <div className="flex flex-wrap gap-2">
             {PRESETS.map((p) => (
-              <button key={p.label} className="pill bg-crema hover:bg-line" onClick={() => setBrief(p.brief)} disabled={busy}>
+              <button key={p.label} type="button" className="preset-button" aria-pressed={brief === p.brief} onClick={() => setBrief(p.brief)} disabled={busy || waiting}>
                 {p.label}
               </button>
             ))}
           </div>
-          <textarea className="input h-32 text-sm" value={brief} onChange={(e) => setBrief(e.target.value)} disabled={busy} />
-          <button className="btn btn-primary w-full" disabled={busy || !subId || !brief.trim()} onClick={start}>
+          <label className="field-label">Your brief<textarea className="input h-40 text-sm" maxLength={1000} value={brief} onChange={(e) => setBrief(e.target.value)} disabled={busy || waiting} /></label>
+          <button className="btn btn-primary w-full" disabled={!available || busy || waiting || !subId || !brief.trim()} onClick={start}>
             {busy && !run?.id ? "Agents negotiating…" : "Send my agent"}
           </button>
+          {waiting && <p className="text-xs text-muted">Answer your agent in the conversation to continue.</p>}
+          {!available && <p className="text-xs text-muted">The live agent demo will be available when the sandbox services are connected.</p>}
         </div>
         <details className="card p-5 text-sm">
           <summary className="font-semibold cursor-pointer">Connect your own agent (MCP)</summary>
@@ -139,13 +146,13 @@ export function AgentDemo({
         </details>
       </div>
 
-      <div className="card flex flex-col min-h-[560px]">
-        <div className="grid grid-cols-2 border-b border-line text-xs font-semibold uppercase tracking-wider text-muted">
-          <div className="px-5 py-3">🧑 Subscriber&apos;s agent (Claude)</div>
-          <div className="px-5 py-3 text-right">Brewbox · KeepAlive (Claude) 🏪</div>
+      <div className="card conversation-panel flex flex-col min-h-[560px]">
+        <div className="grid grid-cols-2 border-b border-line text-xs font-semibold text-muted">
+          <div className="px-5 py-4">Your agent · Claude</div>
+          <div className="px-5 py-4 text-right">Brewbox · KeepAlive</div>
         </div>
-        <div className="flex-1 overflow-y-auto p-5 space-y-3">
-          {!run && <p className="text-sm text-muted text-center mt-24">Pick a brief and send the agent.</p>}
+        <div className="transcript flex-1 p-5 space-y-3" aria-live="polite" aria-busy={busy}>
+          {!run && <div className="my-12"><EmptyState title="A conversation, on your terms">Choose a subscription, give your agent a brief, and follow the conversation here. You stay in control of every offer.</EmptyState></div>}
           {run?.transcript.map((e, i) => (
             <TranscriptRow key={i} e={e} />
           ))}
@@ -169,6 +176,8 @@ export function AgentDemo({
                 </p>
               )}
               <input
+                aria-label="Reply to your agent"
+                maxLength={1000}
                 className="input mt-3 text-sm"
                 placeholder="Optional note for your agent"
                 value={comment}
@@ -195,7 +204,7 @@ export function AgentDemo({
           {run?.status === "done" && run.summary && (
             <div className="rise rounded-xl bg-save-soft text-save p-4 font-medium">Agent finished: {run.summary}</div>
           )}
-          {error && <p className="text-sm text-danger">{error}</p>}
+          {error && <p role="alert" className="notice notice-error">{error}</p>}
           <div ref={bottom} />
         </div>
       </div>
@@ -207,7 +216,7 @@ function TranscriptRow({ e }: { e: Entry }) {
   switch (e.kind) {
     case "human":
       return (
-        <div className="rise text-xs text-muted border-l-2 border-line pl-3">
+        <div className="rise text-xs text-muted border-l border-line pl-3">
           <b>Human → agent:</b> {e.text}
         </div>
       );
@@ -218,7 +227,7 @@ function TranscriptRow({ e }: { e: Entry }) {
     case "tool":
       return (
         <div className="rise max-w-[70%] font-mono text-[11px] text-muted">
-          ⚙ {toolLabel[e.name] ?? e.name}(
+          {toolLabel[e.name] ?? e.name}(
           {Object.entries(e.input)
             .filter(([, v]) => v !== null && v !== undefined)
             .map(([k, v]) => `${k}: ${JSON.stringify(v).slice(0, 80)}`)
@@ -243,13 +252,13 @@ function TranscriptRow({ e }: { e: Entry }) {
         <div className="rise mx-auto max-w-[80%] rounded-lg bg-blue-50 text-paypal px-3 py-2 text-sm text-center">
           <b>PayPal</b> · {e.text}
           {e.approveUrl && (
-            <a href={e.approveUrl} target="_blank" className="btn btn-paypal mt-2 w-full">
+            <a href={e.approveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-paypal mt-2 w-full">
               Human: confirm in PayPal →
             </a>
           )}
         </div>
       );
     case "error":
-      return <div className="rise text-sm text-danger">⚠ {e.text}</div>;
+      return <div role="alert" className="rise notice notice-error">{e.text}</div>;
   }
 }

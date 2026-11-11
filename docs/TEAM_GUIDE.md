@@ -27,18 +27,19 @@ See [ARCHITECTURE.md](ARCHITECTURE.md). Short version:
 - `src/app/*`: pages and API routes
 
 ## Status board (update when you pick something up)
-_Last updated 2026-11-11 by Aditya._
+_Last updated 2026-11-11. See [RELEASE_QA.md](RELEASE_QA.md) for current release evidence._
 
 | Area | Owner | State |
 |---|---|---|
 | Core engine, PayPal wrappers, AI agent | Aditya | ✅ done, verified on the real sandbox |
 | Subscriber cancel-flow UI | Aditya | ✅ done (cancel works while paused too) |
 | Agent-to-agent demo + MCP | Aditya | ✅ done. Travelling and Firm-cancel presets verified live; MCP verified with raw JSON-RPC |
-| Merchant dashboard (AG Grid) | Aditya | ✅ done |
+| Merchant dashboard and application theme | team | ✅ aligned with the landing page; desktop/mobile and error recovery checked |
 | Landing page (`/`, 3D console, scroll story, guardrail playground) | Aditya | ✅ done; static, no backend calls. Model source: `tools/blender/build_console.py` |
-| Tests | Aditya | ✅ 24 offline tests (`npm test`) + 8 live Claude evals (`npm run eval:ai`) |
+| Tests | team | ✅ 55 offline tests; earlier 8 live Claude evals, with prompt-cache usage recorded |
 | Sandbox end-to-end test | Aditya | ✅ steps 1–9 passed, see [TESTING.md](TESTING.md) |
-| Deploy to Render + webhooks (TESTING step 10) | open | not started: `render.yaml` is ready, set env vars, then add the webhook URL |
+| Vercel + Namecheap deployment | team | ✅ https://keepalive.pallabdas.me; private Blob persistence and authenticated cron |
+| Hosted PayPal integration + webhooks | open | REST application credentials and webhook ID are absent; sandbox account logins are saved locally |
 | MCP from Claude Desktop (`mcp-remote`) | open | not tried yet |
 | Demo video (≤ 2:50) | team | not started; script in [DEMO_SCRIPT.md](DEMO_SCRIPT.md) |
 | Devpost submission text | team | draft in [SUBMISSION.md](SUBMISSION.md) |

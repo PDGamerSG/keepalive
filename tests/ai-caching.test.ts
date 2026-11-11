@@ -38,6 +38,8 @@ it("an agent run survives another function instance while cached tool context is
     usage: { input_tokens: 100, output_tokens: 20, cache_creation_input_tokens: 1800, cache_read_input_tokens: 0 },
     content: [{ type: "tool_use", id: "ask-human", name: "ask_my_human", input: { question: "Is a pause useful?", offer_id: null } }],
   });
+  const { upsertSubscriber } = await import("@/lib/store");
+  await upsertSubscriber(makeSub());
   const { startAgentRun } = await import("@/lib/agents/consumer");
   const initial = await startAgentRun("I-TEST", "I am travelling.");
   expect(initial.status).toBe("waiting_human");

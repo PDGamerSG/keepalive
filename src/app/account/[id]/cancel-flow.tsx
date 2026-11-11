@@ -25,7 +25,7 @@ export function CancelFlow({ subscriptionId, status }: { subscriptionId: string;
   const bottom = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    bottom.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    bottom.current?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block: "nearest" });
   }, [session, busy]);
 
   async function run(label: string, fn: () => Promise<PublicSession>) {
@@ -36,20 +36,20 @@ export function CancelFlow({ subscriptionId, status }: { subscriptionId: string;
       setSession(s);
       if (s.paypal_approval_url) setApproveUrl(s.paypal_approval_url);
       if (s.outcome !== "open") router.refresh();
+      return true;
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
+      return false;
     } finally {
       setBusy(null);
     }
   }
 
   const start = () => run("thinking", () => post("/api/retention/start", { subscriptionId }));
-  const send = () => {
+  const send = async () => {
     const text = input.trim();
-    if (!text || !session) return;
-    setInput("");
-    setSession({ ...session, messages: [...session.messages, { from: "subscriber", text }] });
-    run("thinking", () => post(`/api/retention/${session.session_id}/message`, { text }));
+    if (!text || !session || busy) return;
+    if (await run("thinking", () => post(`/api/retention/${session.session_id}/message`, { text }))) setInput("");
   };
   const accept = (o: PublicOffer) => run("paypal", () => post(`/api/retention/${session!.session_id}/accept`, { offerId: o.offer_id }));
   const decline = (o: PublicOffer) => run("thinking", () => post(`/api/retention/${session!.session_id}/decline`, { offerId: o.offer_id }));
@@ -75,7 +75,7 @@ export function CancelFlow({ subscriptionId, status }: { subscriptionId: string;
           {busy ? "One sec…" : "Cancel subscription"}
         </button>
         {!cancellable && <p className="mt-3 text-xs text-muted">Available once PayPal shows the subscription as active or paused (now {status}).</p>}
-        {error && <p className="mt-3 text-sm text-danger">{error}</p>}
+        {error && <p role="alert" className="notice notice-error mt-3">{error}</p>}
       </div>
     );
   }
@@ -84,17 +84,17 @@ export function CancelFlow({ subscriptionId, status }: { subscriptionId: string;
   const open = session.outcome === "open";
 
   return (
-    <div className="card flex flex-col h-[620px]">
+    <div className="card conversation-panel flex flex-col h-[620px] max-h-[80svh]">
       <div className="px-5 py-3 border-b border-line flex items-center justify-between">
         <div>
           <div className="font-semibold">Brewbox support</div>
           <div className="text-xs text-muted">Retention assistant · powered by KeepAlive + Claude</div>
         </div>
-        {session.outcome === "saved" && <span className="pill bg-save-soft text-save">Saved ✓</span>}
+        {session.outcome === "saved" && <span className="pill bg-save-soft text-save">Saved</span>}
         {session.outcome === "cancelled" && <span className="pill bg-red-50 text-danger">Cancelled</span>}
       </div>
 
-      <div className="flex-1 overflow-y-auto px-5 py-4 space-y-3">
+      <div className="flex-1 overflow-y-auto px-5 py-4 space-y-3" role="log" aria-label="Subscription conversation" aria-live="polite" aria-busy={Boolean(busy)}>
         {session.messages.map((m, i) => {
           if (m.from === "system") {
             return (
@@ -128,7 +128,7 @@ export function CancelFlow({ subscriptionId, status }: { subscriptionId: string;
         {approveUrl && session.offers.some((o) => o.status === "awaiting_paypal_approval") && (
           <a href={approveUrl} className="btn btn-paypal w-full">Confirm the plan change in PayPal →</a>
         )}
-        {error && <p className="text-sm text-danger">{error}</p>}
+        {error && <p role="alert" className="notice notice-error">{error}</p>}
         <div ref={bottom} />
       </div>
 
@@ -137,10 +137,12 @@ export function CancelFlow({ subscriptionId, status }: { subscriptionId: string;
           <div className="flex gap-2">
             <input
               className="input"
+              aria-label="Message to KeepAlive"
+              maxLength={2000}
               placeholder="Tell us why you're leaving…"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && send()}
+              onKeyDown={(e) => { if (e.key === "Enter" && !e.nativeEvent.isComposing) { e.preventDefault(); send(); } }}
               disabled={!!busy}
             />
             <button className="btn btn-primary" onClick={send} disabled={!!busy || !input.trim()}>

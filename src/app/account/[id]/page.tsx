@@ -43,7 +43,7 @@ export default async function Account({
   const sub = (await getSubscriber(id))!;
   const t = tier(sub.tier);
   return (
-    <div className="mx-auto max-w-5xl px-4 py-10 grid gap-6 md:grid-cols-[1fr_1.4fr]">
+    <div className="workspace max-w-5xl grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)]">
       <div className="space-y-4">
         <div className="card p-6">
           <p className="text-sm text-muted">Hi {sub.name.split(" ")[0]}, this is your Brewbox subscription</p>
@@ -59,7 +59,7 @@ export default async function Account({
               <span className="ml-2 text-sm text-muted line-through font-sans">${sub.listPriceUsd}</span>
             )}
           </div>
-          <dl className="mt-4 text-sm grid grid-cols-2 gap-y-1">
+          <dl className="account-details mt-4 text-sm grid grid-cols-2 gap-x-3 gap-y-2">
             <dt className="text-muted">Billed by</dt>
             <dd>PayPal Subscriptions</dd>
             <dt className="text-muted">Subscription ID</dt>

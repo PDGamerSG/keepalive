@@ -300,10 +300,20 @@ async function drive(run: AgentRun) {
       return;
     }
   }
-  if (run.status === "running") run.status = "done";
+  if (run.status === "running") {
+    run.status = "error";
+    run.transcript.push({
+      kind: "error",
+      text: "The agent reached its step limit before finishing. Check your subscription status before starting another run.",
+      at: now(),
+    });
+  }
 }
 
 export async function startAgentRun(subscriptionId: string, brief: string): Promise<AgentRun> {
+  if (!(await store.getSubscriber(subscriptionId))) {
+    throw new RetentionError("Unknown subscription", 404);
+  }
   const run: AgentRun = {
     id: randomUUID(),
     subscriptionId,

@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "project": {
+    "name": "keepalive",
+    "productType": "PayPal subscription retention demo",
+    "stack": [
+      "nextjs",
+      "react",
+      "tailwind-v4"
+    ]
+  },
+  "sources": {
+    "tokens": [
+      "src/app/globals.css",
+      "src/components/landing/landing.css"
+    ],
+    "components": [
+      "src/components/app-header.tsx",
+      "src/components/empty-state.tsx"
+    ],
+    "assets": [],
+    "instructions": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  "design": {
+    "colorMode": "light",
+    "colors": {
+      "--background": {
+        "value": "#f3ecde",
+        "source": "src/app/globals.css"
+      },
+      "--foreground": {
+        "value": "#2a1917",
+        "source": "src/app/globals.css"
+      },
+      "--muted": {
+        "value": "#71574f",
+        "source": "src/app/globals.css"
+      },
+      "--color-background": {
+        "value": "var(--background)",
+        "source": "src/app/globals.css"
+      },
+      "--color-foreground": {
+        "value": "var(--foreground)",
+        "source": "src/app/globals.css"
+      },
+      "--color-espresso": {
+        "value": "var(--espresso)",
+        "source": "src/app/globals.css"
+      },
+      "--color-crema": {
+        "value": "var(--crema)",
+        "source": "src/app/globals.css"
+      },
+      "--color-paper": {
+        "value": "var(--paper)",
+        "source": "src/app/globals.css"
+      },
+      "--color-line": {
+        "value": "var(--line)",
+        "source": "src/app/globals.css"
+      },
+      "--color-muted": {
+        "value": "var(--muted)",
+        "source": "src/app/globals.css"
+      },
+      "--color-save": {
+        "value": "var(--save)",
+        "source": "src/app/globals.css"
+      },
+      "--color-save-soft": {
+        "value": "var(--save-soft)",
+        "source": "src/app/globals.css"
+      },
+      "--color-warn": {
+        "value": "var(--warn)",
+        "source": "src/app/globals.css"
+      },
+      "--color-danger": {
+        "value": "var(--danger)",
+        "source": "src/app/globals.css"
+      },
+      "--color-paypal": {
+        "value": "var(--paypal)",
+        "source": "src/app/globals.css"
+      },
+      "--color-paypal-light": {
+        "value": "var(--paypal-light)",
+        "source": "src/app/globals.css"
+      }
+    },
+    "typography": {
+      "--font-sans": {
+        "value": "var(--font-geist-sans)",
+        "source": "src/app/globals.css"
+      },
+      "--font-mono": {
+        "value": "var(--font-geist-mono)",
+        "source": "src/app/globals.css"
+      },
+      "--font-display": {
+        "value": "var(--font-fraunces)",
+        "source": "src/app/globals.css"
+      }
+    },
+    "spacing": {},
+    "radius": {},
+    "shadows": {},
+    "motion": {},
+    "density": "compact"
+  },
+  "components": {
+    "installed": [],
+    "preferredPrimitives": [],
+    "patterns": []
+  },
+  "constraints": {
+    "must": [
+      "Match the existing burgundy, warm cream, mint and coral landing identity",
+      "Preserve PayPal sandbox actions and honest unavailable states",
+      "Support keyboard navigation and mobile layouts"
+    ],
+    "avoid": []
+  },
+  "decisions": [
+    "Extend the existing landing brand across the app using burgundy navigation and headings, cream workspaces, mint save actions and coral focus accents."
+  ],
+  "evidence": [
+    {
+      "fact": "design.colorMode:light",
+      "source": "src/app/globals.css"
+    },
+    {
+      "fact": "design.tokens",
+      "source": "src/app/globals.css"
+    },
+    {
+      "fact": "project.instructions",
+      "source": "AGENTS.md"
+    },
+    {
+      "fact": "project.instructions",
+      "source": "CLAUDE.md"
+    },
+    {
+      "fact": "project.stack:nextjs",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:react",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:tailwind-v4",
+      "source": "package.json"
+    }
+  ],
+  "generatedAt": "2026-11-11T10:07:44.215Z"
+}

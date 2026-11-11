@@ -1,6 +1,8 @@
-| 10 |  | | needs deployed URL || 9 | ✅ pass (raw JSON-RPC) | 2026-11-11 | request_cancellation refuses a wrong email; right email → downgrade offer; decline_offer works. Claude Desktop via mcp-remote not tried yet || 8 | ✅ pass (Travelling, Firm cancel) | 2026-11-11 | Travelling: agent asked its human, approval → pause, SUSPENDED. Firm cancel: no offer pushed, CANCELLED on PayPal. "Too much coffee" not run separately (same downgrade path as step 5) || 7 | ✅ pass | 2026-11-11 | declined downgrade → Claude accepted the no; later one-click cancel → CANCELLED. Found and fixed: cancel was disabled while paused || 6 | ✅ pass (after fix) | 2026-11-11 | first run: PATCH applied but read-back missed the price; fixed with GET ?fields=plan. Then $15.40, plan_overridden true || 5 | ✅ pass | 2026-11-11 | revise → buyer re-consent → plan Lite $12 confirmed by PayPal || 4 | ✅ pass | 2026-11-11 | ACTIVE again || 3 | ✅ pass | 2026-11-11 | Claude offered 2-month pause; PayPal read-back SUSPENDED || 2 | ✅ pass | 2026-11-11 | I-EG44A5H9S43A ACTIVE after approval with US Personal buyer || 1 | ✅ pass | 2026-11-11 Aditya + Claude | product + 3 plans created |# Testing KeepAlive
+# Testing KeepAlive
 
-Three layers, each labelled honestly:
+See [RELEASE_QA.md](RELEASE_QA.md) for the current Vercel release checks and integration status. The manual results below are historical sandbox checks.
+
+Test layers, each labelled honestly:
 
 | Layer | Command | What it proves | Needs |
 |---|---|---|---|
