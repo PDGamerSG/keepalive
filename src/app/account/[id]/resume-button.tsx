@@ -8,9 +8,9 @@ export function ResumeButton({ id }: { id: string }) {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   return (
-    <div className="mt-4">
+    <div className="acct-resume">
       <button
-        className="btn btn-ghost w-full"
+        className="btn btn-line acct-wide"
         disabled={busy}
         onClick={async () => {
           setBusy(true);
@@ -27,7 +27,11 @@ export function ResumeButton({ id }: { id: string }) {
       >
         {busy ? "Resuming on PayPal…" : "Resume my subscription now"}
       </button>
-      {error && <p className="text-xs text-danger mt-2">{error}</p>}
+      {error && (
+        <p className="acct-error" role="alert">
+          {error}
+        </p>
+      )}
     </div>
   );
 }

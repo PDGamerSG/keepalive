@@ -1,21 +1,35 @@
+import { toOrbitBody } from "@/components/orrery/states";
 import { MERCHANT, TIERS } from "@/lib/catalog";
 import { paypalConfigured } from "@/lib/paypal/client";
+import { readStore } from "@/lib/store";
 import { SubscribeForm } from "./subscribe-form";
+import "./shop.css";
 
 export default async function Shop({ searchParams }: { searchParams: Promise<{ cancelled?: string }> }) {
   const { cancelled } = await searchParams;
+  // Other subscribers appear only as anonymous dots: no IDs or names leave the server.
+  const bodies = (await readStore()).subscribers.map((s, i) => ({ ...toOrbitBody(s), id: `subscriber-${i}` }));
   return (
-    <div className="mx-auto max-w-5xl px-4 py-12">
-      <div className="text-center">
-        <p className="text-sm text-muted">Demo merchant</p>
-        <h1 className="font-[family-name:var(--font-display)] text-5xl mt-1">☕ {MERCHANT.name}</h1>
-        <p className="mt-3 text-muted">{MERCHANT.tagline}. Billed monthly with PayPal.</p>
-        {cancelled && <p className="mt-4 pill bg-amber-100 text-amber-900">Checkout cancelled: no subscription was created.</p>}
-      </div>
-      <SubscribeForm tiers={TIERS} checkoutAvailable={paypalConfigured()} />
-      <p className="mt-8 text-center text-xs text-muted">
-        Sandbox only: approve with your PayPal <b>sandbox personal</b> account. No real money moves.
-      </p>
+    <div className="shell shop">
+      <SubscribeForm
+        tiers={TIERS}
+        bodies={bodies}
+        checkoutAvailable={paypalConfigured()}
+        intro={
+          <>
+            <p className="page-kicker">{MERCHANT.name}, a demo merchant on PayPal</p>
+            <h1 className="display page-title">Fresh-roasted coffee, every month.</h1>
+            <p className="lede">
+              {MERCHANT.tagline}. Billed monthly with PayPal Subscriptions, and you can cancel at any time in one click.
+            </p>
+            {cancelled && (
+              <p className="shop-flash state state-offer" role="status">
+                Checkout was cancelled, so no subscription was created.
+              </p>
+            )}
+          </>
+        }
+      />
     </div>
   );
 }

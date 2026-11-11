@@ -1,18 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { OrreryView } from "@/components/orrery/orrery-view";
+import { STATE_LABEL, STATE_TONE, bodyState } from "@/components/orrery/states";
 import { tier } from "@/lib/catalog";
 import { confirmRevise } from "@/lib/retention/engine";
 import { runDueActions, syncSubscriber } from "@/lib/retention/execute";
 import { getSubscriber } from "@/lib/store";
 import { CancelFlow } from "./cancel-flow";
 import { ResumeButton } from "./resume-button";
-
-const statusStyle: Record<string, string> = {
-  ACTIVE: "bg-save-soft text-save",
-  SUSPENDED: "bg-amber-100 text-amber-900",
-  CANCELLED: "bg-red-50 text-danger",
-  APPROVAL_PENDING: "bg-blue-50 text-paypal",
-};
+import "./account.css";
 
 export default async function Account({
   params,
@@ -30,7 +26,7 @@ export default async function Account({
   try {
     if (sp.revised) {
       const s = await confirmRevise(id);
-      notice = s ? s.offers.find((o) => o.type === "downgrade" && o.status === "executed")?.result ?? null : null;
+      notice = s ? (s.offers.find((o) => o.type === "downgrade" && o.status === "executed")?.result ?? null) : null;
     } else {
       await syncSubscriber(id);
     }
@@ -42,51 +38,78 @@ export default async function Account({
 
   const sub = (await getSubscriber(id))!;
   const t = tier(sub.tier);
+  const state = bodyState(sub);
+  const focusLabel = state === "paused" ? "You, paused" : state === "cancelled" ? "You, cancelled" : "You";
   return (
-    <div className="mx-auto max-w-5xl px-4 py-10 grid gap-6 md:grid-cols-[1fr_1.4fr]">
-      <div className="space-y-4">
-        <div className="card p-6">
-          <p className="text-sm text-muted">Hi {sub.name.split(" ")[0]}, this is your Brewbox subscription</p>
-          <div className="mt-3 flex items-center justify-between">
-            <h1 className="font-[family-name:var(--font-display)] text-3xl">{t.name}</h1>
-            <span className={`pill ${statusStyle[sub.status] ?? "bg-crema"}`}>{sub.status}</span>
+    <div className="shell acct">
+      <div className="acct-side">
+        <header className="acct-head">
+          <p className="page-kicker">Hi {sub.name.split(" ")[0]}, this is your Brewbox subscription</p>
+          <div className="acct-title">
+            <h1 className="display page-title">{t.name}</h1>
+            <span className={`state state-${STATE_TONE[state]}`}>{STATE_LABEL[state]}</span>
           </div>
-          <p className="mt-1 text-muted text-sm">{t.description}</p>
-          <div className="mt-5 text-3xl font-[family-name:var(--font-display)]">
+          <p className="acct-desc">{t.description}</p>
+        </header>
+
+        <div className="panel acct-orrery">
+          <OrreryView
+            className="acct-orrery-view"
+            label={`Your subscription, ${STATE_LABEL[state].toLowerCase()}, on the ${t.name} ring`}
+            bodies={[]}
+            focus={{ tier: sub.tier, state }}
+            focusLabel={focusLabel}
+            highlight={sub.tier}
+            zoom={0.78}
+          />
+        </div>
+
+        <section className="panel acct-card">
+          <p className="acct-price num">
             ${sub.priceUsd.toFixed(2)}
-            <span className="text-sm text-muted font-sans"> /month</span>
-            {sub.priceUsd !== sub.listPriceUsd && (
-              <span className="ml-2 text-sm text-muted line-through font-sans">${sub.listPriceUsd}</span>
-            )}
-          </div>
-          <dl className="mt-4 text-sm grid grid-cols-2 gap-y-1">
-            <dt className="text-muted">Billed by</dt>
+            <small>a month</small>
+            {sub.priceUsd !== sub.listPriceUsd && <s>${sub.listPriceUsd.toFixed(2)}</s>}
+          </p>
+          <dl className="acct-facts">
+            <dt>Billed by</dt>
             <dd>PayPal Subscriptions</dd>
-            <dt className="text-muted">Subscription ID</dt>
-            <dd className="font-mono text-xs">{sub.id}</dd>
+            <dt>PayPal status</dt>
+            <dd>{sub.status}</dd>
+            <dt>Subscription</dt>
+            <dd className="code">{sub.id}</dd>
             {sub.resumeAt && (
               <>
-                <dt className="text-muted">Resumes</dt>
+                <dt>Resumes</dt>
                 <dd>{new Date(sub.resumeAt).toLocaleDateString()}</dd>
               </>
             )}
             {sub.discountUntil && (
               <>
-                <dt className="text-muted">Discount until</dt>
+                <dt>Discount until</dt>
                 <dd>{new Date(sub.discountUntil).toLocaleDateString()}</dd>
               </>
             )}
           </dl>
           {sub.status === "SUSPENDED" && <ResumeButton id={sub.id} />}
           {sub.pendingRevise && (
-            <a href={sub.pendingRevise.approveUrl} className="btn btn-paypal mt-4 w-full">
-              Confirm switch to {tier(sub.pendingRevise.toTier).name} in PayPal
+            <a href={sub.pendingRevise.approveUrl} className="btn btn-paypal acct-wide">
+              Confirm the switch to {tier(sub.pendingRevise.toTier).name} in PayPal
             </a>
           )}
-        </div>
-        {notice && <div className="card p-4 text-sm bg-save-soft border-save/30 text-save">{notice}</div>}
-        {error && <div className="card p-4 text-sm text-danger">PayPal: {error}</div>}
-        <Link href="/shop" className="text-sm text-muted underline">← Back to the shop</Link>
+        </section>
+        {notice && (
+          <p className="acct-notice is-ok" role="status">
+            {notice}
+          </p>
+        )}
+        {error && (
+          <p className="acct-notice is-error" role="alert">
+            PayPal: {error}
+          </p>
+        )}
+        <Link href="/shop" className="acct-back">
+          Back to the shop
+        </Link>
       </div>
       <CancelFlow subscriptionId={sub.id} status={sub.status} />
     </div>

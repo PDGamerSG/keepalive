@@ -6,7 +6,7 @@ import { Dashboard } from "./dashboard";
 export default async function MerchantPage() {
   const store = await readStore();
   return (
-    <div className="mx-auto max-w-7xl px-4 py-8">
+    <div className="shell">
       <Dashboard
         metrics={computeMetrics(store)}
         subscribers={store.subscribers}
