@@ -14,7 +14,8 @@
 npm install
 cp .env.example .env.local   # fill in PayPal sandbox + Anthropic keys
 npm run dev                  # http://localhost:3000
-npm run setup:paypal         # one-time: creates the Brewbox product + 3 plans in your sandbox
+# then open /merchant and click "Set up PayPal plans" once (creates the Brewbox product + 3 plans)
+npm test                     # guardrail + engine tests (no keys needed)
 ```
 
 ## Where things live
@@ -26,13 +27,23 @@ See [ARCHITECTURE.md](ARCHITECTURE.md). Short version:
 - `src/app/*`: pages and API routes
 
 ## Status board (update when you pick something up)
+_Last updated 2026-11-11 by Aditya._
+
 | Area | Owner | State |
 |---|---|---|
-| Core engine, PayPal wrappers, AI agent | Claude | built (first pass) |
-| Subscriber cancel-flow UI | Claude | in progress |
-| Agent-to-agent demo + MCP | Claude | in progress |
-| Merchant dashboard (AG Grid) | Claude | in progress |
-| Sandbox end-to-end test | needs PayPal creds | blocked on `.env.local` |
+| Core engine, PayPal wrappers, AI agent | Aditya | ✅ done, verified on the real sandbox |
+| Subscriber cancel-flow UI | Aditya | ✅ done (cancel works while paused too) |
+| Agent-to-agent demo + MCP | Aditya | ✅ done. Travelling and Firm-cancel presets verified live; MCP verified with raw JSON-RPC |
+| Merchant dashboard (AG Grid) | Aditya | ✅ done |
+| Tests | Aditya | ✅ 24 offline tests (`npm test`) + 8 live Claude evals (`npm run eval:ai`) |
+| Sandbox end-to-end test | Aditya | ✅ steps 1–9 passed, see [TESTING.md](TESTING.md) |
+| Deploy to Render + webhooks (TESTING step 10) | open | not started: `render.yaml` is ready, set env vars, then add the webhook URL |
+| MCP from Claude Desktop (`mcp-remote`) | open | not tried yet |
 | Demo video (≤ 2:50) | team | not started; script in [DEMO_SCRIPT.md](DEMO_SCRIPT.md) |
 | Devpost submission text | team | draft in [SUBMISSION.md](SUBMISSION.md) |
-| Make the repo public + LICENSE | repo owner | **required before submitting** |
+| Review/remove raw third-party captures in `docs/archive/proofroute/research/raw` | repo owner | before going public |
+| Make the repo public (LICENSE is MIT) | repo owner | **required before submitting** |
+
+## Sandbox accounts (save yourself an hour)
+- Buyer = a sandbox **Personal account in the United States**. The account that owns the REST app is the *seller* and can't subscribe; India-region accounts fail at checkout with a generic error.
+- Each run of "Subscribe" creates a real sandbox subscription; cancel your test ones from `/account/<id>`.

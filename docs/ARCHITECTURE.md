@@ -36,7 +36,7 @@ A subscription merchant who bills through **PayPal Subscriptions** (here a demo 
 | Engine | `src/lib/retention/engine.ts` | session state machine: start, message, offer, accept, decline, cancel; records every step |
 | Executor | `src/lib/retention/execute.ts` | maps an accepted offer to PayPal calls and confirms the result by reading the subscription back |
 | Consumer agent | `src/lib/agents/consumer.ts` | a Claude agent acting **for the subscriber**; calls the same tools as MCP; pauses for human approval |
-| MCP | `src/app/api/mcp/[transport]/route.ts` | the agent-facing endpoint for real external agents (Claude Desktop, etc.) |
+| MCP | `src/app/api/mcp/route.ts` | the agent-facing endpoint for real external agents (Claude Desktop, etc.) |
 | Store | `src/lib/store.ts` | JSON persistence in `data/store.json` (git-ignored) |
 
 ## Offer → PayPal mapping

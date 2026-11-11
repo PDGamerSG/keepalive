@@ -28,19 +28,39 @@
 | Webhooks with signature verification | `src/app/api/webhooks/paypal/route.ts` |
 | Claude retention agent (structured outputs) | `src/lib/retention/agent.ts` |
 | Claude consumer agent (tool use) | `src/lib/agents/consumer.ts` |
-| MCP server for external agents | `src/app/api/mcp/[transport]/route.ts` |
+| MCP server for external agents | `src/app/api/mcp/route.ts` |
 
 ## Run it locally
+Needs Node 20.9+, a PayPal developer account (sandbox) and an Anthropic API key.
+
 ```bash
 npm install
 cp .env.example .env.local   # PayPal sandbox client ID/secret + ANTHROPIC_API_KEY
-npm run dev
+npm run dev                  # http://localhost:3000
 ```
-Then open http://localhost:3000. Full instructions are coming as the build completes.
+
+1. Open **/merchant** and click **Set up PayPal plans** once. This creates the Brewbox product and 3 monthly plans in your sandbox.
+2. Open **/shop**, subscribe, and approve in PayPal with a sandbox **Personal account in the US**. Don't use the account that owns your REST app, because PayPal rejects the seller as a buyer.
+3. On **/account/<subscription id>**, click **Cancel subscription** and tell the assistant why you're leaving. Accept an offer and watch PayPal change: pause → SUSPENDED, downgrade → plan revise (PayPal asks the buyer to approve again), discount → price override.
+4. **/agent** shows an AI agent negotiating on the subscriber's behalf. **/merchant** shows saves, MRR kept, every conversation and every PayPal call.
+
+Connect your own agent over MCP: `npx -y mcp-remote http://localhost:3000/api/mcp`.
+
+### Tests
+```bash
+npm test          # 24 offline tests: guardrails, engine vs a simulated PayPal, metrics
+npm run eval:ai   # 8 live Claude scenarios (needs ANTHROPIC_API_KEY)
+```
+Results of the manual run against the real PayPal sandbox are in [docs/TESTING.md](docs/TESTING.md).
+
+### Deploy
+`render.yaml` is a Render Blueprint: New → Blueprint → this repo, then fill in the env vars it asks for.
 
 ## Docs
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md): how it's built
 - [docs/TEAM_GUIDE.md](docs/TEAM_GUIDE.md): how we work, plus the status board
+- [docs/TESTING.md](docs/TESTING.md): test layers and the sandbox checklist with results
+- [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md) / [docs/SUBMISSION.md](docs/SUBMISSION.md): video shot list and Devpost draft
 - [docs/STRATEGY.md](docs/STRATEGY.md): why this idea (hackathon research, past winners, competitors)
 - [docs/archive/proofroute](docs/archive/proofroute): the earlier ProofRoute research, kept for reference
 
