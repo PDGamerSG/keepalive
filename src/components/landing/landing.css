@@ -1,0 +1,646 @@
+/* KeepAlive landing page. Scoped under .ka; the rest of the app keeps its own look. */
+
+/* The landing page brings its own bar and footer. */
+body:has(.ka) {
+  background: #24060f;
+}
+body:has(.ka) > header,
+body:has(.ka) > footer,
+body:has(.ka) > div.bg-amber-50 {
+  display: none;
+}
+
+.ka {
+  --ka-ink: #f8f1e1;
+  --ka-soft: #ecc9c1;
+  --ka-mint: #bfe3d0;
+  --ka-tomato: #ec4427;
+  --ka-espresso: #2a1917;
+  --ka-paper: #f8f1e1;
+  --ka-save: #7be3ad;
+  --ka-line: rgba(248, 241, 225, 0.22);
+  --ka-pad: clamp(1.25rem, 6vw, 6rem);
+  position: relative;
+  color: var(--ka-ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+.ka::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(120% 90% at 72% 38%, #6a1b2d 0%, #45101f 42%, #24060f 100%);
+}
+.ka-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+.ka-stage canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  touch-action: pan-y;
+}
+.ka-ready .ka-stage canvas {
+  opacity: 1;
+}
+
+/* ---------------------------------------------------------------- bar */
+.ka-bar {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem var(--ka-pad);
+  pointer-events: none;
+}
+.ka-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 -1.5rem 0;
+  z-index: -1;
+  background: linear-gradient(rgba(36, 6, 15, 0.92) 30%, rgba(36, 6, 15, 0));
+}
+.ka-bar > * {
+  pointer-events: auto;
+}
+.ka-mark {
+  font-family: var(--font-ka-display), Georgia, serif;
+  font-variation-settings: "SOFT" 100;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+}
+.ka-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+}
+.ka-nav a:not(.ka-key) {
+  color: var(--ka-soft);
+}
+.ka-nav a:not(.ka-key):hover {
+  color: var(--ka-ink);
+}
+
+/* ---------------------------------------------------------------- keys (buttons shaped like the desk's keys) */
+.ka-key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.35rem;
+  border: 0;
+  border-radius: 12px;
+  background: var(--ka-paper);
+  color: var(--ka-espresso);
+  font: inherit;
+  font-weight: 650;
+  line-height: 1.2;
+  cursor: pointer;
+  box-shadow:
+    0 5px 0 #b3a482,
+    0 9px 18px rgba(20, 2, 8, 0.45);
+  transition:
+    transform 0.08s ease,
+    box-shadow 0.08s ease;
+}
+.ka-key:hover {
+  transform: translateY(1px);
+  box-shadow:
+    0 4px 0 #b3a482,
+    0 8px 16px rgba(20, 2, 8, 0.45);
+}
+.ka-key:active {
+  transform: translateY(4px);
+  box-shadow:
+    0 1px 0 #b3a482,
+    0 3px 8px rgba(20, 2, 8, 0.45);
+}
+.ka-key-mint {
+  background: var(--ka-mint);
+  box-shadow:
+    0 5px 0 #7fae96,
+    0 9px 18px rgba(20, 2, 8, 0.45);
+}
+.ka-key-mint:hover {
+  box-shadow:
+    0 4px 0 #7fae96,
+    0 8px 16px rgba(20, 2, 8, 0.45);
+}
+.ka-key-mint:active {
+  box-shadow:
+    0 1px 0 #7fae96,
+    0 3px 8px rgba(20, 2, 8, 0.45);
+}
+.ka-key-small {
+  padding: 0.55rem 0.95rem;
+  border-radius: 10px;
+  font-size: 0.92rem;
+}
+.ka :is(a, button, input):focus-visible {
+  outline: 3px solid var(--ka-mint);
+  outline-offset: 3px;
+}
+.ka-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ka-soft);
+  font: inherit;
+  font-size: 0.92rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------- beats */
+.ka-beat {
+  position: relative;
+  z-index: 1;
+  min-height: 100svh;
+  padding: 0 var(--ka-pad);
+  pointer-events: none;
+}
+.ka-cap {
+  --ka-top: clamp(5rem, 15svh, 9rem);
+  position: sticky;
+  top: var(--ka-top);
+  width: min(31rem, 40vw);
+  max-height: calc(100svh - var(--ka-top) - 1rem);
+  overflow-y: auto;
+  scrollbar-width: none;
+  pointer-events: auto;
+}
+.ka-cap-wide {
+  width: min(34rem, 42vw);
+}
+/* Past the hero the camera moves in close, so captions sit on a plate. */
+.ka-beat:not(.ka-hero) .ka-cap {
+  margin-left: -1.6rem;
+  padding: 1.6rem 1.6rem 1.7rem;
+  border-radius: 22px;
+  background: rgba(36, 6, 15, 0.84);
+  backdrop-filter: blur(14px) saturate(1.2);
+  box-shadow: 0 24px 60px rgba(12, 0, 5, 0.45);
+}
+.ka-hero .ka-cap {
+  --ka-top: clamp(5.5rem, 16svh, 9rem);
+  overflow: visible;
+}
+.ka-beat[data-beat-id="guardrails"] .ka-cap {
+  --ka-top: 4.75rem;
+}
+.ka-cap > p {
+  margin-top: 1rem;
+  color: var(--ka-soft);
+  max-width: 34rem;
+}
+.ka-h1,
+.ka-h2 {
+  font-family: var(--font-ka-display), Georgia, serif;
+  font-variation-settings: "SOFT" 100;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.ka-h1 {
+  font-size: clamp(2.9rem, 6.1vw, 6rem);
+  line-height: 0.96;
+}
+.ka-h2 {
+  font-size: clamp(2rem, 3.5vw, 3.3rem);
+  line-height: 1.02;
+}
+.ka-cap > .ka-lede {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  color: var(--ka-ink);
+}
+.ka-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.9rem;
+}
+.ka-cap > .ka-scroll {
+  margin-top: 2.2rem;
+  font-size: 0.95rem;
+}
+.ka code {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.88em;
+}
+
+/* Pieces that switch on for a stretch of their beat. */
+.ka [data-at] {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+.ka [data-at].on,
+.ka li.on {
+  opacity: 1;
+  transform: none;
+}
+
+/* hint that follows the cancel key */
+.ka-hint {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.ka-hint span {
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 0.4rem 0.75rem;
+  border-radius: 9px;
+  background: var(--ka-paper);
+  color: var(--ka-espresso);
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+.ka-hint span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 10px;
+  height: 10px;
+  background: var(--ka-paper);
+  transform: translate(-50%, -6px) rotate(45deg);
+}
+.ka-ready[data-beat="0"] .ka-hint,
+.ka-ready[data-beat="7"] .ka-hint {
+  opacity: 1;
+}
+
+/* ---------------------------------------------------------------- beat content */
+.ka-chat {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+.ka-bubble {
+  max-width: 88%;
+  padding: 0.75rem 0.95rem;
+  border-radius: 14px 14px 14px 4px;
+  background: var(--ka-paper);
+  color: var(--ka-espresso);
+}
+.ka-bubble b {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+.ka-bubble-desk {
+  justify-self: end;
+  border-radius: 14px 14px 4px 14px;
+  background: var(--ka-mint);
+}
+
+.ka-offers {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1.3rem;
+}
+.ka .ka-offer {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.55rem 0 0.55rem 1.1rem;
+  border-left: 3px solid var(--ka-line);
+  color: var(--ka-soft);
+  opacity: 0.45;
+  transform: none;
+}
+.ka .ka-offer.on {
+  border-left-color: var(--ka-save);
+  opacity: 1;
+}
+.ka-offer strong {
+  font-family: var(--font-ka-display), Georgia, serif;
+  font-variation-settings: "SOFT" 100;
+  font-size: 1.35rem;
+  font-weight: 650;
+  line-height: 1.15;
+  color: var(--ka-ink);
+}
+.ka-reason {
+  font-size: 0.95rem;
+}
+
+.ka-lab {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.1rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background: var(--ka-paper);
+  color: var(--ka-espresso);
+}
+.ka-lab fieldset {
+  display: grid;
+  gap: 0.55rem;
+  border: 0;
+  padding: 0;
+}
+.ka-lab legend {
+  margin-bottom: 0.45rem;
+  font-weight: 700;
+}
+.ka-seg {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.25rem;
+  border-radius: 11px;
+  background: #e6dcc3;
+}
+.ka-seg button {
+  flex: 1;
+  padding: 0.45rem 0.5rem;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ka-seg button.is-on {
+  background: var(--ka-espresso);
+  color: var(--ka-paper);
+}
+.ka-slider {
+  display: grid;
+  grid-template-columns: 8.2rem 1fr 5.4rem;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.95rem;
+}
+.ka-slider input {
+  width: 100%;
+  accent-color: var(--ka-espresso);
+}
+.ka-slider output {
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+  text-align: right;
+}
+.ka-verdict {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.8rem 0.95rem;
+  border-radius: 11px;
+  font-size: 0.95rem;
+}
+.ka-verdict strong {
+  font-size: 1.08rem;
+}
+.ka-verdict ul {
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+.ka-verdict.is-ok {
+  background: #d3ecdc;
+  color: #10402b;
+}
+.ka-verdict.is-no {
+  background: #f6d2c9;
+  color: #6d1508;
+}
+.ka-cap .ka-fine {
+  font-size: 0.85rem;
+}
+.ka-lab .ka-fine {
+  color: #5c4a40;
+}
+
+.ka-tape {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+.ka-tape li {
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  background: var(--ka-paper);
+  color: var(--ka-espresso);
+}
+.ka-tape span {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #17693f;
+}
+.ka-tape .ka-tape-done {
+  background: var(--ka-mint);
+  font-weight: 650;
+}
+
+.ka-talk {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+.ka-talk li {
+  display: grid;
+  gap: 0.2rem;
+  justify-items: start;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  background: var(--ka-paper);
+  color: var(--ka-espresso);
+}
+.ka-talk .ka-link {
+  margin-top: 0.3rem;
+  color: #6b574b;
+}
+.ka-talk b {
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+.ka-talk code {
+  padding: 0.1rem 0.4rem;
+  border-radius: 5px;
+  background: var(--ka-espresso);
+  color: var(--ka-mint);
+}
+.ka-ask {
+  display: flex;
+  gap: 0.6rem;
+  margin: 0.45rem 0 0.35rem;
+}
+.ka-ask .ka-key {
+  box-shadow: 0 4px 0 #b3a482;
+  outline: 1px solid #d8cdb0;
+}
+.ka-ask .ka-key-mint {
+  box-shadow: 0 4px 0 #7fae96;
+  outline: 0;
+}
+
+/* ---------------------------------------------------------------- close */
+.ka-close {
+  padding-top: 26svh;
+  padding-bottom: 4rem;
+}
+.ka-close .ka-cap {
+  position: static;
+  max-height: none;
+  overflow: visible;
+}
+.ka-built {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ka-line);
+}
+.ka-built h3 {
+  font-weight: 700;
+}
+.ka-built h3:not(:first-child) {
+  margin-top: 1.6rem;
+}
+.ka-built table {
+  width: 100%;
+  margin-top: 0.6rem;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+.ka-built tr {
+  border-top: 1px solid var(--ka-line);
+}
+.ka-built th {
+  padding: 0.5rem 0.9rem 0.5rem 0;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: left;
+  color: var(--ka-mint);
+}
+.ka-built td {
+  padding: 0.5rem 0;
+  color: var(--ka-soft);
+}
+.ka-cmd {
+  display: block;
+  margin-top: 0.6rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  background: rgba(20, 2, 8, 0.55);
+  color: var(--ka-mint);
+  overflow-wrap: anywhere;
+}
+.ka-close .ka-fine {
+  margin-top: 2rem;
+}
+
+/* ---------------------------------------------------------------- small screens: desk on top, caption card pinned below */
+@media (max-width: 899px) {
+  .ka {
+    font-size: 1rem;
+  }
+  .ka-nav a:not(.ka-key) {
+    display: none;
+  }
+  .ka-beat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0.75rem;
+  }
+  .ka-cap,
+  .ka-cap-wide,
+  .ka-hero .ka-cap,
+  .ka-beat:not(.ka-hero) .ka-cap {
+    margin-left: 0;
+    overflow-y: auto;
+    top: auto;
+    bottom: 0.75rem;
+    width: 100%;
+    max-height: 56svh;
+    overflow-y: auto;
+    padding: 1.1rem 1.1rem 1.2rem;
+    border-radius: 18px;
+    background: rgba(36, 6, 15, 0.9);
+    backdrop-filter: blur(10px);
+  }
+  .ka-h1 {
+    font-size: clamp(2.2rem, 10.5vw, 3.2rem);
+  }
+  .ka-h2 {
+    font-size: clamp(1.6rem, 7.4vw, 2.3rem);
+  }
+  .ka-cap > .ka-lede {
+    margin-top: 0.9rem;
+    font-size: 1rem;
+  }
+  .ka-actions {
+    margin-top: 1.1rem;
+  }
+  .ka-cap > .ka-scroll {
+    display: none;
+  }
+  .ka-slider {
+    grid-template-columns: 6.6rem 1fr 4.8rem;
+    gap: 0.5rem;
+  }
+  .ka-close {
+    padding-top: 62svh;
+  }
+  .ka-beat.ka-close .ka-cap {
+    max-height: none;
+    overflow: visible;
+  }
+  /* Keep the pinned card short: show only what is live. */
+  .ka-chat .ka-bubble:not(.on),
+  .ka-tape li:not(.on),
+  .ka-talk li:not(.on),
+  .ka-talk li.on:has(~ li.on),
+  .ka-offer:not(.on) > span,
+  .ka-beat[data-beat-id="guardrails"] .ka-cap > p {
+    display: none;
+  }
+  .ka .ka-offer {
+    padding-block: 0.3rem;
+  }
+  .ka-offer:not(.on) strong {
+    font-size: 1.05rem;
+  }
+  .ka-lab {
+    margin-top: 0.8rem;
+    padding: 0.85rem;
+  }
+  .ka-hint span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ka [data-at],
+  .ka-key,
+  .ka-hint,
+  .ka-stage canvas {
+    transition: none;
+  }
+}

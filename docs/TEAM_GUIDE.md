@@ -35,6 +35,7 @@ _Last updated 2026-11-11 by Aditya._
 | Subscriber cancel-flow UI | Aditya | ✅ done (cancel works while paused too) |
 | Agent-to-agent demo + MCP | Aditya | ✅ done. Travelling and Firm-cancel presets verified live; MCP verified with raw JSON-RPC |
 | Merchant dashboard (AG Grid) | Aditya | ✅ done |
+| Landing page (`/`, 3D console, scroll story, guardrail playground) | Aditya | ✅ done; static, no backend calls. Model source: `tools/blender/build_console.py` |
 | Tests | Aditya | ✅ 24 offline tests (`npm test`) + 8 live Claude evals (`npm run eval:ai`) |
 | Sandbox end-to-end test | Aditya | ✅ steps 1–9 passed, see [TESTING.md](TESTING.md) |
 | Deploy to Render + webhooks (TESTING step 10) | open | not started: `render.yaml` is ready, set env vars, then add the webhook URL |
