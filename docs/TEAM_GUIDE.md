@@ -34,8 +34,8 @@ _Last updated 2026-11-11 by Aditya._
 | Core engine, PayPal wrappers, AI agent | Aditya | ✅ done, verified on the real sandbox |
 | Subscriber cancel-flow UI | Aditya | ✅ done (cancel works while paused too) |
 | Agent-to-agent demo + MCP | Aditya | ✅ done. Travelling and Firm-cancel presets verified live; MCP verified with raw JSON-RPC |
-| Merchant dashboard (AG Grid) | Aditya | ✅ done |
-| Landing page (`/`, 3D orrery, scroll story, guardrail playground) | Aditya | ✅ done; static, no backend calls. Scenes: `src/components/orrery/` |
+| Merchant dashboard (five pages under `/merchant`, AG Grid on Subscribers) | Aditya | ✅ done |
+| Landing page (`/`, sample cancellation, flow and sequence diagrams, guardrail playground) | Aditya | ✅ done; static, no backend calls. Code: `src/components/landing/` |
 | Tests | Aditya | ✅ 24 offline tests (`npm test`) + 8 live Claude evals (`npm run eval:ai`) |
 | Sandbox end-to-end test | Aditya | ✅ steps 1–9 passed, see [TESTING.md](TESTING.md) |
 | Deploy to Render + webhooks (TESTING step 10) | open | not started: `render.yaml` is ready, set env vars, then add the webhook URL |

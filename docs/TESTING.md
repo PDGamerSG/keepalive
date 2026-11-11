@@ -18,7 +18,7 @@ The simulated PayPal is **not** evidence that the real API behaves the same way.
 - If the dev server reports "credit balance is too low" while `npm run eval:ai` works, the server inherited another `ANTHROPIC_API_KEY` from its parent environment, and that wins over `.env.local`. Start it from a shell without that variable.
 
 ## Manual sandbox checklist (record results in the table)
-1. `/merchant` → **Set up PayPal plans** → the PayPal activity tab shows the product + 3 plans created (201s).
+1. `/merchant` → **Set up PayPal plans** → the PayPal activity page shows the product + 3 plans created (201s).
 2. `/shop` → subscribe (Standard) → approve with the sandbox personal account → the return page shows **ACTIVE**.
 3. `/account/<id>` → Cancel → "travelling for 2 months" → accept **Pause** → the PayPal line says SUSPENDED; the sandbox business account also shows Suspended.
 4. **Resume now** → ACTIVE.
