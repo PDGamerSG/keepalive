@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import { Anybody, Geist, Geist_Mono } from "next/font/google";
-import { SiteHeader } from "@/components/site/header";
-import { aiConfigured } from "@/lib/ai";
-import { paypalConfigured } from "@/lib/paypal/client";
+import { Cal_Sans, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import "./site.css";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
-// Anybody's width axis lets headlines run wide, like the engraving on an instrument.
-const anybody = Anybody({ variable: "--font-anybody", subsets: ["latin"], axes: ["wdth"] });
+const calSans = Cal_Sans({ variable: "--font-cal", subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "KeepAlive: AI retention for PayPal subscriptions",
@@ -19,34 +14,15 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-dynamic";
 
+/** Fonts and global styles only. The site and the merchant desk each bring their own frame. */
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const paypal = paypalConfigured();
-  const ai = aiConfigured();
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${anybody.variable} h-full`}>
+    <html lang="en" className={`${inter.variable} ${geistMono.variable} ${calSans.variable} h-full`}>
       <body className="min-h-full flex flex-col">
         <a href="#main" className="skip-link">
           Skip to content
         </a>
-        <SiteHeader paypal={paypal} ai={ai} />
-        {(!paypal || !ai) && (
-          <div className="site-notice" role="status">
-            <div className="shell">
-              {!paypal && "PayPal checkout is offline, so new subscriptions can't be created. "}
-              {!ai && "AI conversations are offline. "}
-              Everything else in the demo still works.
-            </div>
-          </div>
-        )}
-        <main id="main" className="flex-1">
-          {children}
-        </main>
-        <footer className="site-footer">
-          <div className="shell site-footer-row">
-            <span>Built for the PayPal AI Hackathon. Payments run in the PayPal sandbox. AI by Claude.</span>
-            <span>Brewbox is a fictional demo merchant.</span>
-          </div>
-        </footer>
+        {children}
       </body>
     </html>
   );
