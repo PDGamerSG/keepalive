@@ -23,8 +23,8 @@ import { getSubscriber } from "@/lib/store";
 
 const text = (v: unknown) => ({ content: [{ type: "text" as const, text: typeof v === "string" ? v : JSON.stringify(v, null, 2) }] });
 
-function authorize(subscriptionId: string, email: string) {
-  const sub = getSubscriber(subscriptionId);
+async function authorize(subscriptionId: string, email: string) {
+  const sub = await getSubscriber(subscriptionId);
   if (!sub || sub.email.trim().toLowerCase() !== email.trim().toLowerCase()) {
     throw new Error("No subscription matches that ID and email.");
   }
@@ -48,7 +48,7 @@ const handler = createMcpHandler(
       },
       async ({ subscription_id, email }) =>
         guard(async () => {
-          const s = authorize(subscription_id, email);
+          const s = await authorize(subscription_id, email);
           return {
             subscription_id: s.id,
             merchant: MERCHANT.name,
@@ -75,7 +75,7 @@ const handler = createMcpHandler(
       },
       async ({ subscription_id, email, reason, agent_name }) =>
         guard(async () => {
-          authorize(subscription_id, email);
+          await authorize(subscription_id, email);
           const s = await startSession({
             subscriptionId: subscription_id,
             channel: "agent",
@@ -138,7 +138,7 @@ const handler = createMcpHandler(
         description: "Read the current state of a cancellation session.",
         inputSchema: z.object({ session_id: z.string() }),
       },
-      async ({ session_id }) => guard(async () => publicSession(requireSession(session_id))),
+      async ({ session_id }) => guard(async () => publicSession(await requireSession(session_id))),
     );
   },
   { serverInfo: { name: "keepalive-brewbox", version: "0.1.0" } },

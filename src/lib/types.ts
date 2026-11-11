@@ -97,6 +97,7 @@ export interface AuditEvent {
 }
 
 export interface StoreShape {
+  agentRuns?: Record<string, import("./agents/consumer").AgentRun>;
   config: {
     productId?: string;
     plans: Partial<Record<TierId, string>>;

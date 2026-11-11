@@ -2,6 +2,7 @@ import "server-only";
 import { randomUUID } from "node:crypto";
 import type Anthropic from "@anthropic-ai/sdk";
 import { anthropic, FALLBACK_BETA, MODEL } from "@/lib/ai";
+import { recordAiUsage } from "@/lib/ai-usage";
 import * as store from "@/lib/store";
 import {
   acceptOffer,
@@ -45,12 +46,15 @@ export interface AgentRun {
   summary?: string;
 }
 
-const runs: Map<string, AgentRun> =
-  ((globalThis as Record<string, unknown>).__keepaliveRuns as Map<string, AgentRun>) ?? new Map();
-(globalThis as Record<string, unknown>).__keepaliveRuns = runs;
+export async function getRun(id: string) {
+  return (await store.readStore()).agentRuns?.[id];
+}
 
-export function getRun(id: string) {
-  return runs.get(id);
+async function saveRun(run: AgentRun) {
+  await store.updateStore((s) => {
+    s.agentRuns ??= {};
+    s.agentRuns[run.id] = run;
+  });
 }
 
 const AGENT_NAME = "Claude (subscriber's personal agent)";
@@ -165,7 +169,7 @@ function merchantEntries(run: AgentRun, view: ReturnType<typeof publicSession>, 
 }
 
 async function runTool(run: AgentRun, name: string, input: Record<string, unknown>): Promise<string | { wait: true }> {
-  const sub = store.getSubscriber(run.subscriptionId);
+  const sub = await store.getSubscriber(run.subscriptionId);
   try {
     switch (name) {
       case "request_cancellation": {
@@ -183,7 +187,7 @@ async function runTool(run: AgentRun, name: string, input: Record<string, unknow
       }
       case "reply_to_merchant": {
         if (!run.sessionId) return "No open request. Call request_cancellation first.";
-        const before = publicSession(store.getSession(run.sessionId)!).messages.length;
+        const before = publicSession((await store.getSession(run.sessionId))!).messages.length;
         const s = await sendMessage(run.sessionId, String(input.message ?? ""));
         const view = publicSession(s);
         merchantEntries(run, view, before + 1);
@@ -191,7 +195,7 @@ async function runTool(run: AgentRun, name: string, input: Record<string, unknow
       }
       case "ask_my_human": {
         const offerId = (input.offer_id as string | null) ?? undefined;
-        const session = run.sessionId ? store.getSession(run.sessionId) : undefined;
+        const session = run.sessionId ? (await store.getSession(run.sessionId)) : undefined;
         const offer = offerId ? session?.offers.find((o) => o.id === offerId) : undefined;
         run.pendingQuestion = { question: String(input.question ?? ""), offerId: offer?.id, offerLabel: offer?.label };
         return { wait: true };
@@ -202,7 +206,7 @@ async function runTool(run: AgentRun, name: string, input: Record<string, unknow
           return "Refused: your human has not approved this offer. Call ask_my_human with this offer_id first.";
         }
         if (!run.sessionId) return "No open request.";
-        const before = store.getSession(run.sessionId)!.messages.length;
+        const before = (await store.getSession(run.sessionId))!.messages.length;
         const { session, approveUrl } = await acceptOffer(run.sessionId, offerId);
         const view = publicSession(session);
         merchantEntries(run, view, before);
@@ -213,7 +217,7 @@ async function runTool(run: AgentRun, name: string, input: Record<string, unknow
       }
       case "decline_offer": {
         if (!run.sessionId) return "No open request.";
-        const before = store.getSession(run.sessionId)!.messages.length;
+        const before = (await store.getSession(run.sessionId))!.messages.length;
         const s = await declineOffer(run.sessionId, String(input.offer_id ?? ""));
         const view = publicSession(s);
         merchantEntries(run, view, before + 1);
@@ -224,7 +228,7 @@ async function runTool(run: AgentRun, name: string, input: Record<string, unknow
           const s = await startSession({ subscriptionId: run.subscriptionId, channel: "agent", agentName: AGENT_NAME });
           run.sessionId = s.id;
         }
-        const before = store.getSession(run.sessionId)!.messages.length;
+        const before = (await store.getSession(run.sessionId))!.messages.length;
         const s = await cancelNow(run.sessionId);
         merchantEntries(run, publicSession(s), before);
         return JSON.stringify(publicSession(s));
@@ -252,12 +256,14 @@ async function drive(run: AgentRun) {
       max_tokens: 4000,
       betas: [FALLBACK_BETA],
       fallbacks: "default",
-      system: SYSTEM,
+      system: [{ type: "text", text: SYSTEM, cache_control: { type: "ephemeral" } }],
+      cache_control: { type: "ephemeral" },
       tools: TOOLS,
       tool_choice: { type: "auto", disable_parallel_tool_use: true },
       output_config: { effort: "low" },
       messages: run.messages,
     });
+    await recordAiUsage("consumer", response, run.subscriptionId);
     run.messages.push({ role: "assistant", content: response.content as Anthropic.Beta.Messages.BetaContentBlockParam[] });
 
     for (const block of response.content) {
@@ -312,18 +318,19 @@ export async function startAgentRun(subscriptionId: string, brief: string): Prom
     ],
     approvedOfferIds: [],
   };
-  runs.set(run.id, run);
+  await saveRun(run);
   try {
     await drive(run);
   } catch (e) {
     run.status = "error";
     run.transcript.push({ kind: "error", text: e instanceof Error ? e.message : String(e), at: now() });
   }
+  await saveRun(run);
   return run;
 }
 
 export async function answerHuman(runId: string, answer: string, approve: boolean | null): Promise<AgentRun> {
-  const run = runs.get(runId);
+  const run = await getRun(runId);
   if (!run) throw new RetentionError("Unknown agent run", 404);
   if (run.status !== "waiting_human" || !run.pendingToolUseId) throw new RetentionError("Agent is not waiting for you");
   const q = run.pendingQuestion;
@@ -346,6 +353,7 @@ export async function answerHuman(runId: string, answer: string, approve: boolea
     run.status = "error";
     run.transcript.push({ kind: "error", text: e instanceof Error ? e.message : String(e), at: now() });
   }
+  await saveRun(run);
   return run;
 }
 

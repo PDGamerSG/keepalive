@@ -108,7 +108,7 @@ export async function paypal<T = unknown>(path: string, opts: PayPalRequestOptio
   }
 
   if (method !== "GET" || !res.ok) {
-    recordEvent({
+    await recordEvent({
       type: "paypal.call",
       subscriptionId: opts.subscriptionId,
       summary: `${opts.label ?? `${method} ${path}`} → ${res.status}`,

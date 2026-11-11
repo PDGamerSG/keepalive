@@ -45,14 +45,14 @@ export async function ensureCatalog(): Promise<{ productId: string; plans: Recor
   };
   if (env.productId && env.plans.lite && env.plans.standard && env.plans.premium) {
     const plans = env.plans as Record<TierId, string>;
-    if (readStore().config.productId !== env.productId) {
-      updateStore((s) => {
+    if ((await readStore()).config.productId !== env.productId) {
+      await updateStore((s) => {
         s.config = { productId: env.productId, plans };
       });
     }
     return { productId: env.productId, plans };
   }
-  const existing = readStore().config;
+  const existing = (await readStore()).config;
   if (existing.productId && TIERS.every((t) => existing.plans[t.id])) {
     return { productId: existing.productId, plans: existing.plans as Record<TierId, string> };
   }
@@ -69,7 +69,7 @@ export async function ensureCatalog(): Promise<{ productId: string; plans: Recor
       },
     });
     productId = product.id;
-    updateStore((s) => {
+    await updateStore((s) => {
       s.config.productId = productId;
     });
   }
@@ -102,15 +102,15 @@ export async function ensureCatalog(): Promise<{ productId: string; plans: Recor
       },
     });
     plans[t.id] = plan.id;
-    updateStore((s) => {
+    await updateStore((s) => {
       s.config.plans[t.id] = plan.id;
     });
   }
   return { productId: productId!, plans: plans as Record<TierId, string> };
 }
 
-export function tierForPlan(planId: string): TierId | undefined {
-  const plans = readStore().config.plans;
+export async function tierForPlan(planId: string): Promise<TierId | undefined> {
+  const plans = (await readStore()).config.plans;
   return (Object.keys(plans) as TierId[]).find((k) => plans[k] === planId);
 }
 

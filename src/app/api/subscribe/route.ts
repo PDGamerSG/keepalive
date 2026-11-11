@@ -13,7 +13,7 @@ export async function POST(req: Request) {
     if (!b.name?.trim() || !b.email?.includes("@")) throw new RetentionError("Name and email are required");
     const { id, approveUrl } = await createSubscription({ tier: b.tier, name: b.name, email: b.email });
     const t = tier(b.tier);
-    upsertSubscriber({
+    await upsertSubscriber({
       id,
       name: b.name.trim(),
       email: b.email.trim(),

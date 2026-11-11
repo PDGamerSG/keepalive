@@ -6,7 +6,7 @@ export const maxDuration = 300;
 
 export async function GET(_req: Request, ctx: { params: Promise<{ runId: string }> }) {
   return json(async () => {
-    const run = getRun((await ctx.params).runId);
+    const run = await getRun((await ctx.params).runId);
     if (!run) throw new RetentionError("Unknown run", 404);
     return publicRun(run);
   });

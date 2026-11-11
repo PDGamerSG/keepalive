@@ -2,6 +2,7 @@ import "server-only";
 import { z } from "zod";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import { anthropic, FALLBACK_BETA, MODEL } from "@/lib/ai";
+import { recordAiUsage } from "@/lib/ai-usage";
 import { MERCHANT, tier } from "@/lib/catalog";
 import { describePolicy, type MerchantPolicy } from "@/lib/policy";
 import type { RetentionSession, Subscriber } from "@/lib/types";
@@ -105,10 +106,12 @@ export async function decide(
     max_tokens: 4000,
     betas: [FALLBACK_BETA],
     fallbacks: "default",
-    system: SYSTEM,
+    system: [{ type: "text", text: SYSTEM, cache_control: { type: "ephemeral" } }],
+    cache_control: { type: "ephemeral" },
     output_config: { effort: "low", format: betaZodOutputFormat(DecisionSchema) },
     messages: [{ role: "user", content: buildContext(sub, policy, session, extraNote) }],
   });
+  await recordAiUsage("retention", response, sub.id);
   if (response.stop_reason === "refusal" || !response.parsed_output) {
     // Fail safe: never block a cancellation because the model could not answer.
     return {

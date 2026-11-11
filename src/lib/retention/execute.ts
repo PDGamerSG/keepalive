@@ -22,9 +22,9 @@ const addMonths = (months: number) => new Date(Date.now() + months * 30 * 86_400
 
 /** Pull the live state of one subscription from PayPal into the store. */
 export async function syncSubscriber(id: string): Promise<Subscriber | undefined> {
-  const local = getSubscriber(id);
+  const local = await getSubscriber(id);
   const remote = await getSubscription(id);
-  const t = tierForPlan(remote.plan_id) ?? local?.tier ?? "standard";
+  const t = (await tierForPlan(remote.plan_id)) ?? local?.tier ?? "standard";
   const list = tier(t).priceUsd;
   const price = remote.plan_overridden ? (currentPrice(remote) ?? list) : list;
   const patch: Partial<Subscriber> = {
@@ -35,8 +35,8 @@ export async function syncSubscriber(id: string): Promise<Subscriber | undefined
     lastSyncedAt: new Date().toISOString(),
   };
   if (local?.pendingRevise && local.pendingRevise.toTier === t) patch.pendingRevise = undefined;
-  if (local) patchSubscriber(id, patch);
-  return getSubscriber(id);
+  if (local) await patchSubscriber(id, patch);
+  return await getSubscriber(id);
 }
 
 export interface ExecutionResult {
@@ -54,7 +54,7 @@ export async function executeOffer(sub: Subscriber, offer: Offer): Promise<Execu
       if (fresh?.status !== "SUSPENDED") {
         return { status: "failed", message: `PayPal reports status ${fresh?.status}, expected SUSPENDED` };
       }
-      patchSubscriber(sub.id, { resumeAt: addMonths(offer.months ?? 1) });
+      await patchSubscriber(sub.id, { resumeAt: addMonths(offer.months ?? 1) });
       return {
         status: "executed",
         message: `Paused on PayPal (status SUSPENDED). Billing resumes automatically in ${offer.months} month(s).`,
@@ -69,7 +69,7 @@ export async function executeOffer(sub: Subscriber, offer: Offer): Promise<Execu
         }
         return { status: "failed", message: "PayPal did not return an approval link for the plan change." };
       }
-      patchSubscriber(sub.id, {
+      await patchSubscriber(sub.id, {
         pendingRevise: { toTier: offer.toTier!, approveUrl, at: new Date().toISOString() },
       });
       return {
@@ -86,7 +86,7 @@ export async function executeOffer(sub: Subscriber, offer: Offer): Promise<Execu
       if (p === undefined || Math.abs(p - newPrice) > 0.005) {
         return { status: "failed", message: `PayPal price reads ${p}, expected ${newPrice}` };
       }
-      patchSubscriber(sub.id, { priceUsd: newPrice, discountUntil: addMonths(offer.months ?? 1) });
+      await patchSubscriber(sub.id, { priceUsd: newPrice, discountUntil: addMonths(offer.months ?? 1) });
       return {
         status: "executed",
         message: `Your PayPal price is now $${newPrice.toFixed(2)}/month for ${offer.months} month(s), then back to $${sub.listPriceUsd}.`,
@@ -102,22 +102,22 @@ export async function executeCancel(sub: Subscriber, reason: string, requestId: 
     return { status: "failed", message: `PayPal reports ${fresh?.status}, expected CANCELLED` };
   }
   // Nothing left to resume or restore on a cancelled subscription.
-  patchSubscriber(sub.id, { resumeAt: undefined, discountUntil: undefined });
+  await patchSubscriber(sub.id, { resumeAt: undefined, discountUntil: undefined });
   return { status: "executed", message: "Cancelled on PayPal. You won't be charged again." };
 }
 
 export async function resumeNow(id: string): Promise<Subscriber | undefined> {
   await activateSubscription(id, "KeepAlive: pause ended", `keepalive-resume-${id}-${Date.now()}`);
   await syncSubscriber(id);
-  patchSubscriber(id, { resumeAt: undefined });
-  return getSubscriber(id);
+  await patchSubscriber(id, { resumeAt: undefined });
+  return await getSubscriber(id);
 }
 
 export async function restoreListPrice(id: string): Promise<Subscriber | undefined> {
-  const sub = getSubscriber(id);
+  const sub = await getSubscriber(id);
   if (!sub) return undefined;
   await setSubscriptionPrice(id, sub.listPriceUsd, "restore list price after retention discount", `keepalive-restore-${id}-${sub.discountUntil}`);
-  patchSubscriber(id, { discountUntil: undefined, priceUsd: sub.listPriceUsd });
+  await patchSubscriber(id, { discountUntil: undefined, priceUsd: sub.listPriceUsd });
   return syncSubscriber(id);
 }
 
@@ -125,7 +125,7 @@ export async function restoreListPrice(id: string): Promise<Subscriber | undefin
 export async function runDueActions(): Promise<string[]> {
   const done: string[] = [];
   const now = Date.now();
-  for (const s of readStore().subscribers) {
+  for (const s of (await readStore()).subscribers) {
     try {
       if (s.resumeAt && new Date(s.resumeAt).getTime() <= now && s.status === "SUSPENDED") {
         await resumeNow(s.id);
@@ -136,7 +136,7 @@ export async function runDueActions(): Promise<string[]> {
         done.push(`restored price ${s.id}`);
       }
     } catch (e) {
-      recordEvent({ type: "scheduler.error", subscriptionId: s.id, summary: String(e) });
+      await recordEvent({ type: "scheduler.error", subscriptionId: s.id, summary: String(e) });
     }
   }
   return done;

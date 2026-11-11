@@ -6,12 +6,12 @@ import { tier } from "@/lib/catalog";
 export default async function Return({ searchParams }: { searchParams: Promise<{ subscription_id?: string }> }) {
   const { subscription_id } = await searchParams;
   if (!subscription_id) return <Msg title="Missing subscription" body="PayPal did not return a subscription ID." />;
-  if (!getSubscriber(subscription_id)) return <Msg title="Unknown subscription" body={`We have no record of ${subscription_id}.`} />;
+  if (!(await getSubscriber(subscription_id))) return <Msg title="Unknown subscription" body={`We have no record of ${subscription_id}.`} />;
   let error: string | null = null;
-  let sub = getSubscriber(subscription_id);
+  let sub = await getSubscriber(subscription_id);
   try {
     sub = await syncSubscriber(subscription_id);
-    recordEvent({ type: "subscription.approved", subscriptionId: subscription_id, summary: `Subscriber approved in PayPal → ${sub?.status}` });
+    await recordEvent({ type: "subscription.approved", subscriptionId: subscription_id, summary: `Subscriber approved in PayPal → ${sub?.status}` });
   } catch (e) {
     error = e instanceof Error ? e.message : String(e);
   }

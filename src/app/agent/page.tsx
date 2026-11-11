@@ -3,8 +3,8 @@ import { appUrl } from "@/lib/paypal/subscriptions";
 import { readStore } from "@/lib/store";
 import { AgentDemo } from "./agent-demo";
 
-export default function AgentPage() {
-  const subs = readStore()
+export default async function AgentPage() {
+  const subs = (await readStore())
     .subscribers.filter((s) => s.status === "ACTIVE")
     .map((s) => ({ id: s.id, label: `${s.name} · ${tier(s.tier).name} $${s.priceUsd}/mo`, email: s.email }));
   return (

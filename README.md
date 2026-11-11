@@ -54,6 +54,8 @@ npm run eval:ai   # 8 live Claude scenarios (needs ANTHROPIC_API_KEY)
 Results of the manual run against the real PayPal sandbox are in [docs/TESTING.md](docs/TESTING.md).
 
 ### Deploy
+The Vercel production configuration, durable private storage, scheduled actions and required environment variables are documented in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
+
 `render.yaml` is a Render Blueprint: New → Blueprint → this repo, then fill in the env vars it asks for.
 
 ## Docs

@@ -38,10 +38,10 @@ const offerDecision = (offer: Decision["offer"], reply = "How about this?"): Dec
 
 let plans: Record<string, string>;
 
-function addSubscriber(id: string, tierId: "lite" | "standard" | "premium" = "standard") {
+async function addSubscriber(id: string, tierId: "lite" | "standard" | "premium" = "standard") {
   fake.addSub(id, plans[tierId]);
   const price = { lite: 12, standard: 22, premium: 36 }[tierId];
-  store.upsertSubscriber({
+  await store.upsertSubscriber({
     id,
     name: "Test Person",
     email: "t@example.com",
@@ -68,14 +68,14 @@ describe("retention engine against simulated PayPal", () => {
   });
 
   it("pause offer → suspend on PayPal → SUSPENDED read back → saved", async () => {
-    addSubscriber("I-PAUSE");
+    await addSubscriber("I-PAUSE");
     decisions.push(offerDecision({ type: "pause", months: 2, toTier: null, discountPct: null }));
     const s = await engine.startSession({ subscriptionId: "I-PAUSE", channel: "web", firstMessage: "travelling" });
     expect(s.offers).toHaveLength(1);
     const { session } = await engine.acceptOffer(s.id, s.offers[0].id);
     expect(session.outcome).toBe("saved");
     expect(fake.subs.get("I-PAUSE")!.status).toBe("SUSPENDED");
-    const sub = store.getSubscriber("I-PAUSE")!;
+    const sub = (await store.getSubscriber("I-PAUSE"))!;
     expect(sub.status).toBe("SUSPENDED");
     expect(sub.resumeAt).toBeDefined();
     const suspendCall = fake.calls.find((c) => c.path.endsWith("/I-PAUSE/suspend"))!;
@@ -83,15 +83,15 @@ describe("retention engine against simulated PayPal", () => {
   });
 
   it("scheduled resume re-activates when the pause is due", async () => {
-    store.patchSubscriber("I-PAUSE", { resumeAt: new Date(Date.now() - 1000).toISOString() });
+    await store.patchSubscriber("I-PAUSE", { resumeAt: new Date(Date.now() - 1000).toISOString() });
     const done = await execute.runDueActions();
     expect(done).toContain("resumed I-PAUSE");
     expect(fake.subs.get("I-PAUSE")!.status).toBe("ACTIVE");
-    expect(store.getSubscriber("I-PAUSE")!.resumeAt).toBeUndefined();
+    expect((await store.getSubscriber("I-PAUSE"))!.resumeAt).toBeUndefined();
   });
 
   it("downgrade offer → revise → awaits PayPal re-consent → confirmRevise saves", async () => {
-    addSubscriber("I-DOWN", "premium");
+    await addSubscriber("I-DOWN", "premium");
     decisions.push(offerDecision({ type: "downgrade", months: null, toTier: "lite", discountPct: null }));
     const s = await engine.startSession({ subscriptionId: "I-DOWN", channel: "agent", agentName: "test agent", firstMessage: "too much coffee" });
     const { session, approveUrl } = await engine.acceptOffer(s.id, s.offers[0].id);
@@ -101,14 +101,14 @@ describe("retention engine against simulated PayPal", () => {
     fake.approveRevise("I-DOWN", plans.lite);
     const confirmed = await engine.confirmRevise("I-DOWN");
     expect(confirmed?.outcome).toBe("saved");
-    const sub = store.getSubscriber("I-DOWN")!;
+    const sub = (await store.getSubscriber("I-DOWN"))!;
     expect(sub.tier).toBe("lite");
     expect(sub.priceUsd).toBe(12);
     expect(sub.pendingRevise).toBeUndefined();
   });
 
   it("discount offer → PATCH price → verified → restored later", async () => {
-    addSubscriber("I-DISC");
+    await addSubscriber("I-DISC");
     decisions.push(offerDecision({ type: "discount", months: 2, toTier: null, discountPct: 50 }));
     const s = await engine.startSession({ subscriptionId: "I-DISC", channel: "web", firstMessage: "too pricey" });
     // guardrail clamps 50% → 30% (default policy)
@@ -116,15 +116,15 @@ describe("retention engine against simulated PayPal", () => {
     expect(s.offers[0].guardrailNotes.length).toBeGreaterThan(0);
     await engine.acceptOffer(s.id, s.offers[0].id);
     expect(fake.subs.get("I-DISC")!.price).toBe("15.40");
-    expect(store.getSubscriber("I-DISC")!.priceUsd).toBe(15.4);
-    store.patchSubscriber("I-DISC", { discountUntil: new Date(Date.now() - 1000).toISOString() });
+    expect((await store.getSubscriber("I-DISC"))!.priceUsd).toBe(15.4);
+    await store.patchSubscriber("I-DISC", { discountUntil: new Date(Date.now() - 1000).toISOString() });
     await execute.runDueActions();
     expect(fake.subs.get("I-DISC")!.price).toBe("22.00");
-    expect(store.getSubscriber("I-DISC")!.discountUntil).toBeUndefined();
+    expect((await store.getSubscriber("I-DISC"))!.discountUntil).toBeUndefined();
   });
 
   it("out-of-policy offer is rejected, model retried, then falls back safely", async () => {
-    addSubscriber("I-LITE", "lite");
+    await addSubscriber("I-LITE", "lite");
     // downgrade from the cheapest tier is impossible → rejected; retry asks for cancellation
     decisions.push(offerDecision({ type: "downgrade", months: null, toTier: "lite", discountPct: null }));
     decisions.push({ ...offerDecision(null, "Understood, you can cancel below."), action: "accept_cancellation" });
@@ -135,7 +135,7 @@ describe("retention engine against simulated PayPal", () => {
   });
 
   it("decline → next offer; then cancel always works and is verified on PayPal", async () => {
-    addSubscriber("I-CANCEL");
+    await addSubscriber("I-CANCEL");
     decisions.push(offerDecision({ type: "pause", months: 1, toTier: null, discountPct: null }));
     decisions.push(offerDecision({ type: "downgrade", months: null, toTier: "lite", discountPct: null }));
     const s = await engine.startSession({ subscriptionId: "I-CANCEL", channel: "web", firstMessage: "switching to tea" });
@@ -150,36 +150,36 @@ describe("retention engine against simulated PayPal", () => {
   });
 
   it("a paused subscriber can still cancel, and no resume/restore is left scheduled", async () => {
-    addSubscriber("I-PAUSED-CANCEL");
+    await addSubscriber("I-PAUSED-CANCEL");
     decisions.push(offerDecision({ type: "pause", months: 2, toTier: null, discountPct: null }));
     const s = await engine.startSession({ subscriptionId: "I-PAUSED-CANCEL", channel: "web", firstMessage: "travelling" });
     await engine.acceptOffer(s.id, s.offers[0].id);
-    expect(store.getSubscriber("I-PAUSED-CANCEL")!.resumeAt).toBeTruthy();
+    expect((await store.getSubscriber("I-PAUSED-CANCEL"))!.resumeAt).toBeTruthy();
     // second visit while paused: no offers allowed (policy), cancel still works
     decisions.push({ ...offerDecision(null, "Understood, you can cancel below."), action: "accept_cancellation" });
     const s2 = await engine.startSession({ subscriptionId: "I-PAUSED-CANCEL", channel: "web", firstMessage: "actually just cancel" });
     const done = await engine.cancelNow(s2.id);
     expect(done.outcome).toBe("cancelled");
     expect(fake.subs.get("I-PAUSED-CANCEL")!.status).toBe("CANCELLED");
-    const sub = store.getSubscriber("I-PAUSED-CANCEL")!;
+    const sub = (await store.getSubscriber("I-PAUSED-CANCEL"))!;
     expect(sub.resumeAt).toBeUndefined();
     expect(sub.discountUntil).toBeUndefined();
   });
 
   it("max offers per conversation is enforced by the engine", async () => {
-    addSubscriber("I-MAX");
+    await addSubscriber("I-MAX");
     decisions.push(offerDecision({ type: "pause", months: 1, toTier: null, discountPct: null }));
     decisions.push(offerDecision({ type: "downgrade", months: null, toTier: "lite", discountPct: null }));
     decisions.push(offerDecision({ type: "discount", months: 1, toTier: null, discountPct: 10 })); // 3rd: over limit
     decisions.push({ ...offerDecision(null, "No problem, cancel below."), action: "accept_cancellation" });
     const s = await engine.startSession({ subscriptionId: "I-MAX", channel: "web", firstMessage: "x" });
     await engine.declineOffer(s.id, s.offers[0].id);
-    const s3 = await engine.declineOffer(s.id, engine.requireSession(s.id).offers[1].id);
+    const s3 = await engine.declineOffer(s.id, (await engine.requireSession(s.id)).offers[1].id);
     expect(s3.offers).toHaveLength(2);
   });
 
   it("accepting twice is refused (no double execution)", async () => {
-    addSubscriber("I-TWICE");
+    await addSubscriber("I-TWICE");
     decisions.push(offerDecision({ type: "pause", months: 1, toTier: null, discountPct: null }));
     const s = await engine.startSession({ subscriptionId: "I-TWICE", channel: "web", firstMessage: "x" });
     await engine.acceptOffer(s.id, s.offers[0].id);
@@ -188,9 +188,20 @@ describe("retention engine against simulated PayPal", () => {
   });
 
   it("publicSession never exposes the merchant-only rationale", async () => {
-    const s = store.readStore().sessions[0];
+    const s = (await store.readStore()).sessions[0];
     const view = JSON.stringify(engine.publicSession(s));
     expect(view).not.toContain("test rationale");
     expect(view).not.toContain("Guardrail");
+  });
+
+  it("concurrent accepts execute a payment action only once", async () => {
+    await addSubscriber("I-CONCURRENT");
+    decisions.push(offerDecision({ type: "pause", months: 1, toTier: null, discountPct: null }));
+    const s = await engine.startSession({ subscriptionId: "I-CONCURRENT", channel: "web", firstMessage: "travelling" });
+    const results = await Promise.allSettled([
+      engine.acceptOffer(s.id, s.offers[0].id), engine.acceptOffer(s.id, s.offers[0].id),
+    ]);
+    expect(results.filter((r) => r.status === "fulfilled")).toHaveLength(1);
+    expect(fake.calls.filter((c) => c.path.endsWith("/I-CONCURRENT/suspend"))).toHaveLength(1);
   });
 });

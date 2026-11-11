@@ -23,7 +23,7 @@ export default async function Account({
 }) {
   const { id } = await params;
   const sp = await searchParams;
-  if (!getSubscriber(id)) notFound();
+  if (!(await getSubscriber(id))) notFound();
 
   let notice: string | null = null;
   let error: string | null = null;
@@ -40,7 +40,7 @@ export default async function Account({
   }
   if (sp.revise_cancelled) notice = "You didn't confirm the plan change in PayPal, so your plan is unchanged.";
 
-  const sub = getSubscriber(id)!;
+  const sub = (await getSubscriber(id))!;
   const t = tier(sub.tier);
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 grid gap-6 md:grid-cols-[1fr_1.4fr]">

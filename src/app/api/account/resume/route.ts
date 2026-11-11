@@ -7,7 +7,7 @@ import { RetentionError } from "@/lib/retention/engine";
 export async function POST(req: Request) {
   return json(async () => {
     const { id } = await body<{ id: string }>(req);
-    const sub = getSubscriber(id);
+    const sub = await getSubscriber(id);
     if (!sub) throw new RetentionError("Unknown subscription", 404);
     if (sub.status !== "SUSPENDED") throw new RetentionError(`Subscription is ${sub.status}`);
     return resumeNow(id);

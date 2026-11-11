@@ -16,7 +16,7 @@ export async function POST(req: Request) {
         return ensureCatalog();
       case "sync-all": {
         const out: Record<string, string> = {};
-        for (const s of readStore().subscribers) {
+        for (const s of (await readStore()).subscribers) {
           try {
             out[s.id] = (await syncSubscriber(s.id))?.status ?? "unknown";
           } catch (e) {
@@ -35,18 +35,18 @@ export async function POST(req: Request) {
       case "set-profile": {
         // Demo helper: set the merchant-side facts (usage, tenure) for a subscriber.
         const id = req_id(b.id);
-        patchSubscriber(id, {
+        await patchSubscriber(id, {
           ...(b.usage ? { usage: b.usage as never } : {}),
           ...(b.name ? { name: b.name } : {}),
           ...(b.createdAt ? { createdAt: b.createdAt } : {}),
         });
-        return readStore().subscribers.find((s) => s.id === id);
+        return (await readStore()).subscribers.find((s) => s.id === id);
       }
       case "import": {
         // Track an existing PayPal subscription (e.g. created from the sandbox dashboard).
         const id = req_id(b.id);
         const t = b.tier ?? "standard";
-        upsertSubscriber({
+        await upsertSubscriber({
           id,
           name: b.name ?? "Imported subscriber",
           email: b.email ?? "",

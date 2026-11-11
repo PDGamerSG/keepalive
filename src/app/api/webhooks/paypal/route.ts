@@ -25,11 +25,11 @@ export async function POST(req: Request) {
     verified = false;
   }
   if (!verified) {
-    recordEvent({ type: "webhook.unverified", summary: `${event.event_type} (ignored: signature not verified)` });
+    await recordEvent({ type: "webhook.unverified", summary: `${event.event_type} (ignored: signature not verified)` });
     return NextResponse.json({ ok: false }, { status: 400 });
   }
-  if (readStore().webhookIds.includes(event.id)) return NextResponse.json({ ok: true, duplicate: true });
-  updateStore((s) => {
+  if ((await readStore()).webhookIds.includes(event.id)) return NextResponse.json({ ok: true, duplicate: true });
+  await updateStore((s) => {
     s.webhookIds.unshift(event.id);
     s.webhookIds.length = Math.min(s.webhookIds.length, 1000);
   });
@@ -37,12 +37,12 @@ export async function POST(req: Request) {
   const subId = event.event_type.startsWith("BILLING.SUBSCRIPTION")
     ? event.resource?.id
     : event.resource?.billing_agreement_id;
-  recordEvent({ type: "webhook", subscriptionId: subId, summary: `${event.event_type}${event.summary ? `: ${event.summary}` : ""}` });
-  if (subId && getSubscriber(subId)) {
+  await recordEvent({ type: "webhook", subscriptionId: subId, summary: `${event.event_type}${event.summary ? `: ${event.summary}` : ""}` });
+  if (subId && (await getSubscriber(subId))) {
     try {
       await syncSubscriber(subId);
     } catch (e) {
-      recordEvent({ type: "webhook.sync_error", subscriptionId: subId, summary: String(e) });
+      await recordEvent({ type: "webhook.sync_error", subscriptionId: subId, summary: String(e) });
     }
   }
   return NextResponse.json({ ok: true });

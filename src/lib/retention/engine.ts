@@ -1,7 +1,7 @@
 import "server-only";
 import { randomUUID } from "node:crypto";
 import { DEFAULT_POLICY, checkOffer, type MerchantPolicy } from "@/lib/policy";
-import { getSession, getSubscriber, readStore, recordEvent, saveSession } from "@/lib/store";
+import { getSession, getSubscriber, readStore, recordEvent, saveSession, updateStore } from "@/lib/store";
 import type { ChatMessage, Offer, RetentionSession, Subscriber } from "@/lib/types";
 import { decide } from "./agent";
 import { executeCancel, executeOffer, syncSubscriber } from "./execute";
@@ -17,8 +17,8 @@ export class RetentionError extends Error {
   }
 }
 
-export function getPolicy(): MerchantPolicy {
-  return { ...DEFAULT_POLICY, ...(readStore().policy ?? {}) };
+export async function getPolicy(): Promise<MerchantPolicy> {
+  return { ...DEFAULT_POLICY, ...((await readStore()).policy ?? {}) };
 }
 
 const now = () => new Date().toISOString();
@@ -27,14 +27,14 @@ function msg(role: ChatMessage["role"], text: string, offerId?: string): ChatMes
   return { role, text, at: now(), ...(offerId ? { offerId } : {}) };
 }
 
-function requireSub(id: string): Subscriber {
-  const sub = getSubscriber(id);
+async function requireSub(id: string): Promise<Subscriber> {
+  const sub = await getSubscriber(id);
   if (!sub) throw new RetentionError(`Unknown subscription ${id}`, 404);
   return sub;
 }
 
-export function requireSession(id: string): RetentionSession {
-  const s = getSession(id);
+export async function requireSession(id: string): Promise<RetentionSession> {
+  const s = await getSession(id);
   if (!s) throw new RetentionError(`Unknown session ${id}`, 404);
   return s;
 }
@@ -45,7 +45,7 @@ export async function startSession(input: {
   agentName?: string;
   firstMessage?: string;
 }): Promise<RetentionSession> {
-  let sub = requireSub(input.subscriptionId);
+  let sub = await requireSub(input.subscriptionId);
   try {
     sub = (await syncSubscriber(sub.id)) ?? sub;
   } catch {
@@ -63,7 +63,7 @@ export async function startSession(input: {
     outcome: "open",
     rationale: [],
   };
-  recordEvent({
+  await recordEvent({
     type: "retention.started",
     subscriptionId: sub.id,
     summary: `${input.channel === "agent" ? `Agent (${input.agentName ?? "unknown"})` : "Subscriber"} started cancellation`,
@@ -71,14 +71,14 @@ export async function startSession(input: {
   if (input.firstMessage?.trim()) {
     session.messages.push(msg("subscriber", input.firstMessage.trim()));
   }
-  saveSession(session);
+  await saveSession(session);
   return respond(session, sub);
 }
 
 /** Ask the retention agent for its next move and apply guardrails. */
 async function respond(session: RetentionSession, sub: Subscriber, extraNote?: string): Promise<RetentionSession> {
-  const policy = getPolicy();
-  const store = readStore();
+  const policy = await getPolicy();
+  const store = await readStore();
   let decision = await decide(sub, policy, session, extraNote);
   session.reason = decision.reason_category;
   session.reasonSummary = decision.reason_summary;
@@ -88,7 +88,7 @@ async function respond(session: RetentionSession, sub: Subscriber, extraNote?: s
     let check = checkOffer(decision.offer, sub, policy, session, store.subscribers);
     if (!check.ok) {
       session.rationale.push(`Guardrail rejected ${decision.offer.type}: ${check.reason}`);
-      recordEvent({ type: "guardrail.rejected", subscriptionId: sub.id, summary: `${decision.offer.type}: ${check.reason}` });
+      await recordEvent({ type: "guardrail.rejected", subscriptionId: sub.id, summary: `${decision.offer.type}: ${check.reason}` });
       // One retry with the rejection reason; then fall back to accepting the cancellation.
       decision = await decide(
         sub,
@@ -106,60 +106,66 @@ async function respond(session: RetentionSession, sub: Subscriber, extraNote?: s
       session.offers.push(offer);
       session.messages.push(msg("keepalive", decision.reply, offer.id));
       if (offer.guardrailNotes.length) {
-        recordEvent({ type: "guardrail.adjusted", subscriptionId: sub.id, summary: offer.guardrailNotes.join("; ") });
+        await recordEvent({ type: "guardrail.adjusted", subscriptionId: sub.id, summary: offer.guardrailNotes.join("; ") });
       }
-      recordEvent({ type: "offer.proposed", subscriptionId: sub.id, summary: offer.label });
-      saveSession(session);
+      await recordEvent({ type: "offer.proposed", subscriptionId: sub.id, summary: offer.label });
+      await saveSession(session);
       return session;
     }
     if (decision.action === "propose_offer") {
       session.messages.push(
         msg("keepalive", "Understood. You can cancel right away below and you won't be charged again."),
       );
-      saveSession(session);
+      await saveSession(session);
       return session;
     }
   }
   session.messages.push(msg("keepalive", decision.reply));
-  saveSession(session);
+  await saveSession(session);
   return session;
 }
 
 export async function sendMessage(sessionId: string, text: string): Promise<RetentionSession> {
-  const session = requireSession(sessionId);
+  const session = await requireSession(sessionId);
   if (session.outcome !== "open") throw new RetentionError(`Session is already ${session.outcome}`);
-  const sub = requireSub(session.subscriptionId);
+  const sub = await requireSub(session.subscriptionId);
   // A new message implicitly declines any open offer.
   for (const o of session.offers) if (o.status === "proposed") o.status = "declined";
   session.messages.push(msg("subscriber", text.slice(0, 2000)));
-  saveSession(session);
+  await saveSession(session);
   return respond(session, sub);
 }
 
 export async function declineOffer(sessionId: string, offerId: string): Promise<RetentionSession> {
-  const session = requireSession(sessionId);
+  const session = await requireSession(sessionId);
   const offer = session.offers.find((o) => o.id === offerId);
   if (!offer) throw new RetentionError("Unknown offer", 404);
   if (offer.status !== "proposed") throw new RetentionError(`Offer is ${offer.status}`);
   offer.status = "declined";
   session.messages.push(msg("subscriber", `No thanks to "${offer.label}".`));
-  recordEvent({ type: "offer.declined", subscriptionId: session.subscriptionId, summary: offer.label });
-  saveSession(session);
-  return respond(session, requireSub(session.subscriptionId));
+  await recordEvent({ type: "offer.declined", subscriptionId: session.subscriptionId, summary: offer.label });
+  await saveSession(session);
+  return respond(session, await requireSub(session.subscriptionId));
 }
 
 export async function acceptOffer(
   sessionId: string,
   offerId: string,
 ): Promise<{ session: RetentionSession; approveUrl?: string }> {
-  const session = requireSession(sessionId);
-  if (session.outcome !== "open") throw new RetentionError(`Session is already ${session.outcome}`);
-  const offer = session.offers.find((o) => o.id === offerId);
-  if (!offer) throw new RetentionError("Unknown offer", 404);
-  if (offer.status !== "proposed") throw new RetentionError(`Offer is ${offer.status}`);
-  const sub = requireSub(session.subscriptionId);
-  offer.status = "executing";
-  saveSession(session);
+  // Claim within the storage transaction, before any PayPal call. On contention
+  // the callback is retried against fresh state, which rejects a second accept.
+  const session = await updateStore((s) => {
+    const current = s.sessions.find((x) => x.id === sessionId);
+    if (!current) throw new RetentionError(`Unknown session ${sessionId}`, 404);
+    if (current.outcome !== "open") throw new RetentionError(`Session is already ${current.outcome}`);
+    const offer = current.offers.find((o) => o.id === offerId);
+    if (!offer) throw new RetentionError("Unknown offer", 404);
+    if (offer.status !== "proposed") throw new RetentionError(`Offer is ${offer.status}`);
+    offer.status = "executing";
+    return structuredClone(current);
+  });
+  const offer = session.offers.find((o) => o.id === offerId)!;
+  const sub = await requireSub(session.subscriptionId);
   let result;
   try {
     result = await executeOffer(sub, offer);
@@ -167,7 +173,7 @@ export async function acceptOffer(
     offer.status = "failed";
     offer.result = e instanceof Error ? e.message : String(e);
     session.messages.push(msg("system", `PayPal call failed: ${offer.result}`));
-    saveSession(session);
+    await saveSession(session);
     throw new RetentionError(`PayPal call failed: ${offer.result}`, 502);
   }
   offer.status = result.status;
@@ -176,20 +182,20 @@ export async function acceptOffer(
   if (result.status === "executed") {
     session.outcome = "saved";
     session.closedAt = now();
-    recordEvent({ type: "retention.saved", subscriptionId: sub.id, summary: `${offer.label}: ${result.message}` });
+    await recordEvent({ type: "retention.saved", subscriptionId: sub.id, summary: `${offer.label}: ${result.message}` });
   } else if (result.status === "awaiting_paypal_approval") {
-    recordEvent({ type: "offer.awaiting_approval", subscriptionId: sub.id, summary: offer.label });
+    await recordEvent({ type: "offer.awaiting_approval", subscriptionId: sub.id, summary: offer.label });
   }
-  saveSession(session);
+  await saveSession(session);
   return { session, approveUrl: result.approveUrl };
 }
 
 /** Called after PayPal redirects back from a revise approval. */
 export async function confirmRevise(subscriptionId: string): Promise<RetentionSession | undefined> {
-  const sub = requireSub(subscriptionId);
+  const sub = await requireSub(subscriptionId);
   const pending = sub.pendingRevise;
   const fresh = await syncSubscriber(subscriptionId);
-  const session = readStore().sessions.find((s) =>
+  const session = (await readStore()).sessions.find((s) =>
     s.subscriptionId === subscriptionId && s.offers.some((o) => o.status === "awaiting_paypal_approval"),
   );
   if (!session) return undefined;
@@ -202,14 +208,14 @@ export async function confirmRevise(subscriptionId: string): Promise<RetentionSe
   session.messages.push(msg("system", offer.result, offer.id));
   session.outcome = "saved";
   session.closedAt = now();
-  recordEvent({ type: "retention.saved", subscriptionId, summary: `${offer.label}: approved in PayPal` });
-  saveSession(session);
+  await recordEvent({ type: "retention.saved", subscriptionId, summary: `${offer.label}: approved in PayPal` });
+  await saveSession(session);
   return session;
 }
 
 export async function cancelNow(sessionId: string): Promise<RetentionSession> {
-  const session = requireSession(sessionId);
-  const sub = requireSub(session.subscriptionId);
+  const session = await requireSession(sessionId);
+  const sub = await requireSub(session.subscriptionId);
   for (const o of session.offers) if (o.status === "proposed") o.status = "declined";
   const reason = `KeepAlive: ${session.reasonSummary ?? "subscriber cancelled"}`;
   const result = await executeCancel(sub, reason, `keepalive-cancel-${session.id}`);
@@ -217,9 +223,9 @@ export async function cancelNow(sessionId: string): Promise<RetentionSession> {
   if (result.status === "executed") {
     session.outcome = "cancelled";
     session.closedAt = now();
-    recordEvent({ type: "retention.cancelled", subscriptionId: sub.id, summary: reason });
+    await recordEvent({ type: "retention.cancelled", subscriptionId: sub.id, summary: reason });
   }
-  saveSession(session);
+  await saveSession(session);
   if (result.status !== "executed") throw new RetentionError(result.message, 502);
   return session;
 }

@@ -1,0 +1,8 @@
+.git
+node_modules
+.next
+data
+.env*
+!.env.example
+docs/archive
+research

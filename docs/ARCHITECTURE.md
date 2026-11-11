@@ -37,7 +37,7 @@ A subscription merchant who bills through **PayPal Subscriptions** (here a demo 
 | Executor | `src/lib/retention/execute.ts` | maps an accepted offer to PayPal calls and confirms the result by reading the subscription back |
 | Consumer agent | `src/lib/agents/consumer.ts` | a Claude agent acting **for the subscriber**; calls the same tools as MCP; pauses for human approval |
 | MCP | `src/app/api/mcp/route.ts` | the agent-facing endpoint for real external agents (Claude Desktop, etc.) |
-| Store | `src/lib/store.ts` | JSON persistence in `data/store.json` (git-ignored) |
+| Store | `src/lib/store.ts` | Private Vercel Blob with conditional writes on hosted deployments; JSON persistence in `data/store.json` locally (git-ignored). Agent runs survive function restarts. |
 
 ## Offer → PayPal mapping
 
