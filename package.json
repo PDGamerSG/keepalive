@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "docs:check": "node .agents/skills/documenting-readmes/scripts/check-readme.mjs README.md",
     "test": "vitest run",
     "eval:ai": "vitest run --config vitest.ai.config.ts",
     "typecheck": "tsc --noEmit"
