@@ -1,0 +1,35 @@
+# Render Blueprint: one-click deploy of KeepAlive (Render is a hackathon sponsor).
+# Dashboard → New → Blueprint → pick this repo. Fill in the secret env vars when prompted.
+services:
+  - type: web
+    name: keepalive
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: PAYPAL_ENV
+        value: sandbox
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: PAYPAL_WEBHOOK_ID
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: APP_URL
+        sync: false
+      - key: PAYPAL_PRODUCT_ID
+        sync: false
+      - key: PAYPAL_PLAN_LITE
+        sync: false
+      - key: PAYPAL_PLAN_STANDARD
+        sync: false
+      - key: PAYPAL_PLAN_PREMIUM
+        sync: false
+      - key: ADMIN_TOKEN
+        sync: false
