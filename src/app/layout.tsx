@@ -18,7 +18,8 @@ export const metadata: Metadata = {
 export const dynamic = "force-dynamic";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const missing = [!paypalConfigured() && "PayPal sandbox keys", !aiConfigured() && "ANTHROPIC_API_KEY"].filter(Boolean);
+  const paypalAvailable = paypalConfigured();
+  const aiAvailable = aiConfigured();
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
@@ -34,10 +35,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <span className="ml-auto pill bg-crema text-espresso">PayPal sandbox</span>
           </nav>
         </header>
-        {missing.length > 0 && (
-          <div className="bg-amber-50 border-b border-amber-200 text-amber-900 text-sm">
+        {(!paypalAvailable || !aiAvailable) && (
+          <div role="status" className="bg-amber-50 border-b border-amber-200 text-amber-900 text-sm">
             <div className="mx-auto max-w-6xl px-4 py-2">
-              Setup needed: add {missing.join(" and ")} to <code>.env.local</code> (see <code>.env.example</code>), then restart.
+              {!paypalAvailable && "PayPal checkout is temporarily unavailable. "}
+              {!aiAvailable && "AI conversations are temporarily unavailable. "}
+              You can still explore the demo.
             </div>
           </div>
         )}

@@ -1,4 +1,5 @@
 import { MERCHANT, TIERS } from "@/lib/catalog";
+import { paypalConfigured } from "@/lib/paypal/client";
 import { SubscribeForm } from "./subscribe-form";
 
 export default async function Shop({ searchParams }: { searchParams: Promise<{ cancelled?: string }> }) {
@@ -11,7 +12,7 @@ export default async function Shop({ searchParams }: { searchParams: Promise<{ c
         <p className="mt-3 text-muted">{MERCHANT.tagline}. Billed monthly with PayPal.</p>
         {cancelled && <p className="mt-4 pill bg-amber-100 text-amber-900">Checkout cancelled: no subscription was created.</p>}
       </div>
-      <SubscribeForm tiers={TIERS} />
+      <SubscribeForm tiers={TIERS} checkoutAvailable={paypalConfigured()} />
       <p className="mt-8 text-center text-xs text-muted">
         Sandbox only: approve with your PayPal <b>sandbox personal</b> account. No real money moves.
       </p>

@@ -5,7 +5,7 @@ import type { Tier } from "@/lib/catalog";
 import type { TierId } from "@/lib/types";
 import { PERSONAS } from "@/lib/personas";
 
-export function SubscribeForm({ tiers }: { tiers: Tier[] }) {
+export function SubscribeForm({ tiers, checkoutAvailable }: { tiers: Tier[]; checkoutAvailable: boolean }) {
   const [selected, setSelected] = useState<TierId>("standard");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -37,6 +37,7 @@ export function SubscribeForm({ tiers }: { tiers: Tier[] }) {
         {tiers.map((t) => (
           <button
             key={t.id}
+            aria-pressed={selected === t.id}
             onClick={() => setSelected(t.id)}
             className={`card p-6 text-left transition ${selected === t.id ? "ring-2 ring-espresso" : "hover:bg-crema/40"}`}
           >
@@ -65,8 +66,8 @@ export function SubscribeForm({ tiers }: { tiers: Tier[] }) {
           Email
           <input className="input mt-1" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="maya@example.com" />
         </label>
-        <button className="btn btn-paypal h-[42px]" disabled={busy || !name || !email} onClick={subscribe}>
-          {busy ? "Opening PayPal…" : "Subscribe with PayPal"}
+        <button className="btn btn-paypal h-[42px]" disabled={!checkoutAvailable || busy || !name || !email} onClick={subscribe}>
+          {!checkoutAvailable ? "PayPal checkout unavailable" : busy ? "Opening PayPal…" : "Subscribe with PayPal"}
         </button>
       </div>
       <label className="mt-3 flex flex-wrap items-center justify-end gap-2 text-xs text-muted">
