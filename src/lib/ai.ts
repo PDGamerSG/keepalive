@@ -1,11 +1,12 @@
 import "server-only";
 import Anthropic from "@anthropic-ai/sdk";
 
-/** Shared Claude client + model choice. */
-export const MODEL = process.env.KEEPALIVE_MODEL ?? "claude-opus-5-5";
-
-/** Server-side refusal fallback (routes a refused request to a fallback model automatically). */
-export const FALLBACK_BETA = "server-side-fallback-2026-07-01";
+/**
+ * Shared Claude client + model choice. Claude Haiku 5.5 by default: both agents pass
+ * their evals on it at a fraction of the cost of the larger models. Override with
+ * KEEPALIVE_MODEL (e.g. claude-sonnet-5-5).
+ */
+export const MODEL = process.env.KEEPALIVE_MODEL ?? "claude-haiku-5-5";
 
 let client: Anthropic | null = null;
 export function anthropic(): Anthropic {

@@ -2,7 +2,8 @@ import "server-only";
 import { z } from "zod";
 import Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
-import { aiConfigured, anthropic, FALLBACK_BETA, MODEL } from "@/lib/ai";
+import { aiConfigured, anthropic, MODEL } from "@/lib/ai";
+import { refusalFallback } from "@/lib/ai-fallback";
 import { recordAiUsage } from "@/lib/ai-usage";
 import { MERCHANT, tier } from "@/lib/catalog";
 import { describePolicy, type MerchantPolicy } from "@/lib/policy";
@@ -62,19 +63,26 @@ function tenureLabel(createdAt: string) {
   return days < 1 ? "joined today" : `${days} days`;
 }
 
-export function buildContext(sub: Subscriber, policy: MerchantPolicy, session: RetentionSession, extraNote?: string) {
-  const t = tier(sub.tier);
-  const offers = session.offers.length
-    ? session.offers.map((o) => `- ${o.label}: ${o.status}`).join("\n")
-    : "- none yet";
-  const transcript = session.messages
-    .filter((m) => m.role !== "system")
-    .map((m) => `${m.role === "subscriber" ? (session.channel === "agent" ? "SUBSCRIBER'S AGENT" : "SUBSCRIBER") : "KEEPALIVE"}: ${m.text}`)
-    .join("\n");
-  return `## Merchant voice
-${policy.brandVoice}
+/*
+ * The request is laid out for prompt caching, most stable first:
+ *   system  - fixed instructions + the merchant's voice (same for every conversation)  [cached]
+ *   user[0] - what policy allows for this subscriber, and who they are (same all conversation) [cached]
+ *   user[1] - offers so far and the transcript (new every turn)                         [not cached]
+ * Each cached block is reused by later calls instead of being paid for again. The turn
+ * block sits after the last breakpoint, so the cache is never written with content that
+ * is never read back.
+ */
 
-## What the merchant policy allows for this subscriber
+/** Merchant-wide context: changes only when the merchant edits its brand voice. */
+export function merchantContext(policy: MerchantPolicy) {
+  return `## Merchant voice
+${policy.brandVoice}`;
+}
+
+/** Context that stays the same for the whole conversation. */
+export function sessionContext(sub: Subscriber, policy: MerchantPolicy, session: RetentionSession) {
+  const t = tier(sub.tier);
+  return `## What the merchant policy allows for this subscriber
 ${describePolicy(policy, sub)}
 
 ## Subscriber
@@ -86,8 +94,19 @@ ${
   session.channel === "agent"
     ? `\nYou are talking to an AI agent acting on the subscriber's behalf (${session.agentName ?? "subscriber's agent"}). Be concise and precise: state offer terms exactly so the agent can relay them to its human.\n`
     : ""
+}`;
 }
-## Offers already made in this conversation
+
+/** Context that changes every turn: offers so far, the transcript and any note from the system. */
+export function turnContext(session: RetentionSession, extraNote?: string) {
+  const offers = session.offers.length
+    ? session.offers.map((o) => `- ${o.label}: ${o.status}`).join("\n")
+    : "- none yet";
+  const transcript = session.messages
+    .filter((m) => m.role !== "system")
+    .map((m) => `${m.role === "subscriber" ? (session.channel === "agent" ? "SUBSCRIBER'S AGENT" : "SUBSCRIBER") : "KEEPALIVE"}: ${m.text}`)
+    .join("\n");
+  return `## Offers already made in this conversation
 ${offers}
 
 ## Conversation so far
@@ -108,12 +127,21 @@ export async function decide(
     .beta.messages.parse({
       model: MODEL,
       max_tokens: 4000,
-      betas: [FALLBACK_BETA],
-      fallbacks: "default",
-      system: [{ type: "text", text: SYSTEM, cache_control: { type: "ephemeral" } }],
-      cache_control: { type: "ephemeral" },
+      ...refusalFallback(MODEL),
+      system: [
+        { type: "text", text: SYSTEM },
+        { type: "text", text: merchantContext(policy), cache_control: { type: "ephemeral" } },
+      ],
       output_config: { effort: "low", format: betaZodOutputFormat(DecisionSchema) },
-      messages: [{ role: "user", content: buildContext(sub, policy, session, extraNote) }],
+      messages: [
+        {
+          role: "user",
+          content: [
+            { type: "text", text: sessionContext(sub, policy, session), cache_control: { type: "ephemeral" } },
+            { type: "text", text: turnContext(session, extraNote) },
+          ],
+        },
+      ],
     })
     .catch((e: unknown) => {
       if (!(e instanceof Anthropic.APIError)) throw e;

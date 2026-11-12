@@ -1,7 +1,8 @@
 import "server-only";
 import { randomUUID } from "node:crypto";
 import type Anthropic from "@anthropic-ai/sdk";
-import { aiConfigured, anthropic, FALLBACK_BETA, MODEL } from "@/lib/ai";
+import { aiConfigured, anthropic, MODEL } from "@/lib/ai";
+import { refusalFallback } from "@/lib/ai-fallback";
 import { recordAiUsage } from "@/lib/ai-usage";
 import * as store from "@/lib/store";
 import {
@@ -254,8 +255,7 @@ async function drive(run: AgentRun) {
     const response = await anthropic().beta.messages.create({
       model: MODEL,
       max_tokens: 4000,
-      betas: [FALLBACK_BETA],
-      fallbacks: "default",
+      ...refusalFallback(MODEL),
       system: [{ type: "text", text: SYSTEM, cache_control: { type: "ephemeral" } }],
       cache_control: { type: "ephemeral" },
       tools: TOOLS,

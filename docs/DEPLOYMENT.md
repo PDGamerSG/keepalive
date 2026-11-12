@@ -38,7 +38,7 @@ npm run eval:ai  # loads .env.local; calls Claude and costs API tokens
 npx vercel --prod --yes --scope pallab-das-projects-d3f377fd
 ```
 
-The AI evaluation runs in a temporary local store. Both agents enable five-minute prompt caching on their stable system context and use automatic breakpoints for growing requests. `ai.usage` events retain the provider's input/output, cache-write and cache-read token counters. A configured cache does not imply a hit: inspect those counters to verify reuse.
+The AI evaluation runs in a temporary local store. Both agents run on Claude Haiku 5.5 by default (`KEEPALIVE_MODEL` overrides it) and use five-minute prompt caching, most stable content first. The retention agent caches its instructions with the merchant's voice, then the per-conversation subscriber and policy block; the per-turn transcript comes last and is never written to the cache. The subscriber's agent caches its tools and instructions and moves an automatic breakpoint to the newest turn, so each step reuses the previous one. `ai.usage` events retain the provider's input/output, cache-write and cache-read token counters. A configured cache does not imply a hit: inspect those counters to verify reuse.
 
 After setting credentials, run **Set up PayPal plans** once from `/merchant`. Register the webhook for supported `BILLING.SUBSCRIPTION.*` events and `PAYMENT.SALE.COMPLETED`, then save its ID in Vercel and redeploy. Use a US Personal sandbox buyer for checkout. Follow the real sandbox checklist in [TESTING.md](TESTING.md).
 
