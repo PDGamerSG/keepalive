@@ -18,7 +18,7 @@ The cancel button is where subscription businesses bleed. Merchants on Stripe, B
 ## How we built it
 - **Next.js 16 + TypeScript** app, deployed on Vercel at https://keepalive.pallabdas.me, with state in private Vercel Blob storage and a daily Vercel Cron job for scheduled resumes and price restores.
 - **PayPal:** Catalog Products and Billing Plans (bootstrap), Subscriptions v1 (create, approve, get, suspend, activate, revise, PATCH pricing, cancel, transactions), and Webhooks with `verify-webhook-signature`. Every mutating call sends a `PayPal-Request-Id` idempotency key.
-- **AI:** Claude (`claude-opus-5-5`) through the Anthropic SDK. The retention agent uses **structured outputs** (zod schema: reason, action, offer, reply, rationale). The subscriber's agent is a **tool-use loop** that must call `ask_my_human` before `accept_offer`.
+- **AI:** Claude Haiku 5.5 (`claude-haiku-5-5`) through the Anthropic SDK; set `KEEPALIVE_MODEL` to use another model. The retention agent uses **structured outputs** (zod schema: reason, action, offer, reply, rationale). The subscriber's agent is a **tool-use loop** that must call `ask_my_human` before `accept_offer`.
 - **MCP:** `mcp-handler` + MCP SDK v2 serving `get_subscription`, `request_cancellation`, `send_message`, `accept_offer`, `decline_offer`, `cancel_subscription` and `get_session`.
 - **AG Grid** for the merchant's subscriber table.
 

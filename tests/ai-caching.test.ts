@@ -7,7 +7,7 @@ import { DEFAULT_POLICY } from "@/lib/policy";
 
 const calls = vi.hoisted(() => ({ parse: vi.fn(), create: vi.fn() }));
 vi.mock("@/lib/ai", () => ({
-  MODEL: "claude-opus-5-5", FALLBACK_BETA: "server-side-fallback-2026-07-01",
+  MODEL: "claude-haiku-5-5",
   anthropic: () => ({ beta: { messages: calls } }),
   aiConfigured: () => true,
 }));
@@ -27,7 +27,20 @@ it("retention requests cache the stable instructions and record actual provider 
   const result = await decide(makeSub(), DEFAULT_POLICY, makeSession());
   expect(result.action).toBe("accept_cancellation");
   const request = calls.parse.mock.calls[0][0];
-  expect(request.system[0].cache_control).toEqual({ type: "ephemeral" });
+  // Most stable first: fixed instructions + merchant voice cached, then the per-conversation
+  // subscriber block cached, then the per-turn transcript after the last breakpoint.
+  expect(request.system.at(-1).cache_control).toEqual({ type: "ephemeral" });
+  expect(request.system.at(-1).text).toContain("## Merchant voice");
+  const [session, turn] = request.messages[0].content;
+  expect(session.cache_control).toEqual({ type: "ephemeral" });
+  expect(session.text).toContain("## Subscriber");
+  expect(turn.cache_control).toBeUndefined();
+  expect(turn.text).toContain("## Conversation so far");
+  // No automatic breakpoint: it would write the per-turn block to the cache on every call.
+  expect(request.cache_control).toBeUndefined();
+  // Haiku has no server-side refusal fallback; sending one is a 400.
+  expect(request.fallbacks).toBeUndefined();
+  expect(request.betas).toBeUndefined();
   const { readStore } = await import("@/lib/store");
   const usage = (await readStore()).events.find((e) => e.type === "ai.usage");
   expect(usage?.detail).toMatchObject({ cacheReadInputTokens: 1500, outputTokens: 30 });
