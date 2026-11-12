@@ -7,13 +7,18 @@
   align-items: start;
 }
 
+/* minmax(0, 1fr) lets wide content (the MCP config) scroll inside its card
+   instead of stretching the column under the negotiation panel. */
 .ag-side {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
+  min-width: 0;
 }
 
 .ag-card {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.1rem;
   padding: 1.4rem;
 }
@@ -62,6 +67,7 @@
 
 .ag-party {
   display: grid;
+  min-width: 0;
   font-size: 0.875rem;
 }
 
@@ -83,7 +89,8 @@
   display: grid;
   flex: 1;
   place-items: center;
-  min-width: 3rem;
+  /* Never narrower than the status badge it carries. */
+  min-width: max-content;
 }
 
 .ag-wire::before {
@@ -185,12 +192,24 @@
 
 @media (max-width: 900px) {
   .ag {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
 @media (max-width: 560px) {
   .ag-party small {
     display: none;
+  }
+
+  /* Both parties on one row, the status badge on its own row beneath. */
+  .ag-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.6rem;
+  }
+
+  .ag-wire {
+    grid-column: 1 / -1;
+    grid-row: 2;
   }
 }

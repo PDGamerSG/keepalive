@@ -158,14 +158,14 @@ export function AgentDemo({ subscribers, mcpUrl }: { subscribers: { id: string; 
         <header className="ag-link">
           <span className="ag-party">
             <b>Subscriber&apos;s agent</b>
-            <small>An AI agent, acting for the human</small>
+            <small>Acts for the human</small>
           </span>
           <span className="ag-wire" role="status">
             <span className={`badge badge-${tone}`}>{label}</span>
           </span>
           <span className="ag-party ag-party-right">
             <b>Brewbox&apos;s retention desk</b>
-            <small>KeepAlive, the merchant&apos;s AI desk</small>
+            <small>Answers for the merchant</small>
           </span>
         </header>
 
