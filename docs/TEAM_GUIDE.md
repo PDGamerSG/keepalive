@@ -27,7 +27,7 @@ See [ARCHITECTURE.md](ARCHITECTURE.md). Short version:
 - `src/app/*`: pages and API routes
 
 ## Status board (update when you pick something up)
-_Last updated 2026-11-11. See [RELEASE_QA.md](RELEASE_QA.md) for current release evidence._
+_Last updated 2026-11-12. See [RELEASE_QA.md](RELEASE_QA.md) for current release evidence._
 
 | Area | Owner | State |
 |---|---|---|
@@ -37,9 +37,10 @@ _Last updated 2026-11-11. See [RELEASE_QA.md](RELEASE_QA.md) for current release
 | Merchant dashboard and application theme | team | ✅ aligned with the landing page; desktop/mobile and error recovery checked |
 | Landing page (`/`, 3D console, scroll story, guardrail playground) | Aditya | ✅ done; static, no backend calls. Model source: `tools/blender/build_console.py` |
 | Tests | team | ✅ 55 offline tests; earlier 8 live Claude evals, with prompt-cache usage recorded |
-| Sandbox end-to-end test | Aditya | ✅ steps 1–9 passed, see [TESTING.md](TESTING.md) |
+| Sandbox end-to-end test | Aditya | ✅ steps 1–9 passed on 2026-11-11 and again on 2026-11-12 after the Vercel/Blob changes, see [TESTING.md](TESTING.md) |
 | Vercel + Namecheap deployment | team | ✅ https://keepalive.pallabdas.me; private Blob persistence and authenticated cron |
-| Hosted PayPal integration + webhooks | open | REST application credentials and webhook ID are absent; sandbox account logins are saved locally |
+| Hosted PayPal integration + webhooks | Pallab (Vercel env) | Webhook registered on the sandbox app for the hosted URL. Waiting for `PAYPAL_CLIENT_ID`, `PAYPAL_CLIENT_SECRET`, `PAYPAL_WEBHOOK_ID` and the `PAYPAL_PRODUCT_ID`/`PAYPAL_PLAN_*` values in Vercel (values shared privately, not in git), then a redeploy |
+| Hosted demo data | Aditya | after the hosted keys land: run a few real sandbox subscriptions and conversations so the dashboard is not empty for judges |
 | MCP from Claude Desktop (`mcp-remote`) | open | not tried yet |
 | Demo video (≤ 2:50) | team | not started; script in [DEMO_SCRIPT.md](DEMO_SCRIPT.md) |
 | Devpost submission text | team | draft in [SUBMISSION.md](SUBMISSION.md) |

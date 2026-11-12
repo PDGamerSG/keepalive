@@ -33,4 +33,6 @@ The supplied screenshots contain sandbox account emails/passwords. They are stor
 
 The current hosted environment has Claude, private Blob storage, the application URL, sandbox mode, and the authenticated cron configured. It has no PayPal REST client ID/secret or registered webhook ID. Checkout and the live agent demo therefore show their unavailable states. Real hosted checkout, payment mutations, and webhook delivery have not been verified for this release. Historical sandbox results in [TESTING.md](TESTING.md) describe the earlier developer environment.
 
+Update 2026-11-12: this release's code (commit f810cf6) was re-run locally against the real PayPal sandbox with live Claude. Checkout, pause, resume, discount and restore, downgrade with buyer approval in PayPal, the per-conversation offer limit, the consumer agent's decline-then-cancel path and MCP lookup all passed; results are in [TESTING.md](TESTING.md). A webhook for `https://keepalive.pallabdas.me/api/webhooks/paypal` is registered on the sandbox REST app. The hosted deployment still needs the REST credentials, the webhook ID and the catalog IDs in its environment before hosted checkout and webhook delivery can be verified.
+
 The Vercel and DNS configuration is documented in [DEPLOYMENT.md](DEPLOYMENT.md).

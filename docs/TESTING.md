@@ -1,6 +1,6 @@
 # Testing KeepAlive
 
-See [RELEASE_QA.md](RELEASE_QA.md) for the current Vercel release checks and integration status. The manual results below are historical sandbox checks.
+See [RELEASE_QA.md](RELEASE_QA.md) for the current Vercel release checks and integration status. The first manual table below is from 2026-11-11. The latest run, on 2026-11-12, is at the end of this file.
 
 Test layers, each labelled honestly:
 
@@ -43,3 +43,19 @@ The simulated PayPal is **not** evidence that the real API behaves the same way.
 | 8 | ✅ pass (Travelling, Firm cancel) | 2026-11-11 | Travelling: agent asked its human, approval → pause, SUSPENDED. Firm cancel: no offer pushed, CANCELLED on PayPal. "Too much coffee" not run separately (same downgrade path as step 5) |
 | 9 | ✅ pass (raw JSON-RPC) | 2026-11-11 | request_cancellation refuses a wrong email; right email → downgrade offer; decline_offer works. Claude Desktop via mcp-remote not tried yet |
 | 10 |  | | needs deployed URL |
+
+## Re-verification on 2026-11-12 (commit f810cf6, local, real sandbox)
+
+After the Vercel, Blob storage and prompt-caching changes, the checklist was run again locally against the real PayPal sandbox with live Claude. Webhooks (step 10) still need the hosted deployment to have PayPal credentials.
+
+| Step | Result | Notes |
+|---|---|---|
+| 2 | pass | `/shop` checkout approved with the US Personal buyer; return page shows ACTIVE |
+| 3 | pass | "Travelling around Japan for two months" got a 2-month pause; PayPal read-back SUSPENDED |
+| 4 | pass | Resume returned the subscription to ACTIVE |
+| 5 | pass | "Too much coffee" got Switch to Lite; buyer approved the revise in PayPal; account page shows Lite at $12 |
+| 6 | pass | A direct discount request got 30% off for 3 months; PayPal price $15.40; restore set it back to $22 |
+| 7 | pass | After two declined offers, Claude refused a third (the per-conversation limit) and pointed to cancel |
+| 8 | pass | Travelling preset, human declined the pause: the agent declined it and cancelled; PayPal CANCELLED |
+| 9 | pass (raw JSON-RPC) | `tools/list` returns 7 tools; `get_subscription` with ID and email returns the live status |
+| 10 | pending | Webhook registered on the sandbox app for `https://keepalive.pallabdas.me/api/webhooks/paypal` (subscription events and `PAYMENT.SALE.COMPLETED`); waiting for the hosted PayPal credentials and webhook ID |
