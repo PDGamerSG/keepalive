@@ -60,7 +60,7 @@ export function Sidebar(props: { counts: { subscribers: number; conversations: n
         </p>
         <p className="dash-conn">
           <span className={props.ai ? "live-dot" : "dash-off-dot"} />
-          {props.ai ? "Claude connected" : "Claude is offline"}
+          {props.ai ? "AI connected" : "AI is offline"}
         </p>
         <Link href="/" className="dash-back">
           Back to the site

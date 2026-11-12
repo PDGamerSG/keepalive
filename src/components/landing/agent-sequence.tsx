@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const LANES = ["Leo", "Leo's agent", "KeepAlive", "PayPal"] as const;
-const LANE_NOTE = ["The subscriber", "Claude, acting for Leo", "Brewbox's desk, over MCP", "Subscriptions API"];
+const LANE_NOTE = ["The subscriber", "AI agent, acting for Leo", "Brewbox's desk, over MCP", "Subscriptions API"];
 
 type Lane = 0 | 1 | 2 | 3;
 

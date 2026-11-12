@@ -16,10 +16,10 @@ The cancel button is where subscription businesses bleed. Merchants on Stripe, B
 - **Merchant dashboard.** Saves, MRR kept, save rate, reasons for leaving, every conversation with the AI's internal rationale, and a PayPal audit log with `debug_id`s, built on AG Grid.
 
 ## How we built it
-- **Next.js 16 + TypeScript** app, deployed on Render.
+- **Next.js 16 + TypeScript** app, deployed on Vercel at https://keepalive.pallabdas.me, with state in private Vercel Blob storage and a daily Vercel Cron job for scheduled resumes and price restores.
 - **PayPal:** Catalog Products and Billing Plans (bootstrap), Subscriptions v1 (create, approve, get, suspend, activate, revise, PATCH pricing, cancel, transactions), and Webhooks with `verify-webhook-signature`. Every mutating call sends a `PayPal-Request-Id` idempotency key.
 - **AI:** Claude (`claude-opus-5-5`) through the Anthropic SDK. The retention agent uses **structured outputs** (zod schema: reason, action, offer, reply, rationale). The subscriber's agent is a **tool-use loop** that must call `ask_my_human` before `accept_offer`.
-- **MCP:** `mcp-handler` + MCP SDK v2 serving `request_cancellation`, `send_message`, `accept_offer`, `decline_offer`, `cancel_subscription` and `get_session`.
+- **MCP:** `mcp-handler` + MCP SDK v2 serving `get_subscription`, `request_cancellation`, `send_message`, `accept_offer`, `decline_offer`, `cancel_subscription` and `get_session`.
 - **AG Grid** for the merchant's subscriber table.
 
 ## Challenges
@@ -40,9 +40,19 @@ The cancel button is where subscription businesses bleed. Merchants on Stripe, B
 - OAuth for subscriber identity on MCP, failed-payment recovery (dunning) using `capture` of the outstanding balance, A/B testing of offer strategies, and a PayPal app-marketplace style install for merchants.
 
 ## Built with
-PayPal Subscriptions API · PayPal Catalog Products API · PayPal Webhooks · Claude (Anthropic API) · Model Context Protocol · Next.js · TypeScript · Tailwind CSS · AG Grid · Render
+PayPal Subscriptions API · PayPal Catalog Products API · PayPal Webhooks · Claude (Anthropic API) · Model Context Protocol · Next.js · TypeScript · Tailwind CSS · AG Grid · three.js · Vercel · Vercel Blob
 
 ## Links
-- Repo: (public GitHub URL)
-- Hosted demo: (Render URL)
+- Repo: https://github.com/PDGamerSG/proofroute-dispatch-assurance (must be public before submitting)
+- Hosted demo: https://keepalive.pallabdas.me
 - Video: (YouTube URL)
+
+## Testing instructions for judges
+Paste this into Devpost's testing-instructions field. The buyer password goes only in that private field, never in this repo.
+
+1. Open https://keepalive.pallabdas.me/shop, pick a plan, enter any name and email, and click **Subscribe with PayPal**.
+2. Log in to the PayPal sandbox with the test buyer: email `<sandbox buyer email>`, password `<sandbox buyer password>`. Approve.
+3. On the return page click **Manage my subscription**, then **Cancel subscription**. Tell the assistant why you are leaving (for example "I'm travelling for two months" or "too much coffee") and accept or decline its offer. The PayPal status on the page changes after each action.
+4. Open **/agent** to watch a customer's AI agent negotiate with the retention desk, approving or declining as the human.
+5. Open **/merchant** to see saves, retained revenue, every conversation with the AI's private rationale, the guardrail settings and the PayPal call log.
+6. To connect your own agent: `npx -y mcp-remote https://keepalive.pallabdas.me/api/mcp`, then ask it to cancel the subscription using its ID and the email you entered.

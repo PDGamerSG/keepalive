@@ -10,7 +10,7 @@ const NODES = [
   {
     icon: <Chat size={18} />,
     title: "KeepAlive desk",
-    note: "Claude asks why once, then proposes one offer that fits the reason.",
+    note: "The AI asks why once, then proposes one offer that fits the reason.",
     code: "propose_offer",
   },
   {

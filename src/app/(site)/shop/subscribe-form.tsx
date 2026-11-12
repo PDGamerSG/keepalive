@@ -16,13 +16,14 @@ export function SubscribeForm({ tiers, checkoutAvailable }: { tiers: Tier[]; che
   const plan = tiers.find((t) => t.id === selected)!;
 
   async function subscribe() {
+    if (busy || !checkoutAvailable) return;
     setBusy(true);
     setError(null);
     try {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ tier: selected, name, email, persona }),
+        body: JSON.stringify({ tier: selected, name: name.trim(), email: email.trim(), persona }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Could not start PayPal checkout");

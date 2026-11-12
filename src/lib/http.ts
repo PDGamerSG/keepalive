@@ -20,7 +20,8 @@ export async function json<T>(fn: () => Promise<T>): Promise<NextResponse> {
 
 export async function body<T = Record<string, unknown>>(req: Request): Promise<T> {
   try {
-    return (await req.json()) as T;
+    const value = await req.json();
+    return (value && typeof value === "object" && !Array.isArray(value) ? value : {}) as T;
   } catch {
     return {} as T;
   }

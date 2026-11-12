@@ -58,10 +58,12 @@ export function AgentDemo({ subscribers, mcpUrl }: { subscribers: { id: string; 
   const bottom = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (run) bottom.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (run) bottom.current?.scrollIntoView({ behavior: reduce ? "instant" : "smooth", block: "nearest" });
   }, [run]);
 
-  async function call(url: string, payload: unknown) {
+  /** Sends one request; returns whether it succeeded. */
+  async function call(url: string, payload: unknown): Promise<boolean> {
     setBusy(true);
     setError(null);
     try {
@@ -69,21 +71,25 @@ export function AgentDemo({ subscribers, mcpUrl }: { subscribers: { id: string; 
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Request failed");
       setRun(data);
+      return true;
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
+      return false;
     } finally {
       setBusy(false);
     }
   }
 
-  const start = () => {
+  const start = async () => {
+    if (busy) return;
     setRun({ id: "", status: "running", transcript: [{ kind: "human", text: brief }] });
-    call("/api/agent-demo", { subscriptionId: subId, brief });
+    // Drop the placeholder run if the server never started one.
+    if (!(await call("/api/agent-demo", { subscriptionId: subId, brief }))) setRun(null);
   };
-  const answer = (approve: boolean | null) => {
-    const c = comment;
-    setComment("");
-    call(`/api/agent-demo/${run!.id}`, { answer: c, approve });
+  const answer = async (approve: boolean | null) => {
+    if (busy) return;
+    // Keep the note until the server has it, so a failed send loses nothing.
+    if (await call(`/api/agent-demo/${run!.id}`, { answer: comment, approve })) setComment("");
   };
 
   const sub = subscribers.find((s) => s.id === subId);
@@ -131,7 +137,7 @@ export function AgentDemo({ subscribers, mcpUrl }: { subscribers: { id: string; 
 
         <details className="card ag-card ag-mcp">
           <summary>Connect your own agent over MCP</summary>
-          <p>Any MCP client can talk to this merchant. For Claude Desktop:</p>
+          <p>Any MCP client can talk to this merchant. For a desktop AI app:</p>
           <pre className="code">{`{
   "mcpServers": {
     "brewbox-keepalive": {
@@ -152,14 +158,14 @@ export function AgentDemo({ subscribers, mcpUrl }: { subscribers: { id: string; 
         <header className="ag-link">
           <span className="ag-party">
             <b>Subscriber&apos;s agent</b>
-            <small>Claude, acting for the human</small>
+            <small>An AI agent, acting for the human</small>
           </span>
           <span className="ag-wire" role="status">
             <span className={`badge badge-${tone}`}>{label}</span>
           </span>
           <span className="ag-party ag-party-right">
             <b>Brewbox&apos;s retention desk</b>
-            <small>KeepAlive, with Claude</small>
+            <small>KeepAlive, the merchant&apos;s AI desk</small>
           </span>
         </header>
 
@@ -189,6 +195,7 @@ export function AgentDemo({ subscribers, mcpUrl }: { subscribers: { id: string; 
                 className="field"
                 aria-label="A note for your agent"
                 placeholder="Add a note for your agent (optional)"
+                maxLength={1000}
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
               />

@@ -23,7 +23,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
       </main>
       <footer className="site-footer">
         <div className="shell site-footer-row">
-          <span>Built for the PayPal AI Hackathon. Payments run in the PayPal sandbox. AI by Claude.</span>
+          <span>Built for the PayPal AI Hackathon. Payments run in the PayPal sandbox.</span>
           <span>Brewbox is a fictional demo merchant.</span>
         </div>
       </footer>

@@ -4,13 +4,20 @@ import { tier } from "@/lib/catalog";
 import { upsertSubscriber } from "@/lib/store";
 import { personaFields } from "@/lib/personas";
 import { RetentionError } from "@/lib/retention/engine";
-import type { TierId } from "@/lib/types";
+import { z } from "zod";
+
+const Checkout = z.object({
+  tier: z.enum(["lite", "standard", "premium"]),
+  name: z.string().trim().min(1).max(120),
+  email: z.string().trim().email().max(254),
+  persona: z.string().optional(),
+});
 
 export async function POST(req: Request) {
   return json(async () => {
-    const b = await body<{ tier: TierId; name: string; email: string; persona?: string }>(req);
-    if (!["lite", "standard", "premium"].includes(b.tier)) throw new RetentionError("Unknown tier");
-    if (!b.name?.trim() || !b.email?.includes("@")) throw new RetentionError("Name and email are required");
+    const parsed = Checkout.safeParse(await body(req));
+    if (!parsed.success) throw new RetentionError("Choose a plan and enter your name and a valid email address.");
+    const b = parsed.data;
     const { id, approveUrl } = await createSubscription({ tier: b.tier, name: b.name, email: b.email });
     const t = tier(b.tier);
     await upsertSubscriber({

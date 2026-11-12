@@ -27,7 +27,7 @@ See [ARCHITECTURE.md](ARCHITECTURE.md). Short version:
 - `src/app/*`: pages and API routes
 
 ## Status board (update when you pick something up)
-_Last updated 2026-11-11 by Aditya._
+_Last updated 2026-11-12. See [RELEASE_QA.md](RELEASE_QA.md) for current release evidence._
 
 | Area | Owner | State |
 |---|---|---|
@@ -36,9 +36,11 @@ _Last updated 2026-11-11 by Aditya._
 | Agent-to-agent demo + MCP | Aditya | ✅ done. Travelling and Firm-cancel presets verified live; MCP verified with raw JSON-RPC |
 | Merchant dashboard (five pages under `/merchant`, AG Grid on Subscribers) | Aditya | ✅ done |
 | Landing page (`/`, sample cancellation, flow and sequence diagrams, guardrail playground) | Aditya | ✅ done; static, no backend calls. Code: `src/components/landing/` |
-| Tests | Aditya | ✅ 24 offline tests (`npm test`) + 8 live Claude evals (`npm run eval:ai`) |
-| Sandbox end-to-end test | Aditya | ✅ steps 1–9 passed, see [TESTING.md](TESTING.md) |
-| Deploy to Render + webhooks (TESTING step 10) | open | not started: `render.yaml` is ready, set env vars, then add the webhook URL |
+| Tests | team | ✅ offline tests (`npm test`) + 8 live Claude evals (`npm run eval:ai`), all passing on 2026-11-12 |
+| Sandbox end-to-end test | Aditya | ✅ steps 1–9 passed on 2026-11-11 and again on 2026-11-12 after the Vercel/Blob changes, see [TESTING.md](TESTING.md) |
+| Vercel + Namecheap deployment | team | ✅ https://keepalive.pallabdas.me; private Blob persistence and authenticated cron |
+| Hosted PayPal integration + webhooks | Pallab (Vercel env) | ✅ 2026-11-12: PayPal REST credentials and `PAYPAL_WEBHOOK_ID` set in Vercel; hosted plan setup, checkout to PayPal approval and a signature-verified `BILLING.SUBSCRIPTION.CREATED` webhook confirmed. Hosted Blob writes fixed (they had failed with an ETag mismatch) |
+| Hosted demo data | Aditya | run a few real sandbox subscriptions and conversations so the dashboard is not empty for judges |
 | MCP from Claude Desktop (`mcp-remote`) | open | not tried yet |
 | Demo video (≤ 2:50) | team | not started; script in [DEMO_SCRIPT.md](DEMO_SCRIPT.md) |
 | Devpost submission text | team | draft in [SUBMISSION.md](SUBMISSION.md) |

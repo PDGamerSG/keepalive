@@ -25,10 +25,12 @@ export function CancelFlow({ subscriptionId, status }: { subscriptionId: string;
   const bottom = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    bottom.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    bottom.current?.scrollIntoView({ behavior: reduce ? "instant" : "smooth", block: "nearest" });
   }, [session, busy]);
 
-  async function run(label: string, fn: () => Promise<PublicSession>) {
+  /** Runs one request; returns whether it succeeded. */
+  async function run(label: string, fn: () => Promise<PublicSession>): Promise<boolean> {
     setBusy(label);
     setError(null);
     try {
@@ -36,20 +38,21 @@ export function CancelFlow({ subscriptionId, status }: { subscriptionId: string;
       setSession(s);
       if (s.paypal_approval_url) setApproveUrl(s.paypal_approval_url);
       if (s.outcome !== "open") router.refresh();
+      return true;
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
+      return false;
     } finally {
       setBusy(null);
     }
   }
 
   const start = () => run("thinking", () => post("/api/retention/start", { subscriptionId }));
-  const send = () => {
+  const send = async () => {
     const text = input.trim();
-    if (!text || !session) return;
-    setInput("");
-    setSession({ ...session, messages: [...session.messages, { from: "subscriber", text }] });
-    run("thinking", () => post(`/api/retention/${session.session_id}/message`, { text }));
+    if (!text || !session || busy) return;
+    // Keep the draft until the server has the message, so a failed send loses nothing.
+    if (await run("thinking", () => post(`/api/retention/${session.session_id}/message`, { text }))) setInput("");
   };
   const accept = (o: PublicOffer) => run("paypal", () => post(`/api/retention/${session!.session_id}/accept`, { offerId: o.offer_id }));
   const decline = (o: PublicOffer) => run("thinking", () => post(`/api/retention/${session!.session_id}/decline`, { offerId: o.offer_id }));
@@ -99,7 +102,7 @@ export function CancelFlow({ subscriptionId, status }: { subscriptionId: string;
       <header className="cf-head">
         <div>
           <h2>Brewbox support</h2>
-          <p>Retention assistant, powered by KeepAlive and Claude</p>
+          <p>Retention assistant, powered by KeepAlive</p>
         </div>
         {session.outcome === "saved" && <span className="badge badge-ok">Staying</span>}
         {session.outcome === "cancelled" && <span className="badge badge-gone">Cancelled</span>}
@@ -160,6 +163,7 @@ export function CancelFlow({ subscriptionId, status }: { subscriptionId: string;
               className="field"
               aria-label="Your message"
               placeholder="Tell us why you're leaving"
+              maxLength={2000}
               value={input}
               onChange={(e) => setInput(e.target.value)}
               disabled={!!busy}

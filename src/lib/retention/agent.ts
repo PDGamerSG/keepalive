@@ -103,7 +103,7 @@ export async function decide(
   extraNote?: string,
 ): Promise<Decision> {
   // Fail safe: never block a cancellation because the model is offline or could not answer.
-  if (!aiConfigured()) return failSafe("ANTHROPIC_API_KEY is not set; failed safe to cancellation.");
+  if (!aiConfigured()) return failSafe("AI is offline; failed safe to cancellation.");
   const response = await anthropic()
     .beta.messages.parse({
       model: MODEL,
@@ -120,7 +120,7 @@ export async function decide(
       console.error("Retention agent: Claude API call failed", e);
       return null;
     });
-  if (!response) return failSafe("Claude API call failed; failed safe to cancellation.");
+  if (!response) return failSafe("AI call failed; failed safe to cancellation.");
   await recordAiUsage("retention", response, sub.id);
   if (response.stop_reason === "refusal" || !response.parsed_output) {
     return failSafe(`Model returned stop_reason=${response.stop_reason}; failed safe to cancellation.`);

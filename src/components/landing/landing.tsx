@@ -100,7 +100,7 @@ export function Landing({ mcpUrl }: { mcpUrl: string }) {
           </div>
           <AgentSequence />
           <Link href="/agent" className="lp-more">
-            Run this live with two Claude agents
+            Run this live with two AI agents
             <Arrow size={14} />
           </Link>
         </div>
@@ -111,7 +111,7 @@ export function Landing({ mcpUrl }: { mcpUrl: string }) {
           <div>
             <h2 className="display lp-h2">Every PayPal API it touches</h2>
             <p>
-              Each step of a save is a Subscriptions API call against the PayPal sandbox. The AI is Claude. This page is
+              Each step of a save is a Subscriptions API call against the PayPal sandbox. This page is
               a model of the product and calls nothing.
             </p>
           </div>

@@ -39,8 +39,8 @@ async function getAccessToken(): Promise<string> {
   const secret = process.env.PAYPAL_CLIENT_SECRET;
   if (!id || !secret) {
     throw new PayPalError(
-      "PayPal is not configured: set PAYPAL_CLIENT_ID and PAYPAL_CLIENT_SECRET in .env.local",
-      500,
+      "PayPal sandbox is temporarily unavailable. Please try again later.",
+      503,
       undefined,
       null,
     );

@@ -9,7 +9,7 @@ export async function recordAiUsage(channel: "retention" | "consumer", response:
   await recordEvent({
     type: "ai.usage",
     subscriptionId,
-    summary: `${channel}: ${response.model}, ${response.usage.cache_read_input_tokens ?? 0} cached input tokens`,
+    summary: `${channel}: ${response.usage.cache_read_input_tokens ?? 0} cached input tokens`,
     detail: {
       channel, model: response.model,
       inputTokens: response.usage.input_tokens,

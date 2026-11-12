@@ -57,7 +57,7 @@ async function saveRun(run: AgentRun) {
   });
 }
 
-const AGENT_NAME = "Claude (subscriber's personal agent)";
+const AGENT_NAME = "Subscriber's personal AI agent";
 
 const SYSTEM = `You are a personal AI assistant acting on behalf of your human. Your human asked you to deal with one of their subscriptions. You talk to the merchant's retention desk through tools.
 
@@ -301,12 +301,22 @@ async function drive(run: AgentRun) {
       return;
     }
   }
-  if (run.status === "running") run.status = "done";
+  if (run.status === "running") {
+    run.status = "error";
+    run.transcript.push({
+      kind: "error",
+      text: "The agent reached its step limit before finishing. Check your subscription status before starting another run.",
+      at: now(),
+    });
+  }
 }
 
 export async function startAgentRun(subscriptionId: string, brief: string): Promise<AgentRun> {
   if (!aiConfigured()) {
-    throw new RetentionError("Claude is offline: set ANTHROPIC_API_KEY to run the agent demo.", 503);
+    throw new RetentionError("AI conversations are offline right now, so the agent demo can't run.", 503);
+  }
+  if (!(await store.getSubscriber(subscriptionId))) {
+    throw new RetentionError("Unknown subscription", 404);
   }
   const run: AgentRun = {
     id: randomUUID(),
