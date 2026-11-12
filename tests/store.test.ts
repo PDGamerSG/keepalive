@@ -2,27 +2,37 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { makeSub } from "./helpers";
 
 // The provider is external; emulate its ETag contract, keeping the store real.
+// As in production, put({ ifMatch }) accepts the ETag that head() reports, not the
+// differently formatted ETag header that comes back with a get() download.
 const remote = vi.hoisted(() => ({ text: undefined as string | undefined, version: 0, fail: false }));
 vi.mock("@vercel/blob", () => {
-  class BlobPreconditionFailedError extends Error {}
+  class BlobError extends Error {}
+  class BlobPreconditionFailedError extends BlobError {}
+  class BlobNotFoundError extends BlobError {}
+  const apiEtag = () => `v${remote.version}`;
   return {
+    BlobError,
     BlobPreconditionFailedError,
+    BlobNotFoundError,
+    head: async () => {
+      if (remote.fail) throw new Error("storage unavailable");
+      if (remote.text === undefined) throw new BlobNotFoundError("not found");
+      return { etag: apiEtag() };
+    },
     get: async (_path: string, options: { access: string; useCache: boolean }) => {
       if (remote.fail) throw new Error("storage unavailable");
       if (options.access !== "private" || options.useCache !== false) throw new Error("unsafe read");
       if (remote.text === undefined) return null;
-      const text = remote.text;
-      const etag = String(remote.version);
-      return { statusCode: 200, stream: new Response(text).body, blob: { etag } };
+      return { statusCode: 200, stream: new Response(remote.text).body, blob: { etag: `"${apiEtag()}-download"` } };
     },
     put: async (_path: string, text: string, options: { access: string; ifMatch?: string; allowOverwrite?: boolean; addRandomSuffix: boolean }) => {
       if (options.access !== "private" || options.addRandomSuffix !== false) throw new Error("unsafe write");
-      if (options.ifMatch ? options.ifMatch !== String(remote.version) : remote.text !== undefined && !options.allowOverwrite) {
+      if (options.ifMatch ? options.ifMatch !== apiEtag() : remote.text !== undefined && !options.allowOverwrite) {
         throw new BlobPreconditionFailedError("concurrent write");
       }
       remote.text = text;
       remote.version++;
-      return { etag: String(remote.version) };
+      return { etag: apiEtag() };
     },
   };
 });

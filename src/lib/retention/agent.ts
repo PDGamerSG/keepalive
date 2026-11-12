@@ -1,7 +1,8 @@
 import "server-only";
 import { z } from "zod";
+import Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
-import { anthropic, FALLBACK_BETA, MODEL } from "@/lib/ai";
+import { aiConfigured, anthropic, FALLBACK_BETA, MODEL } from "@/lib/ai";
 import { recordAiUsage } from "@/lib/ai-usage";
 import { MERCHANT, tier } from "@/lib/catalog";
 import { describePolicy, type MerchantPolicy } from "@/lib/policy";
@@ -101,27 +102,39 @@ export async function decide(
   session: RetentionSession,
   extraNote?: string,
 ): Promise<Decision> {
-  const response = await anthropic().beta.messages.parse({
-    model: MODEL,
-    max_tokens: 4000,
-    betas: [FALLBACK_BETA],
-    fallbacks: "default",
-    system: [{ type: "text", text: SYSTEM, cache_control: { type: "ephemeral" } }],
-    cache_control: { type: "ephemeral" },
-    output_config: { effort: "low", format: betaZodOutputFormat(DecisionSchema) },
-    messages: [{ role: "user", content: buildContext(sub, policy, session, extraNote) }],
-  });
+  // Fail safe: never block a cancellation because the model is offline or could not answer.
+  if (!aiConfigured()) return failSafe("AI is offline; failed safe to cancellation.");
+  const response = await anthropic()
+    .beta.messages.parse({
+      model: MODEL,
+      max_tokens: 4000,
+      betas: [FALLBACK_BETA],
+      fallbacks: "default",
+      system: [{ type: "text", text: SYSTEM, cache_control: { type: "ephemeral" } }],
+      cache_control: { type: "ephemeral" },
+      output_config: { effort: "low", format: betaZodOutputFormat(DecisionSchema) },
+      messages: [{ role: "user", content: buildContext(sub, policy, session, extraNote) }],
+    })
+    .catch((e: unknown) => {
+      if (!(e instanceof Anthropic.APIError)) throw e;
+      console.error("Retention agent: Claude API call failed", e);
+      return null;
+    });
+  if (!response) return failSafe("AI call failed; failed safe to cancellation.");
   await recordAiUsage("retention", response, sub.id);
   if (response.stop_reason === "refusal" || !response.parsed_output) {
-    // Fail safe: never block a cancellation because the model could not answer.
-    return {
-      reason_category: "other",
-      reason_summary: "Model could not produce a decision",
-      action: "accept_cancellation",
-      offer: null,
-      reply: "Understood. You can cancel right away with the button below, and nothing else will be charged.",
-      rationale: `Model returned stop_reason=${response.stop_reason}; failed safe to cancellation.`,
-    };
+    return failSafe(`Model returned stop_reason=${response.stop_reason}; failed safe to cancellation.`);
   }
   return response.parsed_output;
+}
+
+function failSafe(rationale: string): Decision {
+  return {
+    reason_category: "other",
+    reason_summary: "Model could not produce a decision",
+    action: "accept_cancellation",
+    offer: null,
+    reply: "Understood. You can cancel right away with the button below, and nothing else will be charged.",
+    rationale,
+  };
 }

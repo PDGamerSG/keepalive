@@ -52,6 +52,9 @@ export async function startSession(input: {
     /* keep local copy if PayPal read fails */
   }
   if (sub.status === "CANCELLED") throw new RetentionError("This subscription is already cancelled.");
+  if (sub.status !== "ACTIVE" && sub.status !== "SUSPENDED") {
+    throw new RetentionError(`Cancellation is available once PayPal shows the subscription as active or paused. It is ${sub.status} now.`);
+  }
   const session: RetentionSession = {
     id: randomUUID(),
     subscriptionId: sub.id,

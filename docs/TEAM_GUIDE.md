@@ -34,13 +34,13 @@ _Last updated 2026-11-12. See [RELEASE_QA.md](RELEASE_QA.md) for current release
 | Core engine, PayPal wrappers, AI agent | Aditya | ✅ done, verified on the real sandbox |
 | Subscriber cancel-flow UI | Aditya | ✅ done (cancel works while paused too) |
 | Agent-to-agent demo + MCP | Aditya | ✅ done. Travelling and Firm-cancel presets verified live; MCP verified with raw JSON-RPC |
-| Merchant dashboard and application theme | team | ✅ aligned with the landing page; desktop/mobile and error recovery checked |
-| Landing page (`/`, 3D console, scroll story, guardrail playground) | Aditya | ✅ done; static, no backend calls. Model source: `tools/blender/build_console.py` |
-| Tests | team | ✅ 55 offline tests; earlier 8 live Claude evals, with prompt-cache usage recorded |
+| Merchant dashboard (five pages under `/merchant`, AG Grid on Subscribers) | Aditya | ✅ done |
+| Landing page (`/`, sample cancellation, flow and sequence diagrams, guardrail playground) | Aditya | ✅ done; static, no backend calls. Code: `src/components/landing/` |
+| Tests | team | ✅ offline tests (`npm test`) + 8 live Claude evals (`npm run eval:ai`), all passing on 2026-11-12 |
 | Sandbox end-to-end test | Aditya | ✅ steps 1–9 passed on 2026-11-11 and again on 2026-11-12 after the Vercel/Blob changes, see [TESTING.md](TESTING.md) |
 | Vercel + Namecheap deployment | team | ✅ https://keepalive.pallabdas.me; private Blob persistence and authenticated cron |
-| Hosted PayPal integration + webhooks | Pallab (Vercel env) | Webhook registered on the sandbox app for the hosted URL. Waiting for `PAYPAL_CLIENT_ID`, `PAYPAL_CLIENT_SECRET`, `PAYPAL_WEBHOOK_ID` and the `PAYPAL_PRODUCT_ID`/`PAYPAL_PLAN_*` values in Vercel (values shared privately, not in git), then a redeploy |
-| Hosted demo data | Aditya | after the hosted keys land: run a few real sandbox subscriptions and conversations so the dashboard is not empty for judges |
+| Hosted PayPal integration + webhooks | Pallab (Vercel env) | ✅ 2026-11-12: PayPal REST credentials and `PAYPAL_WEBHOOK_ID` set in Vercel; hosted plan setup, checkout to PayPal approval and a signature-verified `BILLING.SUBSCRIPTION.CREATED` webhook confirmed. Hosted Blob writes fixed (they had failed with an ETag mismatch) |
+| Hosted demo data | Aditya | run a few real sandbox subscriptions and conversations so the dashboard is not empty for judges |
 | MCP from Claude Desktop (`mcp-remote`) | open | not tried yet |
 | Demo video (≤ 2:50) | team | not started; script in [DEMO_SCRIPT.md](DEMO_SCRIPT.md) |
 | Devpost submission text | team | draft in [SUBMISSION.md](SUBMISSION.md) |

@@ -2,7 +2,7 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
-import { BlobError, BlobPreconditionFailedError, get, put } from "@vercel/blob";
+import { BlobError, BlobNotFoundError, BlobPreconditionFailedError, get, head, put } from "@vercel/blob";
 import type { AuditEvent, RetentionSession, StoreShape, Subscriber } from "./types";
 
 const DATA_DIR = process.env.DATA_DIR ?? path.join(process.cwd(), "data");
@@ -29,13 +29,24 @@ function readFileStore(): StoreShape {
 }
 
 async function readBlob() {
+  // Conditional writes need the ETag from the Blob API (head). The ETag header on the
+  // content download is not accepted by put({ ifMatch }), so every write would fail.
+  // Read the ETag before the content: a write that lands in between makes the
+  // conditional put fail and retry instead of overwriting newer data.
+  let etag: string;
+  try {
+    etag = (await head(BLOB_PATH)).etag;
+  } catch (error) {
+    if (error instanceof BlobNotFoundError) return { store: empty(), etag: undefined };
+    throw error;
+  }
   // Read origin storage directly: checkout and approval must see the latest state.
   const result = await get(BLOB_PATH, { access: "private", useCache: false });
   if (!result) return { store: empty(), etag: undefined };
   if (result.statusCode !== 200) throw new Error("Unexpected storage response");
   return {
     store: { ...empty(), ...await new Response(result.stream).json() } as StoreShape,
-    etag: result.blob.etag,
+    etag,
   };
 }
 

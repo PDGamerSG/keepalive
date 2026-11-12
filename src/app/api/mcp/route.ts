@@ -70,7 +70,7 @@ const handler = createMcpHandler(
           subscription_id: z.string(),
           email: z.string(),
           reason: z.string().describe("Why your human wants to cancel"),
-          agent_name: z.string().optional().describe("Who you are, e.g. 'Claude on behalf of Maya'"),
+          agent_name: z.string().optional().describe("Who you are, e.g. 'Assistant on behalf of Maya'"),
         }),
       },
       async ({ subscription_id, email, reason, agent_name }) =>

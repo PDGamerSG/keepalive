@@ -6,7 +6,7 @@ import { installFakePayPal } from "./fake-paypal";
 import { makeSub } from "./helpers";
 
 const model = vi.hoisted(() => ({ create: vi.fn(), decide: vi.fn() }));
-vi.mock("@/lib/ai", () => ({ MODEL: "test-model", FALLBACK_BETA: "test", anthropic: () => ({ beta: { messages: { create: model.create } } }) }));
+vi.mock("@/lib/ai", () => ({ MODEL: "test-model", FALLBACK_BETA: "test", anthropic: () => ({ beta: { messages: { create: model.create } } }), aiConfigured: () => true }));
 vi.mock("@/lib/retention/agent", () => ({ decide: model.decide }));
 const originalFetch = globalThis.fetch;
 const dir = fs.mkdtempSync(path.join(os.tmpdir(), "keepalive-consumer-"));

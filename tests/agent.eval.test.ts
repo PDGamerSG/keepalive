@@ -76,7 +76,7 @@ run("retention agent (live Claude eval)", () => {
   it("is precise with an AI agent acting for the subscriber", async () => {
     const s = makeSession({
       channel: "agent",
-      agentName: "Claude (subscriber's personal agent)",
+      agentName: "Subscriber's personal AI agent",
       messages: [m("subscriber", "My human is relocating abroad for 3 months and wants to cancel the subscription.")],
     });
     const d = await decide(makeSub(), DEFAULT_POLICY, s);

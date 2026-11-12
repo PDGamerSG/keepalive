@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import { AppHeader } from "@/components/app-header";
-import { Fraunces, Geist, Geist_Mono } from "next/font/google";
-import { aiConfigured } from "@/lib/ai";
-import { paypalConfigured } from "@/lib/paypal/client";
+import { Cal_Sans, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
-const fraunces = Fraunces({ variable: "--font-fraunces", subsets: ["latin"] });
+const calSans = Cal_Sans({ variable: "--font-cal", subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "KeepAlive: AI retention for PayPal subscriptions",
@@ -17,30 +14,15 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-dynamic";
 
+/** Fonts and global styles only. The site and the merchant desk each bring their own frame. */
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const paypalAvailable = paypalConfigured();
-  const aiAvailable = aiConfigured();
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} ${geistMono.variable} ${calSans.variable} h-full`}>
       <body className="min-h-full flex flex-col">
-        <a className="skip-link" href="#main-content">Skip to content</a>
-        <AppHeader />
-        {(!paypalAvailable || !aiAvailable) && (
-          <div role="status" className="service-notice bg-amber-50 text-sm">
-            <div className="mx-auto max-w-6xl px-4 py-2">
-              {!paypalAvailable && "PayPal checkout is temporarily unavailable. "}
-              {!aiAvailable && "AI conversations are temporarily unavailable. "}
-              You can still explore the demo.
-            </div>
-          </div>
-        )}
-        <main id="main-content" className="flex-1" tabIndex={-1}>{children}</main>
-        <footer className="app-footer text-xs">
-          <div className="mx-auto max-w-6xl px-4 py-5 flex flex-wrap gap-4 justify-between">
-            <span>KeepAlive, built for the PayPal AI Hackathon. Payments run in PayPal sandbox. AI by Claude.</span>
-            <span>Brewbox is a fictional demo merchant.</span>
-          </div>
-        </footer>
+        <a href="#main" className="skip-link">
+          Skip to content
+        </a>
+        {children}
       </body>
     </html>
   );

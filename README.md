@@ -8,7 +8,7 @@
 Live link: [keepalive.pallabdas.me](https://keepalive.pallabdas.me/)
 
 <p align="center">
-  <img src="docs/images/hero.png" width="760" alt="KeepAlive's landing page with a subscription console, retention offer keys and a cancel button">
+  <img src="docs/images/hero.png" width="760" alt="KeepAlive's landing page: the headline with a cancel button set into it, beside a sample cancellation conversation that offers a two-month pause">
 </p>
 
 KeepAlive helps merchants who bill through PayPal Subscriptions respond when a subscriber, or their AI agent, asks to cancel. It learns why they are leaving, proposes a pause, a downgrade or a temporary discount within the merchant's limits, and applies accepted offers through PayPal. Cancellation stays available throughout the conversation.
@@ -23,9 +23,9 @@ Built for the [PayPal AI Hackathon](https://paypalaihackathon.devpost.com/) in N
 | Merchant limits | Deterministic checks approve, clamp or reject proposals against discount, duration, tenure, offer-count and monthly budget limits. |
 | PayPal execution | Accepted offers suspend billing, revise the plan with buyer approval or override the subscription price. Results are read back from PayPal. |
 | Agent-to-agent negotiation | A subscriber's agent uses MCP to request cancellation, discuss offers and relay decisions through the same retention engine. The `/agent` demo asks the human before acting. |
-| Merchant dashboard | Shows saved subscriptions, retained monthly revenue, cancellation reasons, conversations, policy settings and PayPal activity. |
+| Merchant dashboard | A five-page desk at `/merchant`: an overview with retained monthly revenue, save rate, subscribers by state, cancellation reasons and offer uptake, then pages for subscribers, conversations, PayPal activity and guardrail settings. |
 | Scheduled follow-up | Due actions resume paused subscriptions and restore expired discounts. Vercel runs the scheduled job daily; relevant page visits also check due actions. |
-| Interactive walkthrough | The landing page has a scroll-driven 3D console and a playground that runs the actual `checkOffer()` logic in the browser without backend calls. |
+| Interactive walkthrough | The landing page has a sample cancellation you answer yourself, a diagram of the path from the click to PayPal, a sequence diagram of an agent-to-agent cancellation, and a playground that runs the actual `checkOffer()` logic in the browser without backend calls. |
 | Direct cancellation | Subscribers can cancel from the flow, including while a subscription is paused. |
 
 ## How it works
@@ -89,22 +89,30 @@ The hosted endpoint is [keepalive.pallabdas.me/api/mcp](https://keepalive.pallab
 
 ## Screenshots
 
-Captured from the live deployment in Chromium on 11 November 2026 at a 1440 × 900 viewport. The shop displayed a temporary checkout-unavailable notice at capture time; these images do not demonstrate a completed payment.
+Captured from a local production build in headless Chrome on 12 November 2026 at a 1440 × 900 viewport, in the light theme, with reduced motion turned on. PayPal and Claude were not configured for that build, so the pages show an offline notice; these images do not demonstrate a completed payment. The dashboard and conversation images use seeded demo subscribers, not live PayPal data.
 
 <p align="center">
-  <img src="docs/images/hero.png" width="860" alt="The KeepAlive landing page introducing the subscription retention console">
+  <img src="docs/images/dashboard.png" width="860" alt="The merchant desk overview: monthly revenue, revenue kept by saves, save rate, a bar of subscribers by state, cancellation reasons and offers made and taken">
 </p>
 
-*The landing page introduces the cancellation flow through an interactive console.*
+*The merchant desk overview, with a sidebar to the subscriber, conversation, PayPal activity and guardrail pages.*
 
 <table>
   <tr>
-    <td width="50%"><img src="docs/images/shop.png" alt="Brewbox's Lite, Standard and Premium subscription plans, with checkout currently unavailable"></td>
-    <td width="50%"><img src="docs/images/guardrails.png" alt="The merchant guardrail playground with policy controls and an offer decision"></td>
+    <td width="50%"><img src="docs/images/flow.png" alt="A diagram of one cancellation moving from the subscriber to the KeepAlive desk, through the merchant's limits, to PayPal Subscriptions, with a table of which reason leads to which PayPal call"></td>
+    <td width="50%"><img src="docs/images/guardrails.png" alt="The guardrail playground cutting a requested 50% discount for 6 months down to 30% for 3 months"></td>
+  </tr>
+  <tr>
+    <td>The path from the cancel click to PayPal and back.</td>
+    <td>The playground evaluates proposed offers against merchant limits.</td>
+  </tr>
+  <tr>
+    <td><img src="docs/images/shop.png" alt="Brewbox's Lite, Standard and Premium plans with a subscription summary, with checkout offline"></td>
+    <td><img src="docs/images/conversations.png" alt="The conversations page: a list of cancellation conversations and one open, showing the transcript, the offer and the AI's reasoning"></td>
   </tr>
   <tr>
     <td>Brewbox plans: Lite $12, Standard $22 and Premium $36 per month.</td>
-    <td>The playground evaluates proposed offers against merchant limits.</td>
+    <td>Each conversation keeps its transcript, offers and the AI's reasoning.</td>
   </tr>
 </table>
 
@@ -115,7 +123,6 @@ Captured from the live deployment in Chromium on 11 November 2026 at a 1440 × 9
 | Next.js 16.4 and React 19.3 | Pages, server rendering and API routes | MIT |
 | TypeScript 5 | Application types | Apache-2.0 |
 | Tailwind CSS 4 | App styling | MIT |
-| Three.js | Interactive landing-page console | MIT |
 | AG Grid Community | Merchant dashboard tables | MIT |
 | Anthropic SDK | Retention and consumer-agent calls to Claude | Apache-2.0 |
 | MCP SDK and `mcp-handler` | Agent-facing tools over HTTP | Apache-2.0 |
@@ -146,13 +153,7 @@ Open [localhost:3000](http://localhost:3000). Without a Blob token, local state 
 3. On `/account/<subscription id>`, select **Cancel subscription** and explain why you are leaving. Accept an offer to pause, revise the plan or apply a price override. A plan revision redirects you to PayPal for approval.
 4. Open `/agent` for the consumer-agent demo and `/merchant` to inspect outcomes and PayPal activity. Use the direct cancel action to cancel a test subscription.
 
-The home page can be explored without making backend requests. Its code is in [src/components/landing](src/components/landing). To rebuild the console model with Blender installed:
-
-```bash
-blender -b -P tools/blender/build_console.py
-```
-
-This writes `public/landing/console.glb`.
+The home page can be explored without making backend requests. Its sample cancellation, diagrams and guardrail playground are in [src/components/landing](src/components/landing). Motion stops when the system asks for reduced motion.
 
 ### Checks
 
@@ -182,16 +183,18 @@ The app is hosted on Vercel at the live link above. [Deployment instructions](do
 
 | Path | What it holds |
 | --- | --- |
-| `src/app/` | Landing page, shop, subscriber account, merchant dashboard, agent demo and API routes |
-| `src/components/landing/` | Scroll story, Three.js scene and guardrail playground |
+| `src/app/(site)/` | Public pages: landing page, shop, subscriber account and agent demo |
+| `src/app/merchant/` | Merchant dashboard: overview, subscribers, conversations, PayPal activity and guardrails |
+| `src/app/api/` | API routes, including the MCP endpoint and the PayPal webhook |
+| `src/components/landing/` | Sample cancellation, flow and sequence diagrams, and the guardrail playground |
+| `src/components/merchant/` | Dashboard sidebar, charts, subscriber grid, conversation view, activity log and policy editor |
+| `src/components/ui/` | Shared sliders, toggles and icons |
 | `src/lib/retention/` | Retention agent, session engine and PayPal offer execution |
 | `src/lib/agents/` | Consumer agent used by the demo |
 | `src/lib/paypal/` | OAuth client, subscription calls and webhook verification |
 | `src/lib/policy.ts` | Merchant policy schema and deterministic offer checks |
 | `src/lib/store.ts` | Private Blob persistence and local JSON storage |
 | `tests/` | Offline tests, simulated PayPal service and live AI scenarios |
-| `tools/blender/` | Script that generates the landing-page model |
-| `public/landing/` | The generated console model |
 | `docs/` | Architecture, deployment, testing, team guide and hackathon materials |
 
 ## Documentation
@@ -207,7 +210,7 @@ The app is hosted on Vercel at the live link above. [Deployment instructions](do
 
 ## Known limits
 
-- This is a sandbox hackathon demo. Brewbox is fictional, and no real money moves. The live shop reported checkout temporarily unavailable when the screenshots were captured.
+- This is a sandbox hackathon demo. Brewbox is fictional, and no real money moves.
 - External-agent identity uses a subscription ID and matching email. Subscriber OAuth and multi-merchant onboarding are not implemented.
 - The hosted cron runs once a day. Unattended resume and price-restoration actions can execute up to a day after their due time; relevant page visits can trigger them sooner.
 - Offer durations use 30-day months. They do not track calendar-month boundaries or an exact number of PayPal billing cycles.

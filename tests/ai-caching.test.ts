@@ -9,6 +9,7 @@ const calls = vi.hoisted(() => ({ parse: vi.fn(), create: vi.fn() }));
 vi.mock("@/lib/ai", () => ({
   MODEL: "claude-opus-5-5", FALLBACK_BETA: "server-side-fallback-2026-07-01",
   anthropic: () => ({ beta: { messages: calls } }),
+  aiConfigured: () => true,
 }));
 
 const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), "keepalive-ai-test-"));

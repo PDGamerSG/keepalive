@@ -1,7 +1,7 @@
 import "server-only";
 import { randomUUID } from "node:crypto";
 import type Anthropic from "@anthropic-ai/sdk";
-import { anthropic, FALLBACK_BETA, MODEL } from "@/lib/ai";
+import { aiConfigured, anthropic, FALLBACK_BETA, MODEL } from "@/lib/ai";
 import { recordAiUsage } from "@/lib/ai-usage";
 import * as store from "@/lib/store";
 import {
@@ -57,7 +57,7 @@ async function saveRun(run: AgentRun) {
   });
 }
 
-const AGENT_NAME = "Claude (subscriber's personal agent)";
+const AGENT_NAME = "Subscriber's personal AI agent";
 
 const SYSTEM = `You are a personal AI assistant acting on behalf of your human. Your human asked you to deal with one of their subscriptions. You talk to the merchant's retention desk through tools.
 
@@ -296,7 +296,8 @@ async function drive(run: AgentRun) {
       content: [{ type: "tool_result", tool_use_id: toolUse.id, content: result }],
     });
     if (toolUse.name === "finish") {
-      run.transcript.push({ kind: "agent", text: `✅ ${run.summary}`, at: now() });
+      // No success mark: the summary may report that the task could not be done.
+      run.transcript.push({ kind: "agent", text: run.summary ?? "", at: now() });
       return;
     }
   }
@@ -311,6 +312,9 @@ async function drive(run: AgentRun) {
 }
 
 export async function startAgentRun(subscriptionId: string, brief: string): Promise<AgentRun> {
+  if (!aiConfigured()) {
+    throw new RetentionError("AI conversations are offline right now, so the agent demo can't run.", 503);
+  }
   if (!(await store.getSubscriber(subscriptionId))) {
     throw new RetentionError("Unknown subscription", 404);
   }
