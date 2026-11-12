@@ -296,7 +296,8 @@ async function drive(run: AgentRun) {
       content: [{ type: "tool_result", tool_use_id: toolUse.id, content: result }],
     });
     if (toolUse.name === "finish") {
-      run.transcript.push({ kind: "agent", text: `✅ ${run.summary}`, at: now() });
+      // No success mark: the summary may report that the task could not be done.
+      run.transcript.push({ kind: "agent", text: run.summary ?? "", at: now() });
       return;
     }
   }
