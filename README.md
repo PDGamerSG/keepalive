@@ -215,7 +215,7 @@ The app is hosted on Vercel at the live link above. [Deployment instructions](do
 - [Demo script](docs/DEMO_SCRIPT.md): the planned video walkthrough.
 - [Submission draft](docs/SUBMISSION.md): the Devpost description and implementation notes.
 - [Strategy](docs/STRATEGY.md): hackathon research, competitors and the product rationale.
-- [Archived research](docs/archive/proofroute): earlier dispatch-assurance research notes retained for reference (raw third-party page captures removed).
+- [Archived research](docs/archive/proofroute): earlier dispatch-assurance research notes retained for reference.
 
 ## Known limits
 
