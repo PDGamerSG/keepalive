@@ -3,8 +3,8 @@
 Organizer tips we follow: open with the problem and who it's for; show PayPal and AI working end to end; cut loading screens; an AI voiceover is fine; upload to YouTube **early** (processing takes hours), set it to **Public**.
 
 ## Before recording
-- `npm run dev` with `.env.local` filled in. In `/merchant`, click **Set up PayPal plans** once.
-- Create 3–4 subscriptions in `/shop` (approve each with the sandbox **personal** account) so the dashboard isn't empty: e.g. Maya (Standard), Leo (Premium), Priya (Standard).
+- Record on the hosted demo, https://keepalive.pallabdas.me (PayPal plans are already set up there), or locally with `npm run dev` and `.env.local` filled in.
+- For the PayPal shots, use **Subscribe with PayPal** and approve with the sandbox **personal** account, so PayPal really changes state. **Try the instant demo** skips the login and is fine for quick extra subscribers so the dashboard isn't empty: e.g. Maya (Standard), Leo (Premium), Priya (Standard).
 - Open a second tab on `sandbox.paypal.com` logged in as the **business** account → Settings → Payments → Subscriptions, to show status changing on PayPal's side.
 - Browser zoom 110%, hide bookmarks, close notifications.
 
