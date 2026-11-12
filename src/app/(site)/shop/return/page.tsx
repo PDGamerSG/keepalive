@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Check } from "@/components/ui/icons";
 import { tier } from "@/lib/catalog";
+import { isSimulated } from "@/lib/paypal/simulator";
 import { syncSubscriber } from "@/lib/retention/execute";
 import { getSubscriber, recordEvent } from "@/lib/store";
 import "../shop.css";
@@ -37,7 +38,9 @@ export default async function Return({ searchParams }: { searchParams: Promise<{
         <span className="welcome-tick">
           <Check size={20} />
         </span>
-        <p className="page-note">Subscription approved in PayPal</p>
+        <p className="page-note">
+          {isSimulated(sub.id) ? "Subscription approved on the simulated PayPal step" : "Subscription approved in PayPal"}
+        </p>
         <h1 className="display page-title">Welcome to Brewbox, {sub.name.split(" ")[0]}.</h1>
         <p className="lede">Your first bag ships with the next roast.</p>
         <dl className="facts">

@@ -80,6 +80,11 @@ export interface PayPalRequestOptions {
 }
 
 export async function paypal<T = unknown>(path: string, opts: PayPalRequestOptions = {}): Promise<T> {
+  // Instant-demo subscriptions (I-DEMO…) are answered by the in-app PayPal simulator.
+  if (/^\/v1\/billing\/subscriptions\/I-DEMO/.test(path)) {
+    const { simulate } = await import("./simulator");
+    return simulate<T>(path, opts);
+  }
   const method = opts.method ?? "GET";
   const token = await getAccessToken();
   const headers: Record<string, string> = {

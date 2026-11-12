@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LocalTime } from "@/components/ui/local-time";
 import { tier } from "@/lib/catalog";
+import { isSimulated } from "@/lib/paypal/simulator";
 import { confirmRevise } from "@/lib/retention/engine";
 import { runDueActions, syncSubscriber } from "@/lib/retention/execute";
 import { getSubscriber } from "@/lib/store";
@@ -60,7 +61,7 @@ export default async function Account({
             <p className="acct-desc">{t.description}</p>
             <dl className="facts">
               <dt>Billed by</dt>
-              <dd>PayPal Subscriptions</dd>
+              <dd>{isSimulated(sub.id) ? "Simulated PayPal (instant demo)" : "PayPal Subscriptions"}</dd>
               <dt>PayPal status</dt>
               <dd>{sub.status}</dd>
               <dt>Subscription</dt>
