@@ -4,9 +4,18 @@ import { useState } from "react";
 import { Check } from "@/components/ui/icons";
 import type { Tier } from "@/lib/catalog";
 import { PERSONAS } from "@/lib/personas";
+import { DemoCheckout, type DemoBuyer } from "./demo-checkout";
 import type { TierId } from "@/lib/types";
 
-export function SubscribeForm({ tiers, checkoutAvailable }: { tiers: Tier[]; checkoutAvailable: boolean }) {
+export function SubscribeForm({
+  tiers,
+  checkoutAvailable,
+  demoBuyer,
+}: {
+  tiers: Tier[];
+  checkoutAvailable: boolean;
+  demoBuyer: DemoBuyer | null;
+}) {
   const [selected, setSelected] = useState<TierId>("standard");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -116,17 +125,14 @@ export function SubscribeForm({ tiers, checkoutAvailable }: { tiers: Tier[]; che
           ))}
         </ul>
         <button className="btn btn-paypal btn-lg shop-pay" type="submit" disabled={!checkoutAvailable || busy || !name || !email}>
-          {!checkoutAvailable ? "PayPal checkout is offline" : busy ? "Opening PayPal…" : `Subscribe to ${plan.name} with PayPal`}
+          {!checkoutAvailable ? "PayPal checkout is offline" : busy ? "Opening PayPal sandbox…" : `Subscribe to ${plan.name} with PayPal`}
         </button>
         {error && (
           <p className="notice notice-error" role="alert">
             {error}
           </p>
         )}
-        <p className="shop-fine">
-          Sandbox only. Approve with a PayPal sandbox personal account; no real money moves. Cancel in one click, at any
-          time.
-        </p>
+        <DemoCheckout buyer={demoBuyer} />
       </aside>
     </form>
   );

@@ -1,7 +1,15 @@
 import { MERCHANT, TIERS } from "@/lib/catalog";
 import { paypalConfigured } from "@/lib/paypal/client";
+import type { DemoBuyer } from "./demo-checkout";
 import { SubscribeForm } from "./subscribe-form";
 import "./shop.css";
+
+/** The shared PayPal sandbox test buyer shown on the page, when the deployment sets one. */
+function demoBuyer(): DemoBuyer | null {
+  const email = process.env.DEMO_BUYER_EMAIL;
+  const password = process.env.DEMO_BUYER_PASSWORD;
+  return email && password ? { email, password } : null;
+}
 
 export default async function Shop({ searchParams }: { searchParams: Promise<{ cancelled?: string }> }) {
   const { cancelled } = await searchParams;
@@ -19,7 +27,7 @@ export default async function Shop({ searchParams }: { searchParams: Promise<{ c
           </p>
         )}
       </header>
-      <SubscribeForm tiers={TIERS} checkoutAvailable={paypalConfigured()} />
+      <SubscribeForm tiers={TIERS} checkoutAvailable={paypalConfigured()} demoBuyer={demoBuyer()} />
     </div>
   );
 }

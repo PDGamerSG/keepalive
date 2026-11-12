@@ -158,10 +158,74 @@
   white-space: normal;
 }
 
-.shop-fine {
+/* "Demo checkout": checkout runs in the PayPal sandbox with a shared test buyer. */
+.demo-box {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.9rem 1rem;
+  border: 1px dashed var(--line-2);
+  border-radius: var(--r-control);
+  background: var(--wash);
+  color: var(--ink-2);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.demo-box h3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ink);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Label and Copy on one row, the value on the full-width row beneath. */
+.demo-creds {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.2rem 0.65rem;
+  align-items: center;
+}
+
+.demo-creds dt {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.demo-copy-cell {
+  margin-top: 0.35rem;
+}
+
+.demo-creds .mono {
+  grid-column: 1 / -1;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+.demo-copy {
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.75rem;
+}
+
+.demo-copy:hover {
+  border-color: var(--line-2);
+}
+
+.demo-fine {
   color: var(--muted);
   font-size: 0.78rem;
-  line-height: 1.5;
 }
 
 /* ---------- after checkout ---------- */
