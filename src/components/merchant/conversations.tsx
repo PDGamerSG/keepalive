@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { LocalTime } from "@/components/ui/local-time";
 import type { RetentionSession } from "@/lib/types";
 import { OUTCOME_LABEL, OUTCOME_TONE, REASON_LABEL } from "./labels";
 
@@ -27,7 +28,7 @@ export function Conversations({ sessions, names }: { sessions: RetentionSession[
                 {REASON_LABEL[s.reason ?? ""] ?? "Reason not given yet"}
                 {s.channel === "agent" && ", through their AI agent"}
               </span>
-              <time>{new Date(s.startedAt).toLocaleString()}</time>
+              <LocalTime iso={s.startedAt} />
             </button>
           </li>
         ))}
@@ -39,7 +40,7 @@ export function Conversations({ sessions, names }: { sessions: RetentionSession[
             <div>
               <h2>{names[open.subscriptionId] ?? open.subscriptionId}</h2>
               <p>
-                {open.channel === "agent" ? "Through their AI agent" : "On the web"}, {new Date(open.startedAt).toLocaleString()}
+                {open.channel === "agent" ? "Through their AI agent" : "On the web"}, <LocalTime iso={open.startedAt} />
               </p>
             </div>
             <span className={`badge badge-${OUTCOME_TONE[open.outcome] ?? "dim"}`}>{OUTCOME_LABEL[open.outcome] ?? open.outcome}</span>

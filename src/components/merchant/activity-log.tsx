@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { LocalTime } from "@/components/ui/local-time";
 import type { AuditEvent } from "@/lib/types";
 import { eventTone } from "./labels";
 
@@ -21,7 +22,7 @@ export function EventRow({ event, compact }: { event: AuditEvent; compact?: bool
       : undefined;
   return (
     <li>
-      <time>{new Date(event.at).toLocaleString()}</time>
+      <LocalTime iso={event.at} />
       <span className={`badge badge-${eventTone(event.type)}`}>{event.type}</span>
       <span className="log-text">{event.summary}</span>
       {!compact && debugId && <span className="mono log-id">debug_id {debugId}</span>}

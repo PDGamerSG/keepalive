@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { LocalTime } from "@/components/ui/local-time";
 import { tier } from "@/lib/catalog";
 import { confirmRevise } from "@/lib/retention/engine";
 import { runDueActions, syncSubscriber } from "@/lib/retention/execute";
@@ -67,13 +68,17 @@ export default async function Account({
               {sub.resumeAt && (
                 <>
                   <dt>Resumes</dt>
-                  <dd>{new Date(sub.resumeAt).toLocaleDateString()}</dd>
+                  <dd>
+                    <LocalTime iso={sub.resumeAt} dateOnly />
+                  </dd>
                 </>
               )}
               {sub.discountUntil && (
                 <>
                   <dt>Discount until</dt>
-                  <dd>{new Date(sub.discountUntil).toLocaleDateString()}</dd>
+                  <dd>
+                    <LocalTime iso={sub.discountUntil} dateOnly />
+                  </dd>
                 </>
               )}
             </dl>

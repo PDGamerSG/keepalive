@@ -1,7 +1,7 @@
 import "server-only";
 import { randomUUID } from "node:crypto";
 import type Anthropic from "@anthropic-ai/sdk";
-import { anthropic, FALLBACK_BETA, MODEL } from "@/lib/ai";
+import { aiConfigured, anthropic, FALLBACK_BETA, MODEL } from "@/lib/ai";
 import { recordAiUsage } from "@/lib/ai-usage";
 import * as store from "@/lib/store";
 import {
@@ -304,6 +304,9 @@ async function drive(run: AgentRun) {
 }
 
 export async function startAgentRun(subscriptionId: string, brief: string): Promise<AgentRun> {
+  if (!aiConfigured()) {
+    throw new RetentionError("Claude is offline: set ANTHROPIC_API_KEY to run the agent demo.", 503);
+  }
   const run: AgentRun = {
     id: randomUUID(),
     subscriptionId,

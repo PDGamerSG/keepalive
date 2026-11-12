@@ -15,11 +15,21 @@ export default async function Return({ searchParams }: { searchParams: Promise<{
   let sub = await getSubscriber(subscription_id);
   try {
     sub = await syncSubscriber(subscription_id);
-    await recordEvent({ type: "subscription.approved", subscriptionId: subscription_id, summary: `Subscriber approved in PayPal → ${sub?.status}` });
+    if (sub && sub.status !== "APPROVAL_PENDING") {
+      await recordEvent({ type: "subscription.approved", subscriptionId: subscription_id, summary: `Subscriber approved in PayPal → ${sub.status}` });
+    }
   } catch (e) {
     error = e instanceof Error ? e.message : String(e);
   }
   if (!sub) return <Msg title="Unknown subscription" body="Start again from the shop." />;
+  if (!error && sub.status === "APPROVAL_PENDING") {
+    return (
+      <Msg
+        title="Waiting for PayPal approval"
+        body={`PayPal hasn't confirmed subscription ${sub.id} yet. Finish approving it in PayPal, then reload this page.`}
+      />
+    );
+  }
   const plan = tier(sub.tier);
   return (
     <div className="shell welcome">
