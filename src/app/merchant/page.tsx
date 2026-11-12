@@ -3,6 +3,7 @@ import { Kpis, OfferPairs, ReasonBars, StateBar } from "@/components/merchant/ch
 import { OUTCOME_LABEL, OUTCOME_TONE, REASON_LABEL } from "@/components/merchant/labels";
 import { DeskLink, PageHead, SyncActions } from "@/components/merchant/shell";
 import { computeMetrics } from "@/lib/metrics";
+import { viewEvents } from "@/lib/audit-view";
 import { readStore } from "@/lib/store";
 
 export default async function Overview() {
@@ -10,7 +11,7 @@ export default async function Overview() {
   const m = computeMetrics(store);
   const names = new Map(store.subscribers.map((s) => [s.id, s.name]));
   const sessions = store.sessions.slice(0, 5);
-  const events = store.events.slice(0, 6);
+  const events = viewEvents(store.events.slice(0, 6));
 
   return (
     <>
