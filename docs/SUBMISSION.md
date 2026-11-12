@@ -14,11 +14,12 @@ The cancel button is where subscription businesses bleed. Merchants on Stripe, B
 - **Agent-to-agent commerce over MCP.** KeepAlive exposes an MCP server, so a customer's AI agent (Claude Desktop, etc.) can request cancellation, receive structured offers, relay them to its human and accept or cancel. The in-app demo shows two Claude agents negotiating, with the human approving the deal.
 - **Cancel is always one click.** No dark patterns: a firm "no" ends in an immediate PayPal cancellation.
 - **Merchant dashboard.** Saves, MRR kept, save rate, reasons for leaving, every conversation with the AI's internal rationale, and a PayPal audit log with `debug_id`s, built on AG Grid.
+- **Two ways to try it.** Checkout runs on the real PayPal sandbox, or as an instant demo with no login: the subscription is approved on a simulated PayPal step, and its later Subscriptions calls are answered by an in-app simulator with PayPal's state rules (logged as simulated).
 
 ## How we built it
 - **Next.js 16 + TypeScript** app, deployed on Vercel at https://keepalive.pallabdas.me, with state in private Vercel Blob storage and a daily Vercel Cron job for scheduled resumes and price restores.
 - **PayPal:** Catalog Products and Billing Plans (bootstrap), Subscriptions v1 (create, approve, get, suspend, activate, revise, PATCH pricing, cancel, transactions), and Webhooks with `verify-webhook-signature`. Every mutating call sends a `PayPal-Request-Id` idempotency key.
-- **AI:** Claude Haiku 5.5 (`claude-haiku-5-5`) through the Anthropic SDK; set `KEEPALIVE_MODEL` to use another model. The retention agent uses **structured outputs** (zod schema: reason, action, offer, reply, rationale). The subscriber's agent is a **tool-use loop** that must call `ask_my_human` before `accept_offer`.
+- **AI:** Claude Haiku 5.5 (`claude-haiku-5-5`) through the Anthropic SDK; set `KEEPALIVE_MODEL` to use another model. The retention agent uses **structured outputs** (zod schema: reason, action, offer, reply, rationale). The subscriber's agent is a **tool-use loop** that must call `ask_my_human` before `accept_offer`. Both use **prompt caching** laid out most stable first (instructions, then the per-conversation subscriber context, then the turn), so later calls read about 1,900 tokens from cache; 8 live evals cover the retention agent's behavior.
 - **MCP:** `mcp-handler` + MCP SDK v2 serving `get_subscription`, `request_cancellation`, `send_message`, `accept_offer`, `decline_offer`, `cancel_subscription` and `get_session`.
 - **AG Grid** for the merchant's subscriber table.
 
@@ -40,19 +41,23 @@ The cancel button is where subscription businesses bleed. Merchants on Stripe, B
 - OAuth for subscriber identity on MCP, failed-payment recovery (dunning) using `capture` of the outstanding balance, A/B testing of offer strategies, and a PayPal app-marketplace style install for merchants.
 
 ## Built with
-PayPal Subscriptions API · PayPal Catalog Products API · PayPal Webhooks · Claude (Anthropic API) · Model Context Protocol · Next.js · TypeScript · Tailwind CSS · AG Grid · three.js · Vercel · Vercel Blob
+PayPal Subscriptions API · PayPal Catalog Products API · PayPal Webhooks · Claude Haiku 5.5 (Anthropic API) · Model Context Protocol · Next.js · TypeScript · Tailwind CSS · AG Grid · Vercel · Vercel Blob
 
 ## Links
-- Repo: https://github.com/PDGamerSG/proofroute-dispatch-assurance (must be public before submitting)
+- Repo: https://github.com/PDGamerSG/keepalive (public, MIT license)
 - Hosted demo: https://keepalive.pallabdas.me
 - Video: (YouTube URL)
 
-## Testing instructions for judges
-Paste this into Devpost's testing-instructions field. The buyer password goes only in that private field, never in this repo.
+## Built during the submission period
+The project was created for this hackathon: the first commit is from 10 November 2026 and the KeepAlive app was scaffolded on 11 November 2026, inside the 1 October to 12 November 2026 submission period.
 
-1. Open https://keepalive.pallabdas.me/shop, pick a plan, enter any name and email, and click **Subscribe with PayPal**.
-2. Log in to the PayPal sandbox with the test buyer: email `<sandbox buyer email>`, password `<sandbox buyer password>`. Approve.
-3. On the return page click **Manage my subscription**, then **Cancel subscription**. Tell the assistant why you are leaving (for example "I'm travelling for two months" or "too much coffee") and accept or decline its offer. The PayPal status on the page changes after each action.
-4. Open **/agent** to watch a customer's AI agent negotiate with the retention desk, approving or declining as the human.
-5. Open **/merchant** to see saves, retained revenue, every conversation with the AI's private rationale, the guardrail settings and the PayPal call log.
-6. To connect your own agent: `npx -y mcp-remote https://keepalive.pallabdas.me/api/mcp`, then ask it to cancel the subscription using its ID and the email you entered.
+## Testing instructions for judges
+Paste this into Devpost's testing-instructions field. No account or key is needed.
+
+1. Open https://keepalive.pallabdas.me/shop, pick a plan and enter any name and email. Then either:
+   - click **Try the instant demo (no PayPal login)** and **Agree and subscribe** on the simulated PayPal step, or
+   - click **Subscribe with PayPal** and approve in the PayPal sandbox with a sandbox **Personal** test account (developer.paypal.com → Testing Tools → Sandbox Accounts). If the team shares a sandbox buyer, its login goes only in this private field, never in the repo.
+2. On the return page click **Manage my subscription**, then **Cancel subscription**. Tell the assistant why you are leaving (for example "I'm travelling for two months" or "too much coffee") and accept or decline its offer. The PayPal status on the page changes after each action.
+3. Open **/agent** to watch a customer's AI agent negotiate with the retention desk, approving or declining as the human.
+4. Open **/merchant** to see saves, retained revenue, every conversation with the AI's private rationale, the guardrail settings and the PayPal call log.
+5. To connect your own agent: `npx -y mcp-remote https://keepalive.pallabdas.me/api/mcp`, then ask it to cancel the subscription using its ID and the email you entered.

@@ -44,7 +44,7 @@ _Last updated 2026-11-12. See [RELEASE_QA.md](RELEASE_QA.md) for current release
 | MCP from Claude Desktop (`mcp-remote`) | open | not tried yet |
 | Demo video (≤ 2:50) | team | not started; script in [DEMO_SCRIPT.md](DEMO_SCRIPT.md) |
 | Devpost submission text | team | draft in [SUBMISSION.md](SUBMISSION.md) |
-| Review/remove raw third-party captures in `docs/archive/proofroute/research/raw` | repo owner | before going public |
+| Review/remove raw third-party captures in `docs/archive/proofroute/research/raw` | repo owner | ✅ 2026-11-12: all `raw/` capture folders removed from the archive |
 | Make the repo public (LICENSE is MIT) | repo owner | **required before submitting** |
 
 ## Sandbox accounts (save yourself an hour)

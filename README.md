@@ -15,18 +15,27 @@ KeepAlive helps merchants who bill through PayPal Subscriptions respond when a s
 
 Built for the [PayPal AI Hackathon](https://paypalaihackathon.devpost.com/) in November 2026. This repository contains the Next.js app, the retention and consumer agents, the PayPal integration, an MCP endpoint, a merchant dashboard and tests. Brewbox, the coffee subscription used in the demo, is fictional. Payments use the PayPal sandbox.
 
+## Try it
+
+The hosted demo needs no account or key. Open [keepalive.pallabdas.me/shop](https://keepalive.pallabdas.me/shop), enter any name and email, and pick a checkout:
+
+- **Try the instant demo (no PayPal login):** approve on a simulated PayPal step on the site. Pausing, discounts, plan changes and cancelling then run on KeepAlive's in-app PayPal simulator, and each call is logged as simulated.
+- **Subscribe with PayPal:** the real PayPal sandbox. Log in with a PayPal **sandbox Personal** test account (developer.paypal.com → Testing Tools → Sandbox Accounts). Real PayPal logins don't work there, and no real money moves.
+
+Then select **Manage my subscription → Cancel subscription** and say why you are leaving. The AI proposes one offer within the merchant's limits; accept it or cancel in one click. Open [/agent](https://keepalive.pallabdas.me/agent) to watch two AI agents negotiate, and [/merchant](https://keepalive.pallabdas.me/merchant) for the merchant desk and the PayPal activity log.
+
 ## Features
 
 | Feature | What it does |
 | --- | --- |
-| Retention conversations | Claude responds to the reason for leaving and proposes a pause, a cheaper plan or a temporary discount. |
+| Retention conversations | Claude responds to the reason for leaving and proposes a pause, a cheaper plan or a temporary discount. Cancelling stays one click away throughout, including while a subscription is paused. |
 | Merchant limits | Deterministic checks approve, clamp or reject proposals against discount, duration, tenure, offer-count and monthly budget limits. |
 | PayPal execution | Accepted offers suspend billing, revise the plan with buyer approval or override the subscription price. Results are read back from PayPal. |
 | Agent-to-agent negotiation | A subscriber's agent uses MCP to request cancellation, discuss offers and relay decisions through the same retention engine. The `/agent` demo asks the human before acting. |
 | Merchant dashboard | A five-page desk at `/merchant`: an overview with retained monthly revenue, save rate, subscribers by state, cancellation reasons and offer uptake, then pages for subscribers, conversations, PayPal activity and guardrail settings. |
 | Scheduled follow-up | Due actions resume paused subscriptions and restore expired discounts. Vercel runs the scheduled job daily; relevant page visits also check due actions. |
 | Interactive walkthrough | The landing page has a sample cancellation you answer yourself, a diagram of the path from the click to PayPal, a sequence diagram of an agent-to-agent cancellation, and a playground that runs the actual `checkOffer()` logic in the browser without backend calls. |
-| Direct cancellation | Subscribers can cancel from the flow, including while a subscription is paused. |
+| Two checkout paths | The PayPal sandbox checkout, or an instant demo whose subscriptions (`I-DEMO…`) are approved on a simulated PayPal step and then served by an in-app simulator of the Subscriptions API with PayPal's state rules. |
 
 ## How it works
 
@@ -124,7 +133,7 @@ Captured from a local production build in headless Chrome on 12 November 2026 at
 | TypeScript 5 | Application types | Apache-2.0 |
 | Tailwind CSS 4 | App styling | MIT |
 | AG Grid Community | Merchant dashboard tables | MIT |
-| Anthropic SDK | Retention and consumer-agent calls to Claude | Apache-2.0 |
+| Anthropic SDK | Retention and consumer-agent calls to Claude Haiku 5.5 (`claude-haiku-5-5`; `KEEPALIVE_MODEL` overrides it), with structured outputs, tool use and prompt caching | Apache-2.0 |
 | MCP SDK and `mcp-handler` | Agent-facing tools over HTTP | Apache-2.0 |
 | PayPal Subscriptions API | Subscription billing and lifecycle actions | PayPal service terms |
 | Vercel Blob SDK | Private, durable storage on hosted deployments | Apache-2.0 |
@@ -206,7 +215,7 @@ The app is hosted on Vercel at the live link above. [Deployment instructions](do
 - [Demo script](docs/DEMO_SCRIPT.md): the planned video walkthrough.
 - [Submission draft](docs/SUBMISSION.md): the Devpost description and implementation notes.
 - [Strategy](docs/STRATEGY.md): hackathon research, competitors and the product rationale.
-- [Archived research](docs/archive/proofroute): earlier dispatch-assurance research retained for reference.
+- [Archived research](docs/archive/proofroute): earlier dispatch-assurance research notes retained for reference (raw third-party page captures removed).
 
 ## Known limits
 
@@ -214,7 +223,8 @@ The app is hosted on Vercel at the live link above. [Deployment instructions](do
 - External-agent identity uses a subscription ID and matching email. Subscriber OAuth and multi-merchant onboarding are not implemented.
 - The hosted cron runs once a day. Unattended resume and price-restoration actions can execute up to a day after their due time; relevant page visits can trigger them sooner.
 - Offer durations use 30-day months. They do not track calendar-month boundaries or an exact number of PayPal billing cycles.
-- MCP has been exercised with raw JSON-RPC. The team checklist still marks the Claude Desktop connection and deployed webhook verification as unverified.
+- MCP has been exercised with raw JSON-RPC; a connection from a desktop MCP client has not been tested. Webhook signature verification has been confirmed on the hosted deployment.
+- Instant-demo subscriptions run on the in-app PayPal simulator, not on PayPal. Use the PayPal sandbox checkout to see real Subscriptions API calls.
 - The Render starter has no persistent disk or cron job configured. Local JSON storage is intended for development; Vercel deployments use private Blob storage.
 
 ## License
