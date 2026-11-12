@@ -1,5 +1,6 @@
 import "server-only";
 import { paypal } from "./client";
+import { isSimulated, simulatedPlans } from "./simulator";
 import { MERCHANT, TIERS, tier } from "@/lib/catalog";
 import { readStore, updateStore } from "@/lib/store";
 import type { SubscriptionStatus, TierId } from "@/lib/types";
@@ -111,7 +112,9 @@ export async function ensureCatalog(): Promise<{ productId: string; plans: Recor
 
 export async function tierForPlan(planId: string): Promise<TierId | undefined> {
   const plans = (await readStore()).config.plans;
-  return (Object.keys(plans) as TierId[]).find((k) => plans[k] === planId);
+  const real = (Object.keys(plans) as TierId[]).find((k) => plans[k] === planId);
+  // Instant-demo subscriptions use stand-in plan IDs when no PayPal catalog exists.
+  return real ?? (planId.match(/^P-DEMO-(LITE|STANDARD|PREMIUM)$/)?.[1].toLowerCase() as TierId | undefined);
 }
 
 export async function createSubscription(input: {
@@ -187,7 +190,7 @@ export async function reviseSubscription(
   toTier: TierId,
   requestId?: string,
 ): Promise<{ approveUrl?: string; planOverridden?: boolean }> {
-  const { plans } = await ensureCatalog();
+  const plans = isSimulated(id) ? await simulatedPlans() : (await ensureCatalog()).plans;
   const res = await paypal<{ links?: Link[]; plan_overridden?: boolean }>(
     `/v1/billing/subscriptions/${encodeURIComponent(id)}/revise`,
     {

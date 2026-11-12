@@ -1,0 +1,63 @@
+/* The instant demo's simulated PayPal approval step. */
+
+.sim {
+  display: grid;
+  place-items: center;
+  padding: clamp(2.5rem, 7vw, 4.5rem) 0;
+}
+
+.sim-card {
+  display: grid;
+  gap: 1rem;
+  width: min(100%, 30rem);
+  padding: clamp(1.4rem, 4vw, 2rem);
+}
+
+.sim-brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.sim-mark {
+  color: var(--ink-2);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.sim-title {
+  font-size: clamp(1.5rem, 4vw, 1.9rem);
+}
+
+.sim-lede {
+  color: var(--ink-2);
+}
+
+.sim-facts {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-control);
+  background: var(--wash);
+}
+
+.sim-facts dd {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.sim-actions {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.sim-actions .btn {
+  width: 100%;
+}
+
+.sim-fine {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}

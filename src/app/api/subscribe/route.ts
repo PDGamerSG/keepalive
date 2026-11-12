@@ -1,5 +1,6 @@
 import { body, json } from "@/lib/http";
 import { createSubscription } from "@/lib/paypal/subscriptions";
+import { createSimulatedSubscription } from "@/lib/paypal/simulator";
 import { tier } from "@/lib/catalog";
 import { upsertSubscriber } from "@/lib/store";
 import { personaFields } from "@/lib/personas";
@@ -11,6 +12,8 @@ const Checkout = z.object({
   name: z.string().trim().min(1).max(120),
   email: z.string().trim().email().max(254),
   persona: z.string().optional(),
+  /** "paypal": PayPal sandbox checkout. "simulated": the instant demo, answered by the in-app PayPal simulator. */
+  mode: z.enum(["paypal", "simulated"]).default("paypal"),
 });
 
 export async function POST(req: Request) {
@@ -18,7 +21,10 @@ export async function POST(req: Request) {
     const parsed = Checkout.safeParse(await body(req));
     if (!parsed.success) throw new RetentionError("Choose a plan and enter your name and a valid email address.");
     const b = parsed.data;
-    const { id, approveUrl } = await createSubscription({ tier: b.tier, name: b.name, email: b.email });
+    const { id, approveUrl } =
+      b.mode === "simulated"
+        ? await createSimulatedSubscription(b.tier)
+        : await createSubscription({ tier: b.tier, name: b.name, email: b.email });
     const t = tier(b.tier);
     await upsertSubscriber({
       id,

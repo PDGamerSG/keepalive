@@ -171,6 +171,22 @@
   line-height: 1.5;
 }
 
+.demo-way {
+  display: grid;
+  gap: 0.35rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--line);
+}
+
+.demo-way-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .demo-box h3 {
   display: flex;
   flex-wrap: wrap;

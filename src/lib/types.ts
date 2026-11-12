@@ -108,4 +108,6 @@ export interface StoreShape {
   policy?: import("./policy").MerchantPolicy;
   /** Webhook transmission IDs already processed (dedupe). */
   webhookIds: string[];
+  /** Instant-demo subscriptions held by the in-app PayPal simulator, by ID. */
+  simulatedPayPal?: Record<string, import("./paypal/simulator").SimulatedSubscription>;
 }

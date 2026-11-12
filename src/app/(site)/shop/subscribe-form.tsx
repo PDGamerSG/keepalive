@@ -7,6 +7,8 @@ import { PERSONAS } from "@/lib/personas";
 import { DemoCheckout, type DemoBuyer } from "./demo-checkout";
 import type { TierId } from "@/lib/types";
 
+type Mode = "paypal" | "simulated";
+
 export function SubscribeForm({
   tiers,
   checkoutAvailable,
@@ -20,26 +22,29 @@ export function SubscribeForm({
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [persona, setPersona] = useState<string>("regular");
-  const [busy, setBusy] = useState(false);
+  const [busy, setBusy] = useState<Mode | null>(null);
   const [error, setError] = useState<string | null>(null);
   const plan = tiers.find((t) => t.id === selected)!;
 
-  async function subscribe() {
-    if (busy || !checkoutAvailable) return;
-    setBusy(true);
+  const ready = Boolean(name.trim() && email.trim());
+
+  /** "paypal" opens the PayPal sandbox; "simulated" is the instant demo on KeepAlive's PayPal simulator. */
+  async function subscribe(mode: Mode) {
+    if (busy || (mode === "paypal" && !checkoutAvailable)) return;
+    setBusy(mode);
     setError(null);
     try {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ tier: selected, name: name.trim(), email: email.trim(), persona }),
+        body: JSON.stringify({ tier: selected, name: name.trim(), email: email.trim(), persona, mode }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error ?? "Could not start PayPal checkout");
+      if (!res.ok) throw new Error(data.error ?? "Could not start checkout");
       window.location.href = data.approveUrl;
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
-      setBusy(false);
+      setBusy(null);
     }
   }
 
@@ -48,7 +53,7 @@ export function SubscribeForm({
       className="shop-grid"
       onSubmit={(e) => {
         e.preventDefault();
-        subscribe();
+        subscribe("paypal");
       }}
     >
       <div className="shop-main">
@@ -124,8 +129,15 @@ export function SubscribeForm({
             </li>
           ))}
         </ul>
-        <button className="btn btn-paypal btn-lg shop-pay" type="submit" disabled={!checkoutAvailable || busy || !name || !email}>
-          {!checkoutAvailable ? "PayPal checkout is offline" : busy ? "Opening PayPal sandbox…" : `Subscribe to ${plan.name} with PayPal`}
+        <button className="btn btn-paypal btn-lg shop-pay" type="submit" disabled={!checkoutAvailable || !!busy || !ready}>
+          {!checkoutAvailable
+            ? "PayPal checkout is offline"
+            : busy === "paypal"
+              ? "Opening PayPal sandbox…"
+              : `Subscribe to ${plan.name} with PayPal`}
+        </button>
+        <button className="btn btn-line btn-lg shop-pay" type="button" onClick={() => subscribe("simulated")} disabled={!!busy || !ready}>
+          {busy === "simulated" ? "Starting the instant demo…" : "Try the instant demo (no PayPal login)"}
         </button>
         {error && (
           <p className="notice notice-error" role="alert">

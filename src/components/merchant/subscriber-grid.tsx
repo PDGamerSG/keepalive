@@ -58,7 +58,21 @@ export function SubscriberGrid({ rows }: { rows: Subscriber[] }) {
       }
     }
     return [
-      { field: "name", headerName: "Subscriber", flex: 1.2, minWidth: 150 },
+      {
+        field: "name",
+        headerName: "Subscriber",
+        flex: 1.2,
+        minWidth: 150,
+        // Instant-demo subscriptions (I-DEMO…) run on the PayPal simulator, not PayPal.
+        cellRenderer: (p: { data?: Subscriber; value: string }) =>
+          p.data?.id.startsWith("I-DEMO") ? (
+            <span>
+              {p.value} <span className="badge badge-offer">Demo</span>
+            </span>
+          ) : (
+            p.value
+          ),
+      },
       { field: "email", flex: 1.3, minWidth: 190 },
       { field: "tier", headerName: "Plan", width: 110, valueFormatter: (p) => planName(String(p.value)) },
       {
